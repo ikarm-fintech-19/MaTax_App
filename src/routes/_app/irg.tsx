@@ -10,11 +10,73 @@ export const Route = createFileRoute("/_app/irg")({
 
 function IrgPage() {
   const { t, locale } = useI18n();
-  const [gross, setGross] = useState(60000);
-  const [otherDeductions, setOther] = useState(0);
-  const [marital, setMarital] = useState<"single" | "married">("single");
-  const [children, setChildren] = useState(0);
-  const [isHandicapped, setIsHandicapped] = useState(false);
+  const [gross, setGross] = useState(() => {
+    if (typeof window !== "undefined") {
+      const stored = window.localStorage.getItem("matax_irg_draft");
+      if (stored) {
+        try {
+          return JSON.parse(stored).gross ?? 60000;
+        } catch (e) {}
+      }
+    }
+    return 60000;
+  });
+  const [otherDeductions, setOther] = useState(() => {
+    if (typeof window !== "undefined") {
+      const stored = window.localStorage.getItem("matax_irg_draft");
+      if (stored) {
+        try {
+          return JSON.parse(stored).otherDeductions ?? 0;
+        } catch (e) {}
+      }
+    }
+    return 0;
+  });
+  const [marital, setMarital] = useState<"single" | "married">((() => {
+    if (typeof window !== "undefined") {
+      const stored = window.localStorage.getItem("matax_irg_draft");
+      if (stored) {
+        try {
+          return JSON.parse(stored).marital ?? "single";
+        } catch (e) {}
+      }
+    }
+    return "single";
+  })());
+  const [children, setChildren] = useState(() => {
+    if (typeof window !== "undefined") {
+      const stored = window.localStorage.getItem("matax_irg_draft");
+      if (stored) {
+        try {
+          return JSON.parse(stored).children ?? 0;
+        } catch (e) {}
+      }
+    }
+    return 0;
+  });
+  const [isHandicapped, setIsHandicapped] = useState(() => {
+    if (typeof window !== "undefined") {
+      const stored = window.localStorage.getItem("matax_irg_draft");
+      if (stored) {
+        try {
+          return JSON.parse(stored).isHandicapped ?? false;
+        } catch (e) {}
+      }
+    }
+    return false;
+  });
+
+  useMemo(() => {
+    if (typeof window !== "undefined") {
+      window.localStorage.setItem("matax_irg_draft", JSON.stringify({
+        gross,
+        otherDeductions,
+        marital,
+        children,
+        isHandicapped
+      }));
+    }
+  }, [gross, otherDeductions, marital, children, isHandicapped]);
 
   const result = useMemo(() => calculateIrg({
     grossMonthly: gross,

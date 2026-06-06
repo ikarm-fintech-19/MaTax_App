@@ -9,9 +9,24 @@ export const Route = createFileRoute("/_app/withholding")({ component: Page });
 
 function Page() {
   const { t, locale } = useI18n();
-  const [lines, setLines] = useState<WithholdingLine[]>([
-    { kind: "dividends_resident_individual", base: 0 },
-  ]);
+  const [lines, setLines] = useState<WithholdingLine[]>(() => {
+    if (typeof window !== "undefined") {
+      const stored = window.localStorage.getItem("matax_withholding_draft");
+      if (stored) {
+        try {
+          return JSON.parse(stored) ?? [{ kind: "dividends_resident_individual", base: 0 }];
+        } catch (e) {}
+      }
+    }
+    return [{ kind: "dividends_resident_individual", base: 0 }];
+  });
+
+  useMemo(() => {
+    if (typeof window !== "undefined") {
+      window.localStorage.setItem("matax_withholding_draft", JSON.stringify(lines));
+    }
+  }, [lines]);
+
   const result = useMemo(() => calculateWithholding(lines), [lines]);
   const kinds = Object.keys(WITHHOLDING_RATES) as WithholdingKind[];
 

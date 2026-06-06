@@ -8,9 +8,49 @@ export const Route = createFileRoute("/_app/ibs")({ component: IbsPage });
 
 function IbsPage() {
   const { t, locale } = useI18n();
-  const [profit, setProfit] = useState(1_000_000);
-  const [activity, setActivity] = useState<IbsActivity>("services_trade");
-  const [credits, setCredits] = useState(0);
+  const [profit, setProfit] = useState(() => {
+    if (typeof window !== "undefined") {
+      const stored = window.localStorage.getItem("matax_ibs_draft");
+      if (stored) {
+        try {
+          return JSON.parse(stored).profit ?? 1_000_000;
+        } catch (e) {}
+      }
+    }
+    return 1_000_000;
+  });
+  const [activity, setActivity] = useState<IbsActivity>(() => {
+    if (typeof window !== "undefined") {
+      const stored = window.localStorage.getItem("matax_ibs_draft");
+      if (stored) {
+        try {
+          return JSON.parse(stored).activity ?? "services_trade";
+        } catch (e) {}
+      }
+    }
+    return "services_trade";
+  });
+  const [credits, setCredits] = useState(() => {
+    if (typeof window !== "undefined") {
+      const stored = window.localStorage.getItem("matax_ibs_draft");
+      if (stored) {
+        try {
+          return JSON.parse(stored).credits ?? 0;
+        } catch (e) {}
+      }
+    }
+    return 0;
+  });
+
+  useMemo(() => {
+    if (typeof window !== "undefined") {
+      window.localStorage.setItem("matax_ibs_draft", JSON.stringify({
+        profit,
+        activity,
+        credits
+      }));
+    }
+  }, [profit, activity, credits]);
 
   const result = useMemo(() => calculateIbs({ activity, taxableProfit: profit, creditsAlreadyPaid: credits }), [profit, activity, credits]);
 
