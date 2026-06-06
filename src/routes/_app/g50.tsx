@@ -63,11 +63,21 @@ function G50Page() {
   ]);
   const [deductions, setDeductions] = useState<DeductionsInput>(emptyDeductions());
 
-  // Hydrate from localStorage on mount + handle ?demo=true seed
+  // Hydrate from localStorage on mount + handle ?demo=true seed.
+  // In demo mode (?demo=true or sessionStorage.matax_demo) the tab is
+  // pre-populated with example data so the tester does not have to click
+  // "Charger un exemple PME" manually before each demo run.
   useEffect(() => {
-    setCompany(loadCompany());
-    if (typeof window !== "undefined" && window.location.search.includes("demo=true")) {
-      seedDemo();
+    const storedCompany = loadCompany();
+    setCompany(storedCompany);
+
+    if (typeof window === "undefined") return;
+    const isDemoSession =
+      new URLSearchParams(window.location.search).get("demo") === "true" ||
+      sessionStorage.getItem("matax_demo") === "1";
+
+    if (isDemoSession) {
+      seedDemo({ forceCompany: !storedCompany.raisonSociale });
       return;
     }
     const draft = loadDraft();
@@ -79,20 +89,36 @@ function G50Page() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
-  function seedDemo() {
+  function seedDemo(opts: { forceCompany?: boolean } = {}) {
+    // Période Mai 2026 — mois en cours pour la démo.
+    const now = new Date();
+    setPeriod({ kind: "monthly", year: now.getFullYear(), month: now.getMonth() + 1 });
+
     setLines([
-      { id: crypto.randomUUID(), code: "E3B8", caHT: 2_500_000 },
-      { id: crypto.randomUUID(), code: "E3B31", caHT: 300_000 },
-      { id: crypto.randomUUID(), code: "E3B30", caHT: 150_000 },
+      { id: crypto.randomUUID(), code: "E3B8", caHT: 2_500_000 }, // Production 19%
+      { id: crypto.randomUUID(), code: "E3B9", caHT: 1_200_000 }, // Revente 19%
+      { id: crypto.randomUUID(), code: "E3B1", caHT: 800_000 },   // Taux réduit 9%
+      { id: crypto.randomUUID(), code: "E3B30", caHT: 450_000 }, // Export (exonéré)
+      { id: crypto.randomUUID(), code: "E3B25", caHT: 220_000 }, // 1ère nécessité (exonéré)
     ]);
-    setDeductions({ ...emptyDeductions(), tvaAchatsBiensServices: 181_300 });
-    setCompany((prev) => prev.raisonSociale ? prev : {
-      raisonSociale: "SARL Démo Atlas",
-      nif: "099916001234567",
-      activite: "Commerce et services",
-      adresse: "12 rue Didouche Mourad, Alger",
-      articleImposition: "16-001-1234",
-      codeActivite: "604101",
+    setDeductions({
+      precompteAnterieur: 32_500,
+      tvaAchatsBiensServices: 285_000,
+      tvaAchatsBiens: 95_000,
+      proRataDeductionComplementaire: 0,
+      tvaFacturesAnnulees: 18_500,
+      autresDeductions: 4_200,
+    });
+    setCompany((prev) => {
+      if (prev.raisonSociale && !opts.forceCompany) return prev;
+      return {
+        raisonSociale: "SARL Démo Atlas",
+        nif: "099916001234567",
+        activite: "Commerce et services",
+        adresse: "12 rue Didouche Mourad, Alger",
+        articleImposition: "16-001-1234",
+        codeActivite: "604101",
+      };
     });
     toast.success(t("g50.demo_loaded"));
   }
@@ -157,7 +183,7 @@ function G50Page() {
         </div>
         <div className="flex flex-wrap items-center gap-2">
           <button
-            onClick={seedDemo}
+            onClick={() => seedDemo()}
             className="inline-flex items-center gap-2 rounded-lg border border-border px-3 py-2 text-sm font-medium hover:border-primary"
           >
             <Sparkles size={14} /> {t("g50.load_demo")}
