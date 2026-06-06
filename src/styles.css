@@ -1,0 +1,211 @@
+@import "tailwindcss" source(none);
+@source "../src";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+/* Matax — Fiscal Authority design system
+   ---------------------------------------
+   No pure gray; every neutral tinted toward teal.
+   No shadows on content (modals/dropdowns only).
+   Three tonal layers max: page → surface → elevated.
+*/
+
+@theme inline {
+  --font-display: "Lexend", system-ui, sans-serif;
+  --font-body: "Source Sans 3", system-ui, sans-serif;
+  --font-arabic: "Cairo", system-ui, sans-serif;
+
+  --radius-sm: 6px;
+  --radius-md: 8px;
+  --radius-lg: 10px;
+  --radius-xl: 14px;
+
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-surface: var(--surface);
+  --color-surface-elevated: var(--surface-elevated);
+  --color-card: var(--surface);
+  --color-card-foreground: var(--foreground);
+  --color-popover: var(--surface-elevated);
+  --color-popover-foreground: var(--foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary-hover: var(--primary-hover);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-ink: var(--foreground);
+  --color-ink-muted: var(--muted-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-success: var(--success);
+  --color-warning: var(--warning);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-ring: var(--ring);
+  --color-sidebar-primary: var(--primary);
+  --color-sidebar-primary-foreground: var(--primary-foreground);
+}
+
+:root {
+  --radius: 10px;
+
+  /* Surfaces — tinted toward fiscal teal, never neutral gray */
+  --background: oklch(0.985 0.012 175);   /* #F0FDFA paper */
+  --surface: oklch(1 0 0);                /* #FFFFFF cards */
+  --surface-elevated: oklch(0.995 0.005 175);
+
+  /* Ink */
+  --foreground: oklch(0.32 0.04 180);     /* #134E4A */
+  --muted: oklch(0.96 0.015 175);
+  --muted-foreground: oklch(0.42 0.07 180); /* Contrast fix */
+
+  /* Brand */
+  --primary: oklch(0.5 0.09 180);         /* #0F766E deep fiscal teal */
+  --primary-foreground: oklch(0.985 0.012 175);
+  --primary-hover: oklch(0.44 0.085 180);
+
+  --secondary: oklch(0.68 0.13 180);      /* #14B8A6 bright teal */
+  --secondary-foreground: oklch(0.99 0.005 175);
+
+  --accent: oklch(0.5 0.13 240);          /* #0369A1 deep blue */
+  --accent-foreground: oklch(0.99 0 0);
+
+  --destructive: oklch(0.58 0.22 27);     /* #DC2626 */
+  --destructive-foreground: oklch(0.99 0 0);
+  --success: oklch(0.62 0.15 155);
+  --warning: oklch(0.78 0.15 75);
+
+  --border: oklch(0.92 0.012 200);        /* #E2E8F0 */
+  --input: oklch(0.92 0.012 200);
+  --ring: oklch(0.5 0.09 180 / 0.45);
+
+  --sidebar: oklch(0.97 0.018 175);
+  --sidebar-foreground: oklch(0.32 0.04 180);
+  --sidebar-border: oklch(0.9 0.018 180);
+  --sidebar-accent: oklch(0.93 0.03 180);
+  --sidebar-accent-foreground: oklch(0.32 0.06 180);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root, .dark {
+    --background: oklch(0.18 0.025 195);
+    --surface: oklch(0.22 0.028 190);
+    --surface-elevated: oklch(0.26 0.03 190);
+    --foreground: oklch(0.96 0.015 170);
+    --muted: oklch(0.26 0.03 190);
+    --muted-foreground: oklch(0.74 0.04 175);
+    --primary: oklch(0.7 0.13 180);
+    --primary-foreground: oklch(0.18 0.025 195);
+    --primary-hover: oklch(0.76 0.13 180);
+    --secondary: oklch(0.62 0.12 180);
+    --secondary-foreground: oklch(0.18 0.025 195);
+    --accent: oklch(0.66 0.14 240);
+    --accent-foreground: oklch(0.99 0 0);
+    --destructive: oklch(0.66 0.2 27);
+    --destructive-foreground: oklch(0.99 0 0);
+    --border: oklch(0.32 0.025 190);
+    --input: oklch(0.32 0.025 190);
+    --ring: oklch(0.7 0.13 180 / 0.5);
+    --sidebar: oklch(0.2 0.028 190);
+    --sidebar-foreground: oklch(0.96 0.015 170);
+    --sidebar-border: oklch(0.3 0.03 190);
+    --sidebar-accent: oklch(0.28 0.035 185);
+    --sidebar-accent-foreground: oklch(0.96 0.015 170);
+  }
+}
+
+@layer base {
+  * { border-color: var(--color-border); }
+  html { font-family: var(--font-body); -webkit-font-smoothing: antialiased; }
+  html[dir="rtl"] { font-family: var(--font-arabic); }
+  body {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    font-family: var(--font-body);
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  html[dir="rtl"] body { font-family: var(--font-arabic); }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-display);
+    font-weight: 600;
+    letter-spacing: -0.01em;
+    line-height: 1.2;
+    color: var(--color-foreground);
+  }
+  html[dir="rtl"] h1, html[dir="rtl"] h2, html[dir="rtl"] h3,
+  html[dir="rtl"] h4, html[dir="rtl"] h5, html[dir="rtl"] h6 {
+    font-family: var(--font-arabic);
+  }
+
+  *:focus-visible {
+    outline: 2px solid var(--ring);
+    outline-offset: 2px;
+  }
+
+  /* Numeric tables: tabular figures */
+  .tabular-nums, table { font-variant-numeric: tabular-nums; }
+}
+
+@layer components {
+  .display-text {
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: clamp(2rem, 5vw, 3.75rem);
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+  }
+  .headline-text {
+    font-family: var(--font-display);
+    font-weight: 600;
+    font-size: clamp(1.5rem, 3vw, 2.25rem);
+    line-height: 1.2;
+  }
+  .title-text {
+    font-family: var(--font-display);
+    font-weight: 600;
+    font-size: clamp(1.125rem, 2vw, 1.5rem);
+    line-height: 1.3;
+  }
+  .label-text {
+    font-weight: 500;
+    font-size: 0.875rem;
+    letter-spacing: 0.01em;
+  }
+  .caption-text {
+    font-size: 0.75rem;
+    color: var(--color-muted-foreground);
+  }
+
+  /* Surface tokens */
+  .surface-card {
+    background-color: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius);
+    padding: 1.5rem;
+  }
+  .surface-card-interactive {
+    background-color: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius);
+    padding: 1.5rem;
+    transition: border-color 200ms ease, background-color 200ms ease;
+    cursor: pointer;
+  }
+  .surface-card-interactive:hover {
+    border-color: var(--color-primary);
+    background-color: var(--color-surface-elevated);
+  }
+}

@@ -1,0 +1,437 @@
+PITCH DECK — Comité National de Labellisation des Projets Innovants, Startups et Incubateurs
+
+MATAX
+Plateforme de Conformité Fiscale Intelligente
+"La conformité fiscale, simplifiée pour tous."
+
+Sommaire
+
+01
+
+Présentation générale
+
+05
+
+Problématique ciblée
+
+02
+
+Informations de contact
+
+06
+
+Solution proposée
+
+03
+
+Résumé du projet
+
+07
+
+Prototype
+
+04
+
+L’équipe
+
+08
+
+PI, valeur, concurrence, marché,
+modèle, roadmap
+
+MATAX — Comité National de Labellisation des Projets Innovants
+
+02
+
+Présentation Générale
+
+Nom du projet: MATAX
+
+"Votre conformité fiscale, en quelques clics."
+
+Description:
+
+Matax est une plateforme numérique qui permet aux entreprises, commerçants
+immatriculés, particuliers assujettis et experts-comptables de gérer l’intégralité
+de leurs obligations fiscales DGI
+
+Déclarations automatisées, calculs conformes aux lois en vigueur, tableau de
+bord des obligations personnalisé
+
+Conformité DGI 2026
+
+Consultation professionnelle en option pour les cas complexes
+
+"MATAX — Comité National de Labellisation des Projets Innovants"
+
+03
+
+Informations de Contact
+
+Responsable du Projet
+Plateforme
+
+Hamoum Ikram
+
+https://matax-frontend.onrender.com/
+
+Fondatrice & PDG
+Localisation
+
+Tiaret, Algérie
+Email
+
+ikramhamoum00@gmail.com
+
+Téléphone
+
+M
+
+"Votre comptable numérique, disponible 24h/24."
+
+0672532599
+
+"MATAX — Comité National de Labellisation des Projets Innovants"
+
+04
+
+Résumé du Projet
+
+PROBLÈME
+
+• La fiscalité algérienne est complexe, instable
+
+SOLUTION
+
+• Automatisation des déclarations (G50, G11,
+
+et intimidante
+•
+
+La législation change chaque année; les
+calculs sont sources d’erreurs; démarches
+chronophages
+
+G04)
+
+IMPACT ATTENDU
+
+•
+Conformité accessible à tous (particuliers,
+entreprises, professionnels)
+
+• Calcul IRG, IBS et TVA selon le code fiscal
+
+DGI 2026
+
+• Moins d’erreurs/pénalités, moins de temps
+perdu
+
+•
+Tableau de bord personnalisé + consultation
+professionnelle en option
+
+"MATAX — Comité National de Labellisation des Projets Innovants"
+
+05
+
+L'Équipe
+Hamoum Ikram
+Fondatrice & PDG
+
+Parcours
+Licence en Sciences Financières et Comptables (2024)
+Master en Comptabilité et Fiscalité (en cours)
+Terbass chez Naftal et Sonelgaz — systèmes de gestion financière
+Expérience en cabinets comptables agréés — déclarations fiscales terrain
+Ancienne gestionnaire/superviseure dans une société d’assurances
+
+Compétences
+Comptabilité
+
+"MATAX — Comité National de Labellisation des Projets Innovants"
+
+Fiscalité
+
+Gestion administrative
+
+Leadership
+
+Entrepreneuriat
+
+06
+
+La fiscalité algérienne : complexe, instable, et coûteuse à gérer
+
+Une législation en mouvement permanent
+Changements annuels (taux, régimes, formulaires)
+
+La peur des pénalités
+Majorations, pénalités, redressements
+
+Des calculs sources d’erreurs
+IRG, IBS, TVA, abattements, cotisations
+
+Du temps perdu entre les administrations
+DGI, CASNOS, CNRC, centres des impôts
+
+Une procédure perçue comme opaque
+« jibâiya » intimidante, obligations méconnues
+
+Un accès à l’expertise difficile
+20 000 à 80 000 DA/mois
+
+"MATAX — Comité National de Labellisation des Projets Innovants"
+
+07
+
+La Solution Proposée
+
+1) 📋 Génération de déclarations
+
+2) 🧮
+
+Calcul d’impôts
+
+IRG salarial/professionnel, IBS (19/23/26%), TVA (19% /
+9%) — conforme DGI 2026
+
+3) 📅 Tableau de bord des
+obligations
+profil par type d’entité + calendrier + alertes
+
+G50 (TVA mensuelle/trimestrielle), G11 (déclaration
+annuelle), G04 (déclaration employeur) — formulaires préremplis, prêts à soumettre à la DGI
+
+4) 💬 Assistant fiscal DGI
+réponses basées sur textes officiels (LF 2026) avec
+citation d’articles
+
+"MATAX — Comité National de Labellisation des Projets Innovants"
+
+5) 👨💼 Consultation professionnelle
+(option)
+mise en relation avec experts agréés
+
+08
+
+Prototype
+Notre Prototype — Déjà en ligne
+
+Plateforme opérationnelle: création de compte, profil fiscal,
+calculateurs, génération de déclarations. Parcours guidé
+étape par étape, sans jargon inutile.
+
+Accessible en ligne
+
+Interface en français
+
+Calculs conformes DGI 2026
+
+Lien :
+
+https://matax-frontend.onrender.com/
+
+"MATAX — Comité National de Labellisation des Projets Innovants"
+
+Compte utilisateur sécurisé
+
+09
+
+Propriété Intellectuelle
+
+🧮 Marque MATAX
+dépôt de marque en cours auprès de l’INAPI
+
+💻 Plateforme web
+droits d’auteur sur le code source et l’interface utilisateur
+
+⚙️ Moteur de calcul fiscal
+• algorithme propriétaire IRG/IBS/TVA conforme DGI, mis à jour à chaque loi de finances
+
+"MATAX — Comité National de Labellisation des Projets Innovants"
+
+10
+
+Ce que Matax apporte à chaque utilisateur
+🧮 Déclarations en minutes
+
+✅ Zéro erreur de calcul
+
+sans déplacement ni rendez-vous
+
+moteur fiscal automatisé, mis à jour
+
+📚 Toujours à jour
+
+📱 Disponible 24h/24, 7j/7
+
+intégration automatique des changements législatifs
+
+multi-appareils
+
+🔒 Données sécurisées
+
+🧮
+
+espace personnel et confidentiel
+
+gestion client plus rapide
+
+Un outil pour les experts-comptables
+
+👨💼 L’humain quand nécessaire
+consultation pro en option
+
+"MATAX — Comité National de Labellisation des Projets Innovants"
+
+1
+1
+
+Analyse Concurrentielle
+Pourquoi Matax se démarque
+Critère
+
+Matax
+
+Moustachir.dz
+
+Faire soi-même
+
+24/7 en ligne
+
+Sur rendez-vous
+
+Toujours mais risqué
+
+Coût
+
+Abonnement abordable
+
+Honoraires élevés
+
+Gratuit mais risqué
+
+Vitesse
+
+Minutes
+
+Jours
+
+Lent et incertain
+
+Conformité DGI 2026
+
+Automatique
+
+Dépend du consultant
+
+Non garantie
+
+Autonomie utilisateur
+
+Totale
+
+Nulle
+
+Partielle
+
+✅ En option
+
+✅ Uniquement ça
+
+❌
+
+Disponibilité
+
+Consultation pro disponible
+
+"MATAX — Comité National de Labellisation des Projets Innovants"
+
+1
+2
+
+Marché Cible
+
+Statistique Centrale
+
++1 500 000
+entités immatriculées au CNRC en Algérie
+
+Entreprises (EURL, SARL,
+SPA)
+
+Commerçants immatriculés
+(RC)
+
+Particuliers assujettis
+
+Experts-comptables &
+fiduciaires
+
+Professions libérales, revenus locatifs,
+IRG non salarial
+Obligations IBS, TVA, G04, G11 — besoin
+de conformité complète et régulière
+
+Artisans, importateurs, détaillants — G50,
+TVA, IBS selon régime
+
+"MATAX — Comité National de Labellisation des Projets Innovants"
+
+Multi-dossiers (segment futur) —
+professionnels gérant plusieurs clients
+
+1
+3
+
+Modèle Économique
+Phase actuelle — V1
+Abonnement unique donnant accès à toutes les fonctionnalités
+(G50/G11/G04, IRG/IBS/TVA, tableau de bord, assistant DGI). Consultation
+professionnelle en option.
+
+Vision future
+Formule
+
+Cible
+
+Contenu prévu
+
+Starter
+
+Particuliers / auto-entrepreneurs
+
+Fonctions de base
+
+PME
+
+TPE, SARL, commerçants
+
+Accès complet
+
+Expert
+
+Comptables, fiduciaires
+
+Multi-dossiers, exports, support prioritaire
+
+Projections de revenus
+
+"MATAX — Comité National de Labellisation des Projets Innovants"
+
+14
+
+Merci
+"Construisons ensemble la conformité fiscale de demain en Algérie."
+
+Hamoum Ikram — Fondatrice & PDG, MATAX
+ikramhamoum00@gmail.com
+
+0672532599
+
+https://matax-frontend.onrender.com/
+
+"MATAX — La fiscalité algérienne, enfin accessible à tous."
+
+
