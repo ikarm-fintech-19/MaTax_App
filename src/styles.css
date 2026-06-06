@@ -97,32 +97,32 @@
   --sidebar-accent-foreground: oklch(0.32 0.06 180);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root, .dark {
-    --background: oklch(0.18 0.025 195);
-    --surface: oklch(0.22 0.028 190);
-    --surface-elevated: oklch(0.26 0.03 190);
-    --foreground: oklch(0.96 0.015 170);
-    --muted: oklch(0.26 0.03 190);
-    --muted-foreground: oklch(0.74 0.04 175);
-    --primary: oklch(0.7 0.13 180);
-    --primary-foreground: oklch(0.18 0.025 195);
-    --primary-hover: oklch(0.76 0.13 180);
-    --secondary: oklch(0.62 0.12 180);
-    --secondary-foreground: oklch(0.18 0.025 195);
-    --accent: oklch(0.66 0.14 240);
-    --accent-foreground: oklch(0.99 0 0);
-    --destructive: oklch(0.66 0.2 27);
-    --destructive-foreground: oklch(0.99 0 0);
-    --border: oklch(0.32 0.025 190);
-    --input: oklch(0.32 0.025 190);
-    --ring: oklch(0.7 0.13 180 / 0.5);
-    --sidebar: oklch(0.2 0.028 190);
-    --sidebar-foreground: oklch(0.96 0.015 170);
-    --sidebar-border: oklch(0.3 0.03 190);
-    --sidebar-accent: oklch(0.28 0.035 185);
-    --sidebar-accent-foreground: oklch(0.96 0.015 170);
-  }
+/* Dark theme — only applied when the user opts in via the theme toggle.
+   The .dark class is set on <html> by the ThemeProvider. */
+.dark {
+  --background: oklch(0.18 0.025 195);
+  --surface: oklch(0.22 0.028 190);
+  --surface-elevated: oklch(0.26 0.03 190);
+  --foreground: oklch(0.96 0.015 170);
+  --muted: oklch(0.26 0.03 190);
+  --muted-foreground: oklch(0.74 0.04 175);
+  --primary: oklch(0.7 0.13 180);
+  --primary-foreground: oklch(0.18 0.025 195);
+  --primary-hover: oklch(0.76 0.13 180);
+  --secondary: oklch(0.62 0.12 180);
+  --secondary-foreground: oklch(0.18 0.025 195);
+  --accent: oklch(0.66 0.14 240);
+  --accent-foreground: oklch(0.99 0 0);
+  --destructive: oklch(0.66 0.2 27);
+  --destructive-foreground: oklch(0.99 0 0);
+  --border: oklch(0.32 0.025 190);
+  --input: oklch(0.32 0.025 190);
+  --ring: oklch(0.7 0.13 180 / 0.5);
+  --sidebar: oklch(0.2 0.028 190);
+  --sidebar-foreground: oklch(0.96 0.015 170);
+  --sidebar-border: oklch(0.3 0.03 190);
+  --sidebar-accent: oklch(0.28 0.035 185);
+  --sidebar-accent-foreground: oklch(0.96 0.015 170);
 }
 
 @layer base {

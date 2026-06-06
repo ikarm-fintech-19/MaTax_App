@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import { useAuth } from "@/hooks/use-auth";
 import { useI18n } from "@/lib/i18n";
 import { LanguageSwitcher } from "@/components/language-switcher";
+import { ThemeToggle } from "@/components/theme-toggle";
 import { LayoutDashboard, Receipt, Calculator, Building2, Fuel, Coins, Settings, LogOut, Menu } from "lucide-react";
 import { FiscalChat } from "@/components/assistant/fiscal-chat";
 import { Sheet, SheetContent, SheetTrigger, SheetTitle, SheetHeader } from "@/components/ui/sheet";
@@ -86,7 +87,10 @@ function AppLayout() {
         ))}
       </div>
       <div className="border-t border-sidebar-border px-3 py-4 space-y-2">
-        <LanguageSwitcher />
+        <div className="flex items-center justify-between gap-2">
+          <LanguageSwitcher />
+          <ThemeToggle />
+        </div>
         <button onClick={() => { sessionStorage.removeItem("matax_demo"); signOut().then(() => navigate({ to: "/login" })); }}
           className="flex w-full items-center gap-2 rounded-lg px-3 py-2 text-sm text-ink-muted hover:bg-sidebar-accent">
           <LogOut size={16} /> {t("common.signOut")}
@@ -126,7 +130,7 @@ function AppLayout() {
           </SheetContent>
         </Sheet>
         <Link to="/dashboard" className="title-text text-primary">Matax</Link>
-        <div className="w-10" />
+        <ThemeToggle />
       </header>
 
       <main className="md:ms-64 h-full min-h-screen">

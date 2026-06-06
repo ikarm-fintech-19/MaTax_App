@@ -5,6 +5,7 @@ import { lovable } from "@/integrations/lovable";
 import { useAuth } from "@/hooks/use-auth";
 import { useI18n } from "@/lib/i18n";
 import { LanguageSwitcher } from "@/components/language-switcher";
+import { ThemeToggle } from "@/components/theme-toggle";
 import { toast } from "sonner";
 
 export const Route = createFileRoute("/login")({
@@ -108,7 +109,10 @@ function LoginPage() {
           <div className="mb-6 flex items-center justify-between">
             <Link to="/" className="title-text text-primary lg:hidden">Matax</Link>
             <div className="hidden lg:block" />
-            <LanguageSwitcher />
+            <div className="flex items-center gap-2">
+              <LanguageSwitcher />
+              <ThemeToggle />
+            </div>
           </div>
           <div className="surface-card border-none shadow-none lg:border-solid lg:border-border lg:shadow-sm">
           <h1 className="title-text">{t("auth.title")}</h1>
