@@ -1,9 +1,10 @@
-import { createFileRoute, Link } from "@tanstack/react-router";
-import { useQuery } from "@tanstack/react-query";
+import { createFileRoute, Link, useNavigate } from "@tanstack/react-router";
+import { useQuery, useMutation, useQueryClient } from "@tanstack/react-query";
 import { supabase } from "@/integrations/supabase/client";
 import { useAuth } from "@/hooks/use-auth";
 import { useI18n } from "@/lib/i18n";
 import { formatCurrency } from "@/lib/format";
+import { searchUsersByNif, addExpertClient, removeExpertClient } from "@/lib/admin-service";
 import {
   Users,
   FileText,
@@ -12,16 +13,76 @@ import {
   CheckCircle,
   ChevronRight,
   TrendingUp,
+  Search,
+  UserPlus,
+  UserMinus,
+  X,
+  Receipt,
+  Calculator,
+  Building2,
+  Fuel,
+  Coins,
+  ArrowLeft,
 } from "lucide-react";
 import { Skeleton } from "@/components/ui/skeleton";
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import {
+  Dialog,
+  DialogContent,
+  DialogHeader,
+  DialogTitle,
+  DialogDescription,
+  DialogFooter,
+} from "@/components/ui/dialog";
+import { Badge } from "@/components/ui/badge";
+import { useState } from "react";
+import { toast } from "sonner";
 
 export const Route = createFileRoute("/_app/expert")({
   component: ExpertDashboard,
 });
 
+type ClientDetail = {
+  id: string;
+  client_id: string;
+  created_at: string;
+  profiles: {
+    full_name: string | null;
+    company_name: string | null;
+    nif: string | null;
+  } | null;
+};
+
+type Declaration = {
+  id: string;
+  user_id: string;
+  type: string;
+  period_label: string | null;
+  total_due: string | number | null;
+  status: string;
+  created_at: string;
+  profiles: { full_name: string | null; company_name: string | null } | null;
+};
+
+const DECLARATION_TYPE_CONFIG: Record<string, { icon: typeof FileText; label: string; route: string }> = {
+  g50: { icon: Receipt, label: "G50 TVA", route: "/g50" },
+  irg: { icon: Calculator, label: "IRG", route: "/irg" },
+  ibs: { icon: Building2, label: "IBS", route: "/ibs" },
+  tfpc: { icon: Fuel, label: "TFPC", route: "/tfpc" },
+  withholding: { icon: Coins, label: "Retenue à la source", route: "/withholding" },
+};
+
 function ExpertDashboard() {
   const { t, locale } = useI18n();
-  const { user, profile } = useAuth();
+  const { user } = useAuth();
+  const navigate = useNavigate();
+  const queryClient = useQueryClient();
+  const [selectedClient, setSelectedClient] = useState<ClientDetail | null>(null);
+  const [addModalOpen, setAddModalOpen] = useState(false);
+  const [searchQuery, setSearchQuery] = useState("");
+  const [searchResults, setSearchResults] = useState<Array<{ id: string; full_name: string | null; company_name: string | null; nif: string | null }>>([]);
+  const [searching, setSearching] = useState(false);
 
   // Fetch clients assigned to this expert
   const { data: clients = [], isLoading: clientsLoading } = useQuery({
@@ -33,7 +94,7 @@ function ExpertDashboard() {
         .select("*, profiles!client_id(full_name, company_name, nif)")
         .eq("expert_id", user!.id);
       if (error) throw error;
-      return data;
+      return (data ?? []) as unknown as ClientDetail[];
     },
   });
 
@@ -51,12 +112,194 @@ function ExpertDashboard() {
         .order("created_at", { ascending: false })
         .limit(20);
       if (error) throw error;
-      return data;
+      return (data ?? []) as Declaration[];
     },
   });
 
   const pendingDeclarations = declarations.filter((d) => d.status === "draft");
   const submittedDeclarations = declarations.filter((d) => d.status === "submitted");
+
+  const addClientMutation = useMutation({
+    mutationFn: async (clientId: string) => {
+      if (!user?.id) throw new Error("Not authenticated");
+      return addExpertClient({ expertId: user.id, clientId });
+    },
+    onSuccess: () => {
+      queryClient.invalidateQueries({ queryKey: ["expert-clients"] });
+      queryClient.invalidateQueries({ queryKey: ["expert-declarations"] });
+      setAddModalOpen(false);
+      setSearchQuery("");
+      setSearchResults([]);
+      toast.success("Client ajouté avec succès");
+    },
+    onError: (error) => {
+      toast.error(error.message);
+    },
+  });
+
+  const removeClientMutation = useMutation({
+    mutationFn: async (assignmentId: string) => {
+      return removeExpertClient({ assignmentId });
+    },
+    onSuccess: () => {
+      queryClient.invalidateQueries({ queryKey: ["expert-clients"] });
+      queryClient.invalidateQueries({ queryKey: ["expert-declarations"] });
+      toast.success("Client retiré");
+    },
+    onError: (error) => {
+      toast.error(error.message);
+    },
+  });
+
+  const handleSearch = async () => {
+    if (!searchQuery.trim()) return;
+    setSearching(true);
+    try {
+      const results = await searchUsersByNif({ query: searchQuery.trim() });
+      setSearchResults(results);
+    } catch (err) {
+      toast.error(err instanceof Error ? err.message : "Erreur de recherche");
+    } finally {
+      setSearching(false);
+    }
+  };
+
+  // Filter declarations for selected client
+  const clientDeclarations = selectedClient
+    ? declarations.filter((d) => d.user_id === selectedClient.client_id)
+    : [];
+
+  const existingClientIds = new Set(clients.map((c) => c.client_id));
+
+  if (selectedClient) {
+    const profile = selectedClient.profiles;
+    return (
+      <div className="space-y-6">
+        <button
+          onClick={() => setSelectedClient(null)}
+          className="inline-flex items-center gap-2 text-sm text-ink-muted hover:text-ink"
+        >
+          <ArrowLeft size={16} /> Retour aux clients
+        </button>
+
+        <header>
+          <div className="flex items-center gap-3">
+            <div className="flex h-12 w-12 items-center justify-center rounded-full bg-primary/10 text-lg font-medium text-primary">
+              {profile?.full_name?.charAt(0) ?? "?"}
+            </div>
+            <div>
+              <h1 className="headline-text">{profile?.full_name ?? "Client"}</h1>
+              <p className="text-ink-muted">
+                {profile?.company_name ?? "—"} · NIF: {profile?.nif ?? "—"}
+              </p>
+            </div>
+          </div>
+        </header>
+
+        {/* Stats */}
+        <div className="grid gap-4 sm:grid-cols-3">
+          <div className="surface-card">
+            <div className="flex items-center gap-3">
+              <div className="rounded-lg bg-primary/10 p-2 text-primary">
+                <FileText size={20} />
+              </div>
+              <div>
+                <div className="title-text text-2xl">{clientDeclarations.length}</div>
+                <div className="text-xs text-ink-muted">Déclarations</div>
+              </div>
+            </div>
+          </div>
+          <div className="surface-card">
+            <div className="flex items-center gap-3">
+              <div className="rounded-lg bg-warning/10 p-2 text-warning">
+                <Clock size={20} />
+              </div>
+              <div>
+                <div className="title-text text-2xl">{clientDeclarations.filter((d) => d.status === "draft").length}</div>
+                <div className="text-xs text-ink-muted">En attente</div>
+              </div>
+            </div>
+          </div>
+          <div className="surface-card">
+            <div className="flex items-center gap-3">
+              <div className="rounded-lg bg-success/10 p-2 text-success">
+                <CheckCircle size={20} />
+              </div>
+              <div>
+                <div className="title-text text-2xl">{clientDeclarations.filter((d) => d.status === "submitted").length}</div>
+                <div className="text-xs text-ink-muted">Soumises</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Declarations */}
+        <section>
+          <h2 className="title-text mb-3">Déclarations</h2>
+          {clientDeclarations.length === 0 ? (
+            <div className="surface-card flex flex-col items-center justify-center p-12 text-center">
+              <FileText size={32} className="mb-2 text-ink-muted" />
+              <p className="text-ink-muted">Aucune déclaration pour ce client.</p>
+            </div>
+          ) : (
+            <div className="space-y-3">
+              {clientDeclarations.map((d) => {
+                const config = DECLARATION_TYPE_CONFIG[d.type];
+                const Icon = config?.icon ?? FileText;
+                return (
+                  <div key={d.id} className="surface-card flex items-center justify-between">
+                    <div className="flex items-center gap-4">
+                      <div className="rounded-lg bg-primary/10 p-2 text-primary">
+                        <Icon size={18} />
+                      </div>
+                      <div>
+                        <div className="font-medium">{config?.label ?? d.type}</div>
+                        <div className="text-xs text-ink-muted">{d.period_label ?? "—"}</div>
+                      </div>
+                    </div>
+                    <div className="flex items-center gap-4">
+                      <div className="text-right">
+                        <div className="font-medium tabular-nums">
+                          {d.total_due != null ? formatCurrency(Number(d.total_due), locale) : "—"}
+                        </div>
+                        <Badge
+                          variant={d.status === "submitted" ? "default" : "secondary"}
+                          className={d.status === "submitted" ? "bg-success/10 text-success" : "bg-warning/10 text-warning"}
+                        >
+                          {d.status === "submitted" ? "Soumise" : "Brouillon"}
+                        </Badge>
+                      </div>
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
+          )}
+        </section>
+
+        {/* Quick actions */}
+        <section>
+          <h2 className="title-text mb-3">Actions rapides</h2>
+          <div className="flex flex-wrap gap-2">
+            {Object.entries(DECLARATION_TYPE_CONFIG).map(([key, config]) => {
+              const Icon = config.icon;
+              return (
+                <Button
+                  key={key}
+                  variant="outline"
+                  className="gap-2"
+                  onClick={() => navigate({ to: config.route as "/g50" | "/irg" | "/ibs" | "/tfpc" | "/withholding" })}
+                >
+                  <Icon size={16} />
+                  {config.label}
+                </Button>
+              );
+            })}
+          </div>
+        </section>
+      </div>
+    );
+  }
 
   return (
     <div className="space-y-8">
@@ -66,9 +309,15 @@ function ExpertDashboard() {
             <Users size={14} /> Espace Expert
           </div>
         </div>
-        <div>
-          <h1 className="headline-text mt-1">Tableau de bord expert</h1>
-          <p className="text-ink-muted">Gérez vos clients et suivez leurs déclarations fiscales</p>
+        <div className="flex flex-wrap items-end justify-between gap-3">
+          <div>
+            <h1 className="headline-text mt-1">Tableau de bord expert</h1>
+            <p className="text-ink-muted">Gérez vos clients et suivez leurs déclarations fiscales</p>
+          </div>
+          <Button onClick={() => setAddModalOpen(true)} className="inline-flex items-center gap-2">
+            <UserPlus size={16} />
+            Ajouter un client
+          </Button>
         </div>
       </header>
 
@@ -140,16 +389,24 @@ function ExpertDashboard() {
             <p className="mt-2 max-w-sm text-sm text-ink-muted">
               Ajoutez des clients pour commencer à gérer leurs déclarations fiscales.
             </p>
+            <Button onClick={() => setAddModalOpen(true)} className="mt-4" variant="outline">
+              <UserPlus size={16} className="mr-2" />
+              Ajouter un client
+            </Button>
           </div>
         ) : (
           <div className="space-y-3">
             {clients.map((client) => {
-              const clientProfile = client.profiles as any;
+              const clientProfile = client.profiles;
               const clientDecls = declarations.filter((d) => d.user_id === client.client_id);
               const pending = clientDecls.filter((d) => d.status === "draft").length;
 
               return (
-                <div key={client.id} className="surface-card flex items-center justify-between">
+                <div
+                  key={client.id}
+                  className="surface-card flex items-center justify-between cursor-pointer hover:border-primary transition-colors"
+                  onClick={() => setSelectedClient(client)}
+                >
                   <div className="flex items-center gap-4">
                     <div className="flex h-10 w-10 items-center justify-center rounded-full bg-primary/10 text-sm font-medium text-primary">
                       {clientProfile?.full_name?.charAt(0) ?? "?"}
@@ -170,9 +427,17 @@ function ExpertDashboard() {
                       </div>
                     )}
                     <div className="text-sm text-ink-muted">
-                      {clientDecls.length} déclaration
-                      {clientDecls.length !== 1 ? "s" : ""}
+                      {clientDecls.length} déclaration{clientDecls.length !== 1 ? "s" : ""}
                     </div>
+                    <button
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        removeClientMutation.mutate(client.id);
+                      }}
+                      className="rounded-lg p-1 text-ink-muted hover:bg-destructive/10 hover:text-destructive"
+                    >
+                      <UserMinus size={16} />
+                    </button>
                     <ChevronRight size={16} className="text-ink-muted" />
                   </div>
                 </div>
@@ -214,30 +479,34 @@ function ExpertDashboard() {
               </thead>
               <tbody>
                 {declarations.slice(0, 10).map((d) => {
-                  const clientProfile = d.profiles as any;
+                  const clientProfile = d.profiles;
+                  const config = DECLARATION_TYPE_CONFIG[d.type];
+                  const Icon = config?.icon ?? FileText;
                   return (
                     <tr key={d.id} className="border-t border-border">
-                      <td className="px-4 py-3">{clientProfile?.full_name ?? "—"}</td>
+                      <td className="px-4 py-3">
+                        <div className="flex items-center gap-2">
+                          <Icon size={14} className="text-ink-muted" />
+                          {clientProfile?.full_name ?? "—"}
+                        </div>
+                      </td>
                       <td className="px-4 py-3 uppercase">{d.type}</td>
                       <td className="px-4 py-3 text-ink-muted">{d.period_label ?? "—"}</td>
                       <td className="px-4 py-3 text-end tabular-nums">
                         {d.total_due != null ? formatCurrency(Number(d.total_due), locale) : "—"}
                       </td>
                       <td className="px-4 py-3 text-center">
-                        <span
-                          className={`inline-flex items-center gap-1 rounded-full px-2 py-0.5 text-xs font-medium ${
-                            d.status === "submitted"
-                              ? "bg-success/10 text-success"
-                              : "bg-warning/10 text-warning"
-                          }`}
+                        <Badge
+                          variant={d.status === "submitted" ? "default" : "secondary"}
+                          className={d.status === "submitted" ? "bg-success/10 text-success" : "bg-warning/10 text-warning"}
                         >
                           {d.status === "submitted" ? (
-                            <CheckCircle size={12} />
+                            <CheckCircle size={12} className="mr-1" />
                           ) : (
-                            <Clock size={12} />
+                            <Clock size={12} className="mr-1" />
                           )}
                           {d.status === "submitted" ? "Soumise" : "Brouillon"}
-                        </span>
+                        </Badge>
                       </td>
                     </tr>
                   );
@@ -247,6 +516,58 @@ function ExpertDashboard() {
           </div>
         )}
       </section>
+
+      {/* Add Client Modal */}
+      <Dialog open={addModalOpen} onOpenChange={setAddModalOpen}>
+        <DialogContent className="sm:max-w-md">
+          <DialogHeader>
+            <DialogTitle>Ajouter un client</DialogTitle>
+            <DialogDescription>
+              Recherchez un client par son nom, sa société ou son NIF.
+            </DialogDescription>
+          </DialogHeader>
+          <div className="flex gap-2">
+            <Input
+              placeholder="Nom, société ou NIF..."
+              value={searchQuery}
+              onChange={(e) => setSearchQuery(e.target.value)}
+              onKeyDown={(e) => e.key === "Enter" && handleSearch()}
+              className="flex-1"
+            />
+            <Button onClick={handleSearch} disabled={searching || !searchQuery.trim()}>
+              {searching ? "..." : <Search size={16} />}
+            </Button>
+          </div>
+          {searchResults.length > 0 && (
+            <div className="space-y-2 max-h-60 overflow-y-auto">
+              {searchResults.map((result) => {
+                const alreadyAdded = existingClientIds.has(result.id);
+                return (
+                  <div key={result.id} className="flex items-center justify-between rounded-lg border border-border p-3">
+                    <div>
+                      <div className="font-medium">{result.full_name ?? "—"}</div>
+                      <div className="text-xs text-ink-muted">
+                        {result.company_name ?? "—"} · NIF: {result.nif ?? "—"}
+                      </div>
+                    </div>
+                    <Button
+                      size="sm"
+                      variant={alreadyAdded ? "ghost" : "default"}
+                      disabled={alreadyAdded || addClientMutation.isPending}
+                      onClick={() => addClientMutation.mutate(result.id)}
+                    >
+                      {alreadyAdded ? "Déjà ajouté" : "Ajouter"}
+                    </Button>
+                  </div>
+                );
+              })}
+            </div>
+          )}
+          {searchResults.length === 0 && searchQuery && !searching && (
+            <p className="text-center text-sm text-ink-muted">Aucun utilisateur trouvé.</p>
+          )}
+        </DialogContent>
+      </Dialog>
     </div>
   );
 }

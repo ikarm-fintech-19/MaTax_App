@@ -38,3 +38,35 @@ export const deleteUser = createServerFn({ method: "POST" })
     if (error) throw new Error(error.message);
     return { success: true };
   });
+
+export const searchUsersByNif = createServerFn({ method: "POST" })
+  .handler(async (data: { query: string }) => {
+    const admin = getAdminClient();
+    const { data: profiles, error } = await admin
+      .from("profiles")
+      .select("id, full_name, company_name, nif")
+      .or(`nif.ilike.%${data.query}%,full_name.ilike.%${data.query}%,company_name.ilike.%${data.query}%`)
+      .eq("role", "user")
+      .limit(10);
+    if (error) throw new Error(error.message);
+    return profiles;
+  });
+
+export const addExpertClient = createServerFn({ method: "POST" })
+  .handler(async (data: { expertId: string; clientId: string }) => {
+    const admin = getAdminClient();
+    const { error } = await admin.from("expert_clients").insert({
+      expert_id: data.expertId,
+      client_id: data.clientId,
+    });
+    if (error) throw new Error(error.message);
+    return { success: true };
+  });
+
+export const removeExpertClient = createServerFn({ method: "POST" })
+  .handler(async (data: { assignmentId: string }) => {
+    const admin = getAdminClient();
+    const { error } = await admin.from("expert_clients").delete().eq("id", data.assignmentId);
+    if (error) throw new Error(error.message);
+    return { success: true };
+  });
