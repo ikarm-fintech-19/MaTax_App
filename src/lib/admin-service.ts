@@ -14,6 +14,9 @@ function getAdminClient() {
 
 export const createUser = createServerFn({ method: "POST" })
   .handler(async (data: { email: string; password: string; fullName: string; companyName?: string; nif?: string; role: "user" | "expert" | "admin" }) => {
+    if (!data.email?.trim()) throw new Error("L'adresse email est obligatoire");
+    if (!data.password?.trim()) throw new Error("Le mot de passe est obligatoire");
+    if (!data.fullName?.trim()) throw new Error("Le nom complet est obligatoire");
     const admin = getAdminClient();
     const { data: authData, error } = await admin.auth.admin.createUser({
       email: data.email,
@@ -69,6 +72,23 @@ export const removeExpertClient = createServerFn({ method: "POST" })
   .handler(async (data: { assignmentId: string }) => {
     const admin = getAdminClient();
     const { error } = await admin.from("expert_clients").delete().eq("id", data.assignmentId);
+    if (error) throw new Error(error.message);
+    return { success: true };
+  });
+
+export const saveClientDeclaration = createServerFn({ method: "POST" })
+  .handler(async (data: { clientId: string; type: string; fiscalYear: number; periodLabel: string; input: unknown; result: unknown; totalDue: number }) => {
+    const admin = getAdminClient();
+    const { error } = await admin.from("declarations").insert({
+      user_id: data.clientId,
+      type: data.type,
+      status: "draft",
+      fiscal_year: data.fiscalYear,
+      period_label: data.periodLabel,
+      input: data.input as any,
+      result: data.result as any,
+      total_due: data.totalDue,
+    });
     if (error) throw new Error(error.message);
     return { success: true };
   });

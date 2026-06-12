@@ -4,7 +4,10 @@ import { supabase } from "@/integrations/supabase/client";
 import { useAuth } from "@/hooks/use-auth";
 import { useI18n } from "@/lib/i18n";
 import { formatCurrency } from "@/lib/format";
-import { searchUsersByNif, addExpertClient, removeExpertClient } from "@/lib/admin-service";
+import { searchUsersByNif, addExpertClient, removeExpertClient, saveClientDeclaration } from "@/lib/admin-service";
+import { calculateG50, G50_OPERATION_LINES, emptyDeductions, type DeductionsInput, type G50Input, type OperationLineInput } from "@/lib/engines/tva";
+import { generateId } from "@/lib/utils";
+import { downloadG50Pdf, type G50CompanyInfo } from "@/lib/pdf/g50-pdf";
 import {
   Users,
   FileText,
@@ -23,6 +26,10 @@ import {
   Fuel,
   Coins,
   ArrowLeft,
+  Download,
+  Plus,
+  Trash2,
+  Sparkles,
 } from "lucide-react";
 import { Skeleton } from "@/components/ui/skeleton";
 import { Button } from "@/components/ui/button";
@@ -65,6 +72,15 @@ type Declaration = {
   profiles: { full_name: string | null; company_name: string | null } | null;
 };
 
+interface DraftLine extends OperationLineInput {
+  id: string;
+}
+
+const MONTHS = [
+  "Janvier", "Février", "Mars", "Avril", "Mai", "Juin",
+  "Juillet", "Août", "Septembre", "Octobre", "Novembre", "Décembre",
+];
+
 const DECLARATION_TYPE_CONFIG: Record<string, { icon: typeof FileText; label: string; route: string }> = {
   g50: { icon: Receipt, label: "G50 TVA", route: "/g50" },
   irg: { icon: Calculator, label: "IRG", route: "/irg" },
@@ -83,6 +99,12 @@ function ExpertDashboard() {
   const [searchQuery, setSearchQuery] = useState("");
   const [searchResults, setSearchResults] = useState<Array<{ id: string; full_name: string | null; company_name: string | null; nif: string | null }>>([]);
   const [searching, setSearching] = useState(false);
+
+  const [g50DialogOpen, setG50DialogOpen] = useState(false);
+  const [g50Company, setG50Company] = useState<G50CompanyInfo>({ raisonSociale: "", nif: "", activite: "", adresse: "" });
+  const [g50Period, setG50Period] = useState<{ kind: "monthly" | "quarterly"; year: number; month?: number; quarter?: number }>({ kind: "monthly", year: new Date().getFullYear(), month: new Date().getMonth() + 1 });
+  const [g50Lines, setG50Lines] = useState<DraftLine[]>([{ id: generateId(), code: "E3B8", caHT: 0 }]);
+  const [g50Deductions, setG50Deductions] = useState<DeductionsInput>(emptyDeductions());
 
   // Fetch clients assigned to this expert
   const { data: clients = [], isLoading: clientsLoading } = useQuery({
@@ -149,6 +171,36 @@ function ExpertDashboard() {
     onError: (error) => {
       toast.error(error.message);
     },
+  });
+
+  const saveG50Mutation = useMutation({
+    mutationFn: async () => {
+      if (!selectedClient) throw new Error("No client selected");
+      const input: G50Input = {
+        period: g50Period,
+        operations: g50Lines.map((l) => ({ code: l.code, caHT: l.caHT })),
+        deductions: g50Deductions,
+      };
+      const result = calculateG50(input);
+      const totalDue = result.precompteAReporter > 0 ? -result.precompteAReporter : result.totalTvaAPayer;
+      const periodLabel = g50Period.kind === "monthly" && g50Period.month
+        ? `${g50Period.month}/${g50Period.year}` : `T${g50Period.quarter}/${g50Period.year}`;
+      return saveClientDeclaration({
+        clientId: selectedClient.client_id,
+        type: "g50",
+        fiscalYear: g50Period.year,
+        periodLabel,
+        input,
+        result,
+        totalDue,
+      });
+    },
+    onSuccess: () => {
+      queryClient.invalidateQueries({ queryKey: ["expert-declarations"] });
+      toast.success("Déclaration G50 enregistrée");
+      setG50DialogOpen(false);
+    },
+    onError: (error) => toast.error(error.message),
   });
 
   const handleSearch = async () => {
@@ -283,6 +335,30 @@ function ExpertDashboard() {
           <div className="flex flex-wrap gap-2">
             {Object.entries(DECLARATION_TYPE_CONFIG).map(([key, config]) => {
               const Icon = config.icon;
+              if (key === "g50") {
+                return (
+                  <Button
+                    key={key}
+                    variant="outline"
+                    className="gap-2"
+                    onClick={() => {
+                      const p = selectedClient?.profiles;
+                      setG50Company({
+                        raisonSociale: p?.full_name ?? "",
+                        nif: p?.nif ?? "",
+                        activite: "",
+                        adresse: "",
+                      });
+                      setG50Lines([{ id: generateId(), code: "E3B8", caHT: 0 }]);
+                      setG50Deductions(emptyDeductions());
+                      setG50DialogOpen(true);
+                    }}
+                  >
+                    <Icon size={16} />
+                    {config.label}
+                  </Button>
+                );
+              }
               return (
                 <Button
                   key={key}
@@ -568,6 +644,151 @@ function ExpertDashboard() {
           )}
         </DialogContent>
       </Dialog>
+
+      {/* G50 Creation Dialog */}
+      <Dialog open={g50DialogOpen} onOpenChange={setG50DialogOpen}>
+        <DialogContent className="sm:max-w-3xl max-h-[90vh] overflow-y-auto">
+          <DialogHeader>
+            <DialogTitle>Nouvelle déclaration G50</DialogTitle>
+            <DialogDescription>Créez une déclaration G50 pour {selectedClient?.profiles?.full_name ?? "ce client"}</DialogDescription>
+          </DialogHeader>
+
+          <div className="space-y-4">
+            <div>
+              <h3 className="label-text mb-2">Identification</h3>
+              <div className="grid grid-cols-1 gap-3 sm:grid-cols-2">
+                <div>
+                  <label className="label-text mb-1 block text-xs">Raison sociale</label>
+                  <Input value={g50Company.raisonSociale} onChange={(e) => setG50Company({ ...g50Company, raisonSociale: e.target.value })} />
+                </div>
+                <div>
+                  <label className="label-text mb-1 block text-xs">NIF</label>
+                  <Input value={g50Company.nif} onChange={(e) => setG50Company({ ...g50Company, nif: e.target.value })} />
+                </div>
+                <div>
+                  <label className="label-text mb-1 block text-xs">Activité</label>
+                  <Input value={g50Company.activite} onChange={(e) => setG50Company({ ...g50Company, activite: e.target.value })} />
+                </div>
+                <div>
+                  <label className="label-text mb-1 block text-xs">Adresse</label>
+                  <Input value={g50Company.adresse} onChange={(e) => setG50Company({ ...g50Company, adresse: e.target.value })} />
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <h3 className="label-text mb-2">Période</h3>
+              <div className="flex flex-wrap items-end gap-2">
+                <div className="inline-flex rounded-lg border border-border p-1">
+                  {(["monthly", "quarterly"] as const).map((k) => (
+                    <button
+                      key={k}
+                      onClick={() => setG50Period({ ...g50Period, kind: k, month: k === "monthly" ? (g50Period.month ?? 1) : undefined, quarter: k === "quarterly" ? (g50Period.quarter ?? 1) : undefined })}
+                      className={`rounded-md px-3 py-1 text-sm ${g50Period.kind === k ? "bg-primary text-primary-foreground" : "text-ink-muted"}`}
+                    >
+                      {k === "monthly" ? "Mensuel" : "Trimestriel"}
+                    </button>
+                  ))}
+                </div>
+                {g50Period.kind === "monthly" ? (
+                  <select value={g50Period.month ?? 1} onChange={(e) => setG50Period({ ...g50Period, month: Number(e.target.value) })} className="rounded-lg border border-input bg-surface px-3 py-2 text-sm">
+                    {MONTHS.map((m, i) => <option key={i} value={i + 1}>{m}</option>)}
+                  </select>
+                ) : (
+                  <select value={g50Period.quarter ?? 1} onChange={(e) => setG50Period({ ...g50Period, quarter: Number(e.target.value) })} className="rounded-lg border border-input bg-surface px-3 py-2 text-sm">
+                    {[1, 2, 3, 4].map((q) => <option key={q} value={q}>T{q}</option>)}
+                  </select>
+                )}
+                <input type="number" value={g50Period.year} onChange={(e) => setG50Period({ ...g50Period, year: Number(e.target.value) })} className="w-24 rounded-lg border border-input bg-surface px-3 py-2 text-sm tabular-nums" />
+              </div>
+            </div>
+
+            <div>
+              <h3 className="label-text mb-2">Opérations imposables</h3>
+              <div className="space-y-2">
+                {g50Lines.map((line) => (
+                  <div key={line.id} className="flex items-center gap-2">
+                    <select value={line.code} onChange={(e) => setG50Lines((prev) => prev.map((l) => l.id === line.id ? { ...l, code: e.target.value } : l))} className="flex-1 rounded-lg border border-input bg-surface px-3 py-2 text-sm">
+                      {G50_OPERATION_LINES.map((d) => (
+                        <option key={d.code} value={d.code}>{d.code} — {d.label} {d.kind === "exonere" ? "(exonéré)" : `(${(d.rate * 100).toFixed(0)}%)`}</option>
+                      ))}
+                    </select>
+                    <input type="number" min={0} value={line.caHT || ""} onChange={(e) => setG50Lines((prev) => prev.map((l) => l.id === line.id ? { ...l, caHT: Number(e.target.value) } : l))} placeholder="CA HT" className="w-32 rounded-lg border border-input bg-surface px-3 py-2 text-sm tabular-nums" />
+                    <button onClick={() => setG50Lines((prev) => prev.filter((l) => l.id !== line.id))} className="rounded-lg p-2 text-ink-muted hover:text-destructive"><Trash2 size={16} /></button>
+                  </div>
+                ))}
+                <Button variant="outline" size="sm" className="gap-1" onClick={() => setG50Lines((prev) => [...prev, { id: generateId(), code: "E3B8", caHT: 0 }])}>
+                  <Plus size={14} /> Ajouter
+                </Button>
+              </div>
+            </div>
+
+            <div>
+              <h3 className="label-text mb-2">Déductions</h3>
+              <div className="space-y-2">
+                {([
+                  { code: "E3B90", label: "Précompte antérieur", key: "precompteAnterieur" as const },
+                  { code: "E3B91", label: "TVA sur achats biens/services (art. 29)", key: "tvaAchatsBiensServices" as const },
+                  { code: "E3B92", label: "TVA sur achat de biens (art. 38)", key: "tvaAchatsBiens" as const },
+                  { code: "E3B93", label: "Régularisation prorata", key: "proRataDeductionComplementaire" as const },
+                  { code: "E3B94", label: "TVA factures annulées/impayées (art. 18)", key: "tvaFacturesAnnulees" as const },
+                  { code: "E3B95", label: "Autres déductions", key: "autresDeductions" as const },
+                ]).map(({ code, label, key }) => (
+                  <div key={code} className="flex items-center gap-2">
+                    <span className="font-mono text-xs text-ink-muted w-16">{code}</span>
+                    <span className="flex-1 text-sm">{label}</span>
+                    <input type="number" min={0} value={g50Deductions[key] || ""} onChange={(e) => setG50Deductions({ ...g50Deductions, [key]: Number(e.target.value) })} className="w-32 rounded-lg border border-input bg-surface px-3 py-2 text-sm tabular-nums" />
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            <div>
+              <h3 className="label-text mb-2">Récapitulatif</h3>
+              <div className="rounded-lg border border-border p-4 space-y-2">
+                <SummaryRow label="CA imposable HT" value={(() => { const r = calculateG50({ period: g50Period, operations: g50Lines.map((l) => ({ code: l.code, caHT: l.caHT })), deductions: g50Deductions }); return formatCurrency(r.totalCAImposable, locale); })()} />
+                <SummaryRow label="CA exonéré" value={(() => { const r = calculateG50({ period: g50Period, operations: g50Lines.map((l) => ({ code: l.code, caHT: l.caHT })), deductions: g50Deductions }); return formatCurrency(r.totalCAExonere, locale); })()} />
+                <div className="h-px bg-border" />
+                <SummaryRow label="Total déductions" value={(() => { const r = calculateG50({ period: g50Period, operations: g50Lines.map((l) => ({ code: l.code, caHT: l.caHT })), deductions: g50Deductions }); return `− ${formatCurrency(r.totalDeductions, locale)}`; })()} />
+                {(() => { const r = calculateG50({ period: g50Period, operations: g50Lines.map((l) => ({ code: l.code, caHT: l.caHT })), deductions: g50Deductions }); return r.precompteAReporter > 0 ? (
+                  <div className="rounded-lg bg-primary/5 p-3 text-center">
+                    <div className="text-xs text-primary uppercase tracking-wider">Crédit de TVA</div>
+                    <div className="text-2xl font-bold tabular-nums text-primary">{formatCurrency(r.precompteAReporter, locale)}</div>
+                  </div>
+                ) : (
+                  <div className="rounded-lg bg-surface p-3 text-center">
+                    <div className="text-xs text-ink-muted uppercase tracking-wider">TVA à payer</div>
+                    <div className="text-2xl font-bold tabular-nums">{formatCurrency(r.totalTvaAPayer, locale)}</div>
+                  </div>
+                ); })()}
+              </div>
+            </div>
+          </div>
+
+          <DialogFooter className="gap-2">
+            <Button variant="outline" className="gap-2" onClick={() => {
+              const input: G50Input = { period: g50Period, operations: g50Lines.map((l) => ({ code: l.code, caHT: l.caHT })), deductions: g50Deductions };
+              const result = calculateG50(input);
+              downloadG50Pdf(g50Company, input, result);
+              toast.success("PDF G50 exporté");
+            }}>
+              <Download size={16} /> Exporter PDF
+            </Button>
+            <Button className="gap-2" onClick={() => saveG50Mutation.mutate()} disabled={saveG50Mutation.isPending}>
+              {saveG50Mutation.isPending ? "..." : "Enregistrer"}
+            </Button>
+          </DialogFooter>
+        </DialogContent>
+      </Dialog>
+    </div>
+  );
+}
+
+function SummaryRow({ label, value }: { label: string; value: string }) {
+  return (
+    <div className="flex items-baseline justify-between gap-3">
+      <span className="text-sm text-ink-muted">{label}</span>
+      <span className="tabular-nums text-sm font-medium">{value}</span>
     </div>
   );
 }
