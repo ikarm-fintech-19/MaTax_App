@@ -203,6 +203,44 @@ function G50Page() {
     toast.success(`Déclaration G50 exportée avec succès pour ${periodName}.`);
   };
 
+  const handleDemoExport = () => {
+    if (!hasAccessToPdf) {
+      setIsLockOpen(true);
+      return;
+    }
+    const now = new Date();
+    const demoInput: G50Input = {
+      period: { kind: "monthly", year: now.getFullYear(), month: now.getMonth() + 1 },
+      operations: [
+        { code: "E3B8", caHT: 2_500_000 },
+        { code: "E3B9", caHT: 1_200_000 },
+        { code: "E3B1", caHT: 800_000 },
+        { code: "E3B30", caHT: 450_000 },
+        { code: "E3B25", caHT: 220_000 },
+      ],
+      deductions: {
+        precompteAnterieur: 32_500,
+        tvaAchatsBiensServices: 285_000,
+        tvaAchatsBiens: 95_000,
+        proRataDeductionComplementaire: 0,
+        tvaFacturesAnnulees: 18_500,
+        autresDeductions: 4_200,
+      },
+    };
+    const demoCompany: G50CompanyInfo = {
+      raisonSociale: "SARL Démo Atlas",
+      nif: "099916001234567",
+      activite: "Commerce et services",
+      adresse: "12 rue Didouche Mourad, Alger",
+      articleImposition: "16-001-1234",
+      codeActivite: "604101",
+    };
+    const demoResult = calculateG50(demoInput);
+    seedDemo();
+    downloadG50Pdf(demoCompany, demoInput, demoResult);
+    toast.success(`Déclaration G50 exportée avec succès pour ${now.getMonth() + 1} ${now.getFullYear()}.`);
+  };
+
   return (
     <div className="space-y-6">
       <div className="text-sm font-medium text-ink-muted flex items-center gap-2 mb-2">
@@ -223,6 +261,12 @@ function G50Page() {
             className="inline-flex items-center gap-2 rounded-lg border border-border px-3 py-2 text-sm font-medium hover:border-primary"
           >
             <Sparkles size={14} /> {t("g50.load_demo")}
+          </button>
+          <button
+            onClick={handleDemoExport}
+            className="inline-flex items-center gap-2 rounded-lg bg-primary px-4 py-2 text-sm font-medium text-primary-foreground transition-all hover:opacity-90"
+          >
+            <Download size={16} /> {t("g50.load_and_export")}
           </button>
           <button
             onClick={handleExport}
