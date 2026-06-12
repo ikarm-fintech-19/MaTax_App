@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720">
+  <rect width="1280" height="720" fill="#FFFFFF"/>
+  <rect x="0" y="0" width="1280" height="70" fill="#00527F"/>
+  <rect x="0" y="0" width="6" height="70" fill="#D62828"/>
+  <text x="40" y="46" fill="#FFFFFF" font-family="Montserrat, Arial, sans-serif" font-size="28" font-weight="bold">05 | النموذج التجريبي — العرض الحي</text>
+  <text x="1220" y="46" text-anchor="end" fill="#FFFFFF" font-family="Montserrat, Arial, sans-serif" font-size="18" font-weight="bold">MATAX</text>
+  
+  <rect x="0" y="70" width="1280" height="50" fill="#F8FAFC"/>
+  <rect x="0" y="70" width="6" height="50" fill="#F77F00"/>
+  <text x="40" y="102" fill="#1E293B" font-family="Montserrat, Arial, sans-serif" font-size="18">عرض حي للمنصة — الانتقال من التصميم إلى التطبيق</text>
+  
+  <!-- Left panel -->
+  <rect x="60" y="140" width="580" height="200" fill="#F8FAFC" rx="12" stroke="#E2E8F0" stroke-width="1"/>
+  <rect x="60" y="140" width="580" height="45" fill="#00527F" rx="12"/>
+  <rect x="60" y="175" width="580" height="10" fill="#00527F"/>
+  <text x="350" y="170" text-anchor="middle" fill="#FFFFFF" font-family="Montserrat, Arial, sans-serif" font-size="16" font-weight="bold">المكونات الأساسية لل-demo</text>
+  
+  <rect x="80" y="200" width="265" height="65" fill="#FFFFFF" rx="8" stroke="#E2E8F0" stroke-width="1"/>
+  <text x="100" y="230" fill="#00527F" font-family="Montserrat, Arial, sans-serif" font-size="13" font-weight="bold">لوحة التحكم الرئيسية</text>
+  <text x="100" y="255" fill="#44546A" font-family="Lato Light, Arial, sans-serif" font-size="12">مؤشرات مالية فورية</text>
+  
+  <rect x="355" y="200" width="265" height="65" fill="#FFFFFF" rx="8" stroke="#E2E8F0" stroke-width="1"/>
+  <text x="375" y="230" fill="#00527F" font-family="Montserrat, Arial, sans-serif" font-size="13" font-weight="bold">إدارة التصاريح</text>
+  <text x="375" y="255" fill="#44546A" font-family="Lato Light, Arial, sans-serif" font-size="12">توليد تلقائي G50</text>
+  
+  <rect x="80" y="280" width="265" height="55" fill="#FFFFFF" rx="8" stroke="#E2E8F0" stroke-width="1"/>
+  <text x="100" y="312" fill="#00527F" font-family="Montserrat, Arial, sans-serif" font-size="13" font-weight="bold">التنبيهات الذكية</text>
+  
+  <rect x="355" y="280" width="265" height="55" fill="#FFFFFF" rx="8" stroke="#E2E8F0" stroke-width="1"/>
+  <text x="375" y="312" fill="#00527F" font-family="Montserrat, Arial, sans-serif" font-size="13" font-weight="bold">الأرشفة السحابية</text>
+  
+  <!-- Right panel -->
+  <rect x="660" y="140" width="580" height="200" fill="#F8FAFC" rx="12" stroke="#E2E8F0" stroke-width="1"/>
+  <rect x="660" y="140" width="580" height="45" fill="#00527F" rx="12"/>
+  <rect x="660" y="175" width="580" height="10" fill="#00527F"/>
+  <text x="950" y="170" text-anchor="middle" fill="#FFFFFF" font-family="Montserrat, Arial, sans-serif" font-size="16" font-weight="bold">جوانب العرض الحي</text>
+  
+  <rect x="680" y="200" width="265" height="65" fill="#FFFFFF" rx="8" stroke="#E2E8F0" stroke-width="1"/>
+  <text x="700" y="230" fill="#00527F" font-family="Montserrat, Arial, sans-serif" font-size="13" font-weight="bold">سير العمل النموذجي</text>
+  <text x="700" y="255" fill="#44546A" font-family="Lato Light, Arial, sans-serif" font-size="12">من التسجيل إلى التصريح</text>
+  
+  <rect x="955" y="200" width="265" height="65" fill="#FFFFFF" rx="8" stroke="#E2E8F0" stroke-width="1"/>
+  <text x="975" y="230" fill="#00527F" font-family="Montserrat, Arial, sans-serif" font-size="13" font-weight="bold">التحليلات والتقارير</text>
+  <text x="975" y="255" fill="#44546A" font-family="Lato Light, Arial, sans-serif" font-size="12">معدلات الأداء والكفاءة</text>
+  
+  <rect x="680" y="280" width="265" height="55" fill="#FFFFFF" rx="8" stroke="#E2E8F0" stroke-width="1"/>
+  <text x="700" y="312" fill="#00527F" font-family="Montserrat, Arial, sans-serif" font-size="13" font-weight="bold">تجربة المستخدم</text>
+  
+  <rect x="955" y="280" width="265" height="55" fill="#FFFFFF" rx="8" stroke="#E2E8F0" stroke-width="1"/>
+  <text x="975" y="312" fill="#00527F" font-family="Montserrat, Arial, sans-serif" font-size="13" font-weight="bold">الأمان والخصوصية</text>
+  
+  <!-- Architecture -->
+  <rect x="60" y="360" width="1180" height="140" fill="#F8FAFC" rx="12" stroke="#E2E8F0" stroke-width="1"/>
+  <rect x="60" y="360" width="1180" height="45" fill="#00527F" rx="12"/>
+  <rect x="60" y="395" width="1180" height="10" fill="#00527F"/>
+  <text x="650" y="390" text-anchor="middle" fill="#FFFFFF" font-family="Montserrat, Arial, sans-serif" font-size="16" font-weight="bold">البنية التقنية</text>
+  
+  <rect x="80" y="420" width="220" height="65" fill="#00527F" rx="8"/>
+  <text x="190" y="450" text-anchor="middle" fill="#FFFFFF" font-family="Montserrat, Arial, sans-serif" font-size="13" font-weight="bold">Frontend</text>
+  <text x="190" y="472" text-anchor="middle" fill="#E8F4FC" font-family="Lato Light, Arial, sans-serif" font-size="12">React/Next.js</text>
+  
+  <rect x="320" y="420" width="220" height="65" fill="#F77F00" rx="8"/>
+  <text x="430" y="450" text-anchor="middle" fill="#FFFFFF" font-family="Montserrat, Arial, sans-serif" font-size="13" font-weight="bold">Backend</text>
+  <text x="430" y="472" text-anchor="middle" fill="#FFF" font-family="Lato Light, Arial, sans-serif" font-size="12">Node.js/Express</text>
+  
+  <rect x="560" y="420" width="220" height="65" fill="#D62828" rx="8"/>
+  <text x="670" y="450" text-anchor="middle" fill="#FFFFFF" font-family="Montserrat, Arial, sans-serif" font-size="13" font-weight="bold">Database</text>
+  <text x="670" y="472" text-anchor="middle" fill="#FECDD3" font-family="Lato Light, Arial, sans-serif" font-size="12">PostgreSQL</text>
+  
+  <rect x="800" y="420" width="220" height="65" fill="#16A34A" rx="8"/>
+  <text x="910" y="450" text-anchor="middle" fill="#FFFFFF" font-family="Montserrat, Arial, sans-serif" font-size="13" font-weight="bold">Cloud</text>
+  <text x="910" y="472" text-anchor="middle" fill="#F0FDF4" font-family="Lato Light, Arial, sans-serif" font-size="12">Cloudflare</text>
+  
+  <rect x="1040" y="420" width="180" height="65" fill="#31ACEA" rx="8"/>
+  <text x="1130" y="450" text-anchor="middle" fill="#FFFFFF" font-family="Montserrat, Arial, sans-serif" font-size="13" font-weight="bold">Security</text>
+  <text x="1130" y="472" text-anchor="middle" fill="#FFF" font-family="Lato Light, Arial, sans-serif" font-size="12">256-SSL</text>
+  
+  <!-- User flow -->
+  <rect x="60" y="520" width="1180" height="140" fill="#F8FAFC" rx="12" stroke="#E2E8F0" stroke-width="1"/>
+  <rect x="60" y="520" width="1180" height="45" fill="#00527F" rx="12"/>
+  <rect x="60" y="555" width="1180" height="10" fill="#00527F"/>
+  <text x="650" y="550" text-anchor="middle" fill="#FFFFFF" font-family="Montserrat, Arial, sans-serif" font-size="16" font-weight="bold">خطوات العرض الحي</text>
+  
+  <rect x="80" y="580" width="210" height="70" fill="#FFFFFF" rx="8" stroke="#E2E8F0" stroke-width="1"/>
+  <text x="185" y="610" text-anchor="middle" fill="#00527F" font-family="Montserrat, Arial, sans-serif" font-size="13" font-weight="bold">1. التسجيل</text>
+  <text x="185" y="635" text-anchor="middle" fill="#44546A" font-family="Lato Light, Arial, sans-serif" font-size="12">إنشاء حساب مجاني</text>
+  
+  <rect x="310" y="580" width="210" height="70" fill="#FFFFFF" rx="8" stroke="#E2E8F0" stroke-width="1"/>
+  <text x="415" y="610" text-anchor="middle" fill="#00527F" font-family="Montserrat, Arial, sans-serif" font-size="13" font-weight="bold">2. إعداد الملف</text>
+  <text x="415" y="635" text-anchor="middle" fill="#44546A" font-family="Lato Light, Arial, sans-serif" font-size="12">إدخال البيانات</text>
+  
+  <rect x="540" y="580" width="210" height="70" fill="#FFFFFF" rx="8" stroke="#E2E8F0" stroke-width="1"/>
+  <text x="645" y="610" text-anchor="middle" fill="#00527F" font-family="Montserrat, Arial, sans-serif" font-size="13" font-weight="bold">3. التصريح</text>
+  <text x="645" y="635" text-anchor="middle" fill="#44546A" font-family="Lato Light, Arial, sans-serif" font-size="12">توليد G50 تلقائي</text>
+  
+  <rect x="770" y="580" width="210" height="70" fill="#FFFFFF" rx="8" stroke="#E2E8F0" stroke-width="1"/>
+  <text x="875" y="610" text-anchor="middle" fill="#00527F" font-family="Montserrat, Arial, sans-serif" font-size="13" font-weight="bold">4. المتابعة</text>
+  <text x="875" y="635" text-anchor="middle" fill="#44546A" font-family="Lato Light, Arial, sans-serif" font-size="12">تنبيهات وتقارير</text>
+  
+  <rect x="1000" y="580" width="220" height="70" fill="#F77F00" rx="8"/>
+  <text x="1110" y="610" text-anchor="middle" fill="#FFFFFF" font-family="Montserrat, Arial, sans-serif" font-size="13" font-weight="bold">5. الأرشفة</text>
+  <text x="1110" y="635" text-anchor="middle" fill="#FFFFFF" font-family="Lato Light, Arial, sans-serif" font-size="12">备份 سحابية</text>
+  
+  <text x="260" y="615" fill="#44546A" font-family="Montserrat, Arial, sans-serif" font-size="20">→</text>
+  <text x="490" y="615" fill="#44546A" font-family="Montserrat, Arial, sans-serif" font-size="20">→</text>
+  <text x="720" y="615" fill="#44546A" font-family="Montserrat, Arial, sans-serif" font-size="20">→</text>
+  <text x="950" y="615" fill="#44546A" font-family="Montserrat, Arial, sans-serif" font-size="20">→</text>
+  
+  <line x1="40" y1="680" x2="1240" y2="680" stroke="#E2E8F0" stroke-width="1"/>
+  <text x="40" y="705" fill="#94A3B8" font-family="Lato Light, Arial, sans-serif" font-size="12">المصدر: PRODUCT.md — النموذج التجريبي</text>
+  <text x="640" y="705" text-anchor="middle" fill="#94A3B8" font-family="Lato Light, Arial, sans-serif" font-size="12">العرض الحي للمنصة</text>
+  <text x="1220" y="705" text-anchor="end" fill="#44546A" font-family="Montserrat, Arial, sans-serif" font-size="14">14</text>
+</svg>

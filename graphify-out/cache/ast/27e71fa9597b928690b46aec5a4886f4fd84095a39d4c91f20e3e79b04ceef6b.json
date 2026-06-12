@@ -1,0 +1,205 @@
+{
+  "nodes": [
+    {
+      "id": "home_dev_lab_documents_github_matax_app_src_lib_engines_tva_ts",
+      "label": "tva.ts",
+      "file_type": "code",
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/engines/tva.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "engines_tva_clamp",
+      "label": "clamp()",
+      "file_type": "code",
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/engines/tva.ts",
+      "source_location": "L130"
+    },
+    {
+      "id": "engines_tva_round2",
+      "label": "round2()",
+      "file_type": "code",
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/engines/tva.ts",
+      "source_location": "L135"
+    },
+    {
+      "id": "engines_tva_emptydeductions",
+      "label": "emptyDeductions()",
+      "file_type": "code",
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/engines/tva.ts",
+      "source_location": "L139"
+    },
+    {
+      "id": "engines_tva_calculateg50",
+      "label": "calculateG50()",
+      "file_type": "code",
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/engines/tva.ts",
+      "source_location": "L150"
+    },
+    {
+      "id": "engines_tva_testcalculateg50",
+      "label": "_testCalculateG50()",
+      "file_type": "code",
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/engines/tva.ts",
+      "source_location": "L214"
+    }
+  ],
+  "edges": [
+    {
+      "source": "home_dev_lab_documents_github_matax_app_src_lib_engines_tva_ts",
+      "target": "engines_tva_clamp",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/engines/tva.ts",
+      "source_location": "L130",
+      "weight": 1.0
+    },
+    {
+      "source": "home_dev_lab_documents_github_matax_app_src_lib_engines_tva_ts",
+      "target": "engines_tva_round2",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/engines/tva.ts",
+      "source_location": "L135",
+      "weight": 1.0
+    },
+    {
+      "source": "home_dev_lab_documents_github_matax_app_src_lib_engines_tva_ts",
+      "target": "engines_tva_emptydeductions",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/engines/tva.ts",
+      "source_location": "L139",
+      "weight": 1.0
+    },
+    {
+      "source": "home_dev_lab_documents_github_matax_app_src_lib_engines_tva_ts",
+      "target": "engines_tva_calculateg50",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/engines/tva.ts",
+      "source_location": "L150",
+      "weight": 1.0
+    },
+    {
+      "source": "home_dev_lab_documents_github_matax_app_src_lib_engines_tva_ts",
+      "target": "engines_tva_testcalculateg50",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/engines/tva.ts",
+      "source_location": "L214",
+      "weight": 1.0
+    },
+    {
+      "source": "engines_tva_calculateg50",
+      "target": "engines_tva_clamp",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/engines/tva.ts",
+      "source_location": "L160",
+      "weight": 1.0
+    },
+    {
+      "source": "engines_tva_calculateg50",
+      "target": "engines_tva_round2",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/engines/tva.ts",
+      "source_location": "L162",
+      "weight": 1.0
+    },
+    {
+      "source": "engines_tva_testcalculateg50",
+      "target": "engines_tva_calculateg50",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/engines/tva.ts",
+      "source_location": "L215",
+      "weight": 1.0
+    },
+    {
+      "source": "engines_tva_testcalculateg50",
+      "target": "engines_tva_emptydeductions",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/engines/tva.ts",
+      "source_location": "L223",
+      "weight": 1.0
+    }
+  ],
+  "raw_calls": [
+    {
+      "caller_nid": "engines_tva_clamp",
+      "callee": "Number",
+      "is_member_call": false,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/engines/tva.ts",
+      "source_location": "L131"
+    },
+    {
+      "caller_nid": "engines_tva_clamp",
+      "callee": "isFinite",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/engines/tva.ts",
+      "source_location": "L132"
+    },
+    {
+      "caller_nid": "engines_tva_round2",
+      "callee": "round",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/engines/tva.ts",
+      "source_location": "L136"
+    },
+    {
+      "caller_nid": "engines_tva_calculateg50",
+      "callee": "get",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/engines/tva.ts",
+      "source_location": "L158"
+    },
+    {
+      "caller_nid": "engines_tva_calculateg50",
+      "callee": "push",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/engines/tva.ts",
+      "source_location": "L163"
+    },
+    {
+      "caller_nid": "engines_tva_calculateg50",
+      "callee": "get",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/engines/tva.ts",
+      "source_location": "L169"
+    },
+    {
+      "caller_nid": "engines_tva_calculateg50",
+      "callee": "set",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/engines/tva.ts",
+      "source_location": "L170"
+    },
+    {
+      "caller_nid": "engines_tva_calculateg50",
+      "callee": "map",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/engines/tva.ts",
+      "source_location": "L203"
+    },
+    {
+      "caller_nid": "engines_tva_calculateg50",
+      "callee": "from",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/engines/tva.ts",
+      "source_location": "L203"
+    },
+    {
+      "caller_nid": "engines_tva_calculateg50",
+      "callee": "entries",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/engines/tva.ts",
+      "source_location": "L203"
+    }
+  ]
+}

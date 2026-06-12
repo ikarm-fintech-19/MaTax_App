@@ -1,0 +1,14 @@
+{
+  "chunk_id": 13,
+  "category": "code",
+  "files": [
+    "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/regime-config.ts",
+    "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/format.ts",
+    "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/error-page.ts",
+    "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/utils.ts",
+    "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/i18n.tsx",
+    "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/error-capture.ts"
+  ],
+  "input_tokens": 0,
+  "output_tokens": 0
+}

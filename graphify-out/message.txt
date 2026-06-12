@@ -1,0 +1,1148 @@
+@agent Chunk 0 of 24:
+You are a graphify extraction subagent. Read the files listed and extract a knowledge graph fragment.
+
+Output ONLY valid JSON matching the schema below - no explanation, no markdown fences, no preamble.
+
+Files (category: code, chunk ID: 0):
+    - /home/dev-lab/Documents/GitHub/MaTax_App/eslint.config.js
+    - /home/dev-lab/Documents/GitHub/MaTax_App/vite.config.ts
+
+Rules:
+- EXTRACTED: relationship explicit in source (import, call, citation, "see §1.2")
+- INFERRED: reasonable inference (shared data structure, implied dependency)  
+- AMBIGUOUS: uncertain - flag for review, do not omit
+
+Code files: focus on semantic edges AST cannot find (call relationships, shared data, arch patterns).
+  Do not re-extract imports - AST already has those.
+Doc/paper files: extract named concepts, entities, citations. For rationale (WHY decisions were made, trade-offs, design intent): store as a `rationale` attribute on the relevant concept node — do NOT create a separate rationale node or fragment node. Only create a node for something that is itself a named entity or concept. Use `file_type:"rationale"` for concept-like nodes (ideas, principles, mechanisms, design patterns). Do NOT invent file_types like `concept` — valid values are only `code|document|paper|image|rationale`.
+Code files: when adding `calls` edges, source MUST be the caller (the function/class doing the calling), target MUST be the callee. Never reverse this direction.
+
+Semantic similarity: if two concepts in this chunk solve the same problem or represent the same idea without any structural link (no import, no call, no citation), add a `semantically_similar_to` edge marked INFERRED with a confidence_score reflecting how similar they are (0.6-0.95). Examples:
+- Two functions that both validate user input but never call each other
+- A class in code and a concept in a paper that describe the same algorithm
+- Two error types that handle the same failure mode differently
+Only add these when the similarity is genuinely non-obvious and cross-cutting. Do not add them for trivially similar things.
+
+Hyperedges: if 3 or more nodes clearly participate together in a shared concept, flow, or pattern that is not captured by pairwise edges alone, add a hyperedge to a top-level `hyperedges` array. Examples:
+- All classes that implement a common protocol or interface
+- All functions in an authentication flow (even if they don't all call each other)
+- All concepts from a paper section that form one coherent idea
+Use sparingly — only when the group relationship adds information beyond the pairwise edges. Maximum 3 hyperedges per chunk.
+
+If a file has YAML frontmatter (--- ... ---), copy source_url, captured_at, author,
+  contributor onto every node from that file.
+
+confidence_score is REQUIRED on every edge - never omit it, never use 0.5 as a default:
+- EXTRACTED edges: confidence_score = 1.0 always
+- INFERRED edges: reason about each edge individually.
+  Direct structural evidence (shared data structure, clear dependency): 0.8-0.9.
+  Reasonable inference with some uncertainty: 0.6-0.7.
+  Weak or speculative: 0.4-0.5. Most edges should be 0.6-0.9, not 0.5.
+- AMBIGUOUS edges: 0.1-0.3
+
+Output exactly this JSON (no other text):
+{"nodes":[{"id":"filestem_entityname","label":"Human Readable Name","file_type":"code|document|paper|image|rationale","source_file":"relative/path","source_location":null,"source_url":null,"captured_at":null,"author":null,"contributor":null}],"edges":[{"source":"node_id","target":"node_id","relation":"calls|implements|references|cites|conceptually_related_to|shares_data_with|semantically_similar_to|rationale_for","confidence":"EXTRACTED|INFERRED|AMBIGUOUS","confidence_score":1.0,"source_file":"relative/path","source_location":null,"weight":1.0}],"hyperedges":[{"id":"snake_case_id","label":"Human Readable Label","nodes":"["node_id1","node_id2","node_id3"]","relation":"participate_in|implement|form","confidence":"EXTRACTED|INFERRED","confidence_score":0.75,"source_file":"relative/path"}],"input_tokens":0,"output_tokens":0}
+@agent Chunk 1 of 24:
+You are a graphify extraction subagent. Read the files listed and extract a knowledge graph fragment.
+
+Output ONLY valid JSON matching the schema below - no explanation, no markdown fences, no preamble.
+
+Files (category: code, chunk ID: 1):
+    - /home/dev-lab/Documents/GitHub/MaTax_App/src/routeTree.gen.ts
+    - /home/dev-lab/Documents/GitHub/MaTax_App/src/server.ts
+    - /home/dev-lab/Documents/GitHub/MaTax_App/src/router.tsx
+    - /home/dev-lab/Documents/GitHub/MaTax_App/src/start.ts
+
+Rules:
+- EXTRACTED: relationship explicit in source (import, call, citation, "see §1.2")
+- INFERRED: reasonable inference (shared data structure, implied dependency)  
+- AMBIGUOUS: uncertain - flag for review, do not omit
+
+Code files: focus on semantic edges AST cannot find (call relationships, shared data, arch patterns).
+  Do not re-extract imports - AST already has those.
+Doc/paper files: extract named concepts, entities, citations. For rationale (WHY decisions were made, trade-offs, design intent): store as a `rationale` attribute on the relevant concept node — do NOT create a separate rationale node or fragment node. Only create a node for something that is itself a named entity or concept. Use `file_type:"rationale"` for concept-like nodes (ideas, principles, mechanisms, design patterns). Do NOT invent file_types like `concept` — valid values are only `code|document|paper|image|rationale`.
+Code files: when adding `calls` edges, source MUST be the caller (the function/class doing the calling), target MUST be the callee. Never reverse this direction.
+
+Semantic similarity: if two concepts in this chunk solve the same problem or represent the same idea without any structural link (no import, no call, no citation), add a `semantically_similar_to` edge marked INFERRED with a confidence_score reflecting how similar they are (0.6-0.95). Examples:
+- Two functions that both validate user input but never call each other
+- A class in code and a concept in a paper that describe the same algorithm
+- Two error types that handle the same failure mode differently
+Only add these when the similarity is genuinely non-obvious and cross-cutting. Do not add them for trivially similar things.
+
+Hyperedges: if 3 or more nodes clearly participate together in a shared concept, flow, or pattern that is not captured by pairwise edges alone, add a hyperedge to a top-level `hyperedges` array. Examples:
+- All classes that implement a common protocol or interface
+- All functions in an authentication flow (even if they don't all call each other)
+- All concepts from a paper section that form one coherent idea
+Use sparingly — only when the group relationship adds information beyond the pairwise edges. Maximum 3 hyperedges per chunk.
+
+If a file has YAML frontmatter (--- ... ---), copy source_url, captured_at, author,
+  contributor onto every node from that file.
+
+confidence_score is REQUIRED on every edge - never omit it, never use 0.5 as a default:
+- EXTRACTED edges: confidence_score = 1.0 always
+- INFERRED edges: reason about each edge individually.
+  Direct structural evidence (shared data structure, clear dependency): 0.8-0.9.
+  Reasonable inference with some uncertainty: 0.6-0.7.
+  Weak or speculative: 0.4-0.5. Most edges should be 0.6-0.9, not 0.5.
+- AMBIGUOUS edges: 0.1-0.3
+
+Output exactly this JSON (no other text):
+{"nodes":[{"id":"filestem_entityname","label":"Human Readable Name","file_type":"code|document|paper|image|rationale","source_file":"relative/path","source_location":null,"source_url":null,"captured_at":null,"author":null,"contributor":null}],"edges":[{"source":"node_id","target":"node_id","relation":"calls|implements|references|cites|conceptually_related_to|shares_data_with|semantically_similar_to|rationale_for","confidence":"EXTRACTED|INFERRED|AMBIGUOUS","confidence_score":1.0,"source_file":"relative/path","source_location":null,"weight":1.0}],"hyperedges":[{"id":"snake_case_id","label":"Human Readable Label","nodes":"["node_id1","node_id2","node_id3"]","relation":"participate_in|implement|form","confidence":"EXTRACTED|INFERRED","confidence_score":0.75,"source_file":"relative/path"}],"input_tokens":0,"output_tokens":0}
+@agent Chunk 2 of 24:
+You are a graphify extraction subagent. Read the files listed and extract a knowledge graph fragment.
+
+Output ONLY valid JSON matching the schema below - no explanation, no markdown fences, no preamble.
+
+Files (category: code, chunk ID: 2):
+    - /home/dev-lab/Documents/GitHub/MaTax_App/src/hooks/use-auth.tsx
+    - /home/dev-lab/Documents/GitHub/MaTax_App/src/hooks/use-theme.tsx
+    - /home/dev-lab/Documents/GitHub/MaTax_App/src/hooks/use-mobile.tsx
+
+Rules:
+- EXTRACTED: relationship explicit in source (import, call, citation, "see §1.2")
+- INFERRED: reasonable inference (shared data structure, implied dependency)  
+- AMBIGUOUS: uncertain - flag for review, do not omit
+
+Code files: focus on semantic edges AST cannot find (call relationships, shared data, arch patterns).
+  Do not re-extract imports - AST already has those.
+Doc/paper files: extract named concepts, entities, citations. For rationale (WHY decisions were made, trade-offs, design intent): store as a `rationale` attribute on the relevant concept node — do NOT create a separate rationale node or fragment node. Only create a node for something that is itself a named entity or concept. Use `file_type:"rationale"` for concept-like nodes (ideas, principles, mechanisms, design patterns). Do NOT invent file_types like `concept` — valid values are only `code|document|paper|image|rationale`.
+Code files: when adding `calls` edges, source MUST be the caller (the function/class doing the calling), target MUST be the callee. Never reverse this direction.
+
+Semantic similarity: if two concepts in this chunk solve the same problem or represent the same idea without any structural link (no import, no call, no citation), add a `semantically_similar_to` edge marked INFERRED with a confidence_score reflecting how similar they are (0.6-0.95). Examples:
+- Two functions that both validate user input but never call each other
+- A class in code and a concept in a paper that describe the same algorithm
+- Two error types that handle the same failure mode differently
+Only add these when the similarity is genuinely non-obvious and cross-cutting. Do not add them for trivially similar things.
+
+Hyperedges: if 3 or more nodes clearly participate together in a shared concept, flow, or pattern that is not captured by pairwise edges alone, add a hyperedge to a top-level `hyperedges` array. Examples:
+- All classes that implement a common protocol or interface
+- All functions in an authentication flow (even if they don't all call each other)
+- All concepts from a paper section that form one coherent idea
+Use sparingly — only when the group relationship adds information beyond the pairwise edges. Maximum 3 hyperedges per chunk.
+
+If a file has YAML frontmatter (--- ... ---), copy source_url, captured_at, author,
+  contributor onto every node from that file.
+
+confidence_score is REQUIRED on every edge - never omit it, never use 0.5 as a default:
+- EXTRACTED edges: confidence_score = 1.0 always
+- INFERRED edges: reason about each edge individually.
+  Direct structural evidence (shared data structure, clear dependency): 0.8-0.9.
+  Reasonable inference with some uncertainty: 0.6-0.7.
+  Weak or speculative: 0.4-0.5. Most edges should be 0.6-0.9, not 0.5.
+- AMBIGUOUS edges: 0.1-0.3
+
+Output exactly this JSON (no other text):
+{"nodes":[{"id":"filestem_entityname","label":"Human Readable Name","file_type":"code|document|paper|image|rationale","source_file":"relative/path","source_location":null,"source_url":null,"captured_at":null,"author":null,"contributor":null}],"edges":[{"source":"node_id","target":"node_id","relation":"calls|implements|references|cites|conceptually_related_to|shares_data_with|semantically_similar_to|rationale_for","confidence":"EXTRACTED|INFERRED|AMBIGUOUS","confidence_score":1.0,"source_file":"relative/path","source_location":null,"weight":1.0}],"hyperedges":[{"id":"snake_case_id","label":"Human Readable Label","nodes":"["node_id1","node_id2","node_id3"]","relation":"participate_in|implement|form","confidence":"EXTRACTED|INFERRED","confidence_score":0.75,"source_file":"relative/path"}],"input_tokens":0,"output_tokens":0}
+@agent Chunk 3 of 24:
+You are a graphify extraction subagent. Read the files listed and extract a knowledge graph fragment.
+
+Output ONLY valid JSON matching the schema below - no explanation, no markdown fences, no preamble.
+
+Files (category: code, chunk ID: 3):
+    - /home/dev-lab/Documents/GitHub/MaTax_App/src/routes/__root.tsx
+    - /home/dev-lab/Documents/GitHub/MaTax_App/src/routes/login.tsx
+    - /home/dev-lab/Documents/GitHub/MaTax_App/src/routes/index.tsx
+    - /home/dev-lab/Documents/GitHub/MaTax_App/src/routes/_app.tsx
+
+Rules:
+- EXTRACTED: relationship explicit in source (import, call, citation, "see §1.2")
+- INFERRED: reasonable inference (shared data structure, implied dependency)  
+- AMBIGUOUS: uncertain - flag for review, do not omit
+
+Code files: focus on semantic edges AST cannot find (call relationships, shared data, arch patterns).
+  Do not re-extract imports - AST already has those.
+Doc/paper files: extract named concepts, entities, citations. For rationale (WHY decisions were made, trade-offs, design intent): store as a `rationale` attribute on the relevant concept node — do NOT create a separate rationale node or fragment node. Only create a node for something that is itself a named entity or concept. Use `file_type:"rationale"` for concept-like nodes (ideas, principles, mechanisms, design patterns). Do NOT invent file_types like `concept` — valid values are only `code|document|paper|image|rationale`.
+Code files: when adding `calls` edges, source MUST be the caller (the function/class doing the calling), target MUST be the callee. Never reverse this direction.
+
+Semantic similarity: if two concepts in this chunk solve the same problem or represent the same idea without any structural link (no import, no call, no citation), add a `semantically_similar_to` edge marked INFERRED with a confidence_score reflecting how similar they are (0.6-0.95). Examples:
+- Two functions that both validate user input but never call each other
+- A class in code and a concept in a paper that describe the same algorithm
+- Two error types that handle the same failure mode differently
+Only add these when the similarity is genuinely non-obvious and cross-cutting. Do not add them for trivially similar things.
+
+Hyperedges: if 3 or more nodes clearly participate together in a shared concept, flow, or pattern that is not captured by pairwise edges alone, add a hyperedge to a top-level `hyperedges` array. Examples:
+- All classes that implement a common protocol or interface
+- All functions in an authentication flow (even if they don't all call each other)
+- All concepts from a paper section that form one coherent idea
+Use sparingly — only when the group relationship adds information beyond the pairwise edges. Maximum 3 hyperedges per chunk.
+
+If a file has YAML frontmatter (--- ... ---), copy source_url, captured_at, author,
+  contributor onto every node from that file.
+
+confidence_score is REQUIRED on every edge - never omit it, never use 0.5 as a default:
+- EXTRACTED edges: confidence_score = 1.0 always
+- INFERRED edges: reason about each edge individually.
+  Direct structural evidence (shared data structure, clear dependency): 0.8-0.9.
+  Reasonable inference with some uncertainty: 0.6-0.7.
+  Weak or speculative: 0.4-0.5. Most edges should be 0.6-0.9, not 0.5.
+- AMBIGUOUS edges: 0.1-0.3
+
+Output exactly this JSON (no other text):
+{"nodes":[{"id":"filestem_entityname","label":"Human Readable Name","file_type":"code|document|paper|image|rationale","source_file":"relative/path","source_location":null,"source_url":null,"captured_at":null,"author":null,"contributor":null}],"edges":[{"source":"node_id","target":"node_id","relation":"calls|implements|references|cites|conceptually_related_to|shares_data_with|semantically_similar_to|rationale_for","confidence":"EXTRACTED|INFERRED|AMBIGUOUS","confidence_score":1.0,"source_file":"relative/path","source_location":null,"weight":1.0}],"hyperedges":[{"id":"snake_case_id","label":"Human Readable Label","nodes":"["node_id1","node_id2","node_id3"]","relation":"participate_in|implement|form","confidence":"EXTRACTED|INFERRED","confidence_score":0.75,"source_file":"relative/path"}],"input_tokens":0,"output_tokens":0}
+@agent Chunk 4 of 24:
+You are a graphify extraction subagent. Read the files listed and extract a knowledge graph fragment.
+
+Output ONLY valid JSON matching the schema below - no explanation, no markdown fences, no preamble.
+
+Files (category: code, chunk ID: 4):
+    - /home/dev-lab/Documents/GitHub/MaTax_App/src/routes/_app/settings.tsx
+    - /home/dev-lab/Documents/GitHub/MaTax_App/src/routes/_app/g50.tsx
+    - /home/dev-lab/Documents/GitHub/MaTax_App/src/routes/_app/dashboard.tsx
+    - /home/dev-lab/Documents/GitHub/MaTax_App/src/routes/_app/ibs.tsx
+    - /home/dev-lab/Documents/GitHub/MaTax_App/src/routes/_app/tfpc.tsx
+    - /home/dev-lab/Documents/GitHub/MaTax_App/src/routes/_app/withholding.tsx
+    - /home/dev-lab/Documents/GitHub/MaTax_App/src/routes/_app/irg.tsx
+
+Rules:
+- EXTRACTED: relationship explicit in source (import, call, citation, "see §1.2")
+- INFERRED: reasonable inference (shared data structure, implied dependency)  
+- AMBIGUOUS: uncertain - flag for review, do not omit
+
+Code files: focus on semantic edges AST cannot find (call relationships, shared data, arch patterns).
+  Do not re-extract imports - AST already has those.
+Doc/paper files: extract named concepts, entities, citations. For rationale (WHY decisions were made, trade-offs, design intent): store as a `rationale` attribute on the relevant concept node — do NOT create a separate rationale node or fragment node. Only create a node for something that is itself a named entity or concept. Use `file_type:"rationale"` for concept-like nodes (ideas, principles, mechanisms, design patterns). Do NOT invent file_types like `concept` — valid values are only `code|document|paper|image|rationale`.
+Code files: when adding `calls` edges, source MUST be the caller (the function/class doing the calling), target MUST be the callee. Never reverse this direction.
+
+Semantic similarity: if two concepts in this chunk solve the same problem or represent the same idea without any structural link (no import, no call, no citation), add a `semantically_similar_to` edge marked INFERRED with a confidence_score reflecting how similar they are (0.6-0.95). Examples:
+- Two functions that both validate user input but never call each other
+- A class in code and a concept in a paper that describe the same algorithm
+- Two error types that handle the same failure mode differently
+Only add these when the similarity is genuinely non-obvious and cross-cutting. Do not add them for trivially similar things.
+
+Hyperedges: if 3 or more nodes clearly participate together in a shared concept, flow, or pattern that is not captured by pairwise edges alone, add a hyperedge to a top-level `hyperedges` array. Examples:
+- All classes that implement a common protocol or interface
+- All functions in an authentication flow (even if they don't all call each other)
+- All concepts from a paper section that form one coherent idea
+Use sparingly — only when the group relationship adds information beyond the pairwise edges. Maximum 3 hyperedges per chunk.
+
+If a file has YAML frontmatter (--- ... ---), copy source_url, captured_at, author,
+  contributor onto every node from that file.
+
+confidence_score is REQUIRED on every edge - never omit it, never use 0.5 as a default:
+- EXTRACTED edges: confidence_score = 1.0 always
+- INFERRED edges: reason about each edge individually.
+  Direct structural evidence (shared data structure, clear dependency): 0.8-0.9.
+  Reasonable inference with some uncertainty: 0.6-0.7.
+  Weak or speculative: 0.4-0.5. Most edges should be 0.6-0.9, not 0.5.
+- AMBIGUOUS edges: 0.1-0.3
+
+Output exactly this JSON (no other text):
+{"nodes":[{"id":"filestem_entityname","label":"Human Readable Name","file_type":"code|document|paper|image|rationale","source_file":"relative/path","source_location":null,"source_url":null,"captured_at":null,"author":null,"contributor":null}],"edges":[{"source":"node_id","target":"node_id","relation":"calls|implements|references|cites|conceptually_related_to|shares_data_with|semantically_similar_to|rationale_for","confidence":"EXTRACTED|INFERRED|AMBIGUOUS","confidence_score":1.0,"source_file":"relative/path","source_location":null,"weight":1.0}],"hyperedges":[{"id":"snake_case_id","label":"Human Readable Label","nodes":"["node_id1","node_id2","node_id3"]","relation":"participate_in|implement|form","confidence":"EXTRACTED|INFERRED","confidence_score":0.75,"source_file":"relative/path"}],"input_tokens":0,"output_tokens":0}
+@agent Chunk 5 of 24:
+You are a graphify extraction subagent. Read the files listed and extract a knowledge graph fragment.
+
+Output ONLY valid JSON matching the schema below - no explanation, no markdown fences, no preamble.
+
+Files (category: code, chunk ID: 5):
+    - /home/dev-lab/Documents/GitHub/MaTax_App/src/components/language-switcher.tsx
+    - /home/dev-lab/Documents/GitHub/MaTax_App/src/components/theme-toggle.tsx
+
+Rules:
+- EXTRACTED: relationship explicit in source (import, call, citation, "see §1.2")
+- INFERRED: reasonable inference (shared data structure, implied dependency)  
+- AMBIGUOUS: uncertain - flag for review, do not omit
+
+Code files: focus on semantic edges AST cannot find (call relationships, shared data, arch patterns).
+  Do not re-extract imports - AST already has those.
+Doc/paper files: extract named concepts, entities, citations. For rationale (WHY decisions were made, trade-offs, design intent): store as a `rationale` attribute on the relevant concept node — do NOT create a separate rationale node or fragment node. Only create a node for something that is itself a named entity or concept. Use `file_type:"rationale"` for concept-like nodes (ideas, principles, mechanisms, design patterns). Do NOT invent file_types like `concept` — valid values are only `code|document|paper|image|rationale`.
+Code files: when adding `calls` edges, source MUST be the caller (the function/class doing the calling), target MUST be the callee. Never reverse this direction.
+
+Semantic similarity: if two concepts in this chunk solve the same problem or represent the same idea without any structural link (no import, no call, no citation), add a `semantically_similar_to` edge marked INFERRED with a confidence_score reflecting how similar they are (0.6-0.95). Examples:
+- Two functions that both validate user input but never call each other
+- A class in code and a concept in a paper that describe the same algorithm
+- Two error types that handle the same failure mode differently
+Only add these when the similarity is genuinely non-obvious and cross-cutting. Do not add them for trivially similar things.
+
+Hyperedges: if 3 or more nodes clearly participate together in a shared concept, flow, or pattern that is not captured by pairwise edges alone, add a hyperedge to a top-level `hyperedges` array. Examples:
+- All classes that implement a common protocol or interface
+- All functions in an authentication flow (even if they don't all call each other)
+- All concepts from a paper section that form one coherent idea
+Use sparingly — only when the group relationship adds information beyond the pairwise edges. Maximum 3 hyperedges per chunk.
+
+If a file has YAML frontmatter (--- ... ---), copy source_url, captured_at, author,
+  contributor onto every node from that file.
+
+confidence_score is REQUIRED on every edge - never omit it, never use 0.5 as a default:
+- EXTRACTED edges: confidence_score = 1.0 always
+- INFERRED edges: reason about each edge individually.
+  Direct structural evidence (shared data structure, clear dependency): 0.8-0.9.
+  Reasonable inference with some uncertainty: 0.6-0.7.
+  Weak or speculative: 0.4-0.5. Most edges should be 0.6-0.9, not 0.5.
+- AMBIGUOUS edges: 0.1-0.3
+
+Output exactly this JSON (no other text):
+{"nodes":[{"id":"filestem_entityname","label":"Human Readable Name","file_type":"code|document|paper|image|rationale","source_file":"relative/path","source_location":null,"source_url":null,"captured_at":null,"author":null,"contributor":null}],"edges":[{"source":"node_id","target":"node_id","relation":"calls|implements|references|cites|conceptually_related_to|shares_data_with|semantically_similar_to|rationale_for","confidence":"EXTRACTED|INFERRED|AMBIGUOUS","confidence_score":1.0,"source_file":"relative/path","source_location":null,"weight":1.0}],"hyperedges":[{"id":"snake_case_id","label":"Human Readable Label","nodes":"["node_id1","node_id2","node_id3"]","relation":"participate_in|implement|form","confidence":"EXTRACTED|INFERRED","confidence_score":0.75,"source_file":"relative/path"}],"input_tokens":0,"output_tokens":0}
+@agent Chunk 6 of 24:
+You are a graphify extraction subagent. Read the files listed and extract a knowledge graph fragment.
+
+Output ONLY valid JSON matching the schema below - no explanation, no markdown fences, no preamble.
+
+Files (category: code, chunk ID: 6):
+    - /home/dev-lab/Documents/GitHub/MaTax_App/src/components/dashboard/obligation-calendar.tsx
+
+Rules:
+- EXTRACTED: relationship explicit in source (import, call, citation, "see §1.2")
+- INFERRED: reasonable inference (shared data structure, implied dependency)  
+- AMBIGUOUS: uncertain - flag for review, do not omit
+
+Code files: focus on semantic edges AST cannot find (call relationships, shared data, arch patterns).
+  Do not re-extract imports - AST already has those.
+Doc/paper files: extract named concepts, entities, citations. For rationale (WHY decisions were made, trade-offs, design intent): store as a `rationale` attribute on the relevant concept node — do NOT create a separate rationale node or fragment node. Only create a node for something that is itself a named entity or concept. Use `file_type:"rationale"` for concept-like nodes (ideas, principles, mechanisms, design patterns). Do NOT invent file_types like `concept` — valid values are only `code|document|paper|image|rationale`.
+Code files: when adding `calls` edges, source MUST be the caller (the function/class doing the calling), target MUST be the callee. Never reverse this direction.
+
+Semantic similarity: if two concepts in this chunk solve the same problem or represent the same idea without any structural link (no import, no call, no citation), add a `semantically_similar_to` edge marked INFERRED with a confidence_score reflecting how similar they are (0.6-0.95). Examples:
+- Two functions that both validate user input but never call each other
+- A class in code and a concept in a paper that describe the same algorithm
+- Two error types that handle the same failure mode differently
+Only add these when the similarity is genuinely non-obvious and cross-cutting. Do not add them for trivially similar things.
+
+Hyperedges: if 3 or more nodes clearly participate together in a shared concept, flow, or pattern that is not captured by pairwise edges alone, add a hyperedge to a top-level `hyperedges` array. Examples:
+- All classes that implement a common protocol or interface
+- All functions in an authentication flow (even if they don't all call each other)
+- All concepts from a paper section that form one coherent idea
+Use sparingly — only when the group relationship adds information beyond the pairwise edges. Maximum 3 hyperedges per chunk.
+
+If a file has YAML frontmatter (--- ... ---), copy source_url, captured_at, author,
+  contributor onto every node from that file.
+
+confidence_score is REQUIRED on every edge - never omit it, never use 0.5 as a default:
+- EXTRACTED edges: confidence_score = 1.0 always
+- INFERRED edges: reason about each edge individually.
+  Direct structural evidence (shared data structure, clear dependency): 0.8-0.9.
+  Reasonable inference with some uncertainty: 0.6-0.7.
+  Weak or speculative: 0.4-0.5. Most edges should be 0.6-0.9, not 0.5.
+- AMBIGUOUS edges: 0.1-0.3
+
+Output exactly this JSON (no other text):
+{"nodes":[{"id":"filestem_entityname","label":"Human Readable Name","file_type":"code|document|paper|image|rationale","source_file":"relative/path","source_location":null,"source_url":null,"captured_at":null,"author":null,"contributor":null}],"edges":[{"source":"node_id","target":"node_id","relation":"calls|implements|references|cites|conceptually_related_to|shares_data_with|semantically_similar_to|rationale_for","confidence":"EXTRACTED|INFERRED|AMBIGUOUS","confidence_score":1.0,"source_file":"relative/path","source_location":null,"weight":1.0}],"hyperedges":[{"id":"snake_case_id","label":"Human Readable Label","nodes":"["node_id1","node_id2","node_id3"]","relation":"participate_in|implement|form","confidence":"EXTRACTED|INFERRED","confidence_score":0.75,"source_file":"relative/path"}],"input_tokens":0,"output_tokens":0}
+@agent Chunk 7 of 24:
+You are a graphify extraction subagent. Read the files listed and extract a knowledge graph fragment.
+
+Output ONLY valid JSON matching the schema below - no explanation, no markdown fences, no preamble.
+
+Files (category: code, chunk ID: 7):
+    - /home/dev-lab/Documents/GitHub/MaTax_App/src/components/onboarding/regime-selector.tsx
+
+Rules:
+- EXTRACTED: relationship explicit in source (import, call, citation, "see §1.2")
+- INFERRED: reasonable inference (shared data structure, implied dependency)  
+- AMBIGUOUS: uncertain - flag for review, do not omit
+
+Code files: focus on semantic edges AST cannot find (call relationships, shared data, arch patterns).
+  Do not re-extract imports - AST already has those.
+Doc/paper files: extract named concepts, entities, citations. For rationale (WHY decisions were made, trade-offs, design intent): store as a `rationale` attribute on the relevant concept node — do NOT create a separate rationale node or fragment node. Only create a node for something that is itself a named entity or concept. Use `file_type:"rationale"` for concept-like nodes (ideas, principles, mechanisms, design patterns). Do NOT invent file_types like `concept` — valid values are only `code|document|paper|image|rationale`.
+Code files: when adding `calls` edges, source MUST be the caller (the function/class doing the calling), target MUST be the callee. Never reverse this direction.
+
+Semantic similarity: if two concepts in this chunk solve the same problem or represent the same idea without any structural link (no import, no call, no citation), add a `semantically_similar_to` edge marked INFERRED with a confidence_score reflecting how similar they are (0.6-0.95). Examples:
+- Two functions that both validate user input but never call each other
+- A class in code and a concept in a paper that describe the same algorithm
+- Two error types that handle the same failure mode differently
+Only add these when the similarity is genuinely non-obvious and cross-cutting. Do not add them for trivially similar things.
+
+Hyperedges: if 3 or more nodes clearly participate together in a shared concept, flow, or pattern that is not captured by pairwise edges alone, add a hyperedge to a top-level `hyperedges` array. Examples:
+- All classes that implement a common protocol or interface
+- All functions in an authentication flow (even if they don't all call each other)
+- All concepts from a paper section that form one coherent idea
+Use sparingly — only when the group relationship adds information beyond the pairwise edges. Maximum 3 hyperedges per chunk.
+
+If a file has YAML frontmatter (--- ... ---), copy source_url, captured_at, author,
+  contributor onto every node from that file.
+
+confidence_score is REQUIRED on every edge - never omit it, never use 0.5 as a default:
+- EXTRACTED edges: confidence_score = 1.0 always
+- INFERRED edges: reason about each edge individually.
+  Direct structural evidence (shared data structure, clear dependency): 0.8-0.9.
+  Reasonable inference with some uncertainty: 0.6-0.7.
+  Weak or speculative: 0.4-0.5. Most edges should be 0.6-0.9, not 0.5.
+- AMBIGUOUS edges: 0.1-0.3
+
+Output exactly this JSON (no other text):
+{"nodes":[{"id":"filestem_entityname","label":"Human Readable Name","file_type":"code|document|paper|image|rationale","source_file":"relative/path","source_location":null,"source_url":null,"captured_at":null,"author":null,"contributor":null}],"edges":[{"source":"node_id","target":"node_id","relation":"calls|implements|references|cites|conceptually_related_to|shares_data_with|semantically_similar_to|rationale_for","confidence":"EXTRACTED|INFERRED|AMBIGUOUS","confidence_score":1.0,"source_file":"relative/path","source_location":null,"weight":1.0}],"hyperedges":[{"id":"snake_case_id","label":"Human Readable Label","nodes":"["node_id1","node_id2","node_id3"]","relation":"participate_in|implement|form","confidence":"EXTRACTED|INFERRED","confidence_score":0.75,"source_file":"relative/path"}],"input_tokens":0,"output_tokens":0}
+@agent Chunk 8 of 24:
+You are a graphify extraction subagent. Read the files listed and extract a knowledge graph fragment.
+
+Output ONLY valid JSON matching the schema below - no explanation, no markdown fences, no preamble.
+
+Files (category: code, chunk ID: 8):
+    - /home/dev-lab/Documents/GitHub/MaTax_App/src/components/assistant/fiscal-chat.tsx
+
+Rules:
+- EXTRACTED: relationship explicit in source (import, call, citation, "see §1.2")
+- INFERRED: reasonable inference (shared data structure, implied dependency)  
+- AMBIGUOUS: uncertain - flag for review, do not omit
+
+Code files: focus on semantic edges AST cannot find (call relationships, shared data, arch patterns).
+  Do not re-extract imports - AST already has those.
+Doc/paper files: extract named concepts, entities, citations. For rationale (WHY decisions were made, trade-offs, design intent): store as a `rationale` attribute on the relevant concept node — do NOT create a separate rationale node or fragment node. Only create a node for something that is itself a named entity or concept. Use `file_type:"rationale"` for concept-like nodes (ideas, principles, mechanisms, design patterns). Do NOT invent file_types like `concept` — valid values are only `code|document|paper|image|rationale`.
+Code files: when adding `calls` edges, source MUST be the caller (the function/class doing the calling), target MUST be the callee. Never reverse this direction.
+
+Semantic similarity: if two concepts in this chunk solve the same problem or represent the same idea without any structural link (no import, no call, no citation), add a `semantically_similar_to` edge marked INFERRED with a confidence_score reflecting how similar they are (0.6-0.95). Examples:
+- Two functions that both validate user input but never call each other
+- A class in code and a concept in a paper that describe the same algorithm
+- Two error types that handle the same failure mode differently
+Only add these when the similarity is genuinely non-obvious and cross-cutting. Do not add them for trivially similar things.
+
+Hyperedges: if 3 or more nodes clearly participate together in a shared concept, flow, or pattern that is not captured by pairwise edges alone, add a hyperedge to a top-level `hyperedges` array. Examples:
+- All classes that implement a common protocol or interface
+- All functions in an authentication flow (even if they don't all call each other)
+- All concepts from a paper section that form one coherent idea
+Use sparingly — only when the group relationship adds information beyond the pairwise edges. Maximum 3 hyperedges per chunk.
+
+If a file has YAML frontmatter (--- ... ---), copy source_url, captured_at, author,
+  contributor onto every node from that file.
+
+confidence_score is REQUIRED on every edge - never omit it, never use 0.5 as a default:
+- EXTRACTED edges: confidence_score = 1.0 always
+- INFERRED edges: reason about each edge individually.
+  Direct structural evidence (shared data structure, clear dependency): 0.8-0.9.
+  Reasonable inference with some uncertainty: 0.6-0.7.
+  Weak or speculative: 0.4-0.5. Most edges should be 0.6-0.9, not 0.5.
+- AMBIGUOUS edges: 0.1-0.3
+
+Output exactly this JSON (no other text):
+{"nodes":[{"id":"filestem_entityname","label":"Human Readable Name","file_type":"code|document|paper|image|rationale","source_file":"relative/path","source_location":null,"source_url":null,"captured_at":null,"author":null,"contributor":null}],"edges":[{"source":"node_id","target":"node_id","relation":"calls|implements|references|cites|conceptually_related_to|shares_data_with|semantically_similar_to|rationale_for","confidence":"EXTRACTED|INFERRED|AMBIGUOUS","confidence_score":1.0,"source_file":"relative/path","source_location":null,"weight":1.0}],"hyperedges":[{"id":"snake_case_id","label":"Human Readable Label","nodes":"["node_id1","node_id2","node_id3"]","relation":"participate_in|implement|form","confidence":"EXTRACTED|INFERRED","confidence_score":0.75,"source_file":"relative/path"}],"input_tokens":0,"output_tokens":0}
+@agent Chunk 9 of 24:
+You are a graphify extraction subagent. Read the files listed and extract a knowledge graph fragment.
+
+Output ONLY valid JSON matching the schema below - no explanation, no markdown fences, no preamble.
+
+Files (category: code, chunk ID: 9):
+    - /home/dev-lab/Documents/GitHub/MaTax_App/src/components/ui/tabs.tsx
+    - /home/dev-lab/Documents/GitHub/MaTax_App/src/components/ui/input.tsx
+    - /home/dev-lab/Documents/GitHub/MaTax_App/src/components/ui/dropdown-menu.tsx
+    - /home/dev-lab/Documents/GitHub/MaTax_App/src/components/ui/checkbox.tsx
+    - /home/dev-lab/Documents/GitHub/MaTax_App/src/components/ui/drawer.tsx
+    - /home/dev-lab/Documents/GitHub/MaTax_App/src/components/ui/radio-group.tsx
+    - /home/dev-lab/Documents/GitHub/MaTax_App/src/components/ui/alert-dialog.tsx
+    - /home/dev-lab/Documents/GitHub/MaTax_App/src/components/ui/sheet.tsx
+    - /home/dev-lab/Documents/GitHub/MaTax_App/src/components/ui/avatar.tsx
+    - /home/dev-lab/Documents/GitHub/MaTax_App/src/components/ui/slider.tsx
+    - /home/dev-lab/Documents/GitHub/MaTax_App/src/components/ui/sidebar.tsx
+    - /home/dev-lab/Documents/GitHub/MaTax_App/src/components/ui/menubar.tsx
+    - /home/dev-lab/Documents/GitHub/MaTax_App/src/components/ui/alert.tsx
+    - /home/dev-lab/Documents/GitHub/MaTax_App/src/components/ui/input-otp.tsx
+    - /home/dev-lab/Documents/GitHub/MaTax_App/src/components/ui/accordion.tsx
+    - /home/dev-lab/Documents/GitHub/MaTax_App/src/components/ui/command.tsx
+    - /home/dev-lab/Documents/GitHub/MaTax_App/src/components/ui/scroll-area.tsx
+    - /home/dev-lab/Documents/GitHub/MaTax_App/src/components/ui/pagination.tsx
+    - /home/dev-lab/Documents/GitHub/MaTax_App/src/components/ui/context-menu.tsx
+    - /home/dev-lab/Documents/GitHub/MaTax_App/src/components/ui/switch.tsx
+    - /home/dev-lab/Documents/GitHub/MaTax_App/src/components/ui/form.tsx
+    - /home/dev-lab/Documents/GitHub/MaTax_App/src/components/ui/breadcrumb.tsx
+    - /home/dev-lab/Documents/GitHub/MaTax_App/src/components/ui/progress.tsx
+    - /home/dev-lab/Documents/GitHub/MaTax_App/src/components/ui/aspect-ratio.tsx
+    - /home/dev-lab/Documents/GitHub/MaTax_App/src/components/ui/carousel.tsx
+
+Rules:
+- EXTRACTED: relationship explicit in source (import, call, citation, "see §1.2")
+- INFERRED: reasonable inference (shared data structure, implied dependency)  
+- AMBIGUOUS: uncertain - flag for review, do not omit
+
+Code files: focus on semantic edges AST cannot find (call relationships, shared data, arch patterns).
+  Do not re-extract imports - AST already has those.
+Doc/paper files: extract named concepts, entities, citations. For rationale (WHY decisions were made, trade-offs, design intent): store as a `rationale` attribute on the relevant concept node — do NOT create a separate rationale node or fragment node. Only create a node for something that is itself a named entity or concept. Use `file_type:"rationale"` for concept-like nodes (ideas, principles, mechanisms, design patterns). Do NOT invent file_types like `concept` — valid values are only `code|document|paper|image|rationale`.
+Code files: when adding `calls` edges, source MUST be the caller (the function/class doing the calling), target MUST be the callee. Never reverse this direction.
+
+Semantic similarity: if two concepts in this chunk solve the same problem or represent the same idea without any structural link (no import, no call, no citation), add a `semantically_similar_to` edge marked INFERRED with a confidence_score reflecting how similar they are (0.6-0.95). Examples:
+- Two functions that both validate user input but never call each other
+- A class in code and a concept in a paper that describe the same algorithm
+- Two error types that handle the same failure mode differently
+Only add these when the similarity is genuinely non-obvious and cross-cutting. Do not add them for trivially similar things.
+
+Hyperedges: if 3 or more nodes clearly participate together in a shared concept, flow, or pattern that is not captured by pairwise edges alone, add a hyperedge to a top-level `hyperedges` array. Examples:
+- All classes that implement a common protocol or interface
+- All functions in an authentication flow (even if they don't all call each other)
+- All concepts from a paper section that form one coherent idea
+Use sparingly — only when the group relationship adds information beyond the pairwise edges. Maximum 3 hyperedges per chunk.
+
+If a file has YAML frontmatter (--- ... ---), copy source_url, captured_at, author,
+  contributor onto every node from that file.
+
+confidence_score is REQUIRED on every edge - never omit it, never use 0.5 as a default:
+- EXTRACTED edges: confidence_score = 1.0 always
+- INFERRED edges: reason about each edge individually.
+  Direct structural evidence (shared data structure, clear dependency): 0.8-0.9.
+  Reasonable inference with some uncertainty: 0.6-0.7.
+  Weak or speculative: 0.4-0.5. Most edges should be 0.6-0.9, not 0.5.
+- AMBIGUOUS edges: 0.1-0.3
+
+Output exactly this JSON (no other text):
+{"nodes":[{"id":"filestem_entityname","label":"Human Readable Name","file_type":"code|document|paper|image|rationale","source_file":"relative/path","source_location":null,"source_url":null,"captured_at":null,"author":null,"contributor":null}],"edges":[{"source":"node_id","target":"node_id","relation":"calls|implements|references|cites|conceptually_related_to|shares_data_with|semantically_similar_to|rationale_for","confidence":"EXTRACTED|INFERRED|AMBIGUOUS","confidence_score":1.0,"source_file":"relative/path","source_location":null,"weight":1.0}],"hyperedges":[{"id":"snake_case_id","label":"Human Readable Label","nodes":"["node_id1","node_id2","node_id3"]","relation":"participate_in|implement|form","confidence":"EXTRACTED|INFERRED","confidence_score":0.75,"source_file":"relative/path"}],"input_tokens":0,"output_tokens":0}
+@agent Chunk 10 of 24:
+You are a graphify extraction subagent. Read the files listed and extract a knowledge graph fragment.
+
+Output ONLY valid JSON matching the schema below - no explanation, no markdown fences, no preamble.
+
+Files (category: code, chunk ID: 10):
+    - /home/dev-lab/Documents/GitHub/MaTax_App/src/components/ui/card.tsx
+    - /home/dev-lab/Documents/GitHub/MaTax_App/src/components/ui/badge.tsx
+    - /home/dev-lab/Documents/GitHub/MaTax_App/src/components/ui/table.tsx
+    - /home/dev-lab/Documents/GitHub/MaTax_App/src/components/ui/calendar.tsx
+    - /home/dev-lab/Documents/GitHub/MaTax_App/src/components/ui/collapsible.tsx
+    - /home/dev-lab/Documents/GitHub/MaTax_App/src/components/ui/select.tsx
+    - /home/dev-lab/Documents/GitHub/MaTax_App/src/components/ui/separator.tsx
+    - /home/dev-lab/Documents/GitHub/MaTax_App/src/components/ui/toggle-group.tsx
+    - /home/dev-lab/Documents/GitHub/MaTax_App/src/components/ui/chart.tsx
+    - /home/dev-lab/Documents/GitHub/MaTax_App/src/components/ui/popover.tsx
+    - /home/dev-lab/Documents/GitHub/MaTax_App/src/components/ui/dialog.tsx
+    - /home/dev-lab/Documents/GitHub/MaTax_App/src/components/ui/navigation-menu.tsx
+    - /home/dev-lab/Documents/GitHub/MaTax_App/src/components/ui/textarea.tsx
+    - /home/dev-lab/Documents/GitHub/MaTax_App/src/components/ui/button.tsx
+    - /home/dev-lab/Documents/GitHub/MaTax_App/src/components/ui/hover-card.tsx
+    - /home/dev-lab/Documents/GitHub/MaTax_App/src/components/ui/sonner.tsx
+    - /home/dev-lab/Documents/GitHub/MaTax_App/src/components/ui/tooltip.tsx
+    - /home/dev-lab/Documents/GitHub/MaTax_App/src/components/ui/label.tsx
+    - /home/dev-lab/Documents/GitHub/MaTax_App/src/components/ui/resizable.tsx
+    - /home/dev-lab/Documents/GitHub/MaTax_App/src/components/ui/toggle.tsx
+    - /home/dev-lab/Documents/GitHub/MaTax_App/src/components/ui/skeleton.tsx
+
+Rules:
+- EXTRACTED: relationship explicit in source (import, call, citation, "see §1.2")
+- INFERRED: reasonable inference (shared data structure, implied dependency)  
+- AMBIGUOUS: uncertain - flag for review, do not omit
+
+Code files: focus on semantic edges AST cannot find (call relationships, shared data, arch patterns).
+  Do not re-extract imports - AST already has those.
+Doc/paper files: extract named concepts, entities, citations. For rationale (WHY decisions were made, trade-offs, design intent): store as a `rationale` attribute on the relevant concept node — do NOT create a separate rationale node or fragment node. Only create a node for something that is itself a named entity or concept. Use `file_type:"rationale"` for concept-like nodes (ideas, principles, mechanisms, design patterns). Do NOT invent file_types like `concept` — valid values are only `code|document|paper|image|rationale`.
+Code files: when adding `calls` edges, source MUST be the caller (the function/class doing the calling), target MUST be the callee. Never reverse this direction.
+
+Semantic similarity: if two concepts in this chunk solve the same problem or represent the same idea without any structural link (no import, no call, no citation), add a `semantically_similar_to` edge marked INFERRED with a confidence_score reflecting how similar they are (0.6-0.95). Examples:
+- Two functions that both validate user input but never call each other
+- A class in code and a concept in a paper that describe the same algorithm
+- Two error types that handle the same failure mode differently
+Only add these when the similarity is genuinely non-obvious and cross-cutting. Do not add them for trivially similar things.
+
+Hyperedges: if 3 or more nodes clearly participate together in a shared concept, flow, or pattern that is not captured by pairwise edges alone, add a hyperedge to a top-level `hyperedges` array. Examples:
+- All classes that implement a common protocol or interface
+- All functions in an authentication flow (even if they don't all call each other)
+- All concepts from a paper section that form one coherent idea
+Use sparingly — only when the group relationship adds information beyond the pairwise edges. Maximum 3 hyperedges per chunk.
+
+If a file has YAML frontmatter (--- ... ---), copy source_url, captured_at, author,
+  contributor onto every node from that file.
+
+confidence_score is REQUIRED on every edge - never omit it, never use 0.5 as a default:
+- EXTRACTED edges: confidence_score = 1.0 always
+- INFERRED edges: reason about each edge individually.
+  Direct structural evidence (shared data structure, clear dependency): 0.8-0.9.
+  Reasonable inference with some uncertainty: 0.6-0.7.
+  Weak or speculative: 0.4-0.5. Most edges should be 0.6-0.9, not 0.5.
+- AMBIGUOUS edges: 0.1-0.3
+
+Output exactly this JSON (no other text):
+{"nodes":[{"id":"filestem_entityname","label":"Human Readable Name","file_type":"code|document|paper|image|rationale","source_file":"relative/path","source_location":null,"source_url":null,"captured_at":null,"author":null,"contributor":null}],"edges":[{"source":"node_id","target":"node_id","relation":"calls|implements|references|cites|conceptually_related_to|shares_data_with|semantically_similar_to|rationale_for","confidence":"EXTRACTED|INFERRED|AMBIGUOUS","confidence_score":1.0,"source_file":"relative/path","source_location":null,"weight":1.0}],"hyperedges":[{"id":"snake_case_id","label":"Human Readable Label","nodes":"["node_id1","node_id2","node_id3"]","relation":"participate_in|implement|form","confidence":"EXTRACTED|INFERRED","confidence_score":0.75,"source_file":"relative/path"}],"input_tokens":0,"output_tokens":0}
+@agent Chunk 11 of 24:
+You are a graphify extraction subagent. Read the files listed and extract a knowledge graph fragment.
+
+Output ONLY valid JSON matching the schema below - no explanation, no markdown fences, no preamble.
+
+Files (category: code, chunk ID: 11):
+    - /home/dev-lab/Documents/GitHub/MaTax_App/src/integrations/lovable/index.ts
+
+Rules:
+- EXTRACTED: relationship explicit in source (import, call, citation, "see §1.2")
+- INFERRED: reasonable inference (shared data structure, implied dependency)  
+- AMBIGUOUS: uncertain - flag for review, do not omit
+
+Code files: focus on semantic edges AST cannot find (call relationships, shared data, arch patterns).
+  Do not re-extract imports - AST already has those.
+Doc/paper files: extract named concepts, entities, citations. For rationale (WHY decisions were made, trade-offs, design intent): store as a `rationale` attribute on the relevant concept node — do NOT create a separate rationale node or fragment node. Only create a node for something that is itself a named entity or concept. Use `file_type:"rationale"` for concept-like nodes (ideas, principles, mechanisms, design patterns). Do NOT invent file_types like `concept` — valid values are only `code|document|paper|image|rationale`.
+Code files: when adding `calls` edges, source MUST be the caller (the function/class doing the calling), target MUST be the callee. Never reverse this direction.
+
+Semantic similarity: if two concepts in this chunk solve the same problem or represent the same idea without any structural link (no import, no call, no citation), add a `semantically_similar_to` edge marked INFERRED with a confidence_score reflecting how similar they are (0.6-0.95). Examples:
+- Two functions that both validate user input but never call each other
+- A class in code and a concept in a paper that describe the same algorithm
+- Two error types that handle the same failure mode differently
+Only add these when the similarity is genuinely non-obvious and cross-cutting. Do not add them for trivially similar things.
+
+Hyperedges: if 3 or more nodes clearly participate together in a shared concept, flow, or pattern that is not captured by pairwise edges alone, add a hyperedge to a top-level `hyperedges` array. Examples:
+- All classes that implement a common protocol or interface
+- All functions in an authentication flow (even if they don't all call each other)
+- All concepts from a paper section that form one coherent idea
+Use sparingly — only when the group relationship adds information beyond the pairwise edges. Maximum 3 hyperedges per chunk.
+
+If a file has YAML frontmatter (--- ... ---), copy source_url, captured_at, author,
+  contributor onto every node from that file.
+
+confidence_score is REQUIRED on every edge - never omit it, never use 0.5 as a default:
+- EXTRACTED edges: confidence_score = 1.0 always
+- INFERRED edges: reason about each edge individually.
+  Direct structural evidence (shared data structure, clear dependency): 0.8-0.9.
+  Reasonable inference with some uncertainty: 0.6-0.7.
+  Weak or speculative: 0.4-0.5. Most edges should be 0.6-0.9, not 0.5.
+- AMBIGUOUS edges: 0.1-0.3
+
+Output exactly this JSON (no other text):
+{"nodes":[{"id":"filestem_entityname","label":"Human Readable Name","file_type":"code|document|paper|image|rationale","source_file":"relative/path","source_location":null,"source_url":null,"captured_at":null,"author":null,"contributor":null}],"edges":[{"source":"node_id","target":"node_id","relation":"calls|implements|references|cites|conceptually_related_to|shares_data_with|semantically_similar_to|rationale_for","confidence":"EXTRACTED|INFERRED|AMBIGUOUS","confidence_score":1.0,"source_file":"relative/path","source_location":null,"weight":1.0}],"hyperedges":[{"id":"snake_case_id","label":"Human Readable Label","nodes":"["node_id1","node_id2","node_id3"]","relation":"participate_in|implement|form","confidence":"EXTRACTED|INFERRED","confidence_score":0.75,"source_file":"relative/path"}],"input_tokens":0,"output_tokens":0}
+@agent Chunk 12 of 24:
+You are a graphify extraction subagent. Read the files listed and extract a knowledge graph fragment.
+
+Output ONLY valid JSON matching the schema below - no explanation, no markdown fences, no preamble.
+
+Files (category: code, chunk ID: 12):
+    - /home/dev-lab/Documents/GitHub/MaTax_App/src/integrations/supabase/auth-middleware.ts
+    - /home/dev-lab/Documents/GitHub/MaTax_App/src/integrations/supabase/client.server.ts
+    - /home/dev-lab/Documents/GitHub/MaTax_App/src/integrations/supabase/auth-attacher.ts
+    - /home/dev-lab/Documents/GitHub/MaTax_App/src/integrations/supabase/client.ts
+    - /home/dev-lab/Documents/GitHub/MaTax_App/src/integrations/supabase/types.ts
+
+Rules:
+- EXTRACTED: relationship explicit in source (import, call, citation, "see §1.2")
+- INFERRED: reasonable inference (shared data structure, implied dependency)  
+- AMBIGUOUS: uncertain - flag for review, do not omit
+
+Code files: focus on semantic edges AST cannot find (call relationships, shared data, arch patterns).
+  Do not re-extract imports - AST already has those.
+Doc/paper files: extract named concepts, entities, citations. For rationale (WHY decisions were made, trade-offs, design intent): store as a `rationale` attribute on the relevant concept node — do NOT create a separate rationale node or fragment node. Only create a node for something that is itself a named entity or concept. Use `file_type:"rationale"` for concept-like nodes (ideas, principles, mechanisms, design patterns). Do NOT invent file_types like `concept` — valid values are only `code|document|paper|image|rationale`.
+Code files: when adding `calls` edges, source MUST be the caller (the function/class doing the calling), target MUST be the callee. Never reverse this direction.
+
+Semantic similarity: if two concepts in this chunk solve the same problem or represent the same idea without any structural link (no import, no call, no citation), add a `semantically_similar_to` edge marked INFERRED with a confidence_score reflecting how similar they are (0.6-0.95). Examples:
+- Two functions that both validate user input but never call each other
+- A class in code and a concept in a paper that describe the same algorithm
+- Two error types that handle the same failure mode differently
+Only add these when the similarity is genuinely non-obvious and cross-cutting. Do not add them for trivially similar things.
+
+Hyperedges: if 3 or more nodes clearly participate together in a shared concept, flow, or pattern that is not captured by pairwise edges alone, add a hyperedge to a top-level `hyperedges` array. Examples:
+- All classes that implement a common protocol or interface
+- All functions in an authentication flow (even if they don't all call each other)
+- All concepts from a paper section that form one coherent idea
+Use sparingly — only when the group relationship adds information beyond the pairwise edges. Maximum 3 hyperedges per chunk.
+
+If a file has YAML frontmatter (--- ... ---), copy source_url, captured_at, author,
+  contributor onto every node from that file.
+
+confidence_score is REQUIRED on every edge - never omit it, never use 0.5 as a default:
+- EXTRACTED edges: confidence_score = 1.0 always
+- INFERRED edges: reason about each edge individually.
+  Direct structural evidence (shared data structure, clear dependency): 0.8-0.9.
+  Reasonable inference with some uncertainty: 0.6-0.7.
+  Weak or speculative: 0.4-0.5. Most edges should be 0.6-0.9, not 0.5.
+- AMBIGUOUS edges: 0.1-0.3
+
+Output exactly this JSON (no other text):
+{"nodes":[{"id":"filestem_entityname","label":"Human Readable Name","file_type":"code|document|paper|image|rationale","source_file":"relative/path","source_location":null,"source_url":null,"captured_at":null,"author":null,"contributor":null}],"edges":[{"source":"node_id","target":"node_id","relation":"calls|implements|references|cites|conceptually_related_to|shares_data_with|semantically_similar_to|rationale_for","confidence":"EXTRACTED|INFERRED|AMBIGUOUS","confidence_score":1.0,"source_file":"relative/path","source_location":null,"weight":1.0}],"hyperedges":[{"id":"snake_case_id","label":"Human Readable Label","nodes":"["node_id1","node_id2","node_id3"]","relation":"participate_in|implement|form","confidence":"EXTRACTED|INFERRED","confidence_score":0.75,"source_file":"relative/path"}],"input_tokens":0,"output_tokens":0}
+@agent Chunk 13 of 24:
+You are a graphify extraction subagent. Read the files listed and extract a knowledge graph fragment.
+
+Output ONLY valid JSON matching the schema below - no explanation, no markdown fences, no preamble.
+
+Files (category: code, chunk ID: 13):
+    - /home/dev-lab/Documents/GitHub/MaTax_App/src/lib/regime-config.ts
+    - /home/dev-lab/Documents/GitHub/MaTax_App/src/lib/format.ts
+    - /home/dev-lab/Documents/GitHub/MaTax_App/src/lib/error-page.ts
+    - /home/dev-lab/Documents/GitHub/MaTax_App/src/lib/utils.ts
+    - /home/dev-lab/Documents/GitHub/MaTax_App/src/lib/i18n.tsx
+    - /home/dev-lab/Documents/GitHub/MaTax_App/src/lib/error-capture.ts
+
+Rules:
+- EXTRACTED: relationship explicit in source (import, call, citation, "see §1.2")
+- INFERRED: reasonable inference (shared data structure, implied dependency)  
+- AMBIGUOUS: uncertain - flag for review, do not omit
+
+Code files: focus on semantic edges AST cannot find (call relationships, shared data, arch patterns).
+  Do not re-extract imports - AST already has those.
+Doc/paper files: extract named concepts, entities, citations. For rationale (WHY decisions were made, trade-offs, design intent): store as a `rationale` attribute on the relevant concept node — do NOT create a separate rationale node or fragment node. Only create a node for something that is itself a named entity or concept. Use `file_type:"rationale"` for concept-like nodes (ideas, principles, mechanisms, design patterns). Do NOT invent file_types like `concept` — valid values are only `code|document|paper|image|rationale`.
+Code files: when adding `calls` edges, source MUST be the caller (the function/class doing the calling), target MUST be the callee. Never reverse this direction.
+
+Semantic similarity: if two concepts in this chunk solve the same problem or represent the same idea without any structural link (no import, no call, no citation), add a `semantically_similar_to` edge marked INFERRED with a confidence_score reflecting how similar they are (0.6-0.95). Examples:
+- Two functions that both validate user input but never call each other
+- A class in code and a concept in a paper that describe the same algorithm
+- Two error types that handle the same failure mode differently
+Only add these when the similarity is genuinely non-obvious and cross-cutting. Do not add them for trivially similar things.
+
+Hyperedges: if 3 or more nodes clearly participate together in a shared concept, flow, or pattern that is not captured by pairwise edges alone, add a hyperedge to a top-level `hyperedges` array. Examples:
+- All classes that implement a common protocol or interface
+- All functions in an authentication flow (even if they don't all call each other)
+- All concepts from a paper section that form one coherent idea
+Use sparingly — only when the group relationship adds information beyond the pairwise edges. Maximum 3 hyperedges per chunk.
+
+If a file has YAML frontmatter (--- ... ---), copy source_url, captured_at, author,
+  contributor onto every node from that file.
+
+confidence_score is REQUIRED on every edge - never omit it, never use 0.5 as a default:
+- EXTRACTED edges: confidence_score = 1.0 always
+- INFERRED edges: reason about each edge individually.
+  Direct structural evidence (shared data structure, clear dependency): 0.8-0.9.
+  Reasonable inference with some uncertainty: 0.6-0.7.
+  Weak or speculative: 0.4-0.5. Most edges should be 0.6-0.9, not 0.5.
+- AMBIGUOUS edges: 0.1-0.3
+
+Output exactly this JSON (no other text):
+{"nodes":[{"id":"filestem_entityname","label":"Human Readable Name","file_type":"code|document|paper|image|rationale","source_file":"relative/path","source_location":null,"source_url":null,"captured_at":null,"author":null,"contributor":null}],"edges":[{"source":"node_id","target":"node_id","relation":"calls|implements|references|cites|conceptually_related_to|shares_data_with|semantically_similar_to|rationale_for","confidence":"EXTRACTED|INFERRED|AMBIGUOUS","confidence_score":1.0,"source_file":"relative/path","source_location":null,"weight":1.0}],"hyperedges":[{"id":"snake_case_id","label":"Human Readable Label","nodes":"["node_id1","node_id2","node_id3"]","relation":"participate_in|implement|form","confidence":"EXTRACTED|INFERRED","confidence_score":0.75,"source_file":"relative/path"}],"input_tokens":0,"output_tokens":0}
+@agent Chunk 14 of 24:
+You are a graphify extraction subagent. Read the files listed and extract a knowledge graph fragment.
+
+Output ONLY valid JSON matching the schema below - no explanation, no markdown fences, no preamble.
+
+Files (category: code, chunk ID: 14):
+    - /home/dev-lab/Documents/GitHub/MaTax_App/src/lib/engines/tfpc.ts
+    - /home/dev-lab/Documents/GitHub/MaTax_App/src/lib/engines/tva.ts
+    - /home/dev-lab/Documents/GitHub/MaTax_App/src/lib/engines/withholding.ts
+    - /home/dev-lab/Documents/GitHub/MaTax_App/src/lib/engines/irg.ts
+    - /home/dev-lab/Documents/GitHub/MaTax_App/src/lib/engines/ibs.ts
+
+Rules:
+- EXTRACTED: relationship explicit in source (import, call, citation, "see §1.2")
+- INFERRED: reasonable inference (shared data structure, implied dependency)  
+- AMBIGUOUS: uncertain - flag for review, do not omit
+
+Code files: focus on semantic edges AST cannot find (call relationships, shared data, arch patterns).
+  Do not re-extract imports - AST already has those.
+Doc/paper files: extract named concepts, entities, citations. For rationale (WHY decisions were made, trade-offs, design intent): store as a `rationale` attribute on the relevant concept node — do NOT create a separate rationale node or fragment node. Only create a node for something that is itself a named entity or concept. Use `file_type:"rationale"` for concept-like nodes (ideas, principles, mechanisms, design patterns). Do NOT invent file_types like `concept` — valid values are only `code|document|paper|image|rationale`.
+Code files: when adding `calls` edges, source MUST be the caller (the function/class doing the calling), target MUST be the callee. Never reverse this direction.
+
+Semantic similarity: if two concepts in this chunk solve the same problem or represent the same idea without any structural link (no import, no call, no citation), add a `semantically_similar_to` edge marked INFERRED with a confidence_score reflecting how similar they are (0.6-0.95). Examples:
+- Two functions that both validate user input but never call each other
+- A class in code and a concept in a paper that describe the same algorithm
+- Two error types that handle the same failure mode differently
+Only add these when the similarity is genuinely non-obvious and cross-cutting. Do not add them for trivially similar things.
+
+Hyperedges: if 3 or more nodes clearly participate together in a shared concept, flow, or pattern that is not captured by pairwise edges alone, add a hyperedge to a top-level `hyperedges` array. Examples:
+- All classes that implement a common protocol or interface
+- All functions in an authentication flow (even if they don't all call each other)
+- All concepts from a paper section that form one coherent idea
+Use sparingly — only when the group relationship adds information beyond the pairwise edges. Maximum 3 hyperedges per chunk.
+
+If a file has YAML frontmatter (--- ... ---), copy source_url, captured_at, author,
+  contributor onto every node from that file.
+
+confidence_score is REQUIRED on every edge - never omit it, never use 0.5 as a default:
+- EXTRACTED edges: confidence_score = 1.0 always
+- INFERRED edges: reason about each edge individually.
+  Direct structural evidence (shared data structure, clear dependency): 0.8-0.9.
+  Reasonable inference with some uncertainty: 0.6-0.7.
+  Weak or speculative: 0.4-0.5. Most edges should be 0.6-0.9, not 0.5.
+- AMBIGUOUS edges: 0.1-0.3
+
+Output exactly this JSON (no other text):
+{"nodes":[{"id":"filestem_entityname","label":"Human Readable Name","file_type":"code|document|paper|image|rationale","source_file":"relative/path","source_location":null,"source_url":null,"captured_at":null,"author":null,"contributor":null}],"edges":[{"source":"node_id","target":"node_id","relation":"calls|implements|references|cites|conceptually_related_to|shares_data_with|semantically_similar_to|rationale_for","confidence":"EXTRACTED|INFERRED|AMBIGUOUS","confidence_score":1.0,"source_file":"relative/path","source_location":null,"weight":1.0}],"hyperedges":[{"id":"snake_case_id","label":"Human Readable Label","nodes":"["node_id1","node_id2","node_id3"]","relation":"participate_in|implement|form","confidence":"EXTRACTED|INFERRED","confidence_score":0.75,"source_file":"relative/path"}],"input_tokens":0,"output_tokens":0}
+@agent Chunk 15 of 24:
+You are a graphify extraction subagent. Read the files listed and extract a knowledge graph fragment.
+
+Output ONLY valid JSON matching the schema below - no explanation, no markdown fences, no preamble.
+
+Files (category: code, chunk ID: 15):
+    - /home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts
+
+Rules:
+- EXTRACTED: relationship explicit in source (import, call, citation, "see §1.2")
+- INFERRED: reasonable inference (shared data structure, implied dependency)  
+- AMBIGUOUS: uncertain - flag for review, do not omit
+
+Code files: focus on semantic edges AST cannot find (call relationships, shared data, arch patterns).
+  Do not re-extract imports - AST already has those.
+Doc/paper files: extract named concepts, entities, citations. For rationale (WHY decisions were made, trade-offs, design intent): store as a `rationale` attribute on the relevant concept node — do NOT create a separate rationale node or fragment node. Only create a node for something that is itself a named entity or concept. Use `file_type:"rationale"` for concept-like nodes (ideas, principles, mechanisms, design patterns). Do NOT invent file_types like `concept` — valid values are only `code|document|paper|image|rationale`.
+Code files: when adding `calls` edges, source MUST be the caller (the function/class doing the calling), target MUST be the callee. Never reverse this direction.
+
+Semantic similarity: if two concepts in this chunk solve the same problem or represent the same idea without any structural link (no import, no call, no citation), add a `semantically_similar_to` edge marked INFERRED with a confidence_score reflecting how similar they are (0.6-0.95). Examples:
+- Two functions that both validate user input but never call each other
+- A class in code and a concept in a paper that describe the same algorithm
+- Two error types that handle the same failure mode differently
+Only add these when the similarity is genuinely non-obvious and cross-cutting. Do not add them for trivially similar things.
+
+Hyperedges: if 3 or more nodes clearly participate together in a shared concept, flow, or pattern that is not captured by pairwise edges alone, add a hyperedge to a top-level `hyperedges` array. Examples:
+- All classes that implement a common protocol or interface
+- All functions in an authentication flow (even if they don't all call each other)
+- All concepts from a paper section that form one coherent idea
+Use sparingly — only when the group relationship adds information beyond the pairwise edges. Maximum 3 hyperedges per chunk.
+
+If a file has YAML frontmatter (--- ... ---), copy source_url, captured_at, author,
+  contributor onto every node from that file.
+
+confidence_score is REQUIRED on every edge - never omit it, never use 0.5 as a default:
+- EXTRACTED edges: confidence_score = 1.0 always
+- INFERRED edges: reason about each edge individually.
+  Direct structural evidence (shared data structure, clear dependency): 0.8-0.9.
+  Reasonable inference with some uncertainty: 0.6-0.7.
+  Weak or speculative: 0.4-0.5. Most edges should be 0.6-0.9, not 0.5.
+- AMBIGUOUS edges: 0.1-0.3
+
+Output exactly this JSON (no other text):
+{"nodes":[{"id":"filestem_entityname","label":"Human Readable Name","file_type":"code|document|paper|image|rationale","source_file":"relative/path","source_location":null,"source_url":null,"captured_at":null,"author":null,"contributor":null}],"edges":[{"source":"node_id","target":"node_id","relation":"calls|implements|references|cites|conceptually_related_to|shares_data_with|semantically_similar_to|rationale_for","confidence":"EXTRACTED|INFERRED|AMBIGUOUS","confidence_score":1.0,"source_file":"relative/path","source_location":null,"weight":1.0}],"hyperedges":[{"id":"snake_case_id","label":"Human Readable Label","nodes":"["node_id1","node_id2","node_id3"]","relation":"participate_in|implement|form","confidence":"EXTRACTED|INFERRED","confidence_score":0.75,"source_file":"relative/path"}],"input_tokens":0,"output_tokens":0}
+@agent Chunk 16 of 24:
+You are a graphify extraction subagent. Read the files listed and extract a knowledge graph fragment.
+
+Output ONLY valid JSON matching the schema below - no explanation, no markdown fences, no preamble.
+
+Files (category: code, chunk ID: 16):
+    - /home/dev-lab/Documents/GitHub/MaTax_App/supabase/migrations/20260516150120_5b65194a-b1ab-4454-943d-cf634bff0eaa.sql
+    - /home/dev-lab/Documents/GitHub/MaTax_App/supabase/migrations/20260516150154_a9e87574-ef3e-423b-9161-b0ca736df533.sql
+
+Rules:
+- EXTRACTED: relationship explicit in source (import, call, citation, "see §1.2")
+- INFERRED: reasonable inference (shared data structure, implied dependency)  
+- AMBIGUOUS: uncertain - flag for review, do not omit
+
+Code files: focus on semantic edges AST cannot find (call relationships, shared data, arch patterns).
+  Do not re-extract imports - AST already has those.
+Doc/paper files: extract named concepts, entities, citations. For rationale (WHY decisions were made, trade-offs, design intent): store as a `rationale` attribute on the relevant concept node — do NOT create a separate rationale node or fragment node. Only create a node for something that is itself a named entity or concept. Use `file_type:"rationale"` for concept-like nodes (ideas, principles, mechanisms, design patterns). Do NOT invent file_types like `concept` — valid values are only `code|document|paper|image|rationale`.
+Code files: when adding `calls` edges, source MUST be the caller (the function/class doing the calling), target MUST be the callee. Never reverse this direction.
+
+Semantic similarity: if two concepts in this chunk solve the same problem or represent the same idea without any structural link (no import, no call, no citation), add a `semantically_similar_to` edge marked INFERRED with a confidence_score reflecting how similar they are (0.6-0.95). Examples:
+- Two functions that both validate user input but never call each other
+- A class in code and a concept in a paper that describe the same algorithm
+- Two error types that handle the same failure mode differently
+Only add these when the similarity is genuinely non-obvious and cross-cutting. Do not add them for trivially similar things.
+
+Hyperedges: if 3 or more nodes clearly participate together in a shared concept, flow, or pattern that is not captured by pairwise edges alone, add a hyperedge to a top-level `hyperedges` array. Examples:
+- All classes that implement a common protocol or interface
+- All functions in an authentication flow (even if they don't all call each other)
+- All concepts from a paper section that form one coherent idea
+Use sparingly — only when the group relationship adds information beyond the pairwise edges. Maximum 3 hyperedges per chunk.
+
+If a file has YAML frontmatter (--- ... ---), copy source_url, captured_at, author,
+  contributor onto every node from that file.
+
+confidence_score is REQUIRED on every edge - never omit it, never use 0.5 as a default:
+- EXTRACTED edges: confidence_score = 1.0 always
+- INFERRED edges: reason about each edge individually.
+  Direct structural evidence (shared data structure, clear dependency): 0.8-0.9.
+  Reasonable inference with some uncertainty: 0.6-0.7.
+  Weak or speculative: 0.4-0.5. Most edges should be 0.6-0.9, not 0.5.
+- AMBIGUOUS edges: 0.1-0.3
+
+Output exactly this JSON (no other text):
+{"nodes":[{"id":"filestem_entityname","label":"Human Readable Name","file_type":"code|document|paper|image|rationale","source_file":"relative/path","source_location":null,"source_url":null,"captured_at":null,"author":null,"contributor":null}],"edges":[{"source":"node_id","target":"node_id","relation":"calls|implements|references|cites|conceptually_related_to|shares_data_with|semantically_similar_to|rationale_for","confidence":"EXTRACTED|INFERRED|AMBIGUOUS","confidence_score":1.0,"source_file":"relative/path","source_location":null,"weight":1.0}],"hyperedges":[{"id":"snake_case_id","label":"Human Readable Label","nodes":"["node_id1","node_id2","node_id3"]","relation":"participate_in|implement|form","confidence":"EXTRACTED|INFERRED","confidence_score":0.75,"source_file":"relative/path"}],"input_tokens":0,"output_tokens":0}
+@agent Chunk 17 of 24:
+You are a graphify extraction subagent. Read the files listed and extract a knowledge graph fragment.
+
+Output ONLY valid JSON matching the schema below - no explanation, no markdown fences, no preamble.
+
+Files (category: document, chunk ID: 17):
+    - /home/dev-lab/Documents/GitHub/MaTax_App/Articles_txt/GN°50- SI jibayatic.txt
+    - /home/dev-lab/Documents/GitHub/MaTax_App/Articles_txt/MATAX - Pitch Deck Comité National.txt
+    - /home/dev-lab/Documents/GitHub/MaTax_App/Articles_txt/GN °08.txt
+    - /home/dev-lab/Documents/GitHub/MaTax_App/Articles_txt/Communiqué général de la loi de finances 2026.txt
+    - /home/dev-lab/Documents/GitHub/MaTax_App/Articles_txt/المحاضرة رقم 01- (IBS) المحور الثالث.txt
+    - /home/dev-lab/Documents/GitHub/MaTax_App/Articles_txt/GN° 11 (IRG - BIC).txt
+    - /home/dev-lab/Documents/GitHub/MaTax_App/Articles_txt/Notice_comment_remplir_la_déclaration_GN°_4_de_l&#039;impôt_sur.txt
+    - /home/dev-lab/Documents/GitHub/MaTax_App/Articles_txt/Loi_de_Finances_2026_FR.txt
+    - /home/dev-lab/Documents/GitHub/MaTax_App/Articles_txt/GN° 4 -2025.txt
+    - /home/dev-lab/Documents/GitHub/MaTax_App/Articles_txt/المحاضرة_08_ملء_مختلف_التصريحات_الجبائية_02.txt
+    - /home/dev-lab/Documents/GitHub/MaTax_App/Articles_txt/المحور_08_ملء_مختلف_التصريحات_الجبائية.txt
+
+Rules:
+- EXTRACTED: relationship explicit in source (import, call, citation, "see §1.2")
+- INFERRED: reasonable inference (shared data structure, implied dependency)  
+- AMBIGUOUS: uncertain - flag for review, do not omit
+
+Code files: focus on semantic edges AST cannot find (call relationships, shared data, arch patterns).
+  Do not re-extract imports - AST already has those.
+Doc/paper files: extract named concepts, entities, citations. For rationale (WHY decisions were made, trade-offs, design intent): store as a `rationale` attribute on the relevant concept node — do NOT create a separate rationale node or fragment node. Only create a node for something that is itself a named entity or concept. Use `file_type:"rationale"` for concept-like nodes (ideas, principles, mechanisms, design patterns). Do NOT invent file_types like `concept` — valid values are only `code|document|paper|image|rationale`.
+Code files: when adding `calls` edges, source MUST be the caller (the function/class doing the calling), target MUST be the callee. Never reverse this direction.
+
+Semantic similarity: if two concepts in this chunk solve the same problem or represent the same idea without any structural link (no import, no call, no citation), add a `semantically_similar_to` edge marked INFERRED with a confidence_score reflecting how similar they are (0.6-0.95). Examples:
+- Two functions that both validate user input but never call each other
+- A class in code and a concept in a paper that describe the same algorithm
+- Two error types that handle the same failure mode differently
+Only add these when the similarity is genuinely non-obvious and cross-cutting. Do not add them for trivially similar things.
+
+Hyperedges: if 3 or more nodes clearly participate together in a shared concept, flow, or pattern that is not captured by pairwise edges alone, add a hyperedge to a top-level `hyperedges` array. Examples:
+- All classes that implement a common protocol or interface
+- All functions in an authentication flow (even if they don't all call each other)
+- All concepts from a paper section that form one coherent idea
+Use sparingly — only when the group relationship adds information beyond the pairwise edges. Maximum 3 hyperedges per chunk.
+
+If a file has YAML frontmatter (--- ... ---), copy source_url, captured_at, author,
+  contributor onto every node from that file.
+
+confidence_score is REQUIRED on every edge - never omit it, never use 0.5 as a default:
+- EXTRACTED edges: confidence_score = 1.0 always
+- INFERRED edges: reason about each edge individually.
+  Direct structural evidence (shared data structure, clear dependency): 0.8-0.9.
+  Reasonable inference with some uncertainty: 0.6-0.7.
+  Weak or speculative: 0.4-0.5. Most edges should be 0.6-0.9, not 0.5.
+- AMBIGUOUS edges: 0.1-0.3
+
+Output exactly this JSON (no other text):
+{"nodes":[{"id":"filestem_entityname","label":"Human Readable Name","file_type":"code|document|paper|image|rationale","source_file":"relative/path","source_location":null,"source_url":null,"captured_at":null,"author":null,"contributor":null}],"edges":[{"source":"node_id","target":"node_id","relation":"calls|implements|references|cites|conceptually_related_to|shares_data_with|semantically_similar_to|rationale_for","confidence":"EXTRACTED|INFERRED|AMBIGUOUS","confidence_score":1.0,"source_file":"relative/path","source_location":null,"weight":1.0}],"hyperedges":[{"id":"snake_case_id","label":"Human Readable Label","nodes":"["node_id1","node_id2","node_id3"]","relation":"participate_in|implement|form","confidence":"EXTRACTED|INFERRED","confidence_score":0.75,"source_file":"relative/path"}],"input_tokens":0,"output_tokens":0}
+@agent Chunk 18 of 24:
+You are a graphify extraction subagent. Read the files listed and extract a knowledge graph fragment.
+
+Output ONLY valid JSON matching the schema below - no explanation, no markdown fences, no preamble.
+
+Files (category: document, chunk ID: 18):
+    - /home/dev-lab/Documents/GitHub/MaTax_App/graphify-out/converted/G50 2025_4d36ada1.md
+
+Rules:
+- EXTRACTED: relationship explicit in source (import, call, citation, "see §1.2")
+- INFERRED: reasonable inference (shared data structure, implied dependency)  
+- AMBIGUOUS: uncertain - flag for review, do not omit
+
+Code files: focus on semantic edges AST cannot find (call relationships, shared data, arch patterns).
+  Do not re-extract imports - AST already has those.
+Doc/paper files: extract named concepts, entities, citations. For rationale (WHY decisions were made, trade-offs, design intent): store as a `rationale` attribute on the relevant concept node — do NOT create a separate rationale node or fragment node. Only create a node for something that is itself a named entity or concept. Use `file_type:"rationale"` for concept-like nodes (ideas, principles, mechanisms, design patterns). Do NOT invent file_types like `concept` — valid values are only `code|document|paper|image|rationale`.
+Code files: when adding `calls` edges, source MUST be the caller (the function/class doing the calling), target MUST be the callee. Never reverse this direction.
+
+Semantic similarity: if two concepts in this chunk solve the same problem or represent the same idea without any structural link (no import, no call, no citation), add a `semantically_similar_to` edge marked INFERRED with a confidence_score reflecting how similar they are (0.6-0.95). Examples:
+- Two functions that both validate user input but never call each other
+- A class in code and a concept in a paper that describe the same algorithm
+- Two error types that handle the same failure mode differently
+Only add these when the similarity is genuinely non-obvious and cross-cutting. Do not add them for trivially similar things.
+
+Hyperedges: if 3 or more nodes clearly participate together in a shared concept, flow, or pattern that is not captured by pairwise edges alone, add a hyperedge to a top-level `hyperedges` array. Examples:
+- All classes that implement a common protocol or interface
+- All functions in an authentication flow (even if they don't all call each other)
+- All concepts from a paper section that form one coherent idea
+Use sparingly — only when the group relationship adds information beyond the pairwise edges. Maximum 3 hyperedges per chunk.
+
+If a file has YAML frontmatter (--- ... ---), copy source_url, captured_at, author,
+  contributor onto every node from that file.
+
+confidence_score is REQUIRED on every edge - never omit it, never use 0.5 as a default:
+- EXTRACTED edges: confidence_score = 1.0 always
+- INFERRED edges: reason about each edge individually.
+  Direct structural evidence (shared data structure, clear dependency): 0.8-0.9.
+  Reasonable inference with some uncertainty: 0.6-0.7.
+  Weak or speculative: 0.4-0.5. Most edges should be 0.6-0.9, not 0.5.
+- AMBIGUOUS edges: 0.1-0.3
+
+Output exactly this JSON (no other text):
+{"nodes":[{"id":"filestem_entityname","label":"Human Readable Name","file_type":"code|document|paper|image|rationale","source_file":"relative/path","source_location":null,"source_url":null,"captured_at":null,"author":null,"contributor":null}],"edges":[{"source":"node_id","target":"node_id","relation":"calls|implements|references|cites|conceptually_related_to|shares_data_with|semantically_similar_to|rationale_for","confidence":"EXTRACTED|INFERRED|AMBIGUOUS","confidence_score":1.0,"source_file":"relative/path","source_location":null,"weight":1.0}],"hyperedges":[{"id":"snake_case_id","label":"Human Readable Label","nodes":"["node_id1","node_id2","node_id3"]","relation":"participate_in|implement|form","confidence":"EXTRACTED|INFERRED","confidence_score":0.75,"source_file":"relative/path"}],"input_tokens":0,"output_tokens":0}
+@agent Chunk 19 of 24:
+You are a graphify extraction subagent. Read the files listed and extract a knowledge graph fragment.
+
+Output ONLY valid JSON matching the schema below - no explanation, no markdown fences, no preamble.
+
+Files (category: document, chunk ID: 19):
+    - /home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/spec_lock.md
+    - /home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/README.md
+    - /home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/design_spec.md
+
+Rules:
+- EXTRACTED: relationship explicit in source (import, call, citation, "see §1.2")
+- INFERRED: reasonable inference (shared data structure, implied dependency)  
+- AMBIGUOUS: uncertain - flag for review, do not omit
+
+Code files: focus on semantic edges AST cannot find (call relationships, shared data, arch patterns).
+  Do not re-extract imports - AST already has those.
+Doc/paper files: extract named concepts, entities, citations. For rationale (WHY decisions were made, trade-offs, design intent): store as a `rationale` attribute on the relevant concept node — do NOT create a separate rationale node or fragment node. Only create a node for something that is itself a named entity or concept. Use `file_type:"rationale"` for concept-like nodes (ideas, principles, mechanisms, design patterns). Do NOT invent file_types like `concept` — valid values are only `code|document|paper|image|rationale`.
+Code files: when adding `calls` edges, source MUST be the caller (the function/class doing the calling), target MUST be the callee. Never reverse this direction.
+
+Semantic similarity: if two concepts in this chunk solve the same problem or represent the same idea without any structural link (no import, no call, no citation), add a `semantically_similar_to` edge marked INFERRED with a confidence_score reflecting how similar they are (0.6-0.95). Examples:
+- Two functions that both validate user input but never call each other
+- A class in code and a concept in a paper that describe the same algorithm
+- Two error types that handle the same failure mode differently
+Only add these when the similarity is genuinely non-obvious and cross-cutting. Do not add them for trivially similar things.
+
+Hyperedges: if 3 or more nodes clearly participate together in a shared concept, flow, or pattern that is not captured by pairwise edges alone, add a hyperedge to a top-level `hyperedges` array. Examples:
+- All classes that implement a common protocol or interface
+- All functions in an authentication flow (even if they don't all call each other)
+- All concepts from a paper section that form one coherent idea
+Use sparingly — only when the group relationship adds information beyond the pairwise edges. Maximum 3 hyperedges per chunk.
+
+If a file has YAML frontmatter (--- ... ---), copy source_url, captured_at, author,
+  contributor onto every node from that file.
+
+confidence_score is REQUIRED on every edge - never omit it, never use 0.5 as a default:
+- EXTRACTED edges: confidence_score = 1.0 always
+- INFERRED edges: reason about each edge individually.
+  Direct structural evidence (shared data structure, clear dependency): 0.8-0.9.
+  Reasonable inference with some uncertainty: 0.6-0.7.
+  Weak or speculative: 0.4-0.5. Most edges should be 0.6-0.9, not 0.5.
+- AMBIGUOUS edges: 0.1-0.3
+
+Output exactly this JSON (no other text):
+{"nodes":[{"id":"filestem_entityname","label":"Human Readable Name","file_type":"code|document|paper|image|rationale","source_file":"relative/path","source_location":null,"source_url":null,"captured_at":null,"author":null,"contributor":null}],"edges":[{"source":"node_id","target":"node_id","relation":"calls|implements|references|cites|conceptually_related_to|shares_data_with|semantically_similar_to|rationale_for","confidence":"EXTRACTED|INFERRED|AMBIGUOUS","confidence_score":1.0,"source_file":"relative/path","source_location":null,"weight":1.0}],"hyperedges":[{"id":"snake_case_id","label":"Human Readable Label","nodes":"["node_id1","node_id2","node_id3"]","relation":"participate_in|implement|form","confidence":"EXTRACTED|INFERRED","confidence_score":0.75,"source_file":"relative/path"}],"input_tokens":0,"output_tokens":0}
+@agent Chunk 20 of 24:
+You are a graphify extraction subagent. Read the files listed and extract a knowledge graph fragment.
+
+Output ONLY valid JSON matching the schema below - no explanation, no markdown fences, no preamble.
+
+Files (category: document, chunk ID: 20):
+    - /home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/templates/design_spec.md
+
+Rules:
+- EXTRACTED: relationship explicit in source (import, call, citation, "see §1.2")
+- INFERRED: reasonable inference (shared data structure, implied dependency)  
+- AMBIGUOUS: uncertain - flag for review, do not omit
+
+Code files: focus on semantic edges AST cannot find (call relationships, shared data, arch patterns).
+  Do not re-extract imports - AST already has those.
+Doc/paper files: extract named concepts, entities, citations. For rationale (WHY decisions were made, trade-offs, design intent): store as a `rationale` attribute on the relevant concept node — do NOT create a separate rationale node or fragment node. Only create a node for something that is itself a named entity or concept. Use `file_type:"rationale"` for concept-like nodes (ideas, principles, mechanisms, design patterns). Do NOT invent file_types like `concept` — valid values are only `code|document|paper|image|rationale`.
+Code files: when adding `calls` edges, source MUST be the caller (the function/class doing the calling), target MUST be the callee. Never reverse this direction.
+
+Semantic similarity: if two concepts in this chunk solve the same problem or represent the same idea without any structural link (no import, no call, no citation), add a `semantically_similar_to` edge marked INFERRED with a confidence_score reflecting how similar they are (0.6-0.95). Examples:
+- Two functions that both validate user input but never call each other
+- A class in code and a concept in a paper that describe the same algorithm
+- Two error types that handle the same failure mode differently
+Only add these when the similarity is genuinely non-obvious and cross-cutting. Do not add them for trivially similar things.
+
+Hyperedges: if 3 or more nodes clearly participate together in a shared concept, flow, or pattern that is not captured by pairwise edges alone, add a hyperedge to a top-level `hyperedges` array. Examples:
+- All classes that implement a common protocol or interface
+- All functions in an authentication flow (even if they don't all call each other)
+- All concepts from a paper section that form one coherent idea
+Use sparingly — only when the group relationship adds information beyond the pairwise edges. Maximum 3 hyperedges per chunk.
+
+If a file has YAML frontmatter (--- ... ---), copy source_url, captured_at, author,
+  contributor onto every node from that file.
+
+confidence_score is REQUIRED on every edge - never omit it, never use 0.5 as a default:
+- EXTRACTED edges: confidence_score = 1.0 always
+- INFERRED edges: reason about each edge individually.
+  Direct structural evidence (shared data structure, clear dependency): 0.8-0.9.
+  Reasonable inference with some uncertainty: 0.6-0.7.
+  Weak or speculative: 0.4-0.5. Most edges should be 0.6-0.9, not 0.5.
+- AMBIGUOUS edges: 0.1-0.3
+
+Output exactly this JSON (no other text):
+{"nodes":[{"id":"filestem_entityname","label":"Human Readable Name","file_type":"code|document|paper|image|rationale","source_file":"relative/path","source_location":null,"source_url":null,"captured_at":null,"author":null,"contributor":null}],"edges":[{"source":"node_id","target":"node_id","relation":"calls|implements|references|cites|conceptually_related_to|shares_data_with|semantically_similar_to|rationale_for","confidence":"EXTRACTED|INFERRED|AMBIGUOUS","confidence_score":1.0,"source_file":"relative/path","source_location":null,"weight":1.0}],"hyperedges":[{"id":"snake_case_id","label":"Human Readable Label","nodes":"["node_id1","node_id2","node_id3"]","relation":"participate_in|implement|form","confidence":"EXTRACTED|INFERRED","confidence_score":0.75,"source_file":"relative/path"}],"input_tokens":0,"output_tokens":0}
+@agent Chunk 21 of 24:
+You are a graphify extraction subagent. Read the files listed and extract a knowledge graph fragment.
+
+Output ONLY valid JSON matching the schema below - no explanation, no markdown fences, no preamble.
+
+Files (category: document, chunk ID: 21):
+    - /home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/notes/02_toc.md
+    - /home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/notes/09_competition_table.md
+    - /home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/notes/05_chapter_innovation.md
+    - /home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/notes/04_problem_solution.md
+    - /home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/notes/15_chapter_roadmap.md
+    - /home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/notes/03_chapter_problem.md
+    - /home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/notes/01_cover.md
+    - /home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/notes/12_kpi_cards.md
+    - /home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/notes/06_innovation_features.md
+    - /home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/notes/16_roadmap_team.md
+    - /home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/notes/07_chapter_market.md
+    - /home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/notes/14_prototype_screenshots.md
+    - /home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/notes/total.md
+    - /home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/notes/08_market_segments.md
+    - /home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/notes/11_financial_statements.md
+    - /home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/notes/10_chapter_financial.md
+    - /home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/notes/13_chapter_prototype.md
+
+Rules:
+- EXTRACTED: relationship explicit in source (import, call, citation, "see §1.2")
+- INFERRED: reasonable inference (shared data structure, implied dependency)  
+- AMBIGUOUS: uncertain - flag for review, do not omit
+
+Code files: focus on semantic edges AST cannot find (call relationships, shared data, arch patterns).
+  Do not re-extract imports - AST already has those.
+Doc/paper files: extract named concepts, entities, citations. For rationale (WHY decisions were made, trade-offs, design intent): store as a `rationale` attribute on the relevant concept node — do NOT create a separate rationale node or fragment node. Only create a node for something that is itself a named entity or concept. Use `file_type:"rationale"` for concept-like nodes (ideas, principles, mechanisms, design patterns). Do NOT invent file_types like `concept` — valid values are only `code|document|paper|image|rationale`.
+Code files: when adding `calls` edges, source MUST be the caller (the function/class doing the calling), target MUST be the callee. Never reverse this direction.
+
+Semantic similarity: if two concepts in this chunk solve the same problem or represent the same idea without any structural link (no import, no call, no citation), add a `semantically_similar_to` edge marked INFERRED with a confidence_score reflecting how similar they are (0.6-0.95). Examples:
+- Two functions that both validate user input but never call each other
+- A class in code and a concept in a paper that describe the same algorithm
+- Two error types that handle the same failure mode differently
+Only add these when the similarity is genuinely non-obvious and cross-cutting. Do not add them for trivially similar things.
+
+Hyperedges: if 3 or more nodes clearly participate together in a shared concept, flow, or pattern that is not captured by pairwise edges alone, add a hyperedge to a top-level `hyperedges` array. Examples:
+- All classes that implement a common protocol or interface
+- All functions in an authentication flow (even if they don't all call each other)
+- All concepts from a paper section that form one coherent idea
+Use sparingly — only when the group relationship adds information beyond the pairwise edges. Maximum 3 hyperedges per chunk.
+
+If a file has YAML frontmatter (--- ... ---), copy source_url, captured_at, author,
+  contributor onto every node from that file.
+
+confidence_score is REQUIRED on every edge - never omit it, never use 0.5 as a default:
+- EXTRACTED edges: confidence_score = 1.0 always
+- INFERRED edges: reason about each edge individually.
+  Direct structural evidence (shared data structure, clear dependency): 0.8-0.9.
+  Reasonable inference with some uncertainty: 0.6-0.7.
+  Weak or speculative: 0.4-0.5. Most edges should be 0.6-0.9, not 0.5.
+- AMBIGUOUS edges: 0.1-0.3
+
+Output exactly this JSON (no other text):
+{"nodes":[{"id":"filestem_entityname","label":"Human Readable Name","file_type":"code|document|paper|image|rationale","source_file":"relative/path","source_location":null,"source_url":null,"captured_at":null,"author":null,"contributor":null}],"edges":[{"source":"node_id","target":"node_id","relation":"calls|implements|references|cites|conceptually_related_to|shares_data_with|semantically_similar_to|rationale_for","confidence":"EXTRACTED|INFERRED|AMBIGUOUS","confidence_score":1.0,"source_file":"relative/path","source_location":null,"weight":1.0}],"hyperedges":[{"id":"snake_case_id","label":"Human Readable Label","nodes":"["node_id1","node_id2","node_id3"]","relation":"participate_in|implement|form","confidence":"EXTRACTED|INFERRED","confidence_score":0.75,"source_file":"relative/path"}],"input_tokens":0,"output_tokens":0}
+@agent Chunk 22 of 24:
+You are a graphify extraction subagent. Read the files listed and extract a knowledge graph fragment.
+
+Output ONLY valid JSON matching the schema below - no explanation, no markdown fences, no preamble.
+
+Files (category: document, chunk ID: 22):
+    - /home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX-2.md
+    - /home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/PRODUCT.md
+    - /home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MaTax_Presentation.md
+    - /home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National.md
+    - /home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MaTax_Digital_Tax_Revolution.md
+
+Rules:
+- EXTRACTED: relationship explicit in source (import, call, citation, "see §1.2")
+- INFERRED: reasonable inference (shared data structure, implied dependency)  
+- AMBIGUOUS: uncertain - flag for review, do not omit
+
+Code files: focus on semantic edges AST cannot find (call relationships, shared data, arch patterns).
+  Do not re-extract imports - AST already has those.
+Doc/paper files: extract named concepts, entities, citations. For rationale (WHY decisions were made, trade-offs, design intent): store as a `rationale` attribute on the relevant concept node — do NOT create a separate rationale node or fragment node. Only create a node for something that is itself a named entity or concept. Use `file_type:"rationale"` for concept-like nodes (ideas, principles, mechanisms, design patterns). Do NOT invent file_types like `concept` — valid values are only `code|document|paper|image|rationale`.
+Code files: when adding `calls` edges, source MUST be the caller (the function/class doing the calling), target MUST be the callee. Never reverse this direction.
+
+Semantic similarity: if two concepts in this chunk solve the same problem or represent the same idea without any structural link (no import, no call, no citation), add a `semantically_similar_to` edge marked INFERRED with a confidence_score reflecting how similar they are (0.6-0.95). Examples:
+- Two functions that both validate user input but never call each other
+- A class in code and a concept in a paper that describe the same algorithm
+- Two error types that handle the same failure mode differently
+Only add these when the similarity is genuinely non-obvious and cross-cutting. Do not add them for trivially similar things.
+
+Hyperedges: if 3 or more nodes clearly participate together in a shared concept, flow, or pattern that is not captured by pairwise edges alone, add a hyperedge to a top-level `hyperedges` array. Examples:
+- All classes that implement a common protocol or interface
+- All functions in an authentication flow (even if they don't all call each other)
+- All concepts from a paper section that form one coherent idea
+Use sparingly — only when the group relationship adds information beyond the pairwise edges. Maximum 3 hyperedges per chunk.
+
+If a file has YAML frontmatter (--- ... ---), copy source_url, captured_at, author,
+  contributor onto every node from that file.
+
+confidence_score is REQUIRED on every edge - never omit it, never use 0.5 as a default:
+- EXTRACTED edges: confidence_score = 1.0 always
+- INFERRED edges: reason about each edge individually.
+  Direct structural evidence (shared data structure, clear dependency): 0.8-0.9.
+  Reasonable inference with some uncertainty: 0.6-0.7.
+  Weak or speculative: 0.4-0.5. Most edges should be 0.6-0.9, not 0.5.
+- AMBIGUOUS edges: 0.1-0.3
+
+Output exactly this JSON (no other text):
+{"nodes":[{"id":"filestem_entityname","label":"Human Readable Name","file_type":"code|document|paper|image|rationale","source_file":"relative/path","source_location":null,"source_url":null,"captured_at":null,"author":null,"contributor":null}],"edges":[{"source":"node_id","target":"node_id","relation":"calls|implements|references|cites|conceptually_related_to|shares_data_with|semantically_similar_to|rationale_for","confidence":"EXTRACTED|INFERRED|AMBIGUOUS","confidence_score":1.0,"source_file":"relative/path","source_location":null,"weight":1.0}],"hyperedges":[{"id":"snake_case_id","label":"Human Readable Label","nodes":"["node_id1","node_id2","node_id3"]","relation":"participate_in|implement|form","confidence":"EXTRACTED|INFERRED","confidence_score":0.75,"source_file":"relative/path"}],"input_tokens":0,"output_tokens":0}
+@agent Chunk 23 of 24:
+You are a graphify extraction subagent. Read the files listed and extract a knowledge graph fragment.
+
+Output ONLY valid JSON matching the schema below - no explanation, no markdown fences, no preamble.
+
+Files (category: paper, chunk ID: 23):
+    - /home/dev-lab/Documents/GitHub/MaTax_App/Articles/GN° 11 (IRG - BIC).pdf
+    - /home/dev-lab/Documents/GitHub/MaTax_App/Articles/GN°50- SI jibayatic.pdf
+    - /home/dev-lab/Documents/GitHub/MaTax_App/Articles/المحاضرة رقم 01- (IBS) المحور الثالث.pdf
+    - /home/dev-lab/Documents/GitHub/MaTax_App/Articles/MATAX - Pitch Deck Comité National.pdf
+    - /home/dev-lab/Documents/GitHub/MaTax_App/Articles/Loi_de_Finances_2026_FR.pdf
+    - /home/dev-lab/Documents/GitHub/MaTax_App/Articles/GN° 4 -2025.pdf
+    - /home/dev-lab/Documents/GitHub/MaTax_App/Articles/Communiqué général de la loi de finances 2026.pdf
+    - /home/dev-lab/Documents/GitHub/MaTax_App/Articles/GN °08.pdf
+    - /home/dev-lab/Documents/GitHub/MaTax_App/Articles/المحور_08_ملء_مختلف_التصريحات_الجبائية.pdf
+    - /home/dev-lab/Documents/GitHub/MaTax_App/Articles/المحاضرة_08_ملء_مختلف_التصريحات_الجبائية_02.pdf
+    - /home/dev-lab/Documents/GitHub/MaTax_App/Articles/Notice_comment_remplir_la_déclaration_GN°_4_de_l&#039;impôt_sur.pdf
+
+Rules:
+- EXTRACTED: relationship explicit in source (import, call, citation, "see §1.2")
+- INFERRED: reasonable inference (shared data structure, implied dependency)  
+- AMBIGUOUS: uncertain - flag for review, do not omit
+
+Code files: focus on semantic edges AST cannot find (call relationships, shared data, arch patterns).
+  Do not re-extract imports - AST already has those.
+Doc/paper files: extract named concepts, entities, citations. For rationale (WHY decisions were made, trade-offs, design intent): store as a `rationale` attribute on the relevant concept node — do NOT create a separate rationale node or fragment node. Only create a node for something that is itself a named entity or concept. Use `file_type:"rationale"` for concept-like nodes (ideas, principles, mechanisms, design patterns). Do NOT invent file_types like `concept` — valid values are only `code|document|paper|image|rationale`.
+Code files: when adding `calls` edges, source MUST be the caller (the function/class doing the calling), target MUST be the callee. Never reverse this direction.
+
+Semantic similarity: if two concepts in this chunk solve the same problem or represent the same idea without any structural link (no import, no call, no citation), add a `semantically_similar_to` edge marked INFERRED with a confidence_score reflecting how similar they are (0.6-0.95). Examples:
+- Two functions that both validate user input but never call each other
+- A class in code and a concept in a paper that describe the same algorithm
+- Two error types that handle the same failure mode differently
+Only add these when the similarity is genuinely non-obvious and cross-cutting. Do not add them for trivially similar things.
+
+Hyperedges: if 3 or more nodes clearly participate together in a shared concept, flow, or pattern that is not captured by pairwise edges alone, add a hyperedge to a top-level `hyperedges` array. Examples:
+- All classes that implement a common protocol or interface
+- All functions in an authentication flow (even if they don't all call each other)
+- All concepts from a paper section that form one coherent idea
+Use sparingly — only when the group relationship adds information beyond the pairwise edges. Maximum 3 hyperedges per chunk.
+
+If a file has YAML frontmatter (--- ... ---), copy source_url, captured_at, author,
+  contributor onto every node from that file.
+
+confidence_score is REQUIRED on every edge - never omit it, never use 0.5 as a default:
+- EXTRACTED edges: confidence_score = 1.0 always
+- INFERRED edges: reason about each edge individually.
+  Direct structural evidence (shared data structure, clear dependency): 0.8-0.9.
+  Reasonable inference with some uncertainty: 0.6-0.7.
+  Weak or speculative: 0.4-0.5. Most edges should be 0.6-0.9, not 0.5.
+- AMBIGUOUS edges: 0.1-0.3
+
+Output exactly this JSON (no other text):
+{"nodes":[{"id":"filestem_entityname","label":"Human Readable Name","file_type":"code|document|paper|image|rationale","source_file":"relative/path","source_location":null,"source_url":null,"captured_at":null,"author":null,"contributor":null}],"edges":[{"source":"node_id","target":"node_id","relation":"calls|implements|references|cites|conceptually_related_to|shares_data_with|semantically_similar_to|rationale_for","confidence":"EXTRACTED|INFERRED|AMBIGUOUS","confidence_score":1.0,"source_file":"relative/path","source_location":null,"weight":1.0}],"hyperedges":[{"id":"snake_case_id","label":"Human Readable Label","nodes":"["node_id1","node_id2","node_id3"]","relation":"participate_in|implement|form","confidence":"EXTRACTED|INFERRED","confidence_score":0.75,"source_file":"relative/path"}],"input_tokens":0,"output_tokens":0}

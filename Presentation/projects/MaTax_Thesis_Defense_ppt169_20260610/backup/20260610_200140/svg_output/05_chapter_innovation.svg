@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720">
+  <rect width="1280" height="720" fill="#00527F"/>
+  <path d="M800 0 L1280 0 L1280 720 L600 720 Z" fill="#003A51" fill-opacity="0.5"/>
+  <rect x="1200" y="0" width="80" height="720" fill="#002A3A" fill-opacity="0.3"/>
+  <rect x="0" y="220" width="12" height="280" fill="#D62828"/>
+  <text x="140" y="520" fill="#FFFFFF" fill-opacity="0.06" font-family="Montserrat, Arial, sans-serif" font-size="320" font-weight="bold">02</text>
+  <text x="400" y="300" fill="#FFFFFF" font-family="Montserrat, Arial, sans-serif" font-size="56" font-weight="bold">الجوانب الابتكارية للمشروع</text>
+  <text x="400" y="380" fill="#E8F4FC" font-family="Lato Light, Arial, sans-serif" font-size="24">6 مبادرات تميز MATAX عن الحلول التقليدية</text>
+  <line x1="400" y1="240" x2="550" y2="240" stroke="#F77F00" stroke-width="6"/>
+  <text x="1240" y="680" text-anchor="end" fill="#FFFFFF" fill-opacity="0.4" font-family="Lato Light, Arial, sans-serif" font-size="18">MATAX — الابتكار في التكنولوجيا الجبائية</text>
+</svg>

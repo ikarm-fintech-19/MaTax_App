@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720">
+  <rect width="1280" height="720" fill="#FFFFFF"/>
+  <rect x="0" y="0" width="1280" height="70" fill="#00527F"/>
+  <rect x="0" y="0" width="6" height="70" fill="#D62828"/>
+  <text x="40" y="46" fill="#FFFFFF" font-family="Montserrat, Arial, sans-serif" font-size="28" font-weight="bold">02 | الجوانب الابتكارية للمشروع</text>
+  <text x="1220" y="46" text-anchor="end" fill="#FFFFFF" font-family="Montserrat, Arial, sans-serif" font-size="18" font-weight="bold">MATAX</text>
+  
+  <rect x="0" y="70" width="1280" height="50" fill="#F8FAFC"/>
+  <rect x="0" y="70" width="6" height="50" fill="#F77F00"/>
+  <text x="40" y="102" fill="#1E293B" font-family="Montserrat, Arial, sans-serif" font-size="18">6 مبادرات تجعل MATAX خياراً استراتيجياً للمقاولين</text>
+  
+  <!-- Row 1 -->
+  <rect x="60" y="145" width="370" height="215" fill="#F8FAFC" rx="12" stroke="#E2E8F0" stroke-width="1"/>
+  <rect x="60" y="145" width="370" height="8" fill="#00527F" rx="4"/>
+  <circle cx="245" cy="195" r="28" fill="#00527F" fill-opacity="0.12"/>
+  <text x="245" y="203" text-anchor="middle" fill="#00527F" font-family="Montserrat, Arial, sans-serif" font-size="24" font-weight="bold">01</text>
+  <text x="245" y="250" text-anchor="middle" fill="#00527F" font-family="Montserrat, Arial, sans-serif" font-size="17" font-weight="bold">بسيطة وسلسة</text>
+  <text x="245" y="278" text-anchor="middle" fill="#44546A" font-family="Lato Light, Arial, sans-serif" font-size="13">واجهة مستخدم سلسة لا تتطلب</text>
+  <text x="245" y="298" text-anchor="middle" fill="#44546A" font-family="Lato Light, Arial, sans-serif" font-size="13">خبرة محاسبية مسبقة</text>
+  <text x="245" y="328" text-anchor="middle" fill="#00527F" font-family="Montserrat, Arial, sans-serif" font-size="12" font-weight="bold">تقليل زمن التأهيل لـ 48 ساعة</text>
+  
+  <rect x="455" y="145" width="370" height="215" fill="#F8FAFC" rx="12" stroke="#E2E8F0" stroke-width="1"/>
+  <rect x="455" y="145" width="370" height="8" fill="#F77F00" rx="4"/>
+  <circle cx="640" cy="195" r="28" fill="#F77F00" fill-opacity="0.12"/>
+  <text x="640" y="203" text-anchor="middle" fill="#F77F00" font-family="Montserrat, Arial, sans-serif" font-size="24" font-weight="bold">02</text>
+  <text x="640" y="250" text-anchor="middle" fill="#F77F00" font-family="Montserrat, Arial, sans-serif" font-size="17" font-weight="bold">استباقية واستشراف</text>
+  <text x="640" y="278" text-anchor="middle" fill="#44546A" font-family="Lato Light, Arial, sans-serif" font-size="13">تنبيهات ذكية عبر SMS</text>
+  <text x="640" y="298" text-anchor="middle" fill="#44546A" font-family="Lato Light, Arial, sans-serif" font-size="13">والبريد الإلكتروني</text>
+  <text x="640" y="328" text-anchor="middle" fill="#F77F00" font-family="Montserrat, Arial, sans-serif" font-size="12" font-weight="bold">متابعة مسبقة للمواعيد</text>
+  
+  <rect x="850" y="145" width="370" height="215" fill="#F8FAFC" rx="12" stroke="#E2E8F0" stroke-width="1"/>
+  <rect x="850" y="145" width="370" height="8" fill="#D62828" rx="4"/>
+  <circle cx="1035" cy="195" r="28" fill="#D62828" fill-opacity="0.12"/>
+  <text x="1035" y="203" text-anchor="middle" fill="#D62828" font-family="Montserrat, Arial, sans-serif" font-size="24" font-weight="bold">03</text>
+  <text x="1035" y="250" text-anchor="middle" fill="#D62828" font-family="Montserrat, Arial, sans-serif" font-size="17" font-weight="bold">ملاءمة قانونية</text>
+  <text x="1035" y="278" text-anchor="middle" fill="#44546A" font-family="Lato Light, Arial, sans-serif" font-size="13">تطابق مع الإطار القانوني</text>
+  <text x="1035" y="298" text-anchor="middle" fill="#44546A" font-family="Lato Light, Arial, sans-serif" font-size="13">الجزائري</text>
+  <text x="1035" y="328" text-anchor="middle" fill="#D62828" font-family="Montserrat, Arial, sans-serif" font-size="12" font-weight="bold">تحديث تلقائي مع القوانين</text>
+  
+  <!-- Row 2 -->
+  <rect x="60" y="395" width="370" height="215" fill="#F8FAFC" rx="12" stroke="#E2E8F0" stroke-width="1"/>
+  <rect x="60" y="395" width="370" height="8" fill="#16A34A" rx="4"/>
+  <circle cx="245" cy="445" r="28" fill="#16A34A" fill-opacity="0.12"/>
+  <text x="245" y="453" text-anchor="middle" fill="#16A34A" font-family="Montserrat, Arial, sans-serif" font-size="24" font-weight="bold">04</text>
+  <text x="245" y="500" text-anchor="middle" fill="#16A34A" font-family="Montserrat, Arial, sans-serif" font-size="17" font-weight="bold">أتمتة شاملة</text>
+  <text x="245" y="528" text-anchor="middle" fill="#44546A" font-family="Lato Light, Arial, sans-serif" font-size="13">توليد تلقائي للتصريحات G50</text>
+  <text x="245" y="548" text-anchor="middle" fill="#44546A" font-family="Lato Light, Arial, sans-serif" font-size="13">بصيغة PDF</text>
+  <text x="245" y="578" text-anchor="middle" fill="#16A34A" font-family="Montserrat, Arial, sans-serif" font-size="12" font-weight="bold">صفر أخطاء يدوية</text>
+  
+  <rect x="455" y="395" width="370" height="215" fill="#F8FAFC" rx="12" stroke="#E2E8F0" stroke-width="1"/>
+  <rect x="455" y="395" width="370" height="8" fill="#FCD916" rx="4"/>
+  <circle cx="640" cy="445" r="28" fill="#FCD916" fill-opacity="0.12"/>
+  <text x="640" y="453" text-anchor="middle" fill="#00527F" font-family="Montserrat, Arial, sans-serif" font-size="24" font-weight="bold">05</text>
+  <text x="640" y="500" text-anchor="middle" fill="#00527F" font-family="Montserrat, Arial, sans-serif" font-size="17" font-weight="bold">اشتراكات اقتصادية</text>
+  <text x="640" y="528" text-anchor="middle" fill="#44546A" font-family="Lato Light, Arial, sans-serif" font-size="13">تقليل التكاليف بنسبة 60%</text>
+  <text x="640" y="548" text-anchor="middle" fill="#44546A" font-family="Lato Light, Arial, sans-serif" font-size="13">مقارنة بالمكاتب التقليدية</text>
+  <text x="640" y="578" text-anchor="middle" fill="#00527F" font-family="Montserrat, Arial, sans-serif" font-size="12" font-weight="bold">اشتراكات من 1,490 دج/شهر</text>
+  
+  <rect x="850" y="395" width="370" height="215" fill="#F8FAFC" rx="12" stroke="#E2E8F0" stroke-width="1"/>
+  <rect x="850" y="395" width="370" height="8" fill="#31ACEA" rx="4"/>
+  <circle cx="1035" cy="445" r="28" fill="#31ACEA" fill-opacity="0.12"/>
+  <text x="1035" y="453" text-anchor="middle" fill="#31ACEA" font-family="Montserrat, Arial, sans-serif" font-size="24" font-weight="bold">06</text>
+  <text x="1035" y="500" text-anchor="middle" fill="#31ACEA" font-family="Montserrat, Arial, sans-serif" font-size="17" font-weight="bold">بنية تحتية سحابية</text>
+  <text x="1035" y="528" text-anchor="middle" fill="#44546A" font-family="Lato Light, Arial, sans-serif" font-size="13">استضافة Cloudflare المحمية</text>
+  <text x="1035" y="548" text-anchor="middle" fill="#44546A" font-family="Lato Light, Arial, sans-serif" font-size="13">بتشفير 256-SSL</text>
+  <text x="1035" y="578" text-anchor="middle" fill="#31ACEA" font-family="Montserrat, Arial, sans-serif" font-size="12" font-weight="bold">مزامنة Google Drive</text>
+  
+  <line x1="40" y1="640" x2="1240" y2="640" stroke="#E2E8F0" stroke-width="1"/>
+  <text x="40" y="670" fill="#94A3B8" font-family="Lato Light, Arial, sans-serif" font-size="12">المصدر: PRODUCT.md</text>
+  <text x="640" y="670" text-anchor="middle" fill="#94A3B8" font-family="Lato Light, Arial, sans-serif" font-size="12">الجوانب الابتكارية</text>
+  <text x="1220" y="670" text-anchor="end" fill="#44546A" font-family="Montserrat, Arial, sans-serif" font-size="14">06</text>
+</svg>

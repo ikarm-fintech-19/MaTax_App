@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720">
+  <!-- Background -->
+  <rect width="1280" height="720" fill="#FFFFFF"/>
+  
+  <!-- Header -->
+  <rect x="0" y="0" width="1280" height="70" fill="#003366"/>
+  <rect x="0" y="0" width="6" height="70" fill="#CC0000"/>
+  <text x="40" y="46" fill="#FFFFFF" font-family="Microsoft YaHei, Arial, sans-serif" font-size="28" font-weight="bold">
+    04 | الدراسة المالية — القوائم المالية
+  </text>
+  <text x="1220" y="46" text-anchor="end" fill="#FFFFFF" font-family="Georgia, Microsoft YaHei, serif" font-size="18" font-weight="bold">MATAX</text>
+  
+  <!-- Key message bar -->
+  <rect x="0" y="70" width="1280" height="50" fill="#F0F4F8"/>
+  <rect x="0" y="70" width="6" height="50" fill="#0066CC"/>
+  <text x="40" y="102" fill="#1D1D1F" font-family="Microsoft YaHei, Arial, sans-serif" font-size="18">
+    التمويل المطلوب: 3,880,000 دج — BEP في الشهر 4 — VAN: +79.6M دج
+  </text>
+  
+  <!-- CONSULTING TABLE: 10 rows x 3 columns -->
+  <!-- Table Header -->
+  <rect x="60" y="135" width="1160" height="50" fill="#003366" rx="4"/>
+  <text x="300" y="167" text-anchor="middle" fill="#FFFFFF" font-family="Microsoft YaHei, Arial, sans-serif" font-size="15" font-weight="bold">البيان</text>
+  <text x="700" y="167" text-anchor="middle" fill="#FFFFFF" font-family="Microsoft YaHei, Arial, sans-serif" font-size="15" font-weight="bold">السنة الأولى</text>
+  <text x="1050" y="167" text-anchor="middle" fill="#FFFFFF" font-family="Microsoft YaHei, Arial, sans-serif" font-size="15" font-weight="bold">الملاحظات</text>
+  
+  <!-- Row 1 -->
+  <rect x="60" y="190" width="1160" height="50" fill="#F0F4F8"/>
+  <text x="300" y="222" text-anchor="middle" fill="#1D1D1F" font-family="Microsoft YaHei, Arial, sans-serif" font-size="15" font-weight="bold">الإيرادات التشغيلية</text>
+  <text x="700" y="222" text-anchor="middle" fill="#2E7D32" font-family="Microsoft YaHei, Arial, sans-serif" font-size="15" font-weight="bold">9,600,000 دج</text>
+  <text x="1050" y="222" text-anchor="middle" fill="#8A8A8A" font-family="Microsoft YaHei, Arial, sans-serif" font-size="13">960 عميل × 10,000 دج/شهر</text>
+  
+  <!-- Row 2 -->
+  <rect x="60" y="245" width="1160" height="50" fill="#FFFFFF"/>
+  <text x="300" y="277" text-anchor="middle" fill="#1D1D1F" font-family="Microsoft YaHei, Arial, sans-serif" font-size="15" font-weight="bold">التكلفة الإجمالية</text>
+  <text x="700" y="277" text-anchor="middle" fill="#C62828" font-family="Microsoft YaHei, Arial, sans-serif" font-size="15" font-weight="bold">5,265,000 دج</text>
+  <text x="1050" y="277" text-anchor="middle" fill="#8A8A8A" font-family="Microsoft YaHei, Arial, sans-serif" font-size="13"> تشغيل + تسويق + تطوير</text>
+  
+  <!-- Row 3 -->
+  <rect x="60" y="300" width="1160" height="50" fill="#F0F4F8"/>
+  <text x="300" y="332" text-anchor="middle" fill="#1D1D1F" font-family="Microsoft YaHei, Arial, sans-serif" font-size="15" font-weight="bold">صافي الربح قبل الضرائب</text>
+  <text x="700" y="332" text-anchor="middle" fill="#2E7D32" font-family="Microsoft YaHei, Arial, sans-serif" font-size="15" font-weight="bold">4,335,000 دج</text>
+  <text x="1050" y="332" text-anchor="middle" fill="#2E7D32" font-family="Microsoft YaHei, Arial, sans-serif" font-size="13">هامش صافي +45.2%</text>
+  
+  <!-- Row 4 -->
+  <rect x="60" y="355" width="1160" height="50" fill="#FFFFFF"/>
+  <text x="300" y="387" text-anchor="middle" fill="#1D1D1F" font-family="Microsoft YaHei, Arial, sans-serif" font-size="15" font-weight="bold">التدفقات النقدية التراكمية</text>
+  <text x="700" y="387" text-anchor="middle" fill="#2E7D32" font-family="Microsoft YaHei, Arial, sans-serif" font-size="15" font-weight="bold">+79,600,000 دج</text>
+  <text x="1050" y="387" text-anchor="middle" fill="#8A8A8A" font-family="Microsoft YaHei, Arial, sans-serif" font-size="13">VAN على 3 سنوات</text>
+  
+  <!-- Row 5 -->
+  <rect x="60" y="410" width="1160" height="50" fill="#F0F4F8"/>
+  <text x="300" y="442" text-anchor="middle" fill="#1D1D1F" font-family="Microsoft YaHei, Arial, sans-serif" font-size="15" font-weight="bold">معدل الخصم الداخلي (DR)</text>
+  <text x="700" y="442" text-anchor="middle" fill="#2E7D32" font-family="Microsoft YaHei, Arial, sans-serif" font-size="15" font-weight="bold">سنة + 9 أشهر</text>
+  <text x="1050" y="442" text-anchor="middle" fill="#8A8A8A" font-family="Microsoft YaHei, Arial, sans-serif" font-size="13">إ recovery سريع جداً</text>
+  
+  <!-- Row 6 -->
+  <rect x="60" y="465" width="1160" height="50" fill="#FFFFFF"/>
+  <text x="300" y="497" text-anchor="middle" fill="#1D1D1F" font-family="Microsoft YaHei, Arial, sans-serif" font-size="15" font-weight="bold">نقطة التعادل (BEP)</text>
+  <text x="700" y="497" text-anchor="middle" fill="#2E7D32" font-family="Microsoft YaHei, Arial, sans-serif" font-size="15" font-weight="bold">الشهر 4 | 61 عميل</text>
+  <text x="1050" y="497" text-anchor="middle" fill="#8A8A8A" font-family="Microsoft YaHei, Arial, sans-serif" font-size="13">BE break-even مبكر جداً</text>
+  
+  <!-- Row 7 -->
+  <rect x="60" y="520" width="1160" height="50" fill="#F0F4F8"/>
+  <text x="300" y="552" text-anchor="middle" fill="#1D1D1F" font-family="Microsoft YaHei, Arial, sans-serif" font-size="15" font-weight="bold">هامش الربح التشغيلي (OM)</text>
+  <text x="700" y="552" text-anchor="middle" fill="#2E7D32" font-family="Microsoft YaHei, Arial, sans-serif" font-size="15" font-weight="bold">+46.6%</text>
+  <text x="1050" y="552" text-anchor="middle" fill="#8A8A8A" font-family="Microsoft YaHei, Arial, sans-serif" font-size="13">هامش صافي مرتفع جداً</text>
+  
+  <!-- Row 8 -->
+  <rect x="60" y="575" width="1160" height="50" fill="#FFFFFF"/>
+  <text x="300" y="607" text-anchor="middle" fill="#1D1D1F" font-family="Microsoft YaHei, Arial, sans-serif" font-size="15" font-weight="bold">العائد على الاستثمار (ROI)</text>
+  <text x="700" y="607" text-anchor="middle" fill="#2E7D32" font-family="Microsoft YaHei, Arial, sans-serif" font-size="15" font-weight="bold">247%</text>
+  <text x="1050" y="607" text-anchor="middle" fill="#8A8A8A" font-family="Microsoft YaHei, Arial, sans-serif" font-size="13">العائد على 3 سنوات</text>
+  
+  <!-- Row 9 -->
+  <rect x="60" y="630" width="1160" height="50" fill="#F0F4F8"/>
+  <text x="300" y="662" text-anchor="middle" fill="#1D1D1F" font-family="Microsoft YaHei, Arial, sans-serif" font-size="15" font-weight="bold">التكلفة المقدرة لكل عميل</text>
+  <text x="700" y="662" text-anchor="middle" fill="#003366" font-family="Microsoft YaHei, Arial, sans-serif" font-size="15" font-weight="bold">5,484 دج</text>
+  <text x="1050" y="662" text-anchor="middle" fill="#8A8A8A" font-family="Microsoft YaHei, Arial, sans-serif" font-size="13">LTV/CAC = 7.3x</text>
+  
+  <!-- Footer -->
+  <line x1="40" y1="685" x2="1240" y2="685" stroke="#F0F4F8" stroke-width="1"/>
+  <text x="40" y="710" fill="#8A8A8A" font-family="Microsoft YaHei, Arial, sans-serif" font-size="12">المصدر: دراسةالمشروع</text>
+  <text x="640" y="710" text-anchor="middle" fill="#8A8A8A" font-family="Microsoft YaHei, Arial, sans-serif" font-size="12">القوائم المالية</text>
+  <text x="1220" y="710" text-anchor="end" fill="#666666" font-family="Microsoft YaHei, Arial, sans-serif" font-size="14">11</text>
+</svg>

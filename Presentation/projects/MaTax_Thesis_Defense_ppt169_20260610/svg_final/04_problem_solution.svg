@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720">
+  
+  <rect width="1280" height="720" fill="#FFFFFF" />
+  
+  
+  <rect x="0" y="0" width="1280" height="70" fill="#003366" />
+  <rect x="0" y="0" width="6" height="70" fill="#CC0000" />
+  <text x="40" y="46" fill="#FFFFFF" font-family="Microsoft YaHei, Arial, sans-serif" font-size="28" font-weight="bold">
+    01 | المشكلة والحل المقترح
+  </text>
+  <text x="1220" y="46" text-anchor="end" fill="#FFFFFF" font-family="Georgia, Microsoft YaHei, serif" font-size="18" font-weight="bold">MATAX</text>
+  
+  
+  <rect x="0" y="70" width="1280" height="50" fill="#F0F4F8" />
+  <rect x="0" y="70" width="6" height="50" fill="#0066CC" />
+  <text x="40" y="102" fill="#1E293B" font-family="Microsoft YaHei, Arial, sans-serif" font-size="18">
+    MATAX يحل 4 مشاكل حرجة من خلال 5 ركائز رقمية متكاملة
+  </text>
+  
+  
+  <path fill="#FEF2F2" stroke="#FECACA" stroke-width="1" d="M52,140 H608 A12,12 0 0 1 620,152 V638 A12,12 0 0 1 608,650 H52 A12,12 0 0 1 40,638 V152 A12,12 0 0 1 52,140 Z" />
+  <path fill="#DC2626" d="M52,140 H608 A12,12 0 0 1 620,152 V183 A12,12 0 0 1 608,195 H52 A12,12 0 0 1 40,183 V152 A12,12 0 0 1 52,140 Z" />
+  <rect x="40" y="185" width="580" height="10" fill="#DC2626" />
+  <text x="330" y="178" text-anchor="middle" fill="#FFFFFF" font-family="Microsoft YaHei, Arial, sans-serif" font-size="22" font-weight="bold">المشكلة</text>
+  
+  
+  <path fill="#FFFFFF" stroke="#FEE2E2" stroke-width="1" d="M68,210 H592 A8,8 0 0 1 600,218 V302 A8,8 0 0 1 592,310 H68 A8,8 0 0 1 60,302 V218 A8,8 0 0 1 68,210 Z" />
+  <path fill="#DC2626" d="M63,210 H63 A3,3 0 0 1 66,213 V307 A3,3 0 0 1 63,310 H63 A3,3 0 0 1 60,307 V213 A3,3 0 0 1 63,210 Z" />
+  <text x="110" y="238" fill="#DC2626" font-family="Microsoft YaHei, Arial, sans-serif" font-size="16" font-weight="bold">01 تعقيد التشريعات الجبائية</text>
+  <text x="110" y="262" fill="#475569" font-family="Microsoft YaHei, Arial, sans-serif" font-size="12">صعوبة استيعاب القوانين المالية السنوية وتداخل</text>
+  <text x="110" y="280" fill="#475569" font-family="Microsoft YaHei, Arial, sans-serif" font-size="12">الإجراءات الإدارية — حاجز كبير لرواد الأعمال</text>
+  <text x="110" y="300" fill="#94A3B8" font-family="Microsoft YaHei, Arial, sans-serif" font-size="11">في فهم التزاماتهم الحقيقية تجاه مصلحة الضرائب</text>
+  
+  
+  <path fill="#FFFFFF" stroke="#FEE2E2" stroke-width="1" d="M68,320 H592 A8,8 0 0 1 600,328 V412 A8,8 0 0 1 592,420 H68 A8,8 0 0 1 60,412 V328 A8,8 0 0 1 68,320 Z" />
+  <path fill="#DC2626" d="M63,320 H63 A3,3 0 0 1 66,323 V417 A3,3 0 0 1 63,420 H63 A3,3 0 0 1 60,417 V323 A3,3 0 0 1 63,320 Z" />
+  <text x="110" y="348" fill="#DC2626" font-family="Microsoft YaHei, Arial, sans-serif" font-size="16" font-weight="bold">02 مخاطر الأخطاء البشرية</text>
+  <text x="110" y="372" fill="#475569" font-family="Microsoft YaHei, Arial, sans-serif" font-size="12">الاعتماد على التعبئة اليدوية للتصاريح الدورية</text>
+  <text x="110" y="390" fill="#475569" font-family="Microsoft YaHei, Arial, sans-serif" font-size="12">(مثل تصريح G50) يعرّض المقاولين للغرامات</text>
+  <text x="110" y="410" fill="#94A3B8" font-family="Microsoft YaHei, Arial, sans-serif" font-size="11">والتأخير في المواعيد القانونية</text>
+  
+  
+  <path fill="#FFFFFF" stroke="#FEE2E2" stroke-width="1" d="M68,430 H592 A8,8 0 0 1 600,438 V522 A8,8 0 0 1 592,530 H68 A8,8 0 0 1 60,522 V438 A8,8 0 0 1 68,430 Z" />
+  <path fill="#DC2626" d="M63,430 H63 A3,3 0 0 1 66,433 V527 A3,3 0 0 1 63,530 H63 A3,3 0 0 1 60,527 V433 A3,3 0 0 1 63,430 Z" />
+  <text x="110" y="458" fill="#DC2626" font-family="Microsoft YaHei, Arial, sans-serif" font-size="16" font-weight="bold">03 غرامات التأخير المالي</text>
+  <text x="110" y="482" fill="#475569" font-family="Microsoft YaHei, Arial, sans-serif" font-size="12">غياب نظام متابعة وتنبيه ذكي للمواعيد القانونية</text>
+  <text x="110" y="500" fill="#475569" font-family="Microsoft YaHei, Arial, sans-serif" font-size="12">يؤدي إلى غرامات باهظة على المقاولين</text>
+  <text x="110" y="520" fill="#94A3B8" font-family="Microsoft YaHei, Arial, sans-serif" font-size="11">وخسارة مالية كبيرة</text>
+  
+  
+  <path fill="#FFFFFF" stroke="#FEE2E2" stroke-width="1" d="M68,540 H592 A8,8 0 0 1 600,548 V617 A8,8 0 0 1 592,625 H68 A8,8 0 0 1 60,617 V548 A8,8 0 0 1 68,540 Z" />
+  <path fill="#DC2626" d="M63,540 H63 A3,3 0 0 1 66,543 V622 A3,3 0 0 1 63,625 H63 A3,3 0 0 1 60,622 V543 A3,3 0 0 1 63,540 Z" />
+  <text x="110" y="568" fill="#DC2626" font-family="Microsoft YaHei, Arial, sans-serif" font-size="16" font-weight="bold">04 التكاليف الباهظة وهشاشة الأرشفة</text>
+  <text x="110" y="592" fill="#475569" font-family="Microsoft YaHei, Arial, sans-serif" font-size="12">أعباء التعاقد مع مكاتب المحاسبة وغياب التخزين</text>
+  <text x="110" y="612" fill="#94A3B8" font-family="Microsoft YaHei, Arial, sans-serif" font-size="11">السحابي الآمن للمستندات الجبائية</text>
+  
+  
+  <path fill="#F0FDF4" stroke="#BBF7D0" stroke-width="1" d="M672,140 H1228 A12,12 0 0 1 1240,152 V638 A12,12 0 0 1 1228,650 H672 A12,12 0 0 1 660,638 V152 A12,12 0 0 1 672,140 Z" />
+  <path fill="#16A34A" d="M672,140 H1228 A12,12 0 0 1 1240,152 V183 A12,12 0 0 1 1228,195 H672 A12,12 0 0 1 660,183 V152 A12,12 0 0 1 672,140 Z" />
+  <rect x="660" y="185" width="580" height="10" fill="#16A34A" />
+  <text x="950" y="178" text-anchor="middle" fill="#FFFFFF" font-family="Microsoft YaHei, Arial, sans-serif" font-size="22" font-weight="bold">الحل: MATAX</text>
+  
+  
+  <path fill="#FFFFFF" stroke="#DCFCE7" stroke-width="1" d="M688,210 H1212 A8,8 0 0 1 1220,218 V292 A8,8 0 0 1 1212,300 H688 A8,8 0 0 1 680,292 V218 A8,8 0 0 1 688,210 Z" />
+  <path fill="#16A34A" d="M683,210 H683 A3,3 0 0 1 686,213 V297 A3,3 0 0 1 683,300 H683 A3,3 0 0 1 680,297 V213 A3,3 0 0 1 683,210 Z" />
+  <text x="730" y="238" fill="#16A34A" font-family="Microsoft YaHei, Arial, sans-serif" font-size="16" font-weight="bold">✅ تبسيط الجباية بضغطة زر</text>
+  <text x="730" y="262" fill="#475569" font-family="Microsoft YaHei, Arial, sans-serif" font-size="12">تحويل النصوص القانونية المعقدة إلى واجهات رقمية</text>
+  <text x="730" y="280" fill="#475569" font-family="Microsoft YaHei, Arial, sans-serif" font-size="12">سلسة وتفاعلية — دون خبرة محاسبية مسبقة</text>
+  <text x="730" y="295" fill="#94A3B8" font-family="Microsoft YaHei, Arial, sans-serif" font-size="11">تقليل زمن التأهيل لـ 48 ساعة فقط</text>
+  
+  
+  <path fill="#FFFFFF" stroke="#DCFCE7" stroke-width="1" d="M688,310 H1212 A8,8 0 0 1 1220,318 V392 A8,8 0 0 1 1212,400 H688 A8,8 0 0 1 680,392 V318 A8,8 0 0 1 688,310 Z" />
+  <path fill="#16A34A" d="M683,310 H683 A3,3 0 0 1 686,313 V397 A3,3 0 0 1 683,400 H683 A3,3 0 0 1 680,397 V313 A3,3 0 0 1 683,310 Z" />
+  <text x="730" y="338" fill="#16A34A" font-family="Microsoft YaHei, Arial, sans-serif" font-size="16" font-weight="bold">🔔 نظام تنبيه ذكي واستباقي</text>
+  <text x="730" y="362" fill="#475569" font-family="Microsoft YaHei, Arial, sans-serif" font-size="12">تنبيهات عبر الرسائل النصية القصيرة (SMS)</text>
+  <text x="730" y="380" fill="#475569" font-family="Microsoft YaHei, Arial, sans-serif" font-size="12">والبريد الإلكتروني قبل المواعيد الجبائية</text>
+  <text x="730" y="395" fill="#94A3B8" font-family="Microsoft YaHei, Arial, sans-serif" font-size="11">حماية المقاولين من الغرامات</text>
+  
+  
+  <path fill="#FFFFFF" stroke="#DCFCE7" stroke-width="1" d="M688,410 H1212 A8,8 0 0 1 1220,418 V492 A8,8 0 0 1 1212,500 H688 A8,8 0 0 1 680,492 V418 A8,8 0 0 1 688,410 Z" />
+  <path fill="#16A34A" d="M683,410 H683 A3,3 0 0 1 686,413 V497 A3,3 0 0 1 683,500 H683 A3,3 0 0 1 680,497 V413 A3,3 0 0 1 683,410 Z" />
+  <text x="730" y="438" fill="#16A34A" font-family="Microsoft YaHei, Arial, sans-serif" font-size="16" font-weight="bold">📋 أتمتة دقيقة بنسبة خطأ 0%</text>
+  <text x="730" y="462" fill="#475569" font-family="Microsoft YaHei, Arial, sans-serif" font-size="12">توليد تصاريح G50 بضغطة زر واحدة</text>
+  <text x="730" y="480" fill="#475569" font-family="Microsoft YaHei, Arial, sans-serif" font-size="12">وتقضي تماماً على مخاطر الأخطاء البشرية</text>
+  <text x="730" y="495" fill="#94A3B8" font-family="Microsoft YaHei, Arial, sans-serif" font-size="11">من عملية تأخذ ساعات إلى عملية رقمية مؤتمتة</text>
+  
+  
+  <path fill="#FFFFFF" stroke="#DCFCE7" stroke-width="1" d="M688,510 H1212 A8,8 0 0 1 1220,518 V592 A8,8 0 0 1 1212,600 H688 A8,8 0 0 1 680,592 V518 A8,8 0 0 1 688,510 Z" />
+  <path fill="#16A34A" d="M683,510 H683 A3,3 0 0 1 686,513 V597 A3,3 0 0 1 683,600 H683 A3,3 0 0 1 680,597 V513 A3,3 0 0 1 683,510 Z" />
+  <text x="730" y="538" fill="#16A34A" font-family="Microsoft YaHei, Arial, sans-serif" font-size="16" font-weight="bold">☁️ أرشفة سحابية مشفرة</text>
+  <text x="730" y="562" fill="#475569" font-family="Microsoft YaHei, Arial, sans-serif" font-size="12">منظومة سحابية آمنة لأرشفة الملفات</text>
+  <text x="730" y="580" fill="#475569" font-family="Microsoft YaHei, Arial, sans-serif" font-size="12">الجبائية والمحاسبية بتشفير 256-SSL</text>
+  <text x="730" y="595" fill="#94A3B8" font-family="Microsoft YaHei, Arial, sans-serif" font-size="11">حماية البيانات من الاختراق</text>
+  
+  
+  <path fill="#FFFFFF" stroke="#DCFCE7" stroke-width="1" d="M684,610 H1216 A4,4 0 0 1 1220,614 V631 A4,4 0 0 1 1216,635 H684 A4,4 0 0 1 680,631 V614 A4,4 0 0 1 684,610 Z" />
+  <path fill="#0891B2" d="M682,610 H684 A2,2 0 0 1 686,612 V633 A2,2 0 0 1 684,635 H682 A2,2 0 0 1 680,633 V612 A2,2 0 0 1 682,610 Z" />
+  <text x="730" y="628" fill="#0891B2" font-family="Microsoft YaHei, Arial, sans-serif" font-size="14" font-weight="bold">💰 اشتراكات اقتصادية — 60% أقل من المكاتب التقليدية</text>
+  
+  
+  <line x1="40" y1="670" x2="1240" y2="670" stroke="#E2E8F0" stroke-width="1" />
+  <text x="40" y="700" fill="#94A3B8" font-family="Microsoft YaHei, Arial, sans-serif" font-size="12">المصدر: دراسة المشروع</text>
+  <text x="640" y="700" text-anchor="middle" fill="#94A3B8" font-family="Microsoft YaHei, Arial, sans-serif" font-size="12">المشكلة والحل المقترح</text>
+  <text x="1220" y="700" text-anchor="end" fill="#64748B" font-family="Microsoft YaHei, Arial, sans-serif" font-size="14">04</text>
+</svg>

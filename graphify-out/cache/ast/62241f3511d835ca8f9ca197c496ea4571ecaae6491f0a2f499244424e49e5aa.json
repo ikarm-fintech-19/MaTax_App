@@ -1,0 +1,54 @@
+{
+  "nodes": [
+    {
+      "id": "home_dev_lab_documents_github_matax_app_src_start_ts",
+      "label": "start.ts",
+      "file_type": "code",
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/start.ts",
+      "source_location": "L1"
+    }
+  ],
+  "edges": [
+    {
+      "source": "home_dev_lab_documents_github_matax_app_src_start_ts",
+      "target": "react_start",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/start.ts",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "home_dev_lab_documents_github_matax_app_src_start_ts",
+      "target": "home_dev_lab_documents_github_matax_app_src_lib_error_page",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/start.ts",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "home_dev_lab_documents_github_matax_app_src_start_ts",
+      "target": "lib_error_page_rendererrorpage",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/start.ts",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "home_dev_lab_documents_github_matax_app_src_start_ts",
+      "target": "auth_attacher",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/start.ts",
+      "source_location": "L4",
+      "weight": 1.0
+    }
+  ],
+  "raw_calls": []
+}

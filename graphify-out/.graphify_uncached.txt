@@ -1,0 +1,895 @@
+/home/dev-lab/Documents/GitHub/MaTax_App/eslint.config.js
+/home/dev-lab/Documents/GitHub/MaTax_App/vite.config.ts
+/home/dev-lab/Documents/GitHub/MaTax_App/src/routeTree.gen.ts
+/home/dev-lab/Documents/GitHub/MaTax_App/src/server.ts
+/home/dev-lab/Documents/GitHub/MaTax_App/src/router.tsx
+/home/dev-lab/Documents/GitHub/MaTax_App/src/start.ts
+/home/dev-lab/Documents/GitHub/MaTax_App/src/hooks/use-auth.tsx
+/home/dev-lab/Documents/GitHub/MaTax_App/src/hooks/use-theme.tsx
+/home/dev-lab/Documents/GitHub/MaTax_App/src/hooks/use-mobile.tsx
+/home/dev-lab/Documents/GitHub/MaTax_App/src/routes/__root.tsx
+/home/dev-lab/Documents/GitHub/MaTax_App/src/routes/login.tsx
+/home/dev-lab/Documents/GitHub/MaTax_App/src/routes/index.tsx
+/home/dev-lab/Documents/GitHub/MaTax_App/src/routes/_app.tsx
+/home/dev-lab/Documents/GitHub/MaTax_App/src/routes/_app/settings.tsx
+/home/dev-lab/Documents/GitHub/MaTax_App/src/routes/_app/g50.tsx
+/home/dev-lab/Documents/GitHub/MaTax_App/src/routes/_app/dashboard.tsx
+/home/dev-lab/Documents/GitHub/MaTax_App/src/routes/_app/ibs.tsx
+/home/dev-lab/Documents/GitHub/MaTax_App/src/routes/_app/tfpc.tsx
+/home/dev-lab/Documents/GitHub/MaTax_App/src/routes/_app/withholding.tsx
+/home/dev-lab/Documents/GitHub/MaTax_App/src/routes/_app/irg.tsx
+/home/dev-lab/Documents/GitHub/MaTax_App/src/components/language-switcher.tsx
+/home/dev-lab/Documents/GitHub/MaTax_App/src/components/theme-toggle.tsx
+/home/dev-lab/Documents/GitHub/MaTax_App/src/components/dashboard/obligation-calendar.tsx
+/home/dev-lab/Documents/GitHub/MaTax_App/src/components/onboarding/regime-selector.tsx
+/home/dev-lab/Documents/GitHub/MaTax_App/src/components/assistant/fiscal-chat.tsx
+/home/dev-lab/Documents/GitHub/MaTax_App/src/components/ui/tabs.tsx
+/home/dev-lab/Documents/GitHub/MaTax_App/src/components/ui/input.tsx
+/home/dev-lab/Documents/GitHub/MaTax_App/src/components/ui/dropdown-menu.tsx
+/home/dev-lab/Documents/GitHub/MaTax_App/src/components/ui/checkbox.tsx
+/home/dev-lab/Documents/GitHub/MaTax_App/src/components/ui/drawer.tsx
+/home/dev-lab/Documents/GitHub/MaTax_App/src/components/ui/radio-group.tsx
+/home/dev-lab/Documents/GitHub/MaTax_App/src/components/ui/alert-dialog.tsx
+/home/dev-lab/Documents/GitHub/MaTax_App/src/components/ui/sheet.tsx
+/home/dev-lab/Documents/GitHub/MaTax_App/src/components/ui/avatar.tsx
+/home/dev-lab/Documents/GitHub/MaTax_App/src/components/ui/slider.tsx
+/home/dev-lab/Documents/GitHub/MaTax_App/src/components/ui/sidebar.tsx
+/home/dev-lab/Documents/GitHub/MaTax_App/src/components/ui/menubar.tsx
+/home/dev-lab/Documents/GitHub/MaTax_App/src/components/ui/alert.tsx
+/home/dev-lab/Documents/GitHub/MaTax_App/src/components/ui/input-otp.tsx
+/home/dev-lab/Documents/GitHub/MaTax_App/src/components/ui/accordion.tsx
+/home/dev-lab/Documents/GitHub/MaTax_App/src/components/ui/command.tsx
+/home/dev-lab/Documents/GitHub/MaTax_App/src/components/ui/scroll-area.tsx
+/home/dev-lab/Documents/GitHub/MaTax_App/src/components/ui/pagination.tsx
+/home/dev-lab/Documents/GitHub/MaTax_App/src/components/ui/context-menu.tsx
+/home/dev-lab/Documents/GitHub/MaTax_App/src/components/ui/switch.tsx
+/home/dev-lab/Documents/GitHub/MaTax_App/src/components/ui/form.tsx
+/home/dev-lab/Documents/GitHub/MaTax_App/src/components/ui/breadcrumb.tsx
+/home/dev-lab/Documents/GitHub/MaTax_App/src/components/ui/progress.tsx
+/home/dev-lab/Documents/GitHub/MaTax_App/src/components/ui/aspect-ratio.tsx
+/home/dev-lab/Documents/GitHub/MaTax_App/src/components/ui/carousel.tsx
+/home/dev-lab/Documents/GitHub/MaTax_App/src/components/ui/card.tsx
+/home/dev-lab/Documents/GitHub/MaTax_App/src/components/ui/badge.tsx
+/home/dev-lab/Documents/GitHub/MaTax_App/src/components/ui/table.tsx
+/home/dev-lab/Documents/GitHub/MaTax_App/src/components/ui/calendar.tsx
+/home/dev-lab/Documents/GitHub/MaTax_App/src/components/ui/collapsible.tsx
+/home/dev-lab/Documents/GitHub/MaTax_App/src/components/ui/select.tsx
+/home/dev-lab/Documents/GitHub/MaTax_App/src/components/ui/separator.tsx
+/home/dev-lab/Documents/GitHub/MaTax_App/src/components/ui/toggle-group.tsx
+/home/dev-lab/Documents/GitHub/MaTax_App/src/components/ui/chart.tsx
+/home/dev-lab/Documents/GitHub/MaTax_App/src/components/ui/popover.tsx
+/home/dev-lab/Documents/GitHub/MaTax_App/src/components/ui/dialog.tsx
+/home/dev-lab/Documents/GitHub/MaTax_App/src/components/ui/navigation-menu.tsx
+/home/dev-lab/Documents/GitHub/MaTax_App/src/components/ui/textarea.tsx
+/home/dev-lab/Documents/GitHub/MaTax_App/src/components/ui/button.tsx
+/home/dev-lab/Documents/GitHub/MaTax_App/src/components/ui/hover-card.tsx
+/home/dev-lab/Documents/GitHub/MaTax_App/src/components/ui/sonner.tsx
+/home/dev-lab/Documents/GitHub/MaTax_App/src/components/ui/tooltip.tsx
+/home/dev-lab/Documents/GitHub/MaTax_App/src/components/ui/label.tsx
+/home/dev-lab/Documents/GitHub/MaTax_App/src/components/ui/resizable.tsx
+/home/dev-lab/Documents/GitHub/MaTax_App/src/components/ui/toggle.tsx
+/home/dev-lab/Documents/GitHub/MaTax_App/src/components/ui/skeleton.tsx
+/home/dev-lab/Documents/GitHub/MaTax_App/src/integrations/lovable/index.ts
+/home/dev-lab/Documents/GitHub/MaTax_App/src/integrations/supabase/auth-middleware.ts
+/home/dev-lab/Documents/GitHub/MaTax_App/src/integrations/supabase/client.server.ts
+/home/dev-lab/Documents/GitHub/MaTax_App/src/integrations/supabase/auth-attacher.ts
+/home/dev-lab/Documents/GitHub/MaTax_App/src/integrations/supabase/client.ts
+/home/dev-lab/Documents/GitHub/MaTax_App/src/integrations/supabase/types.ts
+/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/regime-config.ts
+/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/format.ts
+/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/error-page.ts
+/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/utils.ts
+/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/i18n.tsx
+/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/error-capture.ts
+/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/engines/tfpc.ts
+/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/engines/tva.ts
+/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/engines/withholding.ts
+/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/engines/irg.ts
+/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/engines/ibs.ts
+/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts
+/home/dev-lab/Documents/GitHub/MaTax_App/supabase/migrations/20260516150120_5b65194a-b1ab-4454-943d-cf634bff0eaa.sql
+/home/dev-lab/Documents/GitHub/MaTax_App/supabase/migrations/20260516150154_a9e87574-ef3e-423b-9161-b0ca736df533.sql
+/home/dev-lab/Documents/GitHub/MaTax_App/Articles_txt/GN°50- SI jibayatic.txt
+/home/dev-lab/Documents/GitHub/MaTax_App/Articles_txt/MATAX - Pitch Deck Comité National.txt
+/home/dev-lab/Documents/GitHub/MaTax_App/Articles_txt/GN °08.txt
+/home/dev-lab/Documents/GitHub/MaTax_App/Articles_txt/Communiqué général de la loi de finances 2026.txt
+/home/dev-lab/Documents/GitHub/MaTax_App/Articles_txt/المحاضرة رقم 01- (IBS) المحور الثالث.txt
+/home/dev-lab/Documents/GitHub/MaTax_App/Articles_txt/GN° 11 (IRG - BIC).txt
+/home/dev-lab/Documents/GitHub/MaTax_App/Articles_txt/Notice_comment_remplir_la_déclaration_GN°_4_de_l&#039;impôt_sur.txt
+/home/dev-lab/Documents/GitHub/MaTax_App/Articles_txt/Loi_de_Finances_2026_FR.txt
+/home/dev-lab/Documents/GitHub/MaTax_App/Articles_txt/GN° 4 -2025.txt
+/home/dev-lab/Documents/GitHub/MaTax_App/Articles_txt/المحاضرة_08_ملء_مختلف_التصريحات_الجبائية_02.txt
+/home/dev-lab/Documents/GitHub/MaTax_App/Articles_txt/المحور_08_ملء_مختلف_التصريحات_الجبائية.txt
+/home/dev-lab/Documents/GitHub/MaTax_App/graphify-out/converted/G50 2025_4d36ada1.md
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/spec_lock.md
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/README.md
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/design_spec.md
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/templates/design_spec.md
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/notes/02_toc.md
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/notes/09_competition_table.md
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/notes/05_chapter_innovation.md
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/notes/04_problem_solution.md
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/notes/15_chapter_roadmap.md
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/notes/03_chapter_problem.md
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/notes/01_cover.md
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/notes/12_kpi_cards.md
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/notes/06_innovation_features.md
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/notes/16_roadmap_team.md
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/notes/07_chapter_market.md
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/notes/14_prototype_screenshots.md
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/notes/total.md
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/notes/08_market_segments.md
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/notes/11_financial_statements.md
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/notes/10_chapter_financial.md
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/notes/13_chapter_prototype.md
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX-2.md
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/PRODUCT.md
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MaTax_Presentation.md
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National.md
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MaTax_Digital_Tax_Revolution.md
+/home/dev-lab/Documents/GitHub/MaTax_App/Articles/GN° 11 (IRG - BIC).pdf
+/home/dev-lab/Documents/GitHub/MaTax_App/Articles/GN°50- SI jibayatic.pdf
+/home/dev-lab/Documents/GitHub/MaTax_App/Articles/المحاضرة رقم 01- (IBS) المحور الثالث.pdf
+/home/dev-lab/Documents/GitHub/MaTax_App/Articles/MATAX - Pitch Deck Comité National.pdf
+/home/dev-lab/Documents/GitHub/MaTax_App/Articles/Loi_de_Finances_2026_FR.pdf
+/home/dev-lab/Documents/GitHub/MaTax_App/Articles/GN° 4 -2025.pdf
+/home/dev-lab/Documents/GitHub/MaTax_App/Articles/Communiqué général de la loi de finances 2026.pdf
+/home/dev-lab/Documents/GitHub/MaTax_App/Articles/GN °08.pdf
+/home/dev-lab/Documents/GitHub/MaTax_App/Articles/المحور_08_ملء_مختلف_التصريحات_الجبائية.pdf
+/home/dev-lab/Documents/GitHub/MaTax_App/Articles/المحاضرة_08_ملء_مختلف_التصريحات_الجبائية_02.pdf
+/home/dev-lab/Documents/GitHub/MaTax_App/Articles/Notice_comment_remplir_la_déclaration_GN°_4_de_l&#039;impôt_sur.pdf
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/templates/04_ending.svg
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/templates/01_cover.svg
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/templates/02_toc.svg
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/templates/02_chapter.svg
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/templates/03_content.svg
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-10-2.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MaTax_Presentation__image-1-1.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-8-10.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-4-14.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-10-5.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-5-13.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-11-11.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-4-1.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-8-16.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-6-11.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-11-7.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-2-10.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-3-13.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-1-7.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-9-1.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-11-5.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-8-1.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-14-2.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-11-17.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-5-2.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-6-15.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-11-3.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-1-5.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-14-21.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-8-2.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-11-24.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-12-32.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-4-12.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-2-12.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-13-1.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-2-4.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-9-14.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-3-12.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-12-19.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-10-4.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MaTax_Presentation__image-3-1.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MaTax_Digital_Tax_Revolution__image7.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-1-1.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-13-11.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-12-13.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX-2__image4.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MaTax_Digital_Tax_Revolution__image2.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MaTax_Presentation__image-9-1.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-12-14.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-13-6.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-9-15.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-4-9.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-5-10.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-9-12.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-5-4.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-10-6.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-11-8.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-12-17.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-12-3.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-3-6.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-2-11.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-14-10.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-6-12.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-6-20.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-9-9.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MaTax_Digital_Tax_Revolution__image1.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-12-23.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-4-10.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-13-13.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-8-14.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-3-2.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-9-19.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-2-5.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX-2__image5.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-6-13.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-3-3.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-14-9.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-5-7.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-14-24.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-7-6.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-15-2.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-7-9.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-9-10.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MaTax_Presentation__image-3-5.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MaTax_Presentation__image-3-6.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-2-9.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-12-26.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-12-9.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-14-4.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-10-8.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-4-8.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-12-27.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MaTax_Presentation__image-9-2.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-11-22.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-14-17.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-12-10.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-5-5.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-15-6.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-3-11.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MaTax_Digital_Tax_Revolution__image6.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX-2__image12.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MaTax_Digital_Tax_Revolution__image5.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-6-18.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-12-7.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-4-2.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-6-17.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-4-7.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-12-22.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-8-5.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-13-8.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-8-3.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-11-12.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-13-14.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-14-23.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-11-19.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-7-1.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-15-3.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-7-12.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-4-5.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-9-11.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-9-7.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-11-18.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-12-2.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-4-6.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-5-1.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MaTax_Presentation__image-3-3.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-11-10.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-14-5.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-6-2.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-2-2.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-12-21.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-5-6.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-14-20.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-11-16.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MaTax_Digital_Tax_Revolution__image9.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-3-4.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-7-10.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-8-12.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-12-5.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-6-5.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-12-18.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-13-4.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-12-4.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-11-21.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-8-13.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-10-3.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-14-16.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-7-3.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-12-30.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-8-11.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-9-16.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-11-26.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-1-2.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-12-12.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-11-1.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-6-7.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-10-10.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-11-9.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-11-4.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-4-18.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-12-33.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-8-7.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-4-4.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-2-8.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-13-5.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-4-13.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-7-17.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-2-3.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX-2__image2.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-9-8.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-7-2.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-11-23.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MaTax_Presentation__image-9-3.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-11-25.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-12-1.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX-2__image11.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MaTax_Presentation__image-3-2.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-9-6.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-12-11.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-2-7.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-7-19.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-9-4.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-2-1.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-6-6.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-6-14.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MaTax_Presentation__image-3-4.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-4-19.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-14-7.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-15-7.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-5-9.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-1-6.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-7-11.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-8-8.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-7-18.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-12-6.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-12-15.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-7-16.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-14-12.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-11-13.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-6-1.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-15-5.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-10-1.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-13-3.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-11-20.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-12-28.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-14-11.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-6-8.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-14-19.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-5-14.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-14-14.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-10-11.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-13-9.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-6-3.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-4-11.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-9-2.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-9-13.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-12-8.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-5-3.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-11-14.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-4-16.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MaTax_Digital_Tax_Revolution__image3.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-9-3.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-5-12.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-13-2.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-3-7.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-7-8.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-9-17.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-5-8.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-7-13.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-8-6.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX-2__image3.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-9-18.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-14-13.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-6-9.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-2-6.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MaTax_Digital_Tax_Revolution__image8.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-14-8.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-7-7.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-12-16.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-5-11.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-8-9.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-10-7.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-6-10.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-15-4.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-12-20.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-8-4.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-15-1.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-12-29.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-13-7.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MaTax_Digital_Tax_Revolution__image4.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-3-14.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-6-16.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-3-15.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-3-1.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-12-24.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-3-8.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX-2__image10.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-12-25.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-14-3.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-14-1.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-14-6.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-6-19.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-7-14.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-7-4.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-7-5.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-14-15.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-14-22.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-13-10.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-4-3.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-1-3.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-14-18.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MaTax_Presentation__image-9-4.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-3-5.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-11-15.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-9-5.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-11-6.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-6-4.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-7-15.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-10-9.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-4-17.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-13-12.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-11-2.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-3-10.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-3-9.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-4-15.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-8-15.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-1-4.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/images/MATAX - Pitch Deck Comité National__image-12-31.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/svg_final/04_problem_solution.svg
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/svg_final/07_chapter_market.svg
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/svg_final/10_chapter_financial.svg
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/svg_final/01_cover.svg
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/svg_final/14_prototype_screenshots.svg
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/svg_final/06_innovation_features.svg
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/svg_final/05_chapter_innovation.svg
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/svg_final/02_toc.svg
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/svg_final/08_market_segments.svg
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/svg_final/16_roadmap_team.svg
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/svg_final/11_financial_statements.svg
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/svg_final/09_competition_table.svg
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/svg_final/15_chapter_roadmap.svg
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/svg_final/13_chapter_prototype.svg
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/svg_final/03_chapter_problem.svg
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/svg_final/12_kpi_cards.svg
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/svg_output/04_problem_solution.svg
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/svg_output/07_chapter_market.svg
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/svg_output/08_market_business.svg
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/svg_output/10_chapter_financial.svg
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/svg_output/01_cover.svg
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/svg_output/16_roadmap_timeline.svg
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/svg_output/14_prototype_screenshots.svg
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/svg_output/06_innovation_features.svg
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/svg_output/05_chapter_innovation.svg
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/svg_output/13_chapter_demo.svg
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/svg_output/02_toc.svg
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/svg_output/08_market_segments.svg
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/svg_output/14_demo_walkthrough.svg
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/svg_output/11_finance_year1.svg
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/svg_output/09_revenue_model.svg
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/svg_output/12_finance_scenarios.svg
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/svg_output/16_roadmap_team.svg
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/svg_output/11_financial_statements.svg
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/svg_output/10_chapter_finance.svg
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/svg_output/09_competition_table.svg
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/svg_output/15_chapter_roadmap.svg
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/svg_output/13_chapter_prototype.svg
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/svg_output/03_chapter_problem.svg
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/svg_output/12_kpi_cards.svg
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX-2_files/image10.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX-2_files/image12.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX-2_files/image3.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX-2_files/image5.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX-2_files/image2.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX-2_files/image4.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX-2_files/image11.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-14-20.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-14-7.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-1-4.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-14-4.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-12-2.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-6-9.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-2-4.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-14-18.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-6-18.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-1-6.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-12-13.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-12-27.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-14-8.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-9-2.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-2-1.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-15-6.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-3-6.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-12-21.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-1-7.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-9-14.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-5-6.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-8-13.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-12-25.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-14-1.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-4-12.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-12-28.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-3-5.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-7-17.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-5-14.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-15-5.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-7-12.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-8-1.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-15-1.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-11-2.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-11-20.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-4-2.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-6-11.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-8-15.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-12-23.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-13-2.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-2-2.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-15-3.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-13-6.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-13-8.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-13-10.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-9-19.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-9-6.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-7-9.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-2-6.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-6-10.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-9-9.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-12-18.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-4-6.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-3-13.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-12-12.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-3-2.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-11-11.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-3-15.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-9-17.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-8-16.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-2-7.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-14-16.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-4-4.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-11-5.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-4-5.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-5-13.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-12-7.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-6-17.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-9-1.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-4-17.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-6-8.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-4-18.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-5-1.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-5-10.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-8-14.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-9-15.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-14-14.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-14-23.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-8-4.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-3-9.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-11-9.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-2-3.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-14-21.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-4-8.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-11-22.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-10-1.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-13-3.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-9-18.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-11-4.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-10-5.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-6-1.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-7-5.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-11-12.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-5-7.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-4-19.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-12-15.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-3-10.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-7-15.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-3-8.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-14-9.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-15-7.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-11-19.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-14-22.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-12-3.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-7-14.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-3-3.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-11-23.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-4-14.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-10-11.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-3-14.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-13-5.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-2-5.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-5-2.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-4-7.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-14-2.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-5-12.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-13-11.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-6-7.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-15-4.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-9-4.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-4-16.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-8-5.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-12-14.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-4-9.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-14-12.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-11-17.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-9-16.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-7-6.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-9-11.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-7-7.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-12-16.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-6-3.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-13-12.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-7-4.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-15-2.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-9-7.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-14-19.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-7-1.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-14-10.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-13-4.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-12-8.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-4-13.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-1-2.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-10-2.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-12-17.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-6-19.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-2-10.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-10-3.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-11-3.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-1-5.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-11-21.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-6-5.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-9-13.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-6-2.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-6-12.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-1-1.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-8-7.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-5-5.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-11-16.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-4-1.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-3-11.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-3-4.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-10-6.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-4-11.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-12-26.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-10-7.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-9-8.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-8-12.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-8-3.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-2-8.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-7-11.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-6-16.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-14-15.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-5-9.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-10-10.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-6-4.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-6-15.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-8-11.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-7-8.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-8-9.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-7-18.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-9-3.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-9-5.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-11-10.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-12-31.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-3-7.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-5-8.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-14-24.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-10-9.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-12-19.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-11-14.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-13-13.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-14-6.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-12-6.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-12-1.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-7-3.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-11-6.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-3-1.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-11-18.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-13-1.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-12-33.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-12-9.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-14-5.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-2-9.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-12-30.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-6-13.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-11-26.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-11-8.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-14-13.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-11-24.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-9-10.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-1-3.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-10-8.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-10-4.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-7-19.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-2-12.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-11-7.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-13-7.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-12-29.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-8-2.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-13-14.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-5-11.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-11-1.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-6-20.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-4-15.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-12-22.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-12-24.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-7-16.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-14-11.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-12-32.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-12-5.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-12-4.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-7-13.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-6-14.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-2-11.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-8-6.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-4-10.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-14-3.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-14-17.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-12-11.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-5-4.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-5-3.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-3-12.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-12-20.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-8-8.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-9-12.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-12-10.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-11-13.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-11-15.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-11-25.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-6-6.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-13-9.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-7-10.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-7-2.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-8-10.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MATAX - Pitch Deck Comité National_files/image-4-3.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MaTax_Presentation_files/image-9-2.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MaTax_Presentation_files/image-3-6.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MaTax_Presentation_files/image-3-5.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MaTax_Presentation_files/image-3-2.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MaTax_Presentation_files/image-9-1.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MaTax_Presentation_files/image-3-3.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MaTax_Presentation_files/image-9-4.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MaTax_Presentation_files/image-1-1.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MaTax_Presentation_files/image-3-4.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MaTax_Presentation_files/image-9-3.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MaTax_Presentation_files/image-3-1.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MaTax_Digital_Tax_Revolution_files/image7.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MaTax_Digital_Tax_Revolution_files/image6.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MaTax_Digital_Tax_Revolution_files/image3.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MaTax_Digital_Tax_Revolution_files/image5.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MaTax_Digital_Tax_Revolution_files/image2.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MaTax_Digital_Tax_Revolution_files/image8.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MaTax_Digital_Tax_Revolution_files/image4.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MaTax_Digital_Tax_Revolution_files/image9.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/sources/MaTax_Digital_Tax_Revolution_files/image1.png
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/backup/20260610_195137/svg_output/04_problem_solution.svg
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/backup/20260610_195137/svg_output/07_chapter_market.svg
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/backup/20260610_195137/svg_output/08_market_business.svg
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/backup/20260610_195137/svg_output/10_chapter_financial.svg
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/backup/20260610_195137/svg_output/01_cover.svg
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/backup/20260610_195137/svg_output/16_roadmap_timeline.svg
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/backup/20260610_195137/svg_output/14_prototype_screenshots.svg
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/backup/20260610_195137/svg_output/06_innovation_features.svg
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/backup/20260610_195137/svg_output/05_chapter_innovation.svg
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/backup/20260610_195137/svg_output/13_chapter_demo.svg
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/backup/20260610_195137/svg_output/02_toc.svg
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/backup/20260610_195137/svg_output/08_market_segments.svg
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/backup/20260610_195137/svg_output/14_demo_walkthrough.svg
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/backup/20260610_195137/svg_output/11_finance_year1.svg
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/backup/20260610_195137/svg_output/09_revenue_model.svg
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/backup/20260610_195137/svg_output/12_finance_scenarios.svg
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/backup/20260610_195137/svg_output/16_roadmap_team.svg
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/backup/20260610_195137/svg_output/11_financial_statements.svg
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/backup/20260610_195137/svg_output/10_chapter_finance.svg
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/backup/20260610_195137/svg_output/09_competition_table.svg
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/backup/20260610_195137/svg_output/15_chapter_roadmap.svg
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/backup/20260610_195137/svg_output/13_chapter_prototype.svg
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/backup/20260610_195137/svg_output/03_chapter_problem.svg
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/backup/20260610_195137/svg_output/12_kpi_cards.svg
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/backup/20260610_193340/svg_output/04_problem_solution.svg
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/backup/20260610_193340/svg_output/07_chapter_market.svg
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/backup/20260610_193340/svg_output/10_chapter_financial.svg
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/backup/20260610_193340/svg_output/01_cover.svg
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/backup/20260610_193340/svg_output/14_prototype_screenshots.svg
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/backup/20260610_193340/svg_output/06_innovation_features.svg
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/backup/20260610_193340/svg_output/05_chapter_innovation.svg
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/backup/20260610_193340/svg_output/02_toc.svg
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/backup/20260610_193340/svg_output/08_market_segments.svg
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/backup/20260610_193340/svg_output/16_roadmap_team.svg
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/backup/20260610_193340/svg_output/11_financial_statements.svg
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/backup/20260610_193340/svg_output/09_competition_table.svg
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/backup/20260610_193340/svg_output/15_chapter_roadmap.svg
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/backup/20260610_193340/svg_output/13_chapter_prototype.svg
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/backup/20260610_193340/svg_output/03_chapter_problem.svg
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/backup/20260610_193340/svg_output/12_kpi_cards.svg
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/backup/20260610_192215/svg_output/04_problem_solution.svg
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/backup/20260610_192215/svg_output/07_chapter_market.svg
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/backup/20260610_192215/svg_output/10_chapter_financial.svg
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/backup/20260610_192215/svg_output/01_cover.svg
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/backup/20260610_192215/svg_output/14_prototype_screenshots.svg
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/backup/20260610_192215/svg_output/06_innovation_features.svg
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/backup/20260610_192215/svg_output/05_chapter_innovation.svg
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/backup/20260610_192215/svg_output/02_toc.svg
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/backup/20260610_192215/svg_output/08_market_segments.svg
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/backup/20260610_192215/svg_output/16_roadmap_team.svg
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/backup/20260610_192215/svg_output/11_financial_statements.svg
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/backup/20260610_192215/svg_output/09_competition_table.svg
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/backup/20260610_192215/svg_output/15_chapter_roadmap.svg
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/backup/20260610_192215/svg_output/13_chapter_prototype.svg
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/backup/20260610_192215/svg_output/03_chapter_problem.svg
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/backup/20260610_192215/svg_output/12_kpi_cards.svg
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/backup/20260610_200140/svg_output/04_problem_solution.svg
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/backup/20260610_200140/svg_output/07_chapter_market.svg
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/backup/20260610_200140/svg_output/08_market_business.svg
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/backup/20260610_200140/svg_output/10_chapter_financial.svg
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/backup/20260610_200140/svg_output/01_cover.svg
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/backup/20260610_200140/svg_output/16_roadmap_timeline.svg
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/backup/20260610_200140/svg_output/14_prototype_screenshots.svg
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/backup/20260610_200140/svg_output/06_innovation_features.svg
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/backup/20260610_200140/svg_output/05_chapter_innovation.svg
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/backup/20260610_200140/svg_output/13_chapter_demo.svg
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/backup/20260610_200140/svg_output/02_toc.svg
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/backup/20260610_200140/svg_output/08_market_segments.svg
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/backup/20260610_200140/svg_output/14_demo_walkthrough.svg
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/backup/20260610_200140/svg_output/11_finance_year1.svg
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/backup/20260610_200140/svg_output/09_revenue_model.svg
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/backup/20260610_200140/svg_output/12_finance_scenarios.svg
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/backup/20260610_200140/svg_output/16_roadmap_team.svg
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/backup/20260610_200140/svg_output/11_financial_statements.svg
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/backup/20260610_200140/svg_output/10_chapter_finance.svg
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/backup/20260610_200140/svg_output/09_competition_table.svg
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/backup/20260610_200140/svg_output/15_chapter_roadmap.svg
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/backup/20260610_200140/svg_output/13_chapter_prototype.svg
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/backup/20260610_200140/svg_output/03_chapter_problem.svg
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/backup/20260610_200140/svg_output/12_kpi_cards.svg
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/backup/20260610_200326/svg_output/04_problem_solution.svg
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/backup/20260610_200326/svg_output/07_chapter_market.svg
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/backup/20260610_200326/svg_output/08_market_business.svg
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/backup/20260610_200326/svg_output/10_chapter_financial.svg
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/backup/20260610_200326/svg_output/01_cover.svg
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/backup/20260610_200326/svg_output/16_roadmap_timeline.svg
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/backup/20260610_200326/svg_output/14_prototype_screenshots.svg
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/backup/20260610_200326/svg_output/06_innovation_features.svg
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/backup/20260610_200326/svg_output/05_chapter_innovation.svg
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/backup/20260610_200326/svg_output/13_chapter_demo.svg
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/backup/20260610_200326/svg_output/02_toc.svg
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/backup/20260610_200326/svg_output/08_market_segments.svg
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/backup/20260610_200326/svg_output/14_demo_walkthrough.svg
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/backup/20260610_200326/svg_output/11_finance_year1.svg
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/backup/20260610_200326/svg_output/09_revenue_model.svg
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/backup/20260610_200326/svg_output/12_finance_scenarios.svg
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/backup/20260610_200326/svg_output/16_roadmap_team.svg
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/backup/20260610_200326/svg_output/11_financial_statements.svg
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/backup/20260610_200326/svg_output/10_chapter_finance.svg
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/backup/20260610_200326/svg_output/09_competition_table.svg
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/backup/20260610_200326/svg_output/15_chapter_roadmap.svg
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/backup/20260610_200326/svg_output/13_chapter_prototype.svg
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/backup/20260610_200326/svg_output/03_chapter_problem.svg
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/backup/20260610_200326/svg_output/12_kpi_cards.svg
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/backup/20260610_193849/svg_output/04_problem_solution.svg
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/backup/20260610_193849/svg_output/07_chapter_market.svg
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/backup/20260610_193849/svg_output/10_chapter_financial.svg
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/backup/20260610_193849/svg_output/01_cover.svg
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/backup/20260610_193849/svg_output/14_prototype_screenshots.svg
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/backup/20260610_193849/svg_output/06_innovation_features.svg
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/backup/20260610_193849/svg_output/05_chapter_innovation.svg
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/backup/20260610_193849/svg_output/02_toc.svg
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/backup/20260610_193849/svg_output/08_market_segments.svg
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/backup/20260610_193849/svg_output/16_roadmap_team.svg
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/backup/20260610_193849/svg_output/11_financial_statements.svg
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/backup/20260610_193849/svg_output/09_competition_table.svg
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/backup/20260610_193849/svg_output/15_chapter_roadmap.svg
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/backup/20260610_193849/svg_output/13_chapter_prototype.svg
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/backup/20260610_193849/svg_output/03_chapter_problem.svg
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/backup/20260610_193849/svg_output/12_kpi_cards.svg
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/backup/20260610_195953/svg_output/04_problem_solution.svg
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/backup/20260610_195953/svg_output/07_chapter_market.svg
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/backup/20260610_195953/svg_output/08_market_business.svg
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/backup/20260610_195953/svg_output/10_chapter_financial.svg
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/backup/20260610_195953/svg_output/01_cover.svg
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/backup/20260610_195953/svg_output/16_roadmap_timeline.svg
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/backup/20260610_195953/svg_output/14_prototype_screenshots.svg
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/backup/20260610_195953/svg_output/06_innovation_features.svg
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/backup/20260610_195953/svg_output/05_chapter_innovation.svg
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/backup/20260610_195953/svg_output/13_chapter_demo.svg
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/backup/20260610_195953/svg_output/02_toc.svg
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/backup/20260610_195953/svg_output/08_market_segments.svg
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/backup/20260610_195953/svg_output/14_demo_walkthrough.svg
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/backup/20260610_195953/svg_output/11_finance_year1.svg
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/backup/20260610_195953/svg_output/09_revenue_model.svg
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/backup/20260610_195953/svg_output/12_finance_scenarios.svg
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/backup/20260610_195953/svg_output/16_roadmap_team.svg
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/backup/20260610_195953/svg_output/11_financial_statements.svg
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/backup/20260610_195953/svg_output/10_chapter_finance.svg
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/backup/20260610_195953/svg_output/09_competition_table.svg
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/backup/20260610_195953/svg_output/15_chapter_roadmap.svg
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/backup/20260610_195953/svg_output/13_chapter_prototype.svg
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/backup/20260610_195953/svg_output/03_chapter_problem.svg
+/home/dev-lab/Documents/GitHub/MaTax_App/Presentation/projects/MaTax_Thesis_Defense_ppt169_20260610/backup/20260610_195953/svg_output/12_kpi_cards.svg

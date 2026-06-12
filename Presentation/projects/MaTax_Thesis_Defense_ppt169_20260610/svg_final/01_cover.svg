@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720">
+  
+  <rect width="1280" height="720" fill="#FFFFFF" />
+  
+  
+  <rect x="0" y="0" width="1280" height="120" fill="#003366" />
+  <rect x="0" y="0" width="8" height="120" fill="#CC0000" />
+  
+  
+  <path d="M1280 0 L1100 0 L1280 120 Z" fill="#004080" fill-opacity="0.3" />
+  
+  
+  <path fill="none" stroke="#FFFFFF" stroke-width="1.5" stroke-opacity="0.4" d="M1066,30 H1234 A6,6 0 0 1 1240,36 V84 A6,6 0 0 1 1234,90 H1066 A6,6 0 0 1 1060,84 V36 A6,6 0 0 1 1066,30 Z" />
+  <text x="1150" y="68" text-anchor="middle" fill="#FFFFFF" font-family="Georgia, Microsoft YaHei, serif" font-size="22" font-weight="bold">
+    MATAX
+  </text>
+  
+  
+  <text x="640" y="250" text-anchor="middle" fill="#003366" font-family="Georgia, Microsoft YaHei, serif" font-size="56" font-weight="bold">
+    منصة MATAX
+  </text>
+  <text x="640" y="315" text-anchor="middle" fill="#003366" font-family="Georgia, Microsoft YaHei, serif" font-size="38" font-weight="bold">
+    التسيير الجبائي الرقمي الذكي
+  </text>
+  
+  
+  <text x="640" y="375" text-anchor="middle" fill="#64748B" font-family="Microsoft YaHei, Arial, sans-serif" font-size="20">
+    منصة رقمية مبتكرة في مجال التكنولوجيا الجبائية (TaxTech)
+  </text>
+  
+  
+  <line x1="380" y1="415" x2="900" y2="415" stroke="#0066CC" stroke-width="2" />
+  <circle cx="640" cy="415" r="6" fill="#0066CC" />
+  <circle cx="380" cy="415" r="3" fill="#0066CC" fill-opacity="0.5" />
+  <circle cx="900" cy="415" r="3" fill="#0066CC" fill-opacity="0.5" />
+  
+  
+  <path fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1" d="M252,450 H1028 A12,12 0 0 1 1040,462 V598 A12,12 0 0 1 1028,610 H252 A12,12 0 0 1 240,598 V462 A12,12 0 0 1 252,450 Z" />
+  <text x="640" y="495" text-anchor="middle" fill="#1E293B" font-family="Microsoft YaHei, Arial, sans-serif" font-size="24" font-weight="bold">
+    إعداد: حموم إكرام
+  </text>
+  <text x="640" y="530" text-anchor="middle" fill="#64748B" font-family="Microsoft YaHei, Arial, sans-serif" font-size="18">
+    إشراف: أ. بلعباس مختار — أ. مفتاح فاطمة
+  </text>
+  <text x="640" y="565" text-anchor="middle" fill="#64748B" font-family="Microsoft YaHei, Arial, sans-serif" font-size="16">
+    جامعة ابن خلدون تيارت | ماستر محاسبة وجباية | 2025/2026
+  </text>
+  
+  
+  <rect x="0" y="650" width="1280" height="70" fill="#003366" />
+  <text x="640" y="692" text-anchor="middle" fill="#FFFFFF" font-family="Microsoft YaHei, Arial, sans-serif" font-size="16">
+    عرض التخرج — startup thesis defense
+  </text>
+</svg>

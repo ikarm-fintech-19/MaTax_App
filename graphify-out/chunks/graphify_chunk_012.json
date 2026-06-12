@@ -1,0 +1,13 @@
+{
+  "chunk_id": 12,
+  "category": "code",
+  "files": [
+    "/home/dev-lab/Documents/GitHub/MaTax_App/src/integrations/supabase/auth-middleware.ts",
+    "/home/dev-lab/Documents/GitHub/MaTax_App/src/integrations/supabase/client.server.ts",
+    "/home/dev-lab/Documents/GitHub/MaTax_App/src/integrations/supabase/auth-attacher.ts",
+    "/home/dev-lab/Documents/GitHub/MaTax_App/src/integrations/supabase/client.ts",
+    "/home/dev-lab/Documents/GitHub/MaTax_App/src/integrations/supabase/types.ts"
+  ],
+  "input_tokens": 0,
+  "output_tokens": 0
+}

@@ -12,7 +12,9 @@ export function LanguageSwitcher() {
           onClick={() => setLocale(l)}
           aria-pressed={locale === l}
           className={`rounded-md px-3 py-1 text-sm font-medium transition-colors ${
-            locale === l ? "bg-primary text-primary-foreground" : "text-ink-muted hover:text-foreground"
+            locale === l
+              ? "bg-primary text-primary-foreground"
+              : "text-ink-muted hover:text-foreground"
           }`}
         >
           {LABELS[l]}

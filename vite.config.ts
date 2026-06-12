@@ -1,25 +1,72 @@
-// @lovable.dev/vite-tanstack-config already includes the following — do NOT add them manually
-// or the app will break with duplicate plugins:
-//   - tanstackStart, viteReact, tailwindcss, tsConfigPaths, cloudflare (build-only),
-//     componentTagger (dev-only), VITE_* env injection, @ path alias, React/TanStack dedupe,
-//     error logger plugins, and sandbox detection (port/host/strictPort).
-// You can pass additional config via defineConfig({ vite: { ... } }) if needed.
-import { defineConfig } from "@lovable.dev/vite-tanstack-config";
+import tailwindcss from "@tailwindcss/vite";
+import tsconfigPaths from "vite-tsconfig-paths";
+import { tanstackStart } from "@tanstack/react-start/plugin/vite";
+import react from "@vitejs/plugin-react";
+import { loadEnv, mergeConfig, type UserConfig } from "vite";
 
-// Deploy target selection:
-//   - In the Lovable sandbox the wrapper forces the `cloudflare-module` Nitro preset.
-//   - Outside the sandbox we run Nitro explicitly with the `netlify` preset so the
-//     production build emits Netlify Functions + a static publish dir (default `dist`).
-//     Without this, `vite build` only produces `dist/client` / `dist/server/server.js`
-//     and Netlify serves "Page not found" because there is no `index.html` to publish.
-//   - Set `DEPLOY_TARGET=netlify_edge` (or `cloudflare-module`, etc.) to override.
 const deployPreset = process.env.DEPLOY_TARGET ?? "netlify";
 
-// Redirect TanStack Start's bundled server entry to src/server.ts (our SSR error wrapper).
-// @cloudflare/vite-plugin builds from this — wrangler.jsonc main alone is insufficient.
 export default defineConfig({
   tanstackStart: {
     server: { entry: "server" },
   },
   nitro: { preset: deployPreset },
 });
+
+function defineConfig(options: {
+  tanstackStart?: Record<string, unknown>;
+  nitro?: Record<string, unknown>;
+  vite?: UserConfig;
+} = {}): (env: { command: string; mode: string }) => Promise<UserConfig> {
+  return async (env) => {
+    const { command, mode } = env;
+
+    const internalPlugins = [
+      tailwindcss(),
+      tsconfigPaths({ projects: ["./tsconfig.json"] }),
+      tanstackStart({
+        importProtection: {
+          behavior: "error",
+          client: { files: ["**/server/**"], specifiers: ["server-only"] },
+        },
+        ...options.tanstackStart,
+      }),
+      react(),
+    ];
+
+    if (options.nitro && command === "build") {
+      const { nitro } = await import("nitro/vite");
+      internalPlugins.push(nitro({ preset: "cloudflare-module", ...options.nitro }));
+    }
+
+    let envDefine: Record<string, string> = {};
+    const loadedEnv = loadEnv(mode, process.cwd(), "VITE_");
+    for (const [key, value] of Object.entries(loadedEnv)) {
+      envDefine[`import.meta.env.${key}`] = JSON.stringify(value);
+    }
+
+    let config: UserConfig = {
+      define: envDefine,
+      css: { transformer: "lightningcss" },
+      resolve: {
+        alias: { "@": `${process.cwd()}/src` },
+        dedupe: [
+          "react",
+          "react-dom",
+          "react/jsx-runtime",
+          "react/jsx-dev-runtime",
+          "@tanstack/react-query",
+          "@tanstack/query-core",
+        ],
+      },
+      plugins: [...internalPlugins, ...(options.vite?.plugins ?? [])],
+      server: { host: "::", port: 8080 },
+    };
+
+    if (options.vite) {
+      config = mergeConfig(config, options.vite);
+    }
+
+    return config;
+  };
+}

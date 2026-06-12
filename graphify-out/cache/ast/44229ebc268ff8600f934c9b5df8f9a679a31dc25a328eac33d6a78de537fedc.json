@@ -1,0 +1,59 @@
+{
+  "nodes": [
+    {
+      "id": "home_dev_lab_documents_github_matax_app_src_lib_engines_ibs_ts",
+      "label": "ibs.ts",
+      "file_type": "code",
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/engines/ibs.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "engines_ibs_calculateibs",
+      "label": "calculateIbs()",
+      "file_type": "code",
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/engines/ibs.ts",
+      "source_location": "L50"
+    }
+  ],
+  "edges": [
+    {
+      "source": "home_dev_lab_documents_github_matax_app_src_lib_engines_ibs_ts",
+      "target": "engines_ibs_calculateibs",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/engines/ibs.ts",
+      "source_location": "L50",
+      "weight": 1.0
+    }
+  ],
+  "raw_calls": [
+    {
+      "caller_nid": "engines_ibs_calculateibs",
+      "callee": "max",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/engines/ibs.ts",
+      "source_location": "L52"
+    },
+    {
+      "caller_nid": "engines_ibs_calculateibs",
+      "callee": "max",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/engines/ibs.ts",
+      "source_location": "L54"
+    },
+    {
+      "caller_nid": "engines_ibs_calculateibs",
+      "callee": "max",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/engines/ibs.ts",
+      "source_location": "L55"
+    },
+    {
+      "caller_nid": "engines_ibs_calculateibs",
+      "callee": "max",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/engines/ibs.ts",
+      "source_location": "L56"
+    }
+  ]
+}

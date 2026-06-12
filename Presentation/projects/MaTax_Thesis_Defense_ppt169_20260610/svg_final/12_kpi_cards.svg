@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720">
+  
+  <rect width="1280" height="720" fill="#FFFFFF" />
+  
+  
+  <rect x="0" y="0" width="1280" height="70" fill="#003366" />
+  <rect x="0" y="0" width="6" height="70" fill="#CC0000" />
+  <text x="40" y="46" fill="#FFFFFF" font-family="Microsoft YaHei, Arial, sans-serif" font-size="28" font-weight="bold">
+    04 | الدراسة المالية — مؤشرات الأداء الرئيسية
+  </text>
+  <text x="1220" y="46" text-anchor="end" fill="#FFFFFF" font-family="Georgia, Microsoft YaHei, serif" font-size="18" font-weight="bold">MATAX</text>
+  
+  
+  <rect x="0" y="70" width="1280" height="50" fill="#F0F4F8" />
+  <rect x="0" y="70" width="6" height="50" fill="#0066CC" />
+  <text x="40" y="102" fill="#1E293B" font-family="Microsoft YaHei, Arial, sans-serif" font-size="18">
+    MATAX حقق نتائج استثنائية: VAN +143.3M | DR 6m | BEP 2 months
+  </text>
+  
+  
+  
+  
+  <path fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1" d="M72,140 H418 A12,12 0 0 1 430,152 V358 A12,12 0 0 1 418,370 H72 A12,12 0 0 1 60,358 V152 A12,12 0 0 1 72,140 Z" />
+  <path fill="#16A34A" d="M65,140 H425 A5,5 0 0 1 430,145 V145 A5,5 0 0 1 425,150 H65 A5,5 0 0 1 60,145 V145 A5,5 0 0 1 65,140 Z" />
+  <text x="245" y="215" text-anchor="middle" fill="#16A34A" font-family="Georgia, Microsoft YaHei, serif" font-size="56" font-weight="bold">+143.3M</text>
+  <text x="245" y="260" text-anchor="middle" fill="#1E293B" font-family="Microsoft YaHei, Arial, sans-serif" font-size="18" font-weight="bold">القيمة المضافة الصافية (VAN)</text>
+  <text x="245" y="290" text-anchor="middle" fill="#64748B" font-family="Microsoft YaHei, Arial, sans-serif" font-size="14">التدفقات النقدية التراكمية على 3 سنوات</text>
+  <text x="245" y="340" text-anchor="middle" fill="#16A34A" font-family="Microsoft YaHei, Arial, sans-serif" font-size="16" font-weight="bold">العائد على الاستثمار: 617%</text>
+  
+  
+  <path fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1" d="M467,140 H813 A12,12 0 0 1 825,152 V358 A12,12 0 0 1 813,370 H467 A12,12 0 0 1 455,358 V152 A12,12 0 0 1 467,140 Z" />
+  <path fill="#0066CC" d="M460,140 H820 A5,5 0 0 1 825,145 V145 A5,5 0 0 1 820,150 H460 A5,5 0 0 1 455,145 V145 A5,5 0 0 1 460,140 Z" />
+  <text x="640" y="215" text-anchor="middle" fill="#0066CC" font-family="Georgia, Microsoft YaHei, serif" font-size="56" font-weight="bold">6m</text>
+  <text x="640" y="260" text-anchor="middle" fill="#1E293B" font-family="Microsoft YaHei, Arial, sans-serif" font-size="18" font-weight="bold">معدل الخصم الداخلي (DR)</text>
+  <text x="640" y="290" text-anchor="middle" fill="#64748B" font-family="Microsoft YaHei, Arial, sans-serif" font-size="14">التعافي السريع جداً للاستثمار</text>
+  <text x="640" y="340" text-anchor="middle" fill="#0066CC" font-family="Microsoft YaHei, Arial, sans-serif" font-size="16" font-weight="bold">أقل من 6 أشهر</text>
+  
+  
+  <path fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1" d="M862,140 H1208 A12,12 0 0 1 1220,152 V358 A12,12 0 0 1 1208,370 H862 A12,12 0 0 1 850,358 V152 A12,12 0 0 1 862,140 Z" />
+  <path fill="#0891B2" d="M855,140 H1215 A5,5 0 0 1 1220,145 V145 A5,5 0 0 1 1215,150 H855 A5,5 0 0 1 850,145 V145 A5,5 0 0 1 855,140 Z" />
+  <text x="1035" y="215" text-anchor="middle" fill="#0891B2" font-family="Georgia, Microsoft YaHei, serif" font-size="56" font-weight="bold">30</text>
+  <text x="1035" y="260" text-anchor="middle" fill="#1E293B" font-family="Microsoft YaHei, Arial, sans-serif" font-size="18" font-weight="bold">نقطة التعادل (BEP)</text>
+  <text x="1035" y="290" text-anchor="middle" fill="#64748B" font-family="Microsoft YaHei, Arial, sans-serif" font-size="14">الشهر 2 فقط</text>
+  <text x="1035" y="340" text-anchor="middle" fill="#0891B2" font-family="Microsoft YaHei, Arial, sans-serif" font-size="16" font-weight="bold">30 عميل للتعادل</text>
+  
+  
+  
+  <path fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1" d="M72,395 H418 A12,12 0 0 1 430,407 V613 A12,12 0 0 1 418,625 H72 A12,12 0 0 1 60,613 V407 A12,12 0 0 1 72,395 Z" />
+  <path fill="#7C3AED" d="M65,395 H425 A5,5 0 0 1 430,400 V400 A5,5 0 0 1 425,405 H65 A5,5 0 0 1 60,400 V400 A5,5 0 0 1 65,395 Z" />
+  <text x="245" y="470" text-anchor="middle" fill="#7C3AED" font-family="Georgia, Microsoft YaHei, serif" font-size="56" font-weight="bold">63.4%</text>
+  <text x="245" y="515" text-anchor="middle" fill="#1E293B" font-family="Microsoft YaHei, Arial, sans-serif" font-size="18" font-weight="bold">هامش الربح التشغيلي (OM)</text>
+  <text x="245" y="545" text-anchor="middle" fill="#64748B" font-family="Microsoft YaHei, Arial, sans-serif" font-size="14">هامش صافي مرتفع جداً</text>
+  <text x="245" y="595" text-anchor="middle" fill="#7C3AED" font-family="Microsoft YaHei, Arial, sans-serif" font-size="16" font-weight="bold">+63.4% صافي الربح</text>
+  
+  
+  <path fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1" d="M467,395 H813 A12,12 0 0 1 825,407 V613 A12,12 0 0 1 813,625 H467 A12,12 0 0 1 455,613 V407 A12,12 0 0 1 467,395 Z" />
+  <path fill="#EA580C" d="M460,395 H820 A5,5 0 0 1 825,400 V400 A5,5 0 0 1 820,405 H460 A5,5 0 0 1 455,400 V400 A5,5 0 0 1 460,395 Z" />
+  <text x="640" y="470" text-anchor="middle" fill="#EA580C" font-family="Georgia, Microsoft YaHei, serif" font-size="56" font-weight="bold">3.88M</text>
+  <text x="640" y="515" text-anchor="middle" fill="#1E293B" font-family="Microsoft YaHei, Arial, sans-serif" font-size="18" font-weight="bold">التمويل المطلوب (CAPEX)</text>
+  <text x="640" y="545" text-anchor="middle" fill="#64748B" font-family="Microsoft YaHei, Arial, sans-serif" font-size="14">التكاليف الثابتة المتغيرة</text>
+  <text x="640" y="595" text-anchor="middle" fill="#EA580C" font-family="Microsoft YaHei, Arial, sans-serif" font-size="16" font-weight="bold">أقل من 4M دج</text>
+  
+  
+  <path fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1" d="M862,395 H1208 A12,12 0 0 1 1220,407 V613 A12,12 0 0 1 1208,625 H862 A12,12 0 0 1 850,613 V407 A12,12 0 0 1 862,395 Z" />
+  <path fill="#DC2626" d="M855,395 H1215 A5,5 0 0 1 1220,400 V400 A5,5 0 0 1 1215,405 H855 A5,5 0 0 1 850,400 V400 A5,5 0 0 1 855,395 Z" />
+  <text x="1035" y="470" text-anchor="middle" fill="#DC2626" font-family="Georgia, Microsoft YaHei, serif" font-size="56" font-weight="bold">960</text>
+  <text x="1035" y="515" text-anchor="middle" fill="#1E293B" font-family="Microsoft YaHei, Arial, sans-serif" font-size="18" font-weight="bold">العملاء المستهدفون (السنة 1)</text>
+  <text x="1035" y="545" text-anchor="middle" fill="#64748B" font-family="Microsoft YaHei, Arial, sans-serif" font-size="14">النمو المتوقع خلال 12 شهر</text>
+  <text x="1035" y="595" text-anchor="middle" fill="#DC2626" font-family="Microsoft YaHei, Arial, sans-serif" font-size="16" font-weight="bold">80 عميل/شهر</text>
+  
+  
+  <line x1="40" y1="645" x2="1240" y2="645" stroke="#E2E8F0" stroke-width="1" />
+  <text x="40" y="675" fill="#94A3B8" font-family="Microsoft YaHei, Arial, sans-serif" font-size="12">المصدر: دراسة المشروع</text>
+  <text x="640" y="675" text-anchor="middle" fill="#94A3B8" font-family="Microsoft YaHei, Arial, sans-serif" font-size="12">مؤشرات الأداء الرئيسية</text>
+  <text x="1220" y="675" text-anchor="end" fill="#64748B" font-family="Microsoft YaHei, Arial, sans-serif" font-size="14">12</text>
+</svg>

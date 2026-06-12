@@ -108,15 +108,11 @@ export function ObligationCalendar() {
         : ["Lun", "Mar", "Mer", "Jeu", "Ven", "Sam", "Dim"];
 
   const statusDot = (s: Status) =>
-    s === "submitted"
-      ? "bg-success"
-      : s === "upcoming"
-        ? "bg-warning"
-        : "bg-destructive";
+    s === "submitted" ? "bg-success" : s === "upcoming" ? "bg-warning" : "bg-destructive";
 
   return (
     <div className="surface-card space-y-4">
-      <div className="flex items-center justify-between">
+      <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
         <h2 className="title-text">{t("calendar.title")}</h2>
         <div className="flex flex-wrap items-center gap-3 text-xs text-ink-muted">
           <Legend dotClass="bg-success" label={t("calendar.legend_submitted")} />
@@ -199,7 +195,10 @@ export function ObligationCalendar() {
                         { day: "2-digit", month: "long", year: "numeric" },
                       )}
                       {o.status === "upcoming" && diff >= 0 ? (
-                        <span> · {t("calendar.in")} {diff} {t("calendar.days")}</span>
+                        <span>
+                          {" "}
+                          · {t("calendar.in")} {diff} {t("calendar.days")}
+                        </span>
                       ) : null}
                       {o.status === "overdue" ? (
                         <span className="text-destructive"> · {o.note}</span>

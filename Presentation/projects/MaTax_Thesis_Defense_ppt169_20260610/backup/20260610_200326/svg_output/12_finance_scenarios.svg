@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720">
+  <rect width="1280" height="720" fill="#FFFFFF"/>
+  <rect x="0" y="0" width="1280" height="70" fill="#00527F"/>
+  <rect x="0" y="0" width="6" height="70" fill="#D62828"/>
+  <text x="40" y="46" fill="#FFFFFF" font-family="Montserrat, Arial, sans-serif" font-size="28" font-weight="bold">04 | تحليل السيناريوهات والمخاطر</text>
+  <text x="1220" y="46" text-anchor="end" fill="#FFFFFF" font-family="Montserrat, Arial, sans-serif" font-size="18" font-weight="bold">MATAX</text>
+  
+  <rect x="0" y="70" width="1280" height="50" fill="#F8FAFC"/>
+  <rect x="0" y="70" width="6" height="50" fill="#F77F00"/>
+  <text x="40" y="102" fill="#1E293B" font-family="Montserrat, Arial, sans-serif" font-size="18">3 سيناريوهات: متفائل (+20%) | واقعي | متشائم (-20%)</text>
+  
+  <!-- Scenario table -->
+  <rect x="60" y="140" width="1160" height="340" fill="#F8FAFC" rx="12" stroke="#E2E8F0" stroke-width="1"/>
+  <rect x="60" y="140" width="1160" height="50" fill="#00527F" rx="12"/>
+  <rect x="60" y="180" width="1160" height="10" fill="#00527F"/>
+  
+  <text x="200" y="174" text-anchor="middle" fill="#FFFFFF" font-family="Montserrat, Arial, sans-serif" font-size="16" font-weight="bold">المؤشر</text>
+  <text x="430" y="174" text-anchor="middle" fill="#FFFFFF" font-family="Montserrat, Arial, sans-serif" font-size="16" font-weight="bold">متفائل (+20%)</text>
+  <text x="640" y="174" text-anchor="middle" fill="#FFFFFF" font-family="Montserrat, Arial, sans-serif" font-size="16" font-weight="bold">واقعي</text>
+  <text x="850" y="174" text-anchor="middle" fill="#FFFFFF" font-family="Montserrat, Arial, sans-serif" font-size="16" font-weight="bold">متشائم (-20%)</text>
+  <text x="1060" y="174" text-anchor="middle" fill="#FFFFFF" font-family="Montserrat, Arial, sans-serif" font-size="16" font-weight="bold">ملاحظة</text>
+  
+  <!-- Row 1 -->
+  <rect x="80" y="210" width="1120" height="42" fill="#FFFFFF" rx="4"/>
+  <text x="200" y="238" text-anchor="middle" fill="#44546A" font-family="Lato Light, Arial, sans-serif" font-size="14">العملاء Year 1</text>
+  <text x="430" y="238" text-anchor="middle" fill="#16A34A" font-family="Montserrat, Arial, sans-serif" font-size="14" font-weight="bold">2,190</text>
+  <text x="640" y="238" text-anchor="middle" fill="#00527F" font-family="Montserrat, Arial, sans-serif" font-size="14" font-weight="bold">1,515</text>
+  <text x="850" y="238" text-anchor="middle" fill="#D62828" font-family="Montserrat, Arial, sans-serif" font-size="14" font-weight="bold">1,212</text>
+  <text x="1060" y="238" text-anchor="middle" fill="#44546A" font-family="Lato Light, Arial, sans-serif" font-size="13">الحد الأدنى مقبول: 1,212</text>
+  
+  <!-- Row 2 -->
+  <rect x="80" y="260" width="1120" height="42" fill="#F8FAFC" rx="4"/>
+  <text x="200" y="288" text-anchor="middle" fill="#44546A" font-family="Lato Light, Arial, sans-serif" font-size="14">CA Year 1</text>
+  <text x="430" y="288" text-anchor="middle" fill="#16A34A" font-family="Montserrat, Arial, sans-serif" font-size="14" font-weight="bold">11,520,000</text>
+  <text x="640" y="288" text-anchor="middle" fill="#00527F" font-family="Montserrat, Arial, sans-serif" font-size="14" font-weight="bold">9,600,000</text>
+  <text x="850" y="288" text-anchor="middle" fill="#D62828" font-family="Montserrat, Arial, sans-serif" font-size="14" font-weight="bold">7,680,000</text>
+  <text x="1060" y="288" text-anchor="middle" fill="#44546A" font-family="Lato Light, Arial, sans-serif" font-size="13">CA = clients × ARPU × 12</text>
+  
+  <!-- Row 3 -->
+  <rect x="80" y="310" width="1120" height="42" fill="#FFFFFF" rx="4"/>
+  <text x="200" y="338" text-anchor="middle" fill="#44546A" font-family="Lato Light, Arial, sans-serif" font-size="14">Résultat net</text>
+  <text x="430" y="338" text-anchor="middle" fill="#16A34A" font-family="Montserrat, Arial, sans-serif" font-size="14" font-weight="bold">+5,405,500</text>
+  <text x="640" y="338" text-anchor="middle" fill="#00527F" font-family="Montserrat, Arial, sans-serif" font-size="14" font-weight="bold">+4,487,600</text>
+  <text x="850" y="338" text-anchor="middle" fill="#D62828" font-family="Montserrat, Arial, sans-serif" font-size="14" font-weight="bold">+3,543,400</text>
+  <text x="1060" y="338" text-anchor="middle" fill="#16A34A" font-family="Montserrat, Arial, sans-serif" font-size="13">إيجابي في كل السيناريوهات</text>
+  
+  <!-- Row 4 -->
+  <rect x="80" y="360" width="1120" height="42" fill="#F8FAFC" rx="4"/>
+  <text x="200" y="388" text-anchor="middle" fill="#44546A" font-family="Lato Light, Arial, sans-serif" font-size="14">Trésorerie</text>
+  <text x="430" y="388" text-anchor="middle" fill="#16A34A" font-family="Montserrat, Arial, sans-serif" font-size="14" font-weight="bold">+1,878,700</text>
+  <text x="640" y="388" text-anchor="middle" fill="#00527F" font-family="Montserrat, Arial, sans-serif" font-size="14" font-weight="bold">+1,565,600</text>
+  <text x="850" y="388" text-anchor="middle" fill="#D62828" font-family="Montserrat, Arial, sans-serif" font-size="14" font-weight="bold">+1,239,600</text>
+  <text x="1060" y="388" text-anchor="middle" fill="#16A34A" font-family="Montserrat, Arial, sans-serif" font-size="13">تدفق نقدي إيجابي دائماً</text>
+  
+  <!-- Row 5 -->
+  <rect x="80" y="410" width="1120" height="42" fill="#FFFFFF" rx="4"/>
+  <text x="200" y="438" text-anchor="middle" fill="#44546A" font-family="Lato Light, Arial, sans-serif" font-size="14">Marge Nette</text>
+  <text x="430" y="438" text-anchor="middle" fill="#16A34A" font-family="Montserrat, Arial, sans-serif" font-size="14" font-weight="bold">46.9%</text>
+  <text x="640" y="438" text-anchor="middle" fill="#00527F" font-family="Montserrat, Arial, sans-serif" font-size="14" font-weight="bold">46.7%</text>
+  <text x="850" y="438" text-anchor="middle" fill="#D62828" font-family="Montserrat, Arial, sans-serif" font-size="14" font-weight="bold">46.1%</text>
+  <text x="1060" y="438" text-anchor="middle" fill="#44546A" font-family="Lato Light, Arial, sans-serif" font-size="13">مستقر >= 46%</text>
+  
+  <!-- Row 6 -->
+  <rect x="80" y="460" width="1120" height="42" fill="#F8FAFC" rx="4"/>
+  <text x="200" y="488" text-anchor="middle" fill="#44546A" font-family="Lato Light, Arial, sans-serif" font-size="14">Délai récupération</text>
+  <text x="430" y="488" text-anchor="middle" fill="#16A34A" font-family="Montserrat, Arial, sans-serif" font-size="14" font-weight="bold">1 ans 7 mois</text>
+  <text x="640" y="488" text-anchor="middle" fill="#00527F" font-family="Montserrat, Arial, sans-serif" font-size="14" font-weight="bold">1 ans 9 mois</text>
+  <text x="850" y="488" text-anchor="middle" fill="#D62828" font-family="Montserrat, Arial, sans-serif" font-size="14" font-weight="bold">1 ans 11 mois</text>
+  <text x="1060" y="488" text-anchor="middle" fill="#16A34A" font-family="Montserrat, Arial, sans-serif" font-size="13">&lt; 2 سنوات دائماً</text>
+  
+  <!-- Risk cards -->
+  <rect x="60" y="510" width="570" height="170" fill="#FFF5F5" rx="10" stroke="#FECACA" stroke-width="1"/>
+  <rect x="60" y="510" width="6" height="170" fill="#D62828" rx="3"/>
+  <text x="100" y="540" fill="#D62828" font-family="Montserrat, Arial, sans-serif" font-size="15" font-weight="bold">المخاطر الرئيسية</text>
+  <text x="100" y="570" fill="#44546A" font-family="Lato Light, Arial, sans-serif" font-size="13">• التأخر عن السوق (slow adoption)</text>
+  <text x="100" y="595" fill="#44546A" font-family="Lato Light, Arial, sans-serif" font-size="13">• تغييرات تشريعية مفاجئة</text>
+  <text x="100" y="620" fill="#44546A" font-family="Lato Light, Arial, sans-serif" font-size="13">• منافسة من مكاتب محاسبة تقليدية</text>
+  <text x="100" y="645" fill="#44546A" font-family="Lato Light, Arial, sans-serif" font-size="13">• بنية تحتية تقنية في الجزائر</text>
+  
+  <rect x="650" y="510" width="570" height="170" fill="#F0FDF4" rx="10" stroke="#BBF7D0" stroke-width="1"/>
+  <rect x="650" y="510" width="6" height="170" fill="#16A34A" rx="3"/>
+  <text x="690" y="540" fill="#16A34A" font-family="Montserrat, Arial, sans-serif" font-size="15" font-weight="bold">نقاط القوة</text>
+  <text x="690" y="570" fill="#44546A" font-family="Lato Light, Arial, sans-serif" font-size="13">• إيجابي في كل السيناريوهات</text>
+  <text x="690" y="595" fill="#44546A" font-family="Lato Light, Arial, sans-serif" font-size="13">• هامش ربح عالي ومستقر</text>
+  <text x="690" y="620" fill="#44546A" font-family="Lato Light, Arial, sans-serif" font-size="13">• نموذج SaaS قابل للتوسع</text>
+  <text x="690" y="645" fill="#44546A" font-family="Lato Light, Arial, sans-serif" font-size="13">• CLV/CAC = 10.6x ممتاز</text>
+  
+  <line x1="40" y1="700" x2="1240" y2="700" stroke="#E2E8F0" stroke-width="1"/>
+  <text x="40" y="718" fill="#94A3B8" font-family="Lato Light, Arial, sans-serif" font-size="12">المصدر: PRODUCT.md - تحليل السيناريوهات</text>
+  <text x="640" y="718" text-anchor="middle" fill="#94A3B8" font-family="Lato Light, Arial, sans-serif" font-size="12">تحليل السيناريوهات والمخاطر</text>
+  <text x="1220" y="718" text-anchor="end" fill="#44546A" font-family="Montserrat, Arial, sans-serif" font-size="14">12</text>
+</svg>

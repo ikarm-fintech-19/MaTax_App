@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720">
+  <!-- Background -->
+  <rect width="1280" height="720" fill="#FFFFFF"/>
+  
+  <!-- Header -->
+  <rect x="0" y="0" width="1280" height="70" fill="#003366"/>
+  <rect x="0" y="0" width="6" height="70" fill="#CC0000"/>
+  <text x="40" y="46" fill="#FFFFFF" font-family="Microsoft YaHei, Arial, sans-serif" font-size="28" font-weight="bold">
+    فهرس المحتويات
+  </text>
+  <text x="1200" y="46" text-anchor="end" fill="#FFFFFF" font-family="Georgia, Microsoft YaHei, serif" font-size="18" font-weight="bold">MATAX</text>
+  
+  <!-- TOC Item 01 -->
+  <rect x="80" y="100" width="540" height="95" fill="#F8FAFC" rx="10" stroke="#E2E8F0" stroke-width="1"/>
+  <rect x="80" y="100" width="6" height="95" fill="#003366" rx="3"/>
+  <text x="120" y="148" fill="#003366" font-family="Georgia, Microsoft YaHei, serif" font-size="40" font-weight="bold">01</text>
+  <text x="185" y="148" fill="#1E293B" font-family="Microsoft YaHei, Arial, sans-serif" font-size="22" font-weight="bold">المشكلة والحل المقترح</text>
+  <text x="120" y="178" fill="#64748B" font-family="Microsoft YaHei, Arial, sans-serif" font-size="14">تعقيد الإجراءات الجبائية وأهمية الحلول الرقمية</text>
+  
+  <!-- TOC Item 02 -->
+  <rect x="660" y="100" width="540" height="95" fill="#F8FAFC" rx="10" stroke="#E2E8F0" stroke-width="1"/>
+  <rect x="660" y="100" width="6" height="95" fill="#003366" rx="3"/>
+  <text x="700" y="148" fill="#003366" font-family="Georgia, Microsoft YaHei, serif" font-size="40" font-weight="bold">02</text>
+  <text x="765" y="148" fill="#1E293B" font-family="Microsoft YaHei, Arial, sans-serif" font-size="22" font-weight="bold">الجوانب الابتكارية</text>
+  <text x="700" y="178" fill="#64748B" font-family="Microsoft YaHei, Arial, sans-serif" font-size="14">ما يميز MATAX عن الحلول التقليدية</text>
+  
+  <!-- TOC Item 03 -->
+  <rect x="80" y="215" width="540" height="95" fill="#F8FAFC" rx="10" stroke="#E2E8F0" stroke-width="1"/>
+  <rect x="80" y="215" width="6" height="95" fill="#0066CC" rx="3"/>
+  <text x="120" y="263" fill="#003366" font-family="Georgia, Microsoft YaHei, serif" font-size="40" font-weight="bold">03</text>
+  <text x="185" y="263" fill="#1E293B" font-family="Microsoft YaHei, Arial, sans-serif" font-size="22" font-weight="bold">السوق والنموذج التجاري</text>
+  <text x="120" y="293" fill="#64748B" font-family="Microsoft YaHei, Arial, sans-serif" font-size="14">السوق المستهدف ومصادر الإيرادات</text>
+  
+  <!-- TOC Item 04 -->
+  <rect x="660" y="215" width="540" height="95" fill="#F8FAFC" rx="10" stroke="#E2E8F0" stroke-width="1"/>
+  <rect x="660" y="215" width="6" height="95" fill="#0066CC" rx="3"/>
+  <text x="700" y="263" fill="#003366" font-family="Georgia, Microsoft YaHei, serif" font-size="40" font-weight="bold">04</text>
+  <text x="765" y="263" fill="#1E293B" font-family="Microsoft YaHei, Arial, sans-serif" font-size="22" font-weight="bold">الدراسة المالية</text>
+  <text x="700" y="293" fill="#64748B" font-family="Microsoft YaHei, Arial, sans-serif" font-size="14">الجدوى المالية ومؤشرات الأداء</text>
+  
+  <!-- TOC Item 05 -->
+  <rect x="80" y="330" width="540" height="95" fill="#F8FAFC" rx="10" stroke="#E2E8F0" stroke-width="1"/>
+  <rect x="80" y="330" width="6" height="95" fill="#0099AA" rx="3"/>
+  <text x="120" y="378" fill="#003366" font-family="Georgia, Microsoft YaHei, serif" font-size="40" font-weight="bold">05</text>
+  <text x="185" y="378" fill="#1E293B" font-family="Microsoft YaHei, Arial, sans-serif" font-size="22" font-weight="bold">النموذج التجريبي</text>
+  <text x="120" y="408" fill="#64748B" font-family="Microsoft YaHei, Arial, sans-serif" font-size="14">عرض المنصة والخصائص الرئيسية</text>
+  
+  <!-- TOC Item 06 -->
+  <rect x="660" y="330" width="540" height="95" fill="#F8FAFC" rx="10" stroke="#E2E8F0" stroke-width="1"/>
+  <rect x="660" y="330" width="6" height="95" fill="#0099AA" rx="3"/>
+  <text x="700" y="378" fill="#003366" font-family="Georgia, Microsoft YaHei, serif" font-size="40" font-weight="bold">06</text>
+  <text x="765" y="378" fill="#1E293B" font-family="Microsoft YaHei, Arial, sans-serif" font-size="22" font-weight="bold">المراحل التنفيذية</text>
+  <text x="700" y="408" fill="#64748B" font-family="Microsoft YaHei, Arial, sans-serif" font-size="14">خطة العمل والخريطة الزمنية</text>
+  
+  <!-- Footer -->
+  <line x1="40" y1="460" x2="1240" y2="460" stroke="#E2E8F0" stroke-width="1"/>
+  
+  <!-- Bottom decorative element -->
+  <rect x="440" y="480" width="400" height="40" fill="#F8FAFC" rx="8"/>
+  <text x="640" y="506" text-anchor="middle" fill="#94A3B8" font-family="Microsoft YaHei, Arial, sans-serif" font-size="14">مدة العرض: 15 دقيقة</text>
+  
+  <text x="1220" y="698" text-anchor="end" fill="#64748B" font-family="Microsoft YaHei, Arial, sans-serif" font-size="14">02</text>
+</svg>

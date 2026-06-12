@@ -1,0 +1,52 @@
+{
+  "nodes": [
+    {
+      "id": "home_dev_lab_documents_github_matax_app_src_lib_engines_withholding_ts",
+      "label": "withholding.ts",
+      "file_type": "code",
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/engines/withholding.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "engines_withholding_calculatewithholding",
+      "label": "calculateWithholding()",
+      "file_type": "code",
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/engines/withholding.ts",
+      "source_location": "L96"
+    }
+  ],
+  "edges": [
+    {
+      "source": "home_dev_lab_documents_github_matax_app_src_lib_engines_withholding_ts",
+      "target": "engines_withholding_calculatewithholding",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/engines/withholding.ts",
+      "source_location": "L96",
+      "weight": 1.0
+    }
+  ],
+  "raw_calls": [
+    {
+      "caller_nid": "engines_withholding_calculatewithholding",
+      "callee": "map",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/engines/withholding.ts",
+      "source_location": "L97"
+    },
+    {
+      "caller_nid": "engines_withholding_calculatewithholding",
+      "callee": "reduce",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/engines/withholding.ts",
+      "source_location": "L103"
+    },
+    {
+      "caller_nid": "engines_withholding_calculatewithholding",
+      "callee": "reduce",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/engines/withholding.ts",
+      "source_location": "L104"
+    }
+  ]
+}

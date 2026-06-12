@@ -1,0 +1,274 @@
+{
+  "nodes": [
+    {
+      "id": "home_dev_lab_documents_github_matax_app_src_routetree_gen_ts",
+      "label": "routeTree.gen.ts",
+      "file_type": "code",
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/routeTree.gen.ts",
+      "source_location": "L1"
+    }
+  ],
+  "edges": [
+    {
+      "source": "home_dev_lab_documents_github_matax_app_src_routetree_gen_ts",
+      "target": "home_dev_lab_documents_github_matax_app_src_routes_root",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/routeTree.gen.ts",
+      "source_location": "L11",
+      "weight": 1.0
+    },
+    {
+      "source": "home_dev_lab_documents_github_matax_app_src_routetree_gen_ts",
+      "target": "routes_root_route",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/routeTree.gen.ts",
+      "source_location": "L11",
+      "weight": 1.0
+    },
+    {
+      "source": "home_dev_lab_documents_github_matax_app_src_routetree_gen_ts",
+      "target": "home_dev_lab_documents_github_matax_app_src_routes_login",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/routeTree.gen.ts",
+      "source_location": "L12",
+      "weight": 1.0
+    },
+    {
+      "source": "home_dev_lab_documents_github_matax_app_src_routetree_gen_ts",
+      "target": "routes_login_route",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/routeTree.gen.ts",
+      "source_location": "L12",
+      "weight": 1.0
+    },
+    {
+      "source": "home_dev_lab_documents_github_matax_app_src_routetree_gen_ts",
+      "target": "home_dev_lab_documents_github_matax_app_src_routes_app",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/routeTree.gen.ts",
+      "source_location": "L13",
+      "weight": 1.0
+    },
+    {
+      "source": "home_dev_lab_documents_github_matax_app_src_routetree_gen_ts",
+      "target": "routes_app_route",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/routeTree.gen.ts",
+      "source_location": "L13",
+      "weight": 1.0
+    },
+    {
+      "source": "home_dev_lab_documents_github_matax_app_src_routetree_gen_ts",
+      "target": "home_dev_lab_documents_github_matax_app_src_routes_index",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/routeTree.gen.ts",
+      "source_location": "L14",
+      "weight": 1.0
+    },
+    {
+      "source": "home_dev_lab_documents_github_matax_app_src_routetree_gen_ts",
+      "target": "routes_index_route",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/routeTree.gen.ts",
+      "source_location": "L14",
+      "weight": 1.0
+    },
+    {
+      "source": "home_dev_lab_documents_github_matax_app_src_routetree_gen_ts",
+      "target": "home_dev_lab_documents_github_matax_app_src_routes_app_withholding",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/routeTree.gen.ts",
+      "source_location": "L15",
+      "weight": 1.0
+    },
+    {
+      "source": "home_dev_lab_documents_github_matax_app_src_routetree_gen_ts",
+      "target": "app_withholding_route",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/routeTree.gen.ts",
+      "source_location": "L15",
+      "weight": 1.0
+    },
+    {
+      "source": "home_dev_lab_documents_github_matax_app_src_routetree_gen_ts",
+      "target": "home_dev_lab_documents_github_matax_app_src_routes_app_tfpc",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/routeTree.gen.ts",
+      "source_location": "L16",
+      "weight": 1.0
+    },
+    {
+      "source": "home_dev_lab_documents_github_matax_app_src_routetree_gen_ts",
+      "target": "app_tfpc_route",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/routeTree.gen.ts",
+      "source_location": "L16",
+      "weight": 1.0
+    },
+    {
+      "source": "home_dev_lab_documents_github_matax_app_src_routetree_gen_ts",
+      "target": "home_dev_lab_documents_github_matax_app_src_routes_app_settings",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/routeTree.gen.ts",
+      "source_location": "L17",
+      "weight": 1.0
+    },
+    {
+      "source": "home_dev_lab_documents_github_matax_app_src_routetree_gen_ts",
+      "target": "app_settings_route",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/routeTree.gen.ts",
+      "source_location": "L17",
+      "weight": 1.0
+    },
+    {
+      "source": "home_dev_lab_documents_github_matax_app_src_routetree_gen_ts",
+      "target": "home_dev_lab_documents_github_matax_app_src_routes_app_irg",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/routeTree.gen.ts",
+      "source_location": "L18",
+      "weight": 1.0
+    },
+    {
+      "source": "home_dev_lab_documents_github_matax_app_src_routetree_gen_ts",
+      "target": "app_irg_route",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/routeTree.gen.ts",
+      "source_location": "L18",
+      "weight": 1.0
+    },
+    {
+      "source": "home_dev_lab_documents_github_matax_app_src_routetree_gen_ts",
+      "target": "home_dev_lab_documents_github_matax_app_src_routes_app_ibs",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/routeTree.gen.ts",
+      "source_location": "L19",
+      "weight": 1.0
+    },
+    {
+      "source": "home_dev_lab_documents_github_matax_app_src_routetree_gen_ts",
+      "target": "app_ibs_route",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/routeTree.gen.ts",
+      "source_location": "L19",
+      "weight": 1.0
+    },
+    {
+      "source": "home_dev_lab_documents_github_matax_app_src_routetree_gen_ts",
+      "target": "home_dev_lab_documents_github_matax_app_src_routes_app_g50",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/routeTree.gen.ts",
+      "source_location": "L20",
+      "weight": 1.0
+    },
+    {
+      "source": "home_dev_lab_documents_github_matax_app_src_routetree_gen_ts",
+      "target": "app_g50_route",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/routeTree.gen.ts",
+      "source_location": "L20",
+      "weight": 1.0
+    },
+    {
+      "source": "home_dev_lab_documents_github_matax_app_src_routetree_gen_ts",
+      "target": "home_dev_lab_documents_github_matax_app_src_routes_app_dashboard",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/routeTree.gen.ts",
+      "source_location": "L21",
+      "weight": 1.0
+    },
+    {
+      "source": "home_dev_lab_documents_github_matax_app_src_routetree_gen_ts",
+      "target": "app_dashboard_route",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/routeTree.gen.ts",
+      "source_location": "L21",
+      "weight": 1.0
+    },
+    {
+      "source": "home_dev_lab_documents_github_matax_app_src_routetree_gen_ts",
+      "target": "home_dev_lab_documents_github_matax_app_src_router_tsx",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/routeTree.gen.ts",
+      "source_location": "L257",
+      "weight": 1.0
+    },
+    {
+      "source": "home_dev_lab_documents_github_matax_app_src_routetree_gen_ts",
+      "target": "src_router_getrouter",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/routeTree.gen.ts",
+      "source_location": "L257",
+      "weight": 1.0
+    },
+    {
+      "source": "home_dev_lab_documents_github_matax_app_src_routetree_gen_ts",
+      "target": "home_dev_lab_documents_github_matax_app_src_start_ts",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/routeTree.gen.ts",
+      "source_location": "L258",
+      "weight": 1.0
+    },
+    {
+      "source": "home_dev_lab_documents_github_matax_app_src_routetree_gen_ts",
+      "target": "src_start_startinstance",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/routeTree.gen.ts",
+      "source_location": "L258",
+      "weight": 1.0
+    }
+  ],
+  "raw_calls": []
+}

@@ -1,0 +1,319 @@
+{
+  "nodes": [
+    {
+      "id": "home_dev_lab_documents_github_matax_app_src_routes_login_tsx",
+      "label": "login.tsx",
+      "file_type": "code",
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/routes/login.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "routes_login_submitcredentials",
+      "label": "submitCredentials()",
+      "file_type": "code",
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/routes/login.tsx",
+      "source_location": "L35"
+    },
+    {
+      "id": "routes_login_handleemail",
+      "label": "handleEmail()",
+      "file_type": "code",
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/routes/login.tsx",
+      "source_location": "L58"
+    },
+    {
+      "id": "routes_login_handledemo",
+      "label": "handleDemo()",
+      "file_type": "code",
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/routes/login.tsx",
+      "source_location": "L63"
+    },
+    {
+      "id": "routes_login_handlegoogle",
+      "label": "handleGoogle()",
+      "file_type": "code",
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/routes/login.tsx",
+      "source_location": "L74"
+    }
+  ],
+  "edges": [
+    {
+      "source": "home_dev_lab_documents_github_matax_app_src_routes_login_tsx",
+      "target": "react_router",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/routes/login.tsx",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "home_dev_lab_documents_github_matax_app_src_routes_login_tsx",
+      "target": "react",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/routes/login.tsx",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "home_dev_lab_documents_github_matax_app_src_routes_login_tsx",
+      "target": "client",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/routes/login.tsx",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "home_dev_lab_documents_github_matax_app_src_routes_login_tsx",
+      "target": "lovable",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/routes/login.tsx",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "home_dev_lab_documents_github_matax_app_src_routes_login_tsx",
+      "target": "use_auth",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/routes/login.tsx",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "home_dev_lab_documents_github_matax_app_src_routes_login_tsx",
+      "target": "i18n",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/routes/login.tsx",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "home_dev_lab_documents_github_matax_app_src_routes_login_tsx",
+      "target": "language_switcher",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/routes/login.tsx",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "home_dev_lab_documents_github_matax_app_src_routes_login_tsx",
+      "target": "theme_toggle",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/routes/login.tsx",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "home_dev_lab_documents_github_matax_app_src_routes_login_tsx",
+      "target": "sonner",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/routes/login.tsx",
+      "source_location": "L9",
+      "weight": 1.0
+    },
+    {
+      "source": "home_dev_lab_documents_github_matax_app_src_routes_login_tsx",
+      "target": "routes_login_submitcredentials",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/routes/login.tsx",
+      "source_location": "L35",
+      "weight": 1.0
+    },
+    {
+      "source": "home_dev_lab_documents_github_matax_app_src_routes_login_tsx",
+      "target": "routes_login_handleemail",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/routes/login.tsx",
+      "source_location": "L58",
+      "weight": 1.0
+    },
+    {
+      "source": "home_dev_lab_documents_github_matax_app_src_routes_login_tsx",
+      "target": "routes_login_handledemo",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/routes/login.tsx",
+      "source_location": "L63",
+      "weight": 1.0
+    },
+    {
+      "source": "home_dev_lab_documents_github_matax_app_src_routes_login_tsx",
+      "target": "routes_login_handlegoogle",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/routes/login.tsx",
+      "source_location": "L74",
+      "weight": 1.0
+    },
+    {
+      "source": "routes_login_handleemail",
+      "target": "routes_login_submitcredentials",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/routes/login.tsx",
+      "source_location": "L60",
+      "weight": 1.0
+    }
+  ],
+  "raw_calls": [
+    {
+      "caller_nid": "routes_login_submitcredentials",
+      "callee": "error",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/routes/login.tsx",
+      "source_location": "L37"
+    },
+    {
+      "caller_nid": "routes_login_submitcredentials",
+      "callee": "t",
+      "is_member_call": false,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/routes/login.tsx",
+      "source_location": "L37"
+    },
+    {
+      "caller_nid": "routes_login_submitcredentials",
+      "callee": "setSubmitting",
+      "is_member_call": false,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/routes/login.tsx",
+      "source_location": "L40"
+    },
+    {
+      "caller_nid": "routes_login_submitcredentials",
+      "callee": "signUp",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/routes/login.tsx",
+      "source_location": "L43"
+    },
+    {
+      "caller_nid": "routes_login_submitcredentials",
+      "callee": "success",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/routes/login.tsx",
+      "source_location": "L48"
+    },
+    {
+      "caller_nid": "routes_login_submitcredentials",
+      "callee": "signInWithPassword",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/routes/login.tsx",
+      "source_location": "L50"
+    },
+    {
+      "caller_nid": "routes_login_submitcredentials",
+      "callee": "error",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/routes/login.tsx",
+      "source_location": "L54"
+    },
+    {
+      "caller_nid": "routes_login_submitcredentials",
+      "callee": "String",
+      "is_member_call": false,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/routes/login.tsx",
+      "source_location": "L54"
+    },
+    {
+      "caller_nid": "routes_login_submitcredentials",
+      "callee": "setSubmitting",
+      "is_member_call": false,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/routes/login.tsx",
+      "source_location": "L55"
+    },
+    {
+      "caller_nid": "routes_login_handleemail",
+      "callee": "preventDefault",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/routes/login.tsx",
+      "source_location": "L59"
+    },
+    {
+      "caller_nid": "routes_login_handledemo",
+      "callee": "setEmail",
+      "is_member_call": false,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/routes/login.tsx",
+      "source_location": "L64"
+    },
+    {
+      "caller_nid": "routes_login_handledemo",
+      "callee": "setPassword",
+      "is_member_call": false,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/routes/login.tsx",
+      "source_location": "L65"
+    },
+    {
+      "caller_nid": "routes_login_handledemo",
+      "callee": "info",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/routes/login.tsx",
+      "source_location": "L66"
+    },
+    {
+      "caller_nid": "routes_login_handledemo",
+      "callee": "t",
+      "is_member_call": false,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/routes/login.tsx",
+      "source_location": "L66"
+    },
+    {
+      "caller_nid": "routes_login_handledemo",
+      "callee": "setItem",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/routes/login.tsx",
+      "source_location": "L67"
+    },
+    {
+      "caller_nid": "routes_login_handledemo",
+      "callee": "setTimeout",
+      "is_member_call": false,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/routes/login.tsx",
+      "source_location": "L69"
+    },
+    {
+      "caller_nid": "routes_login_handlegoogle",
+      "callee": "setSubmitting",
+      "is_member_call": false,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/routes/login.tsx",
+      "source_location": "L75"
+    },
+    {
+      "caller_nid": "routes_login_handlegoogle",
+      "callee": "signInWithOAuth",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/routes/login.tsx",
+      "source_location": "L76"
+    },
+    {
+      "caller_nid": "routes_login_handlegoogle",
+      "callee": "error",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/routes/login.tsx",
+      "source_location": "L77"
+    },
+    {
+      "caller_nid": "routes_login_handlegoogle",
+      "callee": "setSubmitting",
+      "is_member_call": false,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/routes/login.tsx",
+      "source_location": "L77"
+    }
+  ]
+}

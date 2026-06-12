@@ -14,22 +14,19 @@ export type WithholdingKind =
   | "capital_gains_nonresident"; // 20%
 
 export const WITHHOLDING_RATES: Record<WithholdingKind, number> = {
-  dividends_resident_individual: 0.10,
+  dividends_resident_individual: 0.1,
   dividends_nonresident: 0.15,
   foreign_services: 0.24,
   foreign_royalties: 0.24,
   foreign_artists: 0.15,
-  interest_resident: 0.10,
+  interest_resident: 0.1,
   interest_savings_low: 0.01,
-  interest_savings_high: 0.10,
+  interest_savings_high: 0.1,
   capital_gains_resident: 0.15,
-  capital_gains_nonresident: 0.20,
+  capital_gains_nonresident: 0.2,
 };
 
-export const WITHHOLDING_LABELS: Record<
-  WithholdingKind,
-  { fr: string; ar: string; en: string }
-> = {
+export const WITHHOLDING_LABELS: Record<WithholdingKind, { fr: string; ar: string; en: string }> = {
   dividends_resident_individual: {
     fr: "Dividendes — personne physique résidente",
     ar: "أرباح موزعة - شخص طبيعي مقيم",

@@ -1,0 +1,219 @@
+{
+  "nodes": [
+    {
+      "id": "home_dev_lab_documents_github_matax_app_src_components_dashboard_obligation_calendar_tsx",
+      "label": "obligation-calendar.tsx",
+      "file_type": "code",
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/components/dashboard/obligation-calendar.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "dashboard_obligation_calendar_daysbetween",
+      "label": "daysBetween()",
+      "file_type": "code",
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/components/dashboard/obligation-calendar.tsx",
+      "source_location": "L17"
+    },
+    {
+      "id": "dashboard_obligation_calendar_buildmockobligations",
+      "label": "buildMockObligations()",
+      "file_type": "code",
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/components/dashboard/obligation-calendar.tsx",
+      "source_location": "L21"
+    },
+    {
+      "id": "dashboard_obligation_calendar_getupcomingalertscount",
+      "label": "getUpcomingAlertsCount()",
+      "file_type": "code",
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/components/dashboard/obligation-calendar.tsx",
+      "source_location": "L69"
+    },
+    {
+      "id": "dashboard_obligation_calendar_label",
+      "label": "label()",
+      "file_type": "code",
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/components/dashboard/obligation-calendar.tsx",
+      "source_location": "L100"
+    },
+    {
+      "id": "dashboard_obligation_calendar_statusdot",
+      "label": "statusDot()",
+      "file_type": "code",
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/components/dashboard/obligation-calendar.tsx",
+      "source_location": "L110"
+    }
+  ],
+  "edges": [
+    {
+      "source": "home_dev_lab_documents_github_matax_app_src_components_dashboard_obligation_calendar_tsx",
+      "target": "react",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/components/dashboard/obligation-calendar.tsx",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "home_dev_lab_documents_github_matax_app_src_components_dashboard_obligation_calendar_tsx",
+      "target": "i18n",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/components/dashboard/obligation-calendar.tsx",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "home_dev_lab_documents_github_matax_app_src_components_dashboard_obligation_calendar_tsx",
+      "target": "lucide_react",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/components/dashboard/obligation-calendar.tsx",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "home_dev_lab_documents_github_matax_app_src_components_dashboard_obligation_calendar_tsx",
+      "target": "dashboard_obligation_calendar_daysbetween",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/components/dashboard/obligation-calendar.tsx",
+      "source_location": "L17",
+      "weight": 1.0
+    },
+    {
+      "source": "home_dev_lab_documents_github_matax_app_src_components_dashboard_obligation_calendar_tsx",
+      "target": "dashboard_obligation_calendar_buildmockobligations",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/components/dashboard/obligation-calendar.tsx",
+      "source_location": "L21",
+      "weight": 1.0
+    },
+    {
+      "source": "home_dev_lab_documents_github_matax_app_src_components_dashboard_obligation_calendar_tsx",
+      "target": "dashboard_obligation_calendar_getupcomingalertscount",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/components/dashboard/obligation-calendar.tsx",
+      "source_location": "L69",
+      "weight": 1.0
+    },
+    {
+      "source": "home_dev_lab_documents_github_matax_app_src_components_dashboard_obligation_calendar_tsx",
+      "target": "dashboard_obligation_calendar_label",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/components/dashboard/obligation-calendar.tsx",
+      "source_location": "L100",
+      "weight": 1.0
+    },
+    {
+      "source": "home_dev_lab_documents_github_matax_app_src_components_dashboard_obligation_calendar_tsx",
+      "target": "dashboard_obligation_calendar_statusdot",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/components/dashboard/obligation-calendar.tsx",
+      "source_location": "L110",
+      "weight": 1.0
+    },
+    {
+      "source": "dashboard_obligation_calendar_getupcomingalertscount",
+      "target": "dashboard_obligation_calendar_buildmockobligations",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/components/dashboard/obligation-calendar.tsx",
+      "source_location": "L70",
+      "weight": 1.0
+    }
+  ],
+  "raw_calls": [
+    {
+      "caller_nid": "dashboard_obligation_calendar_daysbetween",
+      "callee": "round",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/components/dashboard/obligation-calendar.tsx",
+      "source_location": "L18"
+    },
+    {
+      "caller_nid": "dashboard_obligation_calendar_daysbetween",
+      "callee": "getTime",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/components/dashboard/obligation-calendar.tsx",
+      "source_location": "L18"
+    },
+    {
+      "caller_nid": "dashboard_obligation_calendar_daysbetween",
+      "callee": "getTime",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/components/dashboard/obligation-calendar.tsx",
+      "source_location": "L18"
+    },
+    {
+      "caller_nid": "dashboard_obligation_calendar_buildmockobligations",
+      "callee": "iso",
+      "is_member_call": false,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/components/dashboard/obligation-calendar.tsx",
+      "source_location": "L35"
+    },
+    {
+      "caller_nid": "dashboard_obligation_calendar_buildmockobligations",
+      "callee": "addDays",
+      "is_member_call": false,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/components/dashboard/obligation-calendar.tsx",
+      "source_location": "L35"
+    },
+    {
+      "caller_nid": "dashboard_obligation_calendar_buildmockobligations",
+      "callee": "iso",
+      "is_member_call": false,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/components/dashboard/obligation-calendar.tsx",
+      "source_location": "L44"
+    },
+    {
+      "caller_nid": "dashboard_obligation_calendar_buildmockobligations",
+      "callee": "addDays",
+      "is_member_call": false,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/components/dashboard/obligation-calendar.tsx",
+      "source_location": "L44"
+    },
+    {
+      "caller_nid": "dashboard_obligation_calendar_buildmockobligations",
+      "callee": "iso",
+      "is_member_call": false,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/components/dashboard/obligation-calendar.tsx",
+      "source_location": "L53"
+    },
+    {
+      "caller_nid": "dashboard_obligation_calendar_buildmockobligations",
+      "callee": "addDays",
+      "is_member_call": false,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/components/dashboard/obligation-calendar.tsx",
+      "source_location": "L53"
+    },
+    {
+      "caller_nid": "dashboard_obligation_calendar_buildmockobligations",
+      "callee": "iso",
+      "is_member_call": false,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/components/dashboard/obligation-calendar.tsx",
+      "source_location": "L62"
+    },
+    {
+      "caller_nid": "dashboard_obligation_calendar_buildmockobligations",
+      "callee": "addDays",
+      "is_member_call": false,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/components/dashboard/obligation-calendar.tsx",
+      "source_location": "L62"
+    },
+    {
+      "caller_nid": "dashboard_obligation_calendar_getupcomingalertscount",
+      "callee": "filter",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/components/dashboard/obligation-calendar.tsx",
+      "source_location": "L71"
+    }
+  ]
+}

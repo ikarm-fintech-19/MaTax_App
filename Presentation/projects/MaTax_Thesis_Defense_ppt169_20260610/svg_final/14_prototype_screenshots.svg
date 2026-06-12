@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720">
+  
+  <rect width="1280" height="720" fill="#FFFFFF" />
+  
+  
+  <rect x="0" y="0" width="1280" height="70" fill="#003366" />
+  <rect x="0" y="0" width="6" height="70" fill="#CC0000" />
+  <text x="40" y="46" fill="#FFFFFF" font-family="Microsoft YaHei, Arial, sans-serif" font-size="28" font-weight="bold">
+    05 | النموذج التجريبي — عرض المنصة
+  </text>
+  <text x="1220" y="46" text-anchor="end" fill="#FFFFFF" font-family="Georgia, Microsoft YaHei, serif" font-size="18" font-weight="bold">MATAX</text>
+  
+  
+  <rect x="0" y="70" width="1280" height="50" fill="#F0F4F8" />
+  <rect x="0" y="70" width="6" height="50" fill="#0066CC" />
+  <text x="40" y="102" fill="#1D1D1F" font-family="Microsoft YaHei, Arial, sans-serif" font-size="18">
+    MATAX: واجهة عربية سلسة — لا حاجة لخبرة محاسبية مسبقة
+  </text>
+  
+  
+  
+  <path fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1" d="M72,140 H608 A12,12 0 0 1 620,152 V548 A12,12 0 0 1 608,560 H72 A12,12 0 0 1 60,548 V152 A12,12 0 0 1 72,140 Z" />
+  <path fill="#003366" d="M72,140 H608 A12,12 0 0 1 620,152 V183 A12,12 0 0 1 608,195 H72 A12,12 0 0 1 60,183 V152 A12,12 0 0 1 72,140 Z" />
+  <rect x="60" y="185" width="560" height="10" fill="#003366" />
+  <text x="340" y="178" text-anchor="middle" fill="#FFFFFF" font-family="Microsoft YaHei, Arial, sans-serif" font-size="20" font-weight="bold">التطبيق الجوال</text>
+  
+  
+  <path fill="#FFFFFF" stroke="#E2E8F0" stroke-width="2" d="M214,210 H466 A24,24 0 0 1 490,234 V516 A24,24 0 0 1 466,540 H214 A24,24 0 0 1 190,516 V234 A24,24 0 0 1 214,210 Z" />
+  <path fill="#E2E8F0" d="M275,215 H425 A5,5 0 0 1 430,220 V220 A5,5 0 0 1 425,225 H275 A5,5 0 0 1 270,220 V220 A5,5 0 0 1 275,215 Z" />
+  
+  
+  <path fill="#003366" d="M218,240 H462 A8,8 0 0 1 470,248 V282 A8,8 0 0 1 462,290 H218 A8,8 0 0 1 210,282 V248 A8,8 0 0 1 218,240 Z" />
+  <text x="340" y="272" text-anchor="middle" fill="#FFFFFF" font-family="Microsoft YaHei, Arial, sans-serif" font-size="16" font-weight="bold">MATAX - لوحة التحكم</text>
+  
+  <path fill="#F8FAFC" d="M218,305 H462 A8,8 0 0 1 470,313 V367 A8,8 0 0 1 462,375 H218 A8,8 0 0 1 210,367 V313 A8,8 0 0 1 218,305 Z" />
+  <text x="340" y="348" text-anchor="middle" fill="#94A3B8" font-family="Microsoft YaHei, Arial, sans-serif" font-size="13">[صورة لوحة تحكم المقاول]</text>
+  
+  <path fill="#F8FAFC" d="M218,390 H462 A8,8 0 0 1 470,398 V452 A8,8 0 0 1 462,460 H218 A8,8 0 0 1 210,452 V398 A8,8 0 0 1 218,390 Z" />
+  <text x="340" y="433" text-anchor="middle" fill="#94A3B8" font-family="Microsoft YaHei, Arial, sans-serif" font-size="13">[صورة قائمة الجباية]</text>
+  
+  <path fill="#F8FAFC" d="M218,475 H462 A8,8 0 0 1 470,483 V517 A8,8 0 0 1 462,525 H218 A8,8 0 0 1 210,517 V483 A8,8 0 0 1 218,475 Z" />
+  <text x="340" y="507" text-anchor="middle" fill="#94A3B8" font-family="Microsoft YaHei, Arial, sans-serif" font-size="13">[صورة إعدادات الحساب]</text>
+  
+  
+  <path fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1" d="M672,140 H1208 A12,12 0 0 1 1220,152 V548 A12,12 0 0 1 1208,560 H672 A12,12 0 0 1 660,548 V152 A12,12 0 0 1 672,140 Z" />
+  <path fill="#003366" d="M672,140 H1208 A12,12 0 0 1 1220,152 V183 A12,12 0 0 1 1208,195 H672 A12,12 0 0 1 660,183 V152 A12,12 0 0 1 672,140 Z" />
+  <rect x="660" y="185" width="560" height="10" fill="#003366" />
+  <text x="940" y="178" text-anchor="middle" fill="#FFFFFF" font-family="Microsoft YaHei, Arial, sans-serif" font-size="20" font-weight="bold">لوحة التحكم على الويب</text>
+  
+  
+  <path fill="#FFFFFF" stroke="#E2E8F0" stroke-width="2" d="M720,210 H1160 A10,10 0 0 1 1170,220 V530 A10,10 0 0 1 1160,540 H720 A10,10 0 0 1 710,530 V220 A10,10 0 0 1 720,210 Z" />
+  <path fill="#F1F5F9" d="M720,210 H1160 A10,10 0 0 1 1170,220 V235 A10,10 0 0 1 1160,245 H720 A10,10 0 0 1 710,235 V220 A10,10 0 0 1 720,210 Z" />
+  <rect x="710" y="235" width="460" height="10" fill="#F1F5F9" />
+  <circle cx="728" cy="227" r="6" fill="#FF5F56" />
+  <circle cx="748" cy="227" r="6" fill="#FFBD2E" />
+  <circle cx="768" cy="227" r="6" fill="#27CA40" />
+  <path fill="#E2E8F0" d="M863,220 H1057 A3,3 0 0 1 1060,223 V231 A3,3 0 0 1 1057,234 H863 A3,3 0 0 1 860,231 V223 A3,3 0 0 1 863,220 Z" />
+  
+  
+  <path fill="#003366" d="M738,260 H1142 A8,8 0 0 1 1150,268 V302 A8,8 0 0 1 1142,310 H738 A8,8 0 0 1 730,302 V268 A8,8 0 0 1 738,260 Z" />
+  <text x="940" y="292" text-anchor="middle" fill="#FFFFFF" font-family="Microsoft YaHei, Arial, sans-serif" font-size="16" font-weight="bold">MATAX - لوحة تحكم المحاسب</text>
+  
+  <path fill="#F8FAFC" d="M738,325 H1142 A8,8 0 0 1 1150,333 V407 A8,8 0 0 1 1142,415 H738 A8,8 0 0 1 730,407 V333 A8,8 0 0 1 738,325 Z" />
+  <text x="940" y="378" text-anchor="middle" fill="#94A3B8" font-family="Microsoft YaHei, Arial, sans-serif" font-size="13">[صورة إدارة محفظة العملاء]</text>
+  
+  <path fill="#F8FAFC" d="M738,430 H1142 A8,8 0 0 1 1150,438 V517 A8,8 0 0 1 1142,525 H738 A8,8 0 0 1 730,517 V438 A8,8 0 0 1 738,430 Z" />
+  <text x="940" y="488" text-anchor="middle" fill="#94A3B8" font-family="Microsoft YaHei, Arial, sans-serif" font-size="13">[صورة تقارير الجباية والتصرح]</text>
+  
+  
+  <path fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1" d="M70,580 H1210 A10,10 0 0 1 1220,590 V650 A10,10 0 0 1 1210,660 H70 A10,10 0 0 1 60,650 V590 A10,10 0 0 1 70,580 Z" />
+  
+  
+  <path fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1" d="M88,595 H412 A8,8 0 0 1 420,603 V637 A8,8 0 0 1 412,645 H88 A8,8 0 0 1 80,637 V603 A8,8 0 0 1 88,595 Z" />
+  <text x="100" y="627" fill="#003366" font-family="Microsoft YaHei, Arial, sans-serif" font-size="15" font-weight="bold">🌐 واجهة عربية بالكامل</text>
+  
+  
+  <path fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1" d="M448,595 H772 A8,8 0 0 1 780,603 V637 A8,8 0 0 1 772,645 H448 A8,8 0 0 1 440,637 V603 A8,8 0 0 1 448,595 Z" />
+  <text x="460" y="627" fill="#0066CC" font-family="Microsoft YaHei, Arial, sans-serif" font-size="15" font-weight="bold">📱 متوافق مع الجوال</text>
+  
+  
+  <path fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1" d="M808,595 H1192 A8,8 0 0 1 1200,603 V637 A8,8 0 0 1 1192,645 H808 A8,8 0 0 1 800,637 V603 A8,8 0 0 1 808,595 Z" />
+  <text x="820" y="627" fill="#2E7D32" font-family="Microsoft YaHei, Arial, sans-serif" font-size="15" font-weight="bold">🚀 سرعة في الأداء</text>
+  
+  
+  <line x1="40" y1="680" x2="1240" y2="680" stroke="#E2E8F0" stroke-width="1" />
+  <text x="40" y="710" fill="#94A3B8" font-family="Microsoft YaHei, Arial, sans-serif" font-size="12">المصدر: النموذج التجريبي</text>
+  <text x="640" y="710" text-anchor="middle" fill="#94A3B8" font-family="Microsoft YaHei, Arial, sans-serif" font-size="12">عرض المنصة</text>
+  <text x="1220" y="710" text-anchor="end" fill="#64748B" font-family="Microsoft YaHei, Arial, sans-serif" font-size="14">14</text>
+</svg>

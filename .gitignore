@@ -23,6 +23,15 @@ dist-ssr
 # Netlify
 .netlify/
 
+# Environment files
+.env
+.env.local
+.env.production
+
+# Large binary files
+Screenshots/*.docx*
+Screenshots/*.pdf
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json

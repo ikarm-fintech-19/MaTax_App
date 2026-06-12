@@ -1,0 +1,85 @@
+{
+  "nodes": [
+    {
+      "id": "home_dev_lab_documents_github_matax_app_src_components_onboarding_regime_selector_tsx",
+      "label": "regime-selector.tsx",
+      "file_type": "code",
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/components/onboarding/regime-selector.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "onboarding_regime_selector_confirm",
+      "label": "confirm()",
+      "file_type": "code",
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/components/onboarding/regime-selector.tsx",
+      "source_location": "L17"
+    }
+  ],
+  "edges": [
+    {
+      "source": "home_dev_lab_documents_github_matax_app_src_components_onboarding_regime_selector_tsx",
+      "target": "react",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/components/onboarding/regime-selector.tsx",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "home_dev_lab_documents_github_matax_app_src_components_onboarding_regime_selector_tsx",
+      "target": "lucide_react",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/components/onboarding/regime-selector.tsx",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "home_dev_lab_documents_github_matax_app_src_components_onboarding_regime_selector_tsx",
+      "target": "i18n",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/components/onboarding/regime-selector.tsx",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "home_dev_lab_documents_github_matax_app_src_components_onboarding_regime_selector_tsx",
+      "target": "regime_config",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/components/onboarding/regime-selector.tsx",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "home_dev_lab_documents_github_matax_app_src_components_onboarding_regime_selector_tsx",
+      "target": "onboarding_regime_selector_confirm",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/components/onboarding/regime-selector.tsx",
+      "source_location": "L17",
+      "weight": 1.0
+    }
+  ],
+  "raw_calls": [
+    {
+      "caller_nid": "onboarding_regime_selector_confirm",
+      "callee": "setUserRegime",
+      "is_member_call": false,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/components/onboarding/regime-selector.tsx",
+      "source_location": "L18"
+    },
+    {
+      "caller_nid": "onboarding_regime_selector_confirm",
+      "callee": "onConfirm",
+      "is_member_call": false,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/components/onboarding/regime-selector.tsx",
+      "source_location": "L19"
+    }
+  ]
+}

@@ -1,0 +1,332 @@
+{
+  "nodes": [
+    {
+      "id": "home_dev_lab_documents_github_matax_app_src_components_assistant_fiscal_chat_tsx",
+      "label": "fiscal-chat.tsx",
+      "file_type": "code",
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/components/assistant/fiscal-chat.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "assistant_fiscal_chat_normalize",
+      "label": "normalize()",
+      "file_type": "code",
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/components/assistant/fiscal-chat.tsx",
+      "source_location": "L26"
+    },
+    {
+      "id": "assistant_fiscal_chat_tokenize",
+      "label": "tokenize()",
+      "file_type": "code",
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/components/assistant/fiscal-chat.tsx",
+      "source_location": "L60"
+    },
+    {
+      "id": "assistant_fiscal_chat_getlocalizedfield",
+      "label": "getLocalizedField()",
+      "file_type": "code",
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/components/assistant/fiscal-chat.tsx",
+      "source_location": "L66"
+    },
+    {
+      "id": "assistant_fiscal_chat_scoreentry",
+      "label": "scoreEntry()",
+      "file_type": "code",
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/components/assistant/fiscal-chat.tsx",
+      "source_location": "L72"
+    },
+    {
+      "id": "assistant_fiscal_chat_ask",
+      "label": "ask()",
+      "file_type": "code",
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/components/assistant/fiscal-chat.tsx",
+      "source_location": "L140"
+    }
+  ],
+  "edges": [
+    {
+      "source": "home_dev_lab_documents_github_matax_app_src_components_assistant_fiscal_chat_tsx",
+      "target": "react",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/components/assistant/fiscal-chat.tsx",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "home_dev_lab_documents_github_matax_app_src_components_assistant_fiscal_chat_tsx",
+      "target": "lucide_react",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/components/assistant/fiscal-chat.tsx",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "home_dev_lab_documents_github_matax_app_src_components_assistant_fiscal_chat_tsx",
+      "target": "i18n",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/components/assistant/fiscal-chat.tsx",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "home_dev_lab_documents_github_matax_app_src_components_assistant_fiscal_chat_tsx",
+      "target": "fiscal_kb_json",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/components/assistant/fiscal-chat.tsx",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "home_dev_lab_documents_github_matax_app_src_components_assistant_fiscal_chat_tsx",
+      "target": "assistant_fiscal_chat_normalize",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/components/assistant/fiscal-chat.tsx",
+      "source_location": "L26",
+      "weight": 1.0
+    },
+    {
+      "source": "home_dev_lab_documents_github_matax_app_src_components_assistant_fiscal_chat_tsx",
+      "target": "assistant_fiscal_chat_tokenize",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/components/assistant/fiscal-chat.tsx",
+      "source_location": "L60",
+      "weight": 1.0
+    },
+    {
+      "source": "home_dev_lab_documents_github_matax_app_src_components_assistant_fiscal_chat_tsx",
+      "target": "assistant_fiscal_chat_getlocalizedfield",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/components/assistant/fiscal-chat.tsx",
+      "source_location": "L66",
+      "weight": 1.0
+    },
+    {
+      "source": "home_dev_lab_documents_github_matax_app_src_components_assistant_fiscal_chat_tsx",
+      "target": "assistant_fiscal_chat_scoreentry",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/components/assistant/fiscal-chat.tsx",
+      "source_location": "L72",
+      "weight": 1.0
+    },
+    {
+      "source": "home_dev_lab_documents_github_matax_app_src_components_assistant_fiscal_chat_tsx",
+      "target": "assistant_fiscal_chat_ask",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/components/assistant/fiscal-chat.tsx",
+      "source_location": "L140",
+      "weight": 1.0
+    },
+    {
+      "source": "assistant_fiscal_chat_tokenize",
+      "target": "assistant_fiscal_chat_normalize",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/components/assistant/fiscal-chat.tsx",
+      "source_location": "L61",
+      "weight": 1.0
+    },
+    {
+      "source": "assistant_fiscal_chat_scoreentry",
+      "target": "assistant_fiscal_chat_tokenize",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/components/assistant/fiscal-chat.tsx",
+      "source_location": "L73",
+      "weight": 1.0
+    },
+    {
+      "source": "assistant_fiscal_chat_scoreentry",
+      "target": "assistant_fiscal_chat_normalize",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/components/assistant/fiscal-chat.tsx",
+      "source_location": "L76",
+      "weight": 1.0
+    },
+    {
+      "source": "assistant_fiscal_chat_scoreentry",
+      "target": "assistant_fiscal_chat_getlocalizedfield",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/components/assistant/fiscal-chat.tsx",
+      "source_location": "L76",
+      "weight": 1.0
+    },
+    {
+      "source": "assistant_fiscal_chat_ask",
+      "target": "assistant_fiscal_chat_getlocalizedfield",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/components/assistant/fiscal-chat.tsx",
+      "source_location": "L153",
+      "weight": 1.0
+    }
+  ],
+  "raw_calls": [
+    {
+      "caller_nid": "assistant_fiscal_chat_normalize",
+      "callee": "replace",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/components/assistant/fiscal-chat.tsx",
+      "source_location": "L27"
+    },
+    {
+      "caller_nid": "assistant_fiscal_chat_normalize",
+      "callee": "replace",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/components/assistant/fiscal-chat.tsx",
+      "source_location": "L27"
+    },
+    {
+      "caller_nid": "assistant_fiscal_chat_normalize",
+      "callee": "toLowerCase",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/components/assistant/fiscal-chat.tsx",
+      "source_location": "L27"
+    },
+    {
+      "caller_nid": "assistant_fiscal_chat_tokenize",
+      "callee": "filter",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/components/assistant/fiscal-chat.tsx",
+      "source_location": "L61"
+    },
+    {
+      "caller_nid": "assistant_fiscal_chat_tokenize",
+      "callee": "split",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/components/assistant/fiscal-chat.tsx",
+      "source_location": "L61"
+    },
+    {
+      "caller_nid": "assistant_fiscal_chat_scoreentry",
+      "callee": "map",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/components/assistant/fiscal-chat.tsx",
+      "source_location": "L78"
+    },
+    {
+      "caller_nid": "assistant_fiscal_chat_scoreentry",
+      "callee": "includes",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/components/assistant/fiscal-chat.tsx",
+      "source_location": "L84"
+    },
+    {
+      "caller_nid": "assistant_fiscal_chat_scoreentry",
+      "callee": "includes",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/components/assistant/fiscal-chat.tsx",
+      "source_location": "L90"
+    },
+    {
+      "caller_nid": "assistant_fiscal_chat_scoreentry",
+      "callee": "includes",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/components/assistant/fiscal-chat.tsx",
+      "source_location": "L90"
+    },
+    {
+      "caller_nid": "assistant_fiscal_chat_scoreentry",
+      "callee": "includes",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/components/assistant/fiscal-chat.tsx",
+      "source_location": "L97"
+    },
+    {
+      "caller_nid": "assistant_fiscal_chat_scoreentry",
+      "callee": "includes",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/components/assistant/fiscal-chat.tsx",
+      "source_location": "L99"
+    },
+    {
+      "caller_nid": "assistant_fiscal_chat_scoreentry",
+      "callee": "includes",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/components/assistant/fiscal-chat.tsx",
+      "source_location": "L99"
+    },
+    {
+      "caller_nid": "assistant_fiscal_chat_scoreentry",
+      "callee": "includes",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/components/assistant/fiscal-chat.tsx",
+      "source_location": "L105"
+    },
+    {
+      "caller_nid": "assistant_fiscal_chat_scoreentry",
+      "callee": "includes",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/components/assistant/fiscal-chat.tsx",
+      "source_location": "L109"
+    },
+    {
+      "caller_nid": "assistant_fiscal_chat_ask",
+      "callee": "trim",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/components/assistant/fiscal-chat.tsx",
+      "source_location": "L141"
+    },
+    {
+      "caller_nid": "assistant_fiscal_chat_ask",
+      "callee": "sort",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/components/assistant/fiscal-chat.tsx",
+      "source_location": "L143"
+    },
+    {
+      "caller_nid": "assistant_fiscal_chat_ask",
+      "callee": "filter",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/components/assistant/fiscal-chat.tsx",
+      "source_location": "L143"
+    },
+    {
+      "caller_nid": "assistant_fiscal_chat_ask",
+      "callee": "map",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/components/assistant/fiscal-chat.tsx",
+      "source_location": "L143"
+    },
+    {
+      "caller_nid": "assistant_fiscal_chat_ask",
+      "callee": "t",
+      "is_member_call": false,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/components/assistant/fiscal-chat.tsx",
+      "source_location": "L148"
+    },
+    {
+      "caller_nid": "assistant_fiscal_chat_ask",
+      "callee": "setMsgs",
+      "is_member_call": false,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/components/assistant/fiscal-chat.tsx",
+      "source_location": "L157"
+    },
+    {
+      "caller_nid": "assistant_fiscal_chat_ask",
+      "callee": "setInput",
+      "is_member_call": false,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/components/assistant/fiscal-chat.tsx",
+      "source_location": "L158"
+    }
+  ]
+}

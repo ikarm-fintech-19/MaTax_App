@@ -1,0 +1,30 @@
+{
+  "nodes": [
+    {
+      "id": "home_dev_lab_documents_github_matax_app_src_lib_error_page_ts",
+      "label": "error-page.ts",
+      "file_type": "code",
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/error-page.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "lib_error_page_rendererrorpage",
+      "label": "renderErrorPage()",
+      "file_type": "code",
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/error-page.ts",
+      "source_location": "L1"
+    }
+  ],
+  "edges": [
+    {
+      "source": "home_dev_lab_documents_github_matax_app_src_lib_error_page_ts",
+      "target": "lib_error_page_rendererrorpage",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/error-page.ts",
+      "source_location": "L1",
+      "weight": 1.0
+    }
+  ],
+  "raw_calls": []
+}

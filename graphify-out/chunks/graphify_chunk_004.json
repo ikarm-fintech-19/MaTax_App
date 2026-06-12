@@ -1,0 +1,15 @@
+{
+  "chunk_id": 4,
+  "category": "code",
+  "files": [
+    "/home/dev-lab/Documents/GitHub/MaTax_App/src/routes/_app/settings.tsx",
+    "/home/dev-lab/Documents/GitHub/MaTax_App/src/routes/_app/g50.tsx",
+    "/home/dev-lab/Documents/GitHub/MaTax_App/src/routes/_app/dashboard.tsx",
+    "/home/dev-lab/Documents/GitHub/MaTax_App/src/routes/_app/ibs.tsx",
+    "/home/dev-lab/Documents/GitHub/MaTax_App/src/routes/_app/tfpc.tsx",
+    "/home/dev-lab/Documents/GitHub/MaTax_App/src/routes/_app/withholding.tsx",
+    "/home/dev-lab/Documents/GitHub/MaTax_App/src/routes/_app/irg.tsx"
+  ],
+  "input_tokens": 0,
+  "output_tokens": 0
+}

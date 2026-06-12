@@ -18,7 +18,9 @@ import { Route as AppSettingsRouteImport } from './routes/_app/settings'
 import { Route as AppIrgRouteImport } from './routes/_app/irg'
 import { Route as AppIbsRouteImport } from './routes/_app/ibs'
 import { Route as AppG50RouteImport } from './routes/_app/g50'
+import { Route as AppExpertRouteImport } from './routes/_app/expert'
 import { Route as AppDashboardRouteImport } from './routes/_app/dashboard'
+import { Route as AppAdminRouteImport } from './routes/_app/admin'
 
 const LoginRoute = LoginRouteImport.update({
   id: '/login',
@@ -64,16 +66,28 @@ const AppG50Route = AppG50RouteImport.update({
   path: '/g50',
   getParentRoute: () => AppRoute,
 } as any)
+const AppExpertRoute = AppExpertRouteImport.update({
+  id: '/expert',
+  path: '/expert',
+  getParentRoute: () => AppRoute,
+} as any)
 const AppDashboardRoute = AppDashboardRouteImport.update({
   id: '/dashboard',
   path: '/dashboard',
+  getParentRoute: () => AppRoute,
+} as any)
+const AppAdminRoute = AppAdminRouteImport.update({
+  id: '/admin',
+  path: '/admin',
   getParentRoute: () => AppRoute,
 } as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/login': typeof LoginRoute
+  '/admin': typeof AppAdminRoute
   '/dashboard': typeof AppDashboardRoute
+  '/expert': typeof AppExpertRoute
   '/g50': typeof AppG50Route
   '/ibs': typeof AppIbsRoute
   '/irg': typeof AppIrgRoute
@@ -84,7 +98,9 @@ export interface FileRoutesByFullPath {
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/login': typeof LoginRoute
+  '/admin': typeof AppAdminRoute
   '/dashboard': typeof AppDashboardRoute
+  '/expert': typeof AppExpertRoute
   '/g50': typeof AppG50Route
   '/ibs': typeof AppIbsRoute
   '/irg': typeof AppIrgRoute
@@ -97,7 +113,9 @@ export interface FileRoutesById {
   '/': typeof IndexRoute
   '/_app': typeof AppRouteWithChildren
   '/login': typeof LoginRoute
+  '/_app/admin': typeof AppAdminRoute
   '/_app/dashboard': typeof AppDashboardRoute
+  '/_app/expert': typeof AppExpertRoute
   '/_app/g50': typeof AppG50Route
   '/_app/ibs': typeof AppIbsRoute
   '/_app/irg': typeof AppIrgRoute
@@ -110,7 +128,9 @@ export interface FileRouteTypes {
   fullPaths:
     | '/'
     | '/login'
+    | '/admin'
     | '/dashboard'
+    | '/expert'
     | '/g50'
     | '/ibs'
     | '/irg'
@@ -121,7 +141,9 @@ export interface FileRouteTypes {
   to:
     | '/'
     | '/login'
+    | '/admin'
     | '/dashboard'
+    | '/expert'
     | '/g50'
     | '/ibs'
     | '/irg'
@@ -133,7 +155,9 @@ export interface FileRouteTypes {
     | '/'
     | '/_app'
     | '/login'
+    | '/_app/admin'
     | '/_app/dashboard'
+    | '/_app/expert'
     | '/_app/g50'
     | '/_app/ibs'
     | '/_app/irg'
@@ -213,6 +237,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof AppG50RouteImport
       parentRoute: typeof AppRoute
     }
+    '/_app/expert': {
+      id: '/_app/expert'
+      path: '/expert'
+      fullPath: '/expert'
+      preLoaderRoute: typeof AppExpertRouteImport
+      parentRoute: typeof AppRoute
+    }
     '/_app/dashboard': {
       id: '/_app/dashboard'
       path: '/dashboard'
@@ -220,11 +251,20 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof AppDashboardRouteImport
       parentRoute: typeof AppRoute
     }
+    '/_app/admin': {
+      id: '/_app/admin'
+      path: '/admin'
+      fullPath: '/admin'
+      preLoaderRoute: typeof AppAdminRouteImport
+      parentRoute: typeof AppRoute
+    }
   }
 }
 
 interface AppRouteChildren {
+  AppAdminRoute: typeof AppAdminRoute
   AppDashboardRoute: typeof AppDashboardRoute
+  AppExpertRoute: typeof AppExpertRoute
   AppG50Route: typeof AppG50Route
   AppIbsRoute: typeof AppIbsRoute
   AppIrgRoute: typeof AppIrgRoute
@@ -234,7 +274,9 @@ interface AppRouteChildren {
 }
 
 const AppRouteChildren: AppRouteChildren = {
+  AppAdminRoute: AppAdminRoute,
   AppDashboardRoute: AppDashboardRoute,
+  AppExpertRoute: AppExpertRoute,
   AppG50Route: AppG50Route,
   AppIbsRoute: AppIbsRoute,
   AppIrgRoute: AppIrgRoute,

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720">
+  <!-- Background -->
+  <rect width="1280" height="720" fill="#FFFFFF"/>
+  
+  <!-- Top decorative area -->
+  <rect x="0" y="0" width="1280" height="100" fill="#003366"/>
+  <rect x="0" y="0" width="6" height="100" fill="#CC0000"/>
+  
+  <!-- Logo area -->
+  <rect x="1080" y="25" width="160" height="50" fill="none" stroke="#FFFFFF" stroke-width="1" stroke-opacity="0.3" rx="4"/>
+  <text x="1160" y="58" text-anchor="middle" fill="#FFFFFF" font-family="Georgia, Microsoft YaHei, serif" font-size="18" font-weight="bold">
+    MATAX
+  </text>
+  
+  <!-- Main title -->
+  <text x="640" y="280" text-anchor="middle" fill="#003366" font-family="Georgia, Microsoft YaHei, serif" font-size="52" font-weight="bold">
+    منصة MATAX
+  </text>
+  <text x="640" y="340" text-anchor="middle" fill="#003366" font-family="Georgia, Microsoft YaHei, serif" font-size="36" font-weight="bold">
+    التسيير الجبائي الرقمي الذكي
+  </text>
+  
+  <!-- Subtitle -->
+  <text x="640" y="400" text-anchor="middle" fill="#5A5A5A" font-family="Microsoft YaHei, Arial, sans-serif" font-size="22">
+    منصة رقمية مبتكرة في مجال التكنولوجيا الجبائية
+  </text>
+  
+  <!-- Decorative divider -->
+  <line x1="420" y1="440" x2="860" y2="440" stroke="#0066CC" stroke-width="2"/>
+  <circle cx="640" cy="440" r="5" fill="#0066CC"/>
+  
+  <!-- Presenter info -->
+  <text x="640" y="500" text-anchor="middle" fill="#1D1D1F" font-family="Microsoft YaHei, Arial, sans-serif" font-size="22">
+    إعداد: حموم إكرام
+  </text>
+  <text x="640" y="540" text-anchor="middle" fill="#5A5A5A" font-family="Microsoft YaHei, Arial, sans-serif" font-size="18">
+    إشراف: أ. بلعباس مخطار
+  </text>
+  <text x="640" y="580" text-anchor="middle" fill="#5A5A5A" font-family="Microsoft YaHei, Arial, sans-serif" font-size="18">
+    جامعة ابن خلدون تيارت | ماستر محاسبة وجباية | 2025/2026
+  </text>
+  
+  <!-- Bottom info -->
+  <rect x="0" y="665" width="1280" height="55" fill="#F0F4F8"/>
+  <text x="640" y="698" text-anchor="middle" fill="#8A8A8A" font-family="Microsoft YaHei, Arial, sans-serif" font-size="14">
+    عرض التخرج — startup thesis defense
+  </text>
+</svg>

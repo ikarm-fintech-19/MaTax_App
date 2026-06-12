@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720">
+  
+  <rect width="1280" height="720" fill="#FFFFFF" />
+  
+  
+  <rect x="0" y="0" width="1280" height="70" fill="#003366" />
+  <rect x="0" y="0" width="6" height="70" fill="#CC0000" />
+  <text x="40" y="46" fill="#FFFFFF" font-family="Microsoft YaHei, Arial, sans-serif" font-size="28" font-weight="bold">
+    06 | فريق العمل
+  </text>
+  <text x="1220" y="46" text-anchor="end" fill="#FFFFFF" font-family="Georgia, Microsoft YaHei, serif" font-size="18" font-weight="bold">MATAX</text>
+  
+  
+  <rect x="0" y="70" width="1280" height="50" fill="#F0F4F8" />
+  <rect x="0" y="70" width="6" height="50" fill="#0066CC" />
+  <text x="40" y="102" fill="#1E293B" font-family="Microsoft YaHei, Arial, sans-serif" font-size="18">
+    فريق مؤسس متكامل بخبرات متنوعة في المحاسبة والتقنية والإشراف
+  </text>
+  
+  
+  
+  <path fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1" d="M72,140 H398 A12,12 0 0 1 410,152 V328 A12,12 0 0 1 398,340 H72 A12,12 0 0 1 60,328 V152 A12,12 0 0 1 72,140 Z" />
+  <path fill="#003366" d="M64,140 H406 A4,4 0 0 1 410,144 V144 A4,4 0 0 1 406,148 H64 A4,4 0 0 1 60,144 V144 A4,4 0 0 1 64,140 Z" />
+  <circle cx="235" cy="215" r="45" fill="#003366" fill-opacity="0.1" />
+  <text x="235" y="228" text-anchor="middle" fill="#003366" font-family="Georgia, Microsoft YaHei, serif" font-size="36" font-weight="bold">HI</text>
+  <text x="235" y="285" text-anchor="middle" fill="#1E293B" font-family="Microsoft YaHei, Arial, sans-serif" font-size="20" font-weight="bold">حموم إكرام</text>
+  <text x="235" y="312" text-anchor="middle" fill="#003366" font-family="Microsoft YaHei, Arial, sans-serif" font-size="15" font-weight="bold">صاحبة المشروع</text>
+  <text x="235" y="335" text-anchor="middle" fill="#64748B" font-family="Microsoft YaHei, Arial, sans-serif" font-size="13">محاسبة + تكنولوجيا المعلومات</text>
+  
+  
+  <path fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1" d="M452,140 H778 A12,12 0 0 1 790,152 V328 A12,12 0 0 1 778,340 H452 A12,12 0 0 1 440,328 V152 A12,12 0 0 1 452,140 Z" />
+  <path fill="#0066CC" d="M444,140 H786 A4,4 0 0 1 790,144 V144 A4,4 0 0 1 786,148 H444 A4,4 0 0 1 440,144 V144 A4,4 0 0 1 444,140 Z" />
+  <circle cx="615" cy="215" r="45" fill="#0066CC" fill-opacity="0.1" />
+  <text x="615" y="228" text-anchor="middle" fill="#0066CC" font-family="Georgia, Microsoft YaHei, serif" font-size="36" font-weight="bold">BM</text>
+  <text x="615" y="285" text-anchor="middle" fill="#1E293B" font-family="Microsoft YaHei, Arial, sans-serif" font-size="20" font-weight="bold">بلعباس مختار</text>
+  <text x="615" y="312" text-anchor="middle" fill="#0066CC" font-family="Microsoft YaHei, Arial, sans-serif" font-size="15" font-weight="bold">المشرف على المشروع</text>
+  <text x="615" y="335" text-anchor="middle" fill="#64748B" font-family="Microsoft YaHei, Arial, sans-serif" font-size="13">أستاذ محاسبة</text>
+  
+  
+  <path fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1" d="M832,140 H1158 A12,12 0 0 1 1170,152 V328 A12,12 0 0 1 1158,340 H832 A12,12 0 0 1 820,328 V152 A12,12 0 0 1 832,140 Z" />
+  <path fill="#0099AA" d="M824,140 H1166 A4,4 0 0 1 1170,144 V144 A4,4 0 0 1 1166,148 H824 A4,4 0 0 1 820,144 V144 A4,4 0 0 1 824,140 Z" />
+  <circle cx="995" cy="215" r="45" fill="#0099AA" fill-opacity="0.1" />
+  <text x="995" y="228" text-anchor="middle" fill="#0099AA" font-family="Georgia, Microsoft YaHei, serif" font-size="36" font-weight="bold">MF</text>
+  <text x="995" y="285" text-anchor="middle" fill="#1E293B" font-family="Microsoft YaHei, Arial, sans-serif" font-size="20" font-weight="bold">مفتاح فاطمة</text>
+  <text x="995" y="312" text-anchor="middle" fill="#0099AA" font-family="Microsoft YaHei, Arial, sans-serif" font-size="15" font-weight="bold">المشرفة على المشروع</text>
+  <text x="995" y="335" text-anchor="middle" fill="#64748B" font-family="Microsoft YaHei, Arial, sans-serif" font-size="13">أستاذة محاسبة</text>
+  
+  
+  <path fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1" d="M72,370 H1208 A12,12 0 0 1 1220,382 V648 A12,12 0 0 1 1208,660 H72 A12,12 0 0 1 60,648 V382 A12,12 0 0 1 72,370 Z" />
+  <path fill="#003366" d="M72,370 H1208 A12,12 0 0 1 1220,382 V408 A12,12 0 0 1 1208,420 H72 A12,12 0 0 1 60,408 V382 A12,12 0 0 1 72,370 Z" />
+  <rect x="60" y="410" width="1160" height="10" fill="#003366" />
+  <text x="640" y="404" text-anchor="middle" fill="#FFFFFF" font-family="Microsoft YaHei, Arial, sans-serif" font-size="18" font-weight="bold">الخريطة الزمنية</text>
+  
+  
+  <path fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1" d="M88,435 H312 A8,8 0 0 1 320,443 V522 A8,8 0 0 1 312,530 H88 A8,8 0 0 1 80,522 V443 A8,8 0 0 1 88,435 Z" />
+  <path fill="#16A34A" d="M83,435 H317 A3,3 0 0 1 320,438 V438 A3,3 0 0 1 317,441 H83 A3,3 0 0 1 80,438 V438 A3,3 0 0 1 83,435 Z" />
+  <text x="200" y="467" text-anchor="middle" fill="#16A34A" font-family="Microsoft YaHei, Arial, sans-serif" font-size="16" font-weight="bold">المرحلة 1</text>
+  <text x="200" y="489" text-anchor="middle" fill="#1E293B" font-family="Microsoft YaHei, Arial, sans-serif" font-size="13" font-weight="bold">MVP &amp; الإطلاق</text>
+  <text x="200" y="511" text-anchor="middle" fill="#64748B" font-family="Microsoft YaHei, Arial, sans-serif" font-size="12">0-6 أشهر</text>
+  <text x="200" y="523" text-anchor="middle" fill="#16A34A" font-family="Microsoft YaHei, Arial, sans-serif" font-size="11" font-weight="bold">+400 عميل</text>
+  
+  
+  <path fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1" d="M348,435 H572 A8,8 0 0 1 580,443 V522 A8,8 0 0 1 572,530 H348 A8,8 0 0 1 340,522 V443 A8,8 0 0 1 348,435 Z" />
+  <path fill="#0066CC" d="M343,435 H577 A3,3 0 0 1 580,438 V438 A3,3 0 0 1 577,441 H343 A3,3 0 0 1 340,438 V438 A3,3 0 0 1 343,435 Z" />
+  <text x="460" y="467" text-anchor="middle" fill="#0066CC" font-family="Microsoft YaHei, Arial, sans-serif" font-size="16" font-weight="bold">المرحلة 2</text>
+  <text x="460" y="489" text-anchor="middle" fill="#1E293B" font-family="Microsoft YaHei, Arial, sans-serif" font-size="13" font-weight="bold">التوسع والنمو</text>
+  <text x="460" y="511" text-anchor="middle" fill="#64748B" font-family="Microsoft YaHei, Arial, sans-serif" font-size="12">6-18 شهر</text>
+  <text x="460" y="523" text-anchor="middle" fill="#0066CC" font-family="Microsoft YaHei, Arial, sans-serif" font-size="11" font-weight="bold">+960 عميل</text>
+  
+  
+  <path fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1" d="M608,435 H832 A8,8 0 0 1 840,443 V522 A8,8 0 0 1 832,530 H608 A8,8 0 0 1 600,522 V443 A8,8 0 0 1 608,435 Z" />
+  <path fill="#0891B2" d="M603,435 H837 A3,3 0 0 1 840,438 V438 A3,3 0 0 1 837,441 H603 A3,3 0 0 1 600,438 V438 A3,3 0 0 1 603,435 Z" />
+  <text x="720" y="467" text-anchor="middle" fill="#0891B2" font-family="Microsoft YaHei, Arial, sans-serif" font-size="16" font-weight="bold">المرحلة 3</text>
+  <text x="720" y="489" text-anchor="middle" fill="#1E293B" font-family="Microsoft YaHei, Arial, sans-serif" font-size="13" font-weight="bold">الابتكار والتمكين</text>
+  <text x="720" y="511" text-anchor="middle" fill="#64748B" font-family="Microsoft YaHei, Arial, sans-serif" font-size="12">18-36 شهر</text>
+  <text x="720" y="523" text-anchor="middle" fill="#0891B2" font-family="Microsoft YaHei, Arial, sans-serif" font-size="11" font-weight="bold">+2,500 عميل</text>
+  
+  
+  <path fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1" d="M868,435 H1192 A8,8 0 0 1 1200,443 V522 A8,8 0 0 1 1192,530 H868 A8,8 0 0 1 860,522 V443 A8,8 0 0 1 868,435 Z" />
+  <path fill="#7C3AED" d="M863,435 H1197 A3,3 0 0 1 1200,438 V438 A3,3 0 0 1 1197,441 H863 A3,3 0 0 1 860,438 V438 A3,3 0 0 1 863,435 Z" />
+  <text x="1030" y="467" text-anchor="middle" fill="#7C3AED" font-family="Microsoft YaHei, Arial, sans-serif" font-size="16" font-weight="bold">المرحلة 4</text>
+  <text x="1030" y="489" text-anchor="middle" fill="#1E293B" font-family="Microsoft YaHei, Arial, sans-serif" font-size="13" font-weight="bold">الريادة والتوطين</text>
+  <text x="1030" y="511" text-anchor="middle" fill="#64748B" font-family="Microsoft YaHei, Arial, sans-serif" font-size="12">36+ شهر</text>
+  <text x="1030" y="523" text-anchor="middle" fill="#7C3AED" font-family="Microsoft YaHei, Arial, sans-serif" font-size="11" font-weight="bold">ريادة السوق الجزائري</text>
+  
+  
+  <path fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1" d="M88,550 H1172 A8,8 0 0 1 1180,558 V627 A8,8 0 0 1 1172,635 H88 A8,8 0 0 1 80,627 V558 A8,8 0 0 1 88,550 Z" />
+  <path fill="#CC0000" d="M83,550 H83 A3,3 0 0 1 86,553 V632 A3,3 0 0 1 83,635 H83 A3,3 0 0 1 80,632 V553 A3,3 0 0 1 83,550 Z" />
+  <text x="120" y="577" fill="#CC0000" font-family="Microsoft YaHei, Arial, sans-serif" font-size="15" font-weight="bold">المراحل الرئيسية:</text>
+  <text x="120" y="600" fill="#475569" font-family="Microsoft YaHei, Arial, sans-serif" font-size="13">BEP الشهر 4 | 400 عميل السنة 1 | 960 عميل الشهر 12 | 2,500 عميل الشهر 36</text>
+  <text x="120" y="623" fill="#475569" font-family="Microsoft YaHei, Arial, sans-serif" font-size="13">توسيع Zakat &amp; Douane في 2026 | AI/ML للاستشراف الضريبي في 2027</text>
+  
+  
+  <line x1="40" y1="660" x2="1240" y2="660" stroke="#E2E8F0" stroke-width="1" />
+  <text x="40" y="690" fill="#94A3B8" font-family="Microsoft YaHei, Arial, sans-serif" font-size="12">المصدر: خطة العمل</text>
+  <text x="640" y="690" text-anchor="middle" fill="#94A3B8" font-family="Microsoft YaHei, Arial, sans-serif" font-size="12">فريق العمل والخريطة الزمنية</text>
+  <text x="1220" y="690" text-anchor="end" fill="#64748B" font-family="Microsoft YaHei, Arial, sans-serif" font-size="14">16</text>
+</svg>

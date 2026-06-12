@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720">
+  
+  <rect width="1280" height="720" fill="#FFFFFF" />
+  
+  
+  <rect x="0" y="0" width="1280" height="70" fill="#003366" />
+  <rect x="0" y="0" width="6" height="70" fill="#CC0000" />
+  <text x="40" y="46" fill="#FFFFFF" font-family="Microsoft YaHei, Arial, sans-serif" font-size="28" font-weight="bold">
+    03 | السوق والنموذج التجاري
+  </text>
+  <text x="1220" y="46" text-anchor="end" fill="#FFFFFF" font-family="Georgia, Microsoft YaHei, serif" font-size="18" font-weight="bold">MATAX</text>
+  
+  
+  <rect x="0" y="70" width="1280" height="50" fill="#F0F4F8" />
+  <rect x="0" y="70" width="6" height="50" fill="#0066CC" />
+  <text x="40" y="102" fill="#1E293B" font-family="Microsoft YaHei, Arial, sans-serif" font-size="18">
+    MATAX يستهدف شرائح متنوعة من المقاولين والشركات الجزائرية
+  </text>
+  
+  
+  <path fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1" d="M52,140 H628 A12,12 0 0 1 640,152 V638 A12,12 0 0 1 628,650 H52 A12,12 0 0 1 40,638 V152 A12,12 0 0 1 52,140 Z" />
+  <path fill="#003366" d="M52,140 H628 A12,12 0 0 1 640,152 V183 A12,12 0 0 1 628,195 H52 A12,12 0 0 1 40,183 V152 A12,12 0 0 1 52,140 Z" />
+  <rect x="40" y="185" width="600" height="10" fill="#003366" />
+  <text x="340" y="178" text-anchor="middle" fill="#FFFFFF" font-family="Microsoft YaHei, Arial, sans-serif" font-size="22" font-weight="bold">الشرائح المستهدفة</text>
+  
+  
+  <path fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1" d="M68,210 H612 A8,8 0 0 1 620,218 V312 A8,8 0 0 1 612,320 H68 A8,8 0 0 1 60,312 V218 A8,8 0 0 1 68,210 Z" />
+  <path fill="#DC2626" d="M63,210 H63 A3,3 0 0 1 66,213 V317 A3,3 0 0 1 63,320 H63 A3,3 0 0 1 60,317 V213 A3,3 0 0 1 63,210 Z" />
+  <text x="110" y="240" fill="#DC2626" font-family="Microsoft YaHei, Arial, sans-serif" font-size="17" font-weight="bold">المقاولون والشركات الناشئة</text>
+  <text x="110" y="265" fill="#475569" font-family="Microsoft YaHei, Arial, sans-serif" font-size="14">890,000 مقاول + 46,000 مؤسسة صغيرة ومتوسطة</text>
+  <text x="110" y="290" fill="#94A3B8" font-family="Microsoft YaHei, Arial, sans-serif" font-size="12">شريحة النمو الأسرع مع أولوية للرقمنة</text>
+  
+  
+  <path fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1" d="M68,335 H612 A8,8 0 0 1 620,343 V437 A8,8 0 0 1 612,445 H68 A8,8 0 0 1 60,437 V343 A8,8 0 0 1 68,335 Z" />
+  <path fill="#0066CC" d="M63,335 H63 A3,3 0 0 1 66,338 V442 A3,3 0 0 1 63,445 H63 A3,3 0 0 1 60,442 V338 A3,3 0 0 1 63,335 Z" />
+  <text x="110" y="365" fill="#0066CC" font-family="Microsoft YaHei, Arial, sans-serif" font-size="17" font-weight="bold">مكاتب المحاسبة</text>
+  <text x="110" y="390" fill="#475569" font-family="Microsoft YaHei, Arial, sans-serif" font-size="14">2,613 مكتب + 12,560 محاسب معتمد</text>
+  <text x="110" y="415" fill="#94A3B8" font-family="Microsoft YaHei, Arial, sans-serif" font-size="12">شريحة الاحتراف: بحاجة لأدوات رقمية متقدمة</text>
+  
+  
+  <path fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1" d="M68,460 H612 A8,8 0 0 1 620,468 V562 A8,8 0 0 1 612,570 H68 A8,8 0 0 1 60,562 V468 A8,8 0 0 1 68,460 Z" />
+  <path fill="#16A34A" d="M63,460 H63 A3,3 0 0 1 66,463 V567 A3,3 0 0 1 63,570 H63 A3,3 0 0 1 60,567 V463 A3,3 0 0 1 63,460 Z" />
+  <text x="110" y="490" fill="#16A34A" font-family="Microsoft YaHei, Arial, sans-serif" font-size="17" font-weight="bold">المؤسسات المتوسطة والكبيرة</text>
+  <text x="110" y="515" fill="#475569" font-family="Microsoft YaHei, Arial, sans-serif" font-size="14">58,000 مؤسسة + 1,200 مؤسسة خارج النظام الجبائي</text>
+  <text x="110" y="540" fill="#94A3B8" font-family="Microsoft YaHei, Arial, sans-serif" font-size="12">حلول مخصصة للمؤسسات متعددة الفروع</text>
+  
+  
+  <path fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1" d="M672,140 H1228 A12,12 0 0 1 1240,152 V638 A12,12 0 0 1 1228,650 H672 A12,12 0 0 1 660,638 V152 A12,12 0 0 1 672,140 Z" />
+  <path fill="#0066CC" d="M672,140 H1228 A12,12 0 0 1 1240,152 V183 A12,12 0 0 1 1228,195 H672 A12,12 0 0 1 660,183 V152 A12,12 0 0 1 672,140 Z" />
+  <rect x="660" y="185" width="580" height="10" fill="#0066CC" />
+  <text x="950" y="178" text-anchor="middle" fill="#FFFFFF" font-family="Microsoft YaHei, Arial, sans-serif" font-size="22" font-weight="bold">مصادر الإيرادات</text>
+  
+  
+  <path fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1" d="M688,210 H1212 A8,8 0 0 1 1220,218 V332 A8,8 0 0 1 1212,340 H688 A8,8 0 0 1 680,332 V218 A8,8 0 0 1 688,210 Z" />
+  <path fill="#003366" d="M683,210 H683 A3,3 0 0 1 686,213 V337 A3,3 0 0 1 683,340 H683 A3,3 0 0 1 680,337 V213 A3,3 0 0 1 683,210 Z" />
+  <text x="730" y="240" fill="#003366" font-family="Microsoft YaHei, Arial, sans-serif" font-size="18" font-weight="bold">الاشتراكات الشهرية/السنوية</text>
+  <text x="730" y="268" fill="#475569" font-family="Microsoft YaHei, Arial, sans-serif" font-size="14">Start: 1,490 دج | Pro: 3,490 دج</text>
+  <text x="730" y="290" fill="#475569" font-family="Microsoft YaHei, Arial, sans-serif" font-size="14">Enterprise: 5,990 دج</text>
+  <text x="730" y="318" fill="#16A34A" font-family="Microsoft YaHei, Arial, sans-serif" font-size="14" font-weight="bold">مصدر الإيراد الأساسي + 70%</text>
+  
+  
+  <path fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1" d="M688,355 H1212 A8,8 0 0 1 1220,363 V457 A8,8 0 0 1 1212,465 H688 A8,8 0 0 1 680,457 V363 A8,8 0 0 1 688,355 Z" />
+  <path fill="#0891B2" d="M683,355 H683 A3,3 0 0 1 686,358 V462 A3,3 0 0 1 683,465 H683 A3,3 0 0 1 680,462 V358 A3,3 0 0 1 683,355 Z" />
+  <text x="730" y="385" fill="#0891B2" font-family="Microsoft YaHei, Arial, sans-serif" font-size="18" font-weight="bold">الخدمات الإضافية</text>
+  <text x="730" y="413" fill="#475569" font-family="Microsoft YaHei, Arial, sans-serif" font-size="14">دعم تقني مخصص + استشارات ضريبية</text>
+  <text x="730" y="438" fill="#94A3B8" font-family="Microsoft YaHei, Arial, sans-serif" font-size="12">هوامش ربح عالية + تعميق العلاقة مع العميل</text>
+  
+  
+  <path fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1" d="M688,480 H1212 A8,8 0 0 1 1220,488 V582 A8,8 0 0 1 1212,590 H688 A8,8 0 0 1 680,582 V488 A8,8 0 0 1 688,480 Z" />
+  <path fill="#7C3AED" d="M683,480 H683 A3,3 0 0 1 686,483 V587 A3,3 0 0 1 683,590 H683 A3,3 0 0 1 680,587 V483 A3,3 0 0 1 683,480 Z" />
+  <text x="730" y="510" fill="#7C3AED" font-family="Microsoft YaHei, Arial, sans-serif" font-size="18" font-weight="bold">الشراكات والتعاون</text>
+  <text x="730" y="538" fill="#475569" font-family="Microsoft YaHei, Arial, sans-serif" font-size="14">عمولات بيع مشترك مع البنوك</text>
+  <text x="730" y="563" fill="#94A3B8" font-family="Microsoft YaHei, Arial, sans-serif" font-size="12">توسيع قاعدة المستخدمين عبر شراكات استراتيجية</text>
+  
+  
+  <line x1="40" y1="670" x2="1240" y2="670" stroke="#E2E8F0" stroke-width="1" />
+  <text x="40" y="700" fill="#94A3B8" font-family="Microsoft YaHei, Arial, sans-serif" font-size="12">المصدر: دراسة المشروع + PRODUCT.md</text>
+  <text x="640" y="700" text-anchor="middle" fill="#94A3B8" font-family="Microsoft YaHei, Arial, sans-serif" font-size="12">السوق والنموذج التجاري</text>
+  <text x="1220" y="700" text-anchor="end" fill="#64748B" font-family="Microsoft YaHei, Arial, sans-serif" font-size="14">08</text>
+</svg>

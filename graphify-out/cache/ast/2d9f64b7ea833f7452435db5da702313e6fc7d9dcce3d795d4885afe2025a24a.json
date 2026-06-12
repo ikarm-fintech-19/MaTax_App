@@ -1,0 +1,295 @@
+{
+  "nodes": [
+    {
+      "id": "home_dev_lab_documents_github_matax_app_src_server_ts",
+      "label": "server.ts",
+      "file_type": "code",
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/server.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "src_server_getserverentry",
+      "label": "getServerEntry()",
+      "file_type": "code",
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/server.ts",
+      "source_location": "L12"
+    },
+    {
+      "id": "src_server_brandederrorresponse",
+      "label": "brandedErrorResponse()",
+      "file_type": "code",
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/server.ts",
+      "source_location": "L21"
+    },
+    {
+      "id": "src_server_iscatastrophicssrerrorbody",
+      "label": "isCatastrophicSsrErrorBody()",
+      "file_type": "code",
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/server.ts",
+      "source_location": "L28"
+    },
+    {
+      "id": "src_server_normalizecatastrophicssrresponse",
+      "label": "normalizeCatastrophicSsrResponse()",
+      "file_type": "code",
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/server.ts",
+      "source_location": "L55"
+    },
+    {
+      "id": "src_server_fetch",
+      "label": "fetch()",
+      "file_type": "code",
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/server.ts",
+      "source_location": "L70"
+    }
+  ],
+  "edges": [
+    {
+      "source": "home_dev_lab_documents_github_matax_app_src_server_ts",
+      "target": "home_dev_lab_documents_github_matax_app_src_lib_error_capture",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/server.ts",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "home_dev_lab_documents_github_matax_app_src_server_ts",
+      "target": "home_dev_lab_documents_github_matax_app_src_lib_error_capture",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/server.ts",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "home_dev_lab_documents_github_matax_app_src_server_ts",
+      "target": "lib_error_capture_consumelastcapturederror",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/server.ts",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "home_dev_lab_documents_github_matax_app_src_server_ts",
+      "target": "home_dev_lab_documents_github_matax_app_src_lib_error_page",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/server.ts",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "home_dev_lab_documents_github_matax_app_src_server_ts",
+      "target": "lib_error_page_rendererrorpage",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/server.ts",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "home_dev_lab_documents_github_matax_app_src_server_ts",
+      "target": "src_server_getserverentry",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/server.ts",
+      "source_location": "L12",
+      "weight": 1.0
+    },
+    {
+      "source": "home_dev_lab_documents_github_matax_app_src_server_ts",
+      "target": "src_server_brandederrorresponse",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/server.ts",
+      "source_location": "L21",
+      "weight": 1.0
+    },
+    {
+      "source": "home_dev_lab_documents_github_matax_app_src_server_ts",
+      "target": "src_server_iscatastrophicssrerrorbody",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/server.ts",
+      "source_location": "L28",
+      "weight": 1.0
+    },
+    {
+      "source": "home_dev_lab_documents_github_matax_app_src_server_ts",
+      "target": "src_server_normalizecatastrophicssrresponse",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/server.ts",
+      "source_location": "L55",
+      "weight": 1.0
+    },
+    {
+      "source": "home_dev_lab_documents_github_matax_app_src_server_ts",
+      "target": "src_server_fetch",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/server.ts",
+      "source_location": "L70",
+      "weight": 1.0
+    },
+    {
+      "source": "src_server_getserverentry",
+      "target": "server_entry",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/server.ts",
+      "source_location": "L14",
+      "weight": 1.0
+    },
+    {
+      "source": "src_server_normalizecatastrophicssrresponse",
+      "target": "src_server_iscatastrophicssrerrorbody",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/server.ts",
+      "source_location": "L61",
+      "weight": 1.0
+    },
+    {
+      "source": "src_server_normalizecatastrophicssrresponse",
+      "target": "src_server_brandederrorresponse",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/server.ts",
+      "source_location": "L66",
+      "weight": 1.0
+    },
+    {
+      "source": "src_server_fetch",
+      "target": "src_server_getserverentry",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/server.ts",
+      "source_location": "L72",
+      "weight": 1.0
+    },
+    {
+      "source": "src_server_fetch",
+      "target": "src_server_normalizecatastrophicssrresponse",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/server.ts",
+      "source_location": "L74",
+      "weight": 1.0
+    },
+    {
+      "source": "src_server_fetch",
+      "target": "src_server_brandederrorresponse",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/server.ts",
+      "source_location": "L77",
+      "weight": 1.0
+    }
+  ],
+  "raw_calls": [
+    {
+      "caller_nid": "src_server_getserverentry",
+      "callee": "then",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/server.ts",
+      "source_location": "L14"
+    },
+    {
+      "caller_nid": "src_server_brandederrorresponse",
+      "callee": "renderErrorPage",
+      "is_member_call": false,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/server.ts",
+      "source_location": "L22"
+    },
+    {
+      "caller_nid": "src_server_iscatastrophicssrerrorbody",
+      "callee": "parse",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/server.ts",
+      "source_location": "L31"
+    },
+    {
+      "caller_nid": "src_server_iscatastrophicssrerrorbody",
+      "callee": "isArray",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/server.ts",
+      "source_location": "L36"
+    },
+    {
+      "caller_nid": "src_server_iscatastrophicssrerrorbody",
+      "callee": "every",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/server.ts",
+      "source_location": "L42"
+    },
+    {
+      "caller_nid": "src_server_iscatastrophicssrerrorbody",
+      "callee": "keys",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/server.ts",
+      "source_location": "L42"
+    },
+    {
+      "caller_nid": "src_server_normalizecatastrophicssrresponse",
+      "callee": "get",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/server.ts",
+      "source_location": "L57"
+    },
+    {
+      "caller_nid": "src_server_normalizecatastrophicssrresponse",
+      "callee": "includes",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/server.ts",
+      "source_location": "L58"
+    },
+    {
+      "caller_nid": "src_server_normalizecatastrophicssrresponse",
+      "callee": "text",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/server.ts",
+      "source_location": "L60"
+    },
+    {
+      "caller_nid": "src_server_normalizecatastrophicssrresponse",
+      "callee": "clone",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/server.ts",
+      "source_location": "L60"
+    },
+    {
+      "caller_nid": "src_server_normalizecatastrophicssrresponse",
+      "callee": "error",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/server.ts",
+      "source_location": "L65"
+    },
+    {
+      "caller_nid": "src_server_normalizecatastrophicssrresponse",
+      "callee": "consumeLastCapturedError",
+      "is_member_call": false,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/server.ts",
+      "source_location": "L65"
+    },
+    {
+      "caller_nid": "src_server_fetch",
+      "callee": "error",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/server.ts",
+      "source_location": "L76"
+    }
+  ]
+}

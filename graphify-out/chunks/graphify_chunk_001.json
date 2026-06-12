@@ -1,0 +1,12 @@
+{
+  "chunk_id": 1,
+  "category": "code",
+  "files": [
+    "/home/dev-lab/Documents/GitHub/MaTax_App/src/routeTree.gen.ts",
+    "/home/dev-lab/Documents/GitHub/MaTax_App/src/server.ts",
+    "/home/dev-lab/Documents/GitHub/MaTax_App/src/router.tsx",
+    "/home/dev-lab/Documents/GitHub/MaTax_App/src/start.ts"
+  ],
+  "input_tokens": 0,
+  "output_tokens": 0
+}

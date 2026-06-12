@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720">
+  
+  <rect width="1280" height="720" fill="#FFFFFF" />
+  
+  
+  <rect x="0" y="0" width="1280" height="70" fill="#003366" />
+  <rect x="0" y="0" width="6" height="70" fill="#CC0000" />
+  <text x="40" y="46" fill="#FFFFFF" font-family="Microsoft YaHei, Arial, sans-serif" font-size="28" font-weight="bold">
+    03 | السوق والنموذج التجاري — التميّز التنافسي
+  </text>
+  <text x="1220" y="46" text-anchor="end" fill="#FFFFFF" font-family="Georgia, Microsoft YaHei, serif" font-size="18" font-weight="bold">MATAX</text>
+  
+  
+  <rect x="0" y="70" width="1280" height="50" fill="#F0F4F8" />
+  <rect x="0" y="70" width="6" height="50" fill="#0066CC" />
+  <text x="40" y="102" fill="#1E293B" font-family="Microsoft YaHei, Arial, sans-serif" font-size="18">
+    MATAX يتفوق على المنافسين بفضل أتمتة الإجراءات الجبائية بالكامل
+  </text>
+  
+  
+  
+  <path fill="#003366" d="M66,140 H1214 A6,6 0 0 1 1220,146 V189 A6,6 0 0 1 1214,195 H66 A6,6 0 0 1 60,189 V146 A6,6 0 0 1 66,140 Z" />
+  <text x="220" y="175" text-anchor="middle" fill="#FFFFFF" font-family="Microsoft YaHei, Arial, sans-serif" font-size="16" font-weight="bold">المعيار</text>
+  <text x="450" y="175" text-anchor="middle" fill="#FFFFFF" font-family="Microsoft YaHei, Arial, sans-serif" font-size="16" font-weight="bold">MATAX</text>
+  <text x="650" y="175" text-anchor="middle" fill="#FFFFFF" font-family="Microsoft YaHei, Arial, sans-serif" font-size="16" font-weight="bold">Compta Pro</text>
+  <text x="850" y="175" text-anchor="middle" fill="#FFFFFF" font-family="Microsoft YaHei, Arial, sans-serif" font-size="16" font-weight="bold">SAGE</text>
+  <text x="1050" y="175" text-anchor="middle" fill="#FFFFFF" font-family="Microsoft YaHei, Arial, sans-serif" font-size="16" font-weight="bold">FiscalPro</text>
+  
+  
+  <path fill="#F8FAFC" d="M64,200 H1216 A4,4 0 0 1 1220,204 V261 A4,4 0 0 1 1216,265 H64 A4,4 0 0 1 60,261 V204 A4,4 0 0 1 64,200 Z" />
+  <text x="220" y="240" text-anchor="middle" fill="#1E293B" font-family="Microsoft YaHei, Arial, sans-serif" font-size="15" font-weight="bold">التصريح الجبائي الآلي</text>
+  <text x="450" y="240" text-anchor="middle" fill="#16A34A" font-family="Microsoft YaHei, Arial, sans-serif" font-size="15" font-weight="bold">✅ متكامل</text>
+  <text x="650" y="240" text-anchor="middle" fill="#DC2626" font-family="Microsoft YaHei, Arial, sans-serif" font-size="15">❌ غير متوفر</text>
+  <text x="850" y="240" text-anchor="middle" fill="#DC2626" font-family="Microsoft YaHei, Arial, sans-serif" font-size="15">❌ غير متوفر</text>
+  <text x="1050" y="240" text-anchor="middle" fill="#EA580C" font-family="Microsoft YaHei, Arial, sans-serif" font-size="15">⚠️ جزئي</text>
+  
+  
+  <path fill="#FFFFFF" d="M64,270 H1216 A4,4 0 0 1 1220,274 V331 A4,4 0 0 1 1216,335 H64 A4,4 0 0 1 60,331 V274 A4,4 0 0 1 64,270 Z" />
+  <text x="220" y="310" text-anchor="middle" fill="#1E293B" font-family="Microsoft YaHei, Arial, sans-serif" font-size="15" font-weight="bold">نظام التنبيهات الذكي</text>
+  <text x="450" y="310" text-anchor="middle" fill="#16A34A" font-family="Microsoft YaHei, Arial, sans-serif" font-size="15" font-weight="bold">✅ استباقي</text>
+  <text x="650" y="310" text-anchor="middle" fill="#DC2626" font-family="Microsoft YaHei, Arial, sans-serif" font-size="15">❌ سلبي فقط</text>
+  <text x="850" y="310" text-anchor="middle" fill="#DC2626" font-family="Microsoft YaHei, Arial, sans-serif" font-size="15">❌ غير متوفر</text>
+  <text x="1050" y="310" text-anchor="middle" fill="#EA580C" font-family="Microsoft YaHei, Arial, sans-serif" font-size="15">⚠️ محدود</text>
+  
+  
+  <path fill="#F8FAFC" d="M64,340 H1216 A4,4 0 0 1 1220,344 V401 A4,4 0 0 1 1216,405 H64 A4,4 0 0 1 60,401 V344 A4,4 0 0 1 64,340 Z" />
+  <text x="220" y="380" text-anchor="middle" fill="#1E293B" font-family="Microsoft YaHei, Arial, sans-serif" font-size="15" font-weight="bold">الأرشفة السحابية المشفرة</text>
+  <text x="450" y="380" text-anchor="middle" fill="#16A34A" font-family="Microsoft YaHei, Arial, sans-serif" font-size="15" font-weight="bold">✅ 256-SSL</text>
+  <text x="650" y="380" text-anchor="middle" fill="#16A34A" font-family="Microsoft YaHei, Arial, sans-serif" font-size="15">✅ Cloud</text>
+  <text x="850" y="380" text-anchor="middle" fill="#DC2626" font-family="Microsoft YaHei, Arial, sans-serif" font-size="15">❌ محلي فقط</text>
+  <text x="1050" y="380" text-anchor="middle" fill="#DC2626" font-family="Microsoft YaHei, Arial, sans-serif" font-size="15">❌ غير متوفر</text>
+  
+  
+  <path fill="#FFFFFF" d="M64,410 H1216 A4,4 0 0 1 1220,414 V471 A4,4 0 0 1 1216,475 H64 A4,4 0 0 1 60,471 V414 A4,4 0 0 1 64,410 Z" />
+  <text x="220" y="450" text-anchor="middle" fill="#1E293B" font-family="Microsoft YaHei, Arial, sans-serif" font-size="15" font-weight="bold">الامتثال للتشريعات الجزائرية</text>
+  <text x="450" y="450" text-anchor="middle" fill="#16A34A" font-family="Microsoft YaHei, Arial, sans-serif" font-size="15" font-weight="bold">✅ تحديث فوري</text>
+  <text x="650" y="450" text-anchor="middle" fill="#DC2626" font-family="Microsoft YaHei, Arial, sans-serif" font-size="15">❌ بطيء</text>
+  <text x="850" y="450" text-anchor="middle" fill="#16A34A" font-family="Microsoft YaHei, Arial, sans-serif" font-size="15">✅ متوسط</text>
+  <text x="1050" y="450" text-anchor="middle" fill="#DC2626" font-family="Microsoft YaHei, Arial, sans-serif" font-size="15">❌ محدود</text>
+  
+  
+  <path fill="#F8FAFC" d="M64,480 H1216 A4,4 0 0 1 1220,484 V541 A4,4 0 0 1 1216,545 H64 A4,4 0 0 1 60,541 V484 A4,4 0 0 1 64,480 Z" />
+  <text x="220" y="520" text-anchor="middle" fill="#1E293B" font-family="Microsoft YaHei, Arial, sans-serif" font-size="15" font-weight="bold">التكلفة الشهرية</text>
+  <text x="450" y="520" text-anchor="middle" fill="#16A34A" font-family="Microsoft YaHei, Arial, sans-serif" font-size="16" font-weight="bold">1,490 دج</text>
+  <text x="650" y="520" text-anchor="middle" fill="#DC2626" font-family="Microsoft YaHei, Arial, sans-serif" font-size="16" font-weight="bold">5,000+ دج</text>
+  <text x="850" y="520" text-anchor="middle" fill="#DC2626" font-family="Microsoft YaHei, Arial, sans-serif" font-size="16" font-weight="bold">15,000+ دج</text>
+  <text x="1050" y="520" text-anchor="middle" fill="#EA580C" font-family="Microsoft YaHei, Arial, sans-serif" font-size="16" font-weight="bold">3,500+ دج</text>
+  
+  
+  <path fill="#FFFFFF" d="M64,550 H1216 A4,4 0 0 1 1220,554 V611 A4,4 0 0 1 1216,615 H64 A4,4 0 0 1 60,611 V554 A4,4 0 0 1 64,550 Z" />
+  <text x="220" y="590" text-anchor="middle" fill="#1E293B" font-family="Microsoft YaHei, Arial, sans-serif" font-size="15" font-weight="bold">التكلفة السنوية</text>
+  <text x="450" y="590" text-anchor="middle" fill="#16A34A" font-family="Microsoft YaHei, Arial, sans-serif" font-size="16" font-weight="bold">16,880 دج</text>
+  <text x="650" y="590" text-anchor="middle" fill="#DC2626" font-family="Microsoft YaHei, Arial, sans-serif" font-size="16" font-weight="bold">60,000+ دج</text>
+  <text x="850" y="590" text-anchor="middle" fill="#DC2626" font-family="Microsoft YaHei, Arial, sans-serif" font-size="16" font-weight="bold">180,000+ دج</text>
+  <text x="1050" y="590" text-anchor="middle" fill="#EA580C" font-family="Microsoft YaHei, Arial, sans-serif" font-size="16" font-weight="bold">42,000+ دج</text>
+  
+  
+  <line x1="40" y1="640" x2="1240" y2="640" stroke="#E2E8F0" stroke-width="1" />
+  <text x="40" y="670" fill="#94A3B8" font-family="Microsoft YaHei, Arial, sans-serif" font-size="12">المصدر: مقارنة السوق</text>
+  <text x="640" y="670" text-anchor="middle" fill="#94A3B8" font-family="Microsoft YaHei, Arial, sans-serif" font-size="12">التميّز التنافسي</text>
+  <text x="1220" y="670" text-anchor="end" fill="#64748B" font-family="Microsoft YaHei, Arial, sans-serif" font-size="14">09</text>
+</svg>

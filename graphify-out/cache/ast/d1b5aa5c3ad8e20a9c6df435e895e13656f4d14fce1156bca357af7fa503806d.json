@@ -1,0 +1,147 @@
+{
+  "nodes": [
+    {
+      "id": "home_dev_lab_documents_github_matax_app_src_routes_app_settings_tsx",
+      "label": "settings.tsx",
+      "file_type": "code",
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/routes/_app/settings.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "app_settings_save",
+      "label": "save()",
+      "file_type": "code",
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/routes/_app/settings.tsx",
+      "source_location": "L26"
+    }
+  ],
+  "edges": [
+    {
+      "source": "home_dev_lab_documents_github_matax_app_src_routes_app_settings_tsx",
+      "target": "react_router",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/routes/_app/settings.tsx",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "home_dev_lab_documents_github_matax_app_src_routes_app_settings_tsx",
+      "target": "react",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/routes/_app/settings.tsx",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "home_dev_lab_documents_github_matax_app_src_routes_app_settings_tsx",
+      "target": "use_auth",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/routes/_app/settings.tsx",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "home_dev_lab_documents_github_matax_app_src_routes_app_settings_tsx",
+      "target": "i18n",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/routes/_app/settings.tsx",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "home_dev_lab_documents_github_matax_app_src_routes_app_settings_tsx",
+      "target": "client",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/routes/_app/settings.tsx",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "home_dev_lab_documents_github_matax_app_src_routes_app_settings_tsx",
+      "target": "sonner",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/routes/_app/settings.tsx",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "home_dev_lab_documents_github_matax_app_src_routes_app_settings_tsx",
+      "target": "app_settings_save",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/routes/_app/settings.tsx",
+      "source_location": "L26",
+      "weight": 1.0
+    }
+  ],
+  "raw_calls": [
+    {
+      "caller_nid": "app_settings_save",
+      "callee": "setLoading",
+      "is_member_call": false,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/routes/_app/settings.tsx",
+      "source_location": "L28"
+    },
+    {
+      "caller_nid": "app_settings_save",
+      "callee": "eq",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/routes/_app/settings.tsx",
+      "source_location": "L29"
+    },
+    {
+      "caller_nid": "app_settings_save",
+      "callee": "update",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/routes/_app/settings.tsx",
+      "source_location": "L29"
+    },
+    {
+      "caller_nid": "app_settings_save",
+      "callee": "from",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/routes/_app/settings.tsx",
+      "source_location": "L29"
+    },
+    {
+      "caller_nid": "app_settings_save",
+      "callee": "setLoading",
+      "is_member_call": false,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/routes/_app/settings.tsx",
+      "source_location": "L30"
+    },
+    {
+      "caller_nid": "app_settings_save",
+      "callee": "error",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/routes/_app/settings.tsx",
+      "source_location": "L31"
+    },
+    {
+      "caller_nid": "app_settings_save",
+      "callee": "success",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/routes/_app/settings.tsx",
+      "source_location": "L32"
+    },
+    {
+      "caller_nid": "app_settings_save",
+      "callee": "t",
+      "is_member_call": false,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/routes/_app/settings.tsx",
+      "source_location": "L32"
+    }
+  ]
+}

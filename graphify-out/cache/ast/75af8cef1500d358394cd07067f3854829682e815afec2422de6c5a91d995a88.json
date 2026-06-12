@@ -1,0 +1,94 @@
+{
+  "nodes": [
+    {
+      "id": "home_dev_lab_documents_github_matax_app_src_lib_engines_tfpc_ts",
+      "label": "tfpc.ts",
+      "file_type": "code",
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/engines/tfpc.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "engines_tfpc_calculatetfpc",
+      "label": "calculateTfpc()",
+      "file_type": "code",
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/engines/tfpc.ts",
+      "source_location": "L48"
+    }
+  ],
+  "edges": [
+    {
+      "source": "home_dev_lab_documents_github_matax_app_src_lib_engines_tfpc_ts",
+      "target": "engines_tfpc_calculatetfpc",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/engines/tfpc.ts",
+      "source_location": "L48",
+      "weight": 1.0
+    }
+  ],
+  "raw_calls": [
+    {
+      "caller_nid": "engines_tfpc_calculatetfpc",
+      "callee": "max",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/engines/tfpc.ts",
+      "source_location": "L49"
+    },
+    {
+      "caller_nid": "engines_tfpc_calculatetfpc",
+      "callee": "max",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/engines/tfpc.ts",
+      "source_location": "L50"
+    },
+    {
+      "caller_nid": "engines_tfpc_calculatetfpc",
+      "callee": "max",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/engines/tfpc.ts",
+      "source_location": "L51"
+    },
+    {
+      "caller_nid": "engines_tfpc_calculatetfpc",
+      "callee": "max",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/engines/tfpc.ts",
+      "source_location": "L52"
+    },
+    {
+      "caller_nid": "engines_tfpc_calculatetfpc",
+      "callee": "max",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/engines/tfpc.ts",
+      "source_location": "L64"
+    },
+    {
+      "caller_nid": "engines_tfpc_calculatetfpc",
+      "callee": "max",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/engines/tfpc.ts",
+      "source_location": "L67"
+    },
+    {
+      "caller_nid": "engines_tfpc_calculatetfpc",
+      "callee": "max",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/engines/tfpc.ts",
+      "source_location": "L70"
+    },
+    {
+      "caller_nid": "engines_tfpc_calculatetfpc",
+      "callee": "min",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/engines/tfpc.ts",
+      "source_location": "L74"
+    },
+    {
+      "caller_nid": "engines_tfpc_calculatetfpc",
+      "callee": "max",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/engines/tfpc.ts",
+      "source_location": "L77"
+    }
+  ]
+}

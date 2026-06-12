@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720">
+  <!-- Background -->
+  <rect width="1280" height="720" fill="#FFFFFF"/>
+  
+  <!-- Header -->
+  <rect x="0" y="0" width="1280" height="70" fill="#003366"/>
+  <rect x="0" y="0" width="6" height="70" fill="#CC0000"/>
+  <text x="40" y="46" fill="#FFFFFF" font-family="Microsoft YaHei, Arial, sans-serif" font-size="28" font-weight="bold">
+    02 | الجوانب الابتكارية للمشروع
+  </text>
+  <text x="1220" y="46" text-anchor="end" fill="#FFFFFF" font-family="Georgia, Microsoft YaHei, serif" font-size="18" font-weight="bold">MATAX</text>
+  
+  <!-- Key message bar -->
+  <rect x="0" y="70" width="1280" height="50" fill="#F0F4F8"/>
+  <rect x="0" y="70" width="6" height="50" fill="#0066CC"/>
+  <text x="40" y="102" fill="#1D1D1F" font-family="Microsoft YaHei, Arial, sans-serif" font-size="18">
+    6 مبادرات تجعل MATAX خياراً استراتيجياً للمقاولين والشركات الجزائرية
+  </text>
+  
+  <!-- Innovation Grid: 3 columns x 2 rows -->
+  <!-- Row 1 -->
+  <!-- Card 1: بسيطة -->
+  <rect x="60" y="145" width="370" height="230" fill="#F0F4F8" rx="8"/>
+  <rect x="60" y="145" width="370" height="6" fill="#003366" rx="3"/>
+  <circle cx="248" cy="198" r="22" fill="#003366" fill-opacity="0.15"/>
+  <text x="248" y="205" text-anchor="middle" fill="#003366" font-family="Microsoft YaHei, Arial, sans-serif" font-size="20" font-weight="bold">🚀</text>
+  <text x="245" y="248" text-anchor="middle" fill="#003366" font-family="Microsoft YaHei, Arial, sans-serif" font-size="18" font-weight="bold">بسيطة وسلسة</text>
+  <text x="245" y="275" text-anchor="middle" fill="#5A5A5A" font-family="Microsoft YaHei, Arial, sans-serif" font-size="13">واجهة مستخدم سلسة لا تتطلب خبرة محاسبية مسبقة</text>
+  <text x="245" y="300" text-anchor="middle" fill="#5A5A5A" font-family="Microsoft YaHei, Arial, sans-serif" font-size="12">تقليل زمن التأهيل ل 48 ساعة فقط</text>
+  
+  <!-- Card 2: استباقية -->
+  <rect x="455" y="145" width="370" height="230" fill="#F0F4F8" rx="8"/>
+  <rect x="455" y="145" width="370" height="6" fill="#0066CC" rx="3"/>
+  <circle cx="643" cy="198" r="22" fill="#0066CC" fill-opacity="0.15"/>
+  <text x="643" y="205" text-anchor="middle" fill="#0066CC" font-family="Microsoft YaHei, Arial, sans-serif" font-size="20" font-weight="bold">🔔</text>
+  <text x="640" y="248" text-anchor="middle" fill="#0066CC" font-family="Microsoft YaHei, Arial, sans-serif" font-size="18" font-weight="bold">استباقية واستشراف</text>
+  <text x="640" y="275" text-anchor="middle" fill="#5A5A5A" font-family="Microsoft YaHei, Arial, sans-serif" font-size="13">تنبيهات ذكية عبر SMS والبريد الإلكتروني</text>
+  <text x="640" y="300" text-anchor="middle" fill="#5A5A5A" font-family="Microsoft YaHei, Arial, sans-serif" font-size="12">متابعة مسبقة للمواعيد الجبائية</text>
+  
+  <!-- Card 3: قانونية -->
+  <rect x="850" y="145" width="370" height="230" fill="#F0F4F8" rx="8"/>
+  <rect x="850" y="145" width="370" height="6" fill="#0099AA" rx="3"/>
+  <circle cx="1038" cy="198" r="22" fill="#0099AA" fill-opacity="0.15"/>
+  <text x="1038" y="205" text-anchor="middle" fill="#0099AA" font-family="Microsoft YaHei, Arial, sans-serif" font-size="20" font-weight="bold">⚖️</text>
+  <text x="1035" y="248" text-anchor="middle" fill="#0099AA" font-family="Microsoft YaHei, Arial, sans-serif" font-size="18" font-weight="bold">ملاءمة قانونية</text>
+  <text x="1035" y="275" text-anchor="middle" fill="#5A5A5A" font-family="Microsoft YaHei, Arial, sans-serif" font-size="13">تطابق مع الإطار القانوني الجزائري</text>
+  <text x="1035" y="300" text-anchor="middle" fill="#5A5A5A" font-family="Microsoft YaHei, Arial, sans-serif" font-size="12">تحديث تلقائي مع القوانين المالية</text>
+  
+  <!-- Row 2 -->
+  <!-- Card 4: أتمتة -->
+  <rect x="60" y="400" width="370" height="230" fill="#F0F4F8" rx="8"/>
+  <rect x="60" y="400" width="370" height="6" fill="#2E7D32" rx="3"/>
+  <circle cx="248" cy="453" r="22" fill="#2E7D32" fill-opacity="0.15"/>
+  <text x="248" y="460" text-anchor="middle" fill="#2E7D32" font-family="Microsoft YaHei, Arial, sans-serif" font-size="20" font-weight="bold">📱</text>
+  <text x="245" y="503" text-anchor="middle" fill="#2E7D32" font-family="Microsoft YaHei, Arial, sans-serif" font-size="18" font-weight="bold">أتمتة شاملة</text>
+  <text x="245" y="530" text-anchor="middle" fill="#5A5A5A" font-family="Microsoft YaHei, Arial, sans-serif" font-size="13">توليد تلقائي للتصريحات G50</text>
+  <text x="245" y="555" text-anchor="middle" fill="#5A5A5A" font-family="Microsoft YaHei, Arial, sans-serif" font-size="12">صفر أخطاء يدوية في الإجراءات الجبائية</text>
+  
+  <!-- Card 5: اقتصادية -->
+  <rect x="455" y="400" width="370" height="230" fill="#F0F4F8" rx="8"/>
+  <rect x="455" y="400" width="370" height="6" fill="#1565C0" rx="3"/>
+  <circle cx="643" cy="453" r="22" fill="#1565C0" fill-opacity="0.15"/>
+  <text x="643" y="460" text-anchor="middle" fill="#1565C0" font-family="Microsoft YaHei, Arial, sans-serif" font-size="20" font-weight="bold">💰</text>
+  <text x="640" y="503" text-anchor="middle" fill="#1565C0" font-family="Microsoft YaHei, Arial, sans-serif" font-size="18" font-weight="bold">اشتراكات اقتصادية</text>
+  <text x="640" y="530" text-anchor="middle" fill="#5A5A5A" font-family="Microsoft YaHei, Arial, sans-serif" font-size="13">تقليل التكاليف بنسبة 60% مقارنة بالمكاتب</text>
+  <text x="640" y="555" text-anchor="middle" fill="#5A5A5A" font-family="Microsoft YaHei, Arial, sans-serif" font-size="12">اشتراكات من 1,490 دج/شهر</text>
+  
+  <!-- Card 6: سحابية -->
+  <rect x="850" y="400" width="370" height="230" fill="#F0F4F8" rx="8"/>
+  <rect x="850" y="400" width="370" height="6" fill="#6A1B9A" rx="3"/>
+  <circle cx="1038" cy="453" r="22" fill="#6A1B9A" fill-opacity="0.15"/>
+  <text x="1038" y="460" text-anchor="middle" fill="#6A1B9A" font-family="Microsoft YaHei, Arial, sans-serif" font-size="20" font-weight="bold">☁️</text>
+  <text x="1035" y="503" text-anchor="middle" fill="#6A1B9A" font-family="Microsoft YaHei, Arial, sans-serif" font-size="18" font-weight="bold">بنية تحتية سحابية</text>
+  <text x="1035" y="530" text-anchor="middle" fill="#5A5A5A" font-family="Microsoft YaHei, Arial, sans-serif" font-size="13">استضافة Cloudflare المحمية</text>
+  <text x="1035" y="555" text-anchor="middle" fill="#5A5A5A" font-family="Microsoft YaHei, Arial, sans-serif" font-size="12">تشفير 256-SSL + مزامنة Google Drive</text>
+  
+  <!-- Footer -->
+  <line x1="40" y1="665" x2="1240" y2="665" stroke="#F0F4F8" stroke-width="1"/>
+  <text x="40" y="695" fill="#8A8A8A" font-family="Microsoft YaHei, Arial, sans-serif" font-size="12">المصدر: PRODUCT.md</text>
+  <text x="640" y="695" text-anchor="middle" fill="#8A8A8A" font-family="Microsoft YaHei, Arial, sans-serif" font-size="12">الجوانب الابتكارية</text>
+  <text x="1220" y="695" text-anchor="end" fill="#666666" font-family="Microsoft YaHei, Arial, sans-serif" font-size="14">06</text>
+</svg>

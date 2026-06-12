@@ -1,0 +1,11 @@
+{
+  "chunk_id": 2,
+  "category": "code",
+  "files": [
+    "/home/dev-lab/Documents/GitHub/MaTax_App/src/hooks/use-auth.tsx",
+    "/home/dev-lab/Documents/GitHub/MaTax_App/src/hooks/use-theme.tsx",
+    "/home/dev-lab/Documents/GitHub/MaTax_App/src/hooks/use-mobile.tsx"
+  ],
+  "input_tokens": 0,
+  "output_tokens": 0
+}

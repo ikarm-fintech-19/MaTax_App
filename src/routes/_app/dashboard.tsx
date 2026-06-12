@@ -1,15 +1,37 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { useQuery } from "@tanstack/react-query";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useCallback } from "react";
 import { supabase } from "@/integrations/supabase/client";
 import { useAuth } from "@/hooks/use-auth";
 import { useI18n } from "@/lib/i18n";
 import { formatCurrency } from "@/lib/format";
-import { Calculator, Receipt, Building2, Fuel, Coins, ShieldCheck, AlertTriangle, Phone, X, Mail, RefreshCw, Lock, Download } from "lucide-react";
-import { downloadG50Pdf } from "@/lib/pdf/g50-pdf";
+import {
+  Calculator,
+  Receipt,
+  Building2,
+  Fuel,
+  Coins,
+  ShieldCheck,
+  AlertTriangle,
+  Phone,
+  X,
+  Mail,
+  RefreshCw,
+  Lock,
+  Download,
+  FileDown,
+} from "lucide-react";
+import { downloadG50Pdf, type G50CompanyInfo } from "@/lib/pdf/g50-pdf";
+import { downloadIrgPdf } from "@/lib/pdf/irg-pdf";
+import { downloadIbsPdf } from "@/lib/pdf/ibs-pdf";
+import { downloadTfpcPdf } from "@/lib/pdf/tfpc-pdf";
+import { downloadWithholdingPdf } from "@/lib/pdf/withholding-pdf";
 import { calculateG50 } from "@/lib/engines/tva";
 import { Skeleton } from "@/components/ui/skeleton";
-import { ObligationCalendar, getUpcomingAlertsCount } from "@/components/dashboard/obligation-calendar";
+import {
+  ObligationCalendar,
+  getUpcomingAlertsCount,
+} from "@/components/dashboard/obligation-calendar";
 import { RegimeSelector } from "@/components/onboarding/regime-selector";
 import { getUserRegime, isRegimeSet, type FiscalRegime } from "@/lib/regime-config";
 
@@ -17,14 +39,15 @@ export const Route = createFileRoute("/_app/dashboard")({
   component: Dashboard,
 });
 
+const EXAMPLE_COMPANY: G50CompanyInfo = {
+  raisonSociale: "SARL BatiPlus",
+  nif: "0002167890345678",
+  activite: "BTP / Construction",
+  adresse: "12 Rue Didouche Mourad, Alger Centre",
+  codeActivite: "4110",
+};
+
 function handleDownloadExample() {
-  const company = {
-    raisonSociale: "SARL BatiPlus",
-    nif: "0002167890345678",
-    activite: "BTP / Construction",
-    adresse: "12 Rue Didouche Mourad, Alger Centre",
-    codeActivite: "4110",
-  };
   const input = {
     period: { kind: "monthly" as const, year: 2026, month: 5 },
     operations: [
@@ -43,18 +66,19 @@ function handleDownloadExample() {
     },
   };
   const result = calculateG50(input);
-  downloadG50Pdf(company, input, result);
+  downloadG50Pdf(EXAMPLE_COMPANY, input, result);
 }
 
 function Dashboard() {
   const { t, locale } = useI18n();
-  const { user } = useAuth();
+  const { user, role } = useAuth();
   const [consultOpen, setConsultOpen] = useState(false);
   const alertCount = getUpcomingAlertsCount();
 
   // Fiscal regime (client-side, localStorage). Committee demo: regime selector
   // skipped for stability — ?demo=true always lands on Régime Réel instantly.
-  const isDemo = typeof window !== "undefined" &&
+  const isDemo =
+    typeof window !== "undefined" &&
     (new URLSearchParams(window.location.search).get("demo") === "true" ||
       sessionStorage.getItem("matax_demo") === "1");
   const [regime, setRegime] = useState<FiscalRegime>("reel");
@@ -67,24 +91,127 @@ function Dashboard() {
     if (!isDemo && !isRegimeSet()) setRegimeOpen(true);
   }, [isDemo]);
 
-
   const { data: recent = [], isLoading } = useQuery({
     queryKey: ["declarations", user?.id],
     enabled: !!user,
     queryFn: async () => {
       const { data, error } = await supabase
-        .from("declarations").select("*")
-        .order("created_at", { ascending: false }).limit(8);
+        .from("declarations")
+        .select("*")
+        .order("created_at", { ascending: false })
+        .limit(8);
       if (error) throw error;
       return data;
     },
   });
 
+  const { data: profile } = useQuery({
+    queryKey: ["profile", user?.id],
+    enabled: !!user,
+    queryFn: async () => {
+      const { data, error } = await supabase
+        .from("profiles")
+        .select("*")
+        .eq("id", user!.id)
+        .single();
+      if (error) throw error;
+      return data;
+    },
+  });
+
+  function getCompanyInfo(): G50CompanyInfo | null {
+    if (!profile) return null;
+    return {
+      raisonSociale: profile.company_name ?? "Ma société",
+      nif: profile.nif ?? "—",
+      activite: "",
+      adresse: profile.address ?? "",
+      codeActivite: "",
+    };
+  }
+
+  const downloadDeclaration = useCallback(
+    (decl: typeof recent[number]) => {
+      const company = getCompanyInfo() ?? EXAMPLE_COMPANY;
+      try {
+        switch (decl.type) {
+          case "g50": {
+            const input = decl.input as any;
+            const result = decl.result as any;
+            if (input && result) downloadG50Pdf(company, input, result);
+            break;
+          }
+          case "irg": {
+            const input = decl.input as any;
+            const result = decl.result as any;
+            if (input && result) downloadIrgPdf(input, result);
+            break;
+          }
+          case "ibs": {
+            const input = decl.input as any;
+            const result = decl.result as any;
+            if (input && result) downloadIbsPdf(input, result);
+            break;
+          }
+          case "tfpc": {
+            const input = decl.input as any;
+            const result = decl.result as any;
+            if (input && result) downloadTfpcPdf(input, result);
+            break;
+          }
+          case "withholding": {
+            const input = decl.input as any;
+            const result = decl.result as any;
+            const lines = input?.lines ?? result?.lines ?? [];
+            if (result) downloadWithholdingPdf(lines, result);
+            break;
+          }
+        }
+      } catch (e) {
+        console.error("Download failed", e);
+      }
+    },
+    [profile],
+  );
+
+  function downloadLatestG50() {
+    const latestG50 = recent.find((d) => d.type === "g50");
+    if (latestG50) {
+      downloadDeclaration(latestG50);
+    } else {
+      handleDownloadExample();
+    }
+  }
+
   const actions = [
-    { to: "/irg", icon: Calculator, label: t("nav.irg"), desc: "Impôt sur le Revenu Global (Salaires)", isComingSoon: false },
-    { to: "/ibs", icon: Building2, label: t("nav.ibs"), desc: "Impôt sur les Bénéfices des Sociétés", isComingSoon: true },
-    { to: "/tfpc", icon: Fuel, label: t("nav.tfpc"), desc: "Taxe de formation professionnelle", isComingSoon: true },
-    { to: "/withholding", icon: Coins, label: t("nav.withholding"), desc: "Gestion des retenues à la source", isComingSoon: true },
+    {
+      to: "/irg",
+      icon: Calculator,
+      label: t("nav.irg"),
+      desc: "Impôt sur le Revenu Global (Salaires)",
+      isComingSoon: false,
+    },
+    {
+      to: "/ibs",
+      icon: Building2,
+      label: t("nav.ibs"),
+      desc: "Impôt sur les Bénéfices des Sociétés",
+      isComingSoon: false,
+    },
+    {
+      to: "/tfpc",
+      icon: Fuel,
+      label: t("nav.tfpc"),
+      desc: "Taxe de formation professionnelle",
+      isComingSoon: false,
+    },
+    {
+      to: "/withholding",
+      icon: Coins,
+      label: t("nav.withholding"),
+      desc: "Gestion des retenues à la source",
+      isComingSoon: false,
+    },
   ];
 
   return (
@@ -100,16 +227,22 @@ function Dashboard() {
             </div>
           )}
           <button
-            onClick={() => { setChangeMode(true); setRegimeOpen(true); }}
+            onClick={() => {
+              setChangeMode(true);
+              setRegimeOpen(true);
+            }}
             className="inline-flex items-center gap-2 rounded-full border border-border bg-surface px-3 py-1 text-xs text-ink-muted hover:border-primary"
           >
-            <RefreshCw size={13} /> {regime === "reel" ? t("regime.badge.reel") : t("regime.badge.forfaitaire")}
+            <RefreshCw size={13} />{" "}
+            {regime === "reel" ? t("regime.badge.reel") : t("regime.badge.forfaitaire")}
           </button>
         </div>
 
         <div className="flex flex-wrap items-end justify-between gap-3">
           <div>
-            <h1 className="headline-text mt-1">{t("dashboard.welcome")}, {user?.email?.split("@")[0]}</h1>
+            <h1 className="headline-text mt-1">
+              {t("dashboard.welcome")}, {user?.email?.split("@")[0] || t(`roles.${role}`)}
+            </h1>
             <p className="text-ink-muted">{t("dashboard.subtitle")}</p>
           </div>
           <button
@@ -133,13 +266,19 @@ function Dashboard() {
           {regime === "reel" ? (
             <>
               {/* Primary Action */}
-              <Link to="/g50" className="surface-card-interactive sm:col-span-2 lg:col-span-2 flex flex-col justify-between bg-primary text-primary-foreground hover:bg-primary-hover border-none">
+              <Link
+                to="/g50"
+                className="surface-card-interactive sm:col-span-2 lg:col-span-2 flex flex-col justify-between bg-primary text-primary-foreground hover:bg-primary-hover border-none"
+              >
                 <div className="flex items-start justify-between">
                   <div>
-                    <div className="text-sm font-semibold uppercase tracking-wider text-primary-foreground/80">Déclaration Principale</div>
+                    <div className="text-sm font-semibold uppercase tracking-wider text-primary-foreground/80">
+                      Déclaration Principale
+                    </div>
                     <h3 className="mt-1 text-2xl font-bold">{t("nav.g50")}</h3>
                     <p className="mt-2 max-w-sm text-sm text-primary-foreground/90">
-                      Déclarez votre TVA mensuelle et calculez votre impôt net à payer en toute simplicité.
+                      Déclarez votre TVA mensuelle et calculez votre impôt net à payer en toute
+                      simplicité.
                     </p>
                   </div>
                   <div className="rounded-full bg-primary-foreground/20 p-3">
@@ -150,12 +289,19 @@ function Dashboard() {
                   Commencer la déclaration →
                 </div>
               </Link>
-              {actions.map(({ to, icon: Icon, label, desc, isComingSoon }) => (
+              {actions.map(({ to, icon: Icon, label, desc, isComingSoon }) =>
                 isComingSoon ? (
-                  <div key={to} className="surface-card flex flex-col gap-3 opacity-60 cursor-not-allowed relative">
-                    <div className="absolute top-3 right-3 rounded-full bg-primary/10 px-2 py-0.5 text-[10px] font-semibold text-primary uppercase">Bientôt</div>
+                  <div
+                    key={to}
+                    className="surface-card flex flex-col gap-3 opacity-60 cursor-not-allowed relative"
+                  >
+                    <div className="absolute top-3 right-3 rounded-full bg-primary/10 px-2 py-0.5 text-[10px] font-semibold text-primary uppercase">
+                      Bientôt
+                    </div>
                     <div className="flex items-center gap-3">
-                      <div className="rounded-lg bg-muted p-2 text-ink-muted"><Icon size={20} /></div>
+                      <div className="rounded-lg bg-muted p-2 text-ink-muted">
+                        <Icon size={20} />
+                      </div>
                       <div className="label-text">{label}</div>
                     </div>
                     <div className="text-sm text-ink-muted">{desc}</div>
@@ -163,13 +309,15 @@ function Dashboard() {
                 ) : (
                   <Link key={to} to={to} className="surface-card-interactive flex flex-col gap-3">
                     <div className="flex items-center gap-3">
-                      <div className="rounded-lg bg-primary/10 p-2 text-primary"><Icon size={20} /></div>
+                      <div className="rounded-lg bg-primary/10 p-2 text-primary">
+                        <Icon size={20} />
+                      </div>
                       <div className="label-text">{label}</div>
                     </div>
                     <div className="text-sm text-ink-muted">{desc}</div>
                   </Link>
-                )
-              ))}
+                ),
+              )}
             </>
           ) : (
             <>
@@ -179,10 +327,14 @@ function Dashboard() {
                   title={t("regime.unavailable")}
                   className="surface-card flex cursor-not-allowed items-start gap-3 opacity-50"
                 >
-                  <div className="rounded-lg bg-muted p-2 text-ink-muted"><Icon size={20} /></div>
+                  <div className="rounded-lg bg-muted p-2 text-ink-muted">
+                    <Icon size={20} />
+                  </div>
                   <div>
                     <div className="label-text">{label}</div>
-                    <div className="text-[10px] uppercase text-ink-muted">{t("regime.unavailable")}</div>
+                    <div className="text-[10px] uppercase text-ink-muted">
+                      {t("regime.unavailable")}
+                    </div>
                   </div>
                 </div>
               ))}
@@ -190,8 +342,12 @@ function Dashboard() {
                 onClick={() => setV2Open(true)}
                 className="surface-card-interactive flex items-start gap-3 text-start"
               >
-                <div className="rounded-lg bg-muted p-2 text-primary"><Calculator size={20} /></div>
-                <div><div className="label-text">{t("regime.irg_forfaitaire")}</div></div>
+                <div className="rounded-lg bg-muted p-2 text-primary">
+                  <Calculator size={20} />
+                </div>
+                <div>
+                  <div className="label-text">{t("regime.irg_forfaitaire")}</div>
+                </div>
               </button>
             </>
           )}
@@ -205,7 +361,7 @@ function Dashboard() {
           </h4>
           <p className="mb-3 text-sm text-ink-muted">{t("dashboard.exampleDesc")}</p>
           <button
-            onClick={handleDownloadExample}
+            onClick={downloadLatestG50}
             className="inline-flex items-center gap-2 rounded-lg border border-primary bg-surface px-4 py-2 text-sm font-medium text-primary transition hover:bg-primary hover:text-primary-foreground"
           >
             <Download size={16} /> {t("dashboard.exampleButton")}
@@ -232,7 +388,8 @@ function Dashboard() {
               </div>
               <h3 className="title-text">{t("dashboard.empty")}</h3>
               <p className="mt-2 max-w-sm text-sm text-ink-muted">
-                Toutes vos déclarations apparaîtront ici. Lancez votre premier calcul depuis le menu.
+                Toutes vos déclarations apparaîtront ici. Lancez votre premier calcul depuis le
+                menu.
               </p>
             </div>
           ) : (
@@ -243,6 +400,7 @@ function Dashboard() {
                     <th className="px-4 py-3 text-start label-text">Type</th>
                     <th className="px-4 py-3 text-start label-text">{t("common.period")}</th>
                     <th className="px-4 py-3 text-end label-text">{t("common.total")}</th>
+                    <th className="px-4 py-3 text-end label-text sr-only">Actions</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -252,6 +410,15 @@ function Dashboard() {
                       <td className="px-4 py-3 text-ink-muted">{d.period_label ?? "—"}</td>
                       <td className="px-4 py-3 text-end tabular-nums">
                         {d.total_due != null ? formatCurrency(Number(d.total_due), locale) : "—"}
+                      </td>
+                      <td className="px-4 py-3 text-end">
+                        <button
+                          onClick={() => downloadDeclaration(d)}
+                          className="rounded-md p-1.5 text-ink-muted hover:text-primary hover:bg-primary/10 transition-colors"
+                          title="Télécharger le PDF"
+                        >
+                          <FileDown size={16} />
+                        </button>
                       </td>
                     </tr>
                   ))}
@@ -264,8 +431,14 @@ function Dashboard() {
 
       {/* Consultation modal */}
       {consultOpen && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 p-4" onClick={() => setConsultOpen(false)}>
-          <div className="w-full max-w-md rounded-2xl border border-border bg-background p-6 shadow-2xl" onClick={(e) => e.stopPropagation()}>
+        <div
+          className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 p-4"
+          onClick={() => setConsultOpen(false)}
+        >
+          <div
+            className="w-full max-w-md rounded-2xl border border-border bg-background p-6 shadow-2xl"
+            onClick={(e) => e.stopPropagation()}
+          >
             <div className="flex items-start justify-between gap-3">
               <div>
                 <span className="inline-block rounded-full bg-muted px-2 py-0.5 text-[10px] uppercase text-ink-muted">
@@ -273,14 +446,22 @@ function Dashboard() {
                 </span>
                 <h3 className="title-text mt-2">{t("consultation.title")}</h3>
               </div>
-              <button onClick={() => setConsultOpen(false)} className="rounded-md p-1 text-ink-muted hover:bg-muted">
+              <button
+                onClick={() => setConsultOpen(false)}
+                className="rounded-md p-1 text-ink-muted hover:bg-muted"
+              >
                 <X size={18} />
               </button>
             </div>
             <p className="mt-3 text-sm text-ink-muted">{t("consultation.desc")}</p>
             <div className="mt-4 rounded-lg border border-border bg-surface p-3">
-              <div className="text-[10px] uppercase text-ink-muted">{t("consultation.email_label")}</div>
-              <a href="mailto:experts@matax.dz" className="mt-1 inline-flex items-center gap-2 text-sm font-medium text-primary">
+              <div className="text-[10px] uppercase text-ink-muted">
+                {t("consultation.email_label")}
+              </div>
+              <a
+                href="mailto:experts@matax.dz"
+                className="mt-1 inline-flex items-center gap-2 text-sm font-medium text-primary"
+              >
                 <Mail size={14} /> experts@matax.dz
               </a>
             </div>
@@ -299,29 +480,51 @@ function Dashboard() {
         <RegimeSelector
           initial={regime}
           showWarning={changeMode}
-          onConfirm={(r) => { setRegime(r); setRegimeOpen(false); setChangeMode(false); }}
-          onClose={changeMode ? () => { setRegimeOpen(false); setChangeMode(false); } : undefined}
+          onConfirm={(r) => {
+            setRegime(r);
+            setRegimeOpen(false);
+            setChangeMode(false);
+          }}
+          onClose={
+            changeMode
+              ? () => {
+                  setRegimeOpen(false);
+                  setChangeMode(false);
+                }
+              : undefined
+          }
         />
       )}
 
       {/* V2 placeholder modal */}
       {v2Open && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 p-4" onClick={() => setV2Open(false)}>
-          <div className="w-full max-w-md rounded-2xl border border-border bg-background p-6 shadow-2xl" onClick={(e) => e.stopPropagation()}>
+        <div
+          className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 p-4"
+          onClick={() => setV2Open(false)}
+        >
+          <div
+            className="w-full max-w-md rounded-2xl border border-border bg-background p-6 shadow-2xl"
+            onClick={(e) => e.stopPropagation()}
+          >
             <div className="flex items-start justify-between gap-3">
               <h3 className="title-text">{t("regime.irg_forfaitaire")}</h3>
-              <button onClick={() => setV2Open(false)} className="rounded-md p-1 text-ink-muted hover:bg-muted">
+              <button
+                onClick={() => setV2Open(false)}
+                className="rounded-md p-1 text-ink-muted hover:bg-muted"
+              >
                 <X size={18} />
               </button>
             </div>
             <p className="mt-3 text-sm text-ink-muted">{t("regime.v2note")}</p>
-            <button onClick={() => setV2Open(false)} className="mt-4 w-full rounded-lg border border-border px-4 py-2 text-sm hover:border-primary">
+            <button
+              onClick={() => setV2Open(false)}
+              className="mt-4 w-full rounded-lg border border-border px-4 py-2 text-sm hover:border-primary"
+            >
               {t("consultation.close")}
             </button>
           </div>
         </div>
       )}
     </div>
-
   );
 }

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720">
+  <!-- Background -->
+  <rect width="1280" height="720" fill="#FFFFFF"/>
+  
+  <!-- Header -->
+  <rect x="0" y="0" width="1280" height="70" fill="#003366"/>
+  <rect x="0" y="0" width="6" height="70" fill="#CC0000"/>
+  <text x="40" y="46" fill="#FFFFFF" font-family="Microsoft YaHei, Arial, sans-serif" font-size="28" font-weight="bold">
+    06 | المراحل التنفيذية — فريق العمل
+  </text>
+  <text x="1220" y="46" text-anchor="end" fill="#FFFFFF" font-family="Georgia, Microsoft YaHei, serif" font-size="18" font-weight="bold">MATAX</text>
+  
+  <!-- Key message bar -->
+  <rect x="0" y="70" width="1280" height="50" fill="#F0F4F8"/>
+  <rect x="0" y="70" width="6" height="50" fill="#0066CC"/>
+  <text x="40" y="102" fill="#1D1D1F" font-family="Microsoft YaHei, Arial, sans-serif" font-size="18">
+    فريق مؤسس متكامل بخبرات متنوعة في المحاسبة والتقنية
+  </text>
+  
+  <!-- Team Roster -->
+  <!-- Team Member 1: PDG -->
+  <rect x="60" y="140" width="370" height="180" fill="#F0F4F8" rx="10"/>
+  <rect x="60" y="140" width="370" height="8" fill="#003366" rx="4"/>
+  <circle cx="245" cy="210" r="35" fill="#003366" fill-opacity="0.1"/>
+  <text x="245" y="218" text-anchor="middle" fill="#003366" font-family="Georgia, Microsoft YaHei, serif" font-size="28" font-weight="bold">HI</text>
+  <text x="245" y="270" text-anchor="middle" fill="#1D1D1F" font-family="Microsoft YaHei, Arial, sans-serif" font-size="18" font-weight="bold">حموم إكرام</text>
+  <text x="245" y="295" text-anchor="middle" fill="#003366" font-family="Microsoft YaHei, Arial, sans-serif" font-size="14" font-weight="bold">المديرة العامة (PDG)</text>
+  <text x="245" y="315" text-anchor="middle" fill="#5A5A5A" font-family="Microsoft YaHei, Arial, sans-serif" font-size="12">محاسبة + تكنولوجيا المعلومات</text>
+  
+  <!-- Team Member 2: CFO -->
+  <rect x="455" y="140" width="370" height="180" fill="#F0F4F8" rx="10"/>
+  <rect x="455" y="140" width="370" height="8" fill="#0066CC" rx="4"/>
+  <circle cx="640" cy="210" r="35" fill="#0066CC" fill-opacity="0.1"/>
+  <text x="640" y="218" text-anchor="middle" fill="#0066CC" font-family="Georgia, Microsoft YaHei, serif" font-size="28" font-weight="bold">YZ</text>
+  <text x="640" y="270" text-anchor="middle" fill="#1D1D1F" font-family="Microsoft YaHei, Arial, sans-serif" font-size="18" font-weight="bold">يزيد زين الدين</text>
+  <text x="640" y="295" text-anchor="middle" fill="#0066CC" font-family="Microsoft YaHei, Arial, sans-serif" font-size="14" font-weight="bold">المدير المالي (CFO)</text>
+  <text x="640" y="315" text-anchor="middle" fill="#5A5A5A" font-family="Microsoft YaHei, Arial, sans-serif" font-size="12">محاسبة + تمويل + مالية</text>
+  
+  <!-- Team Member 3: CTO -->
+  <rect x="850" y="140" width="370" height="180" fill="#F0F4F8" rx="10"/>
+  <rect x="850" y="140" width="370" height="8" fill="#0099AA" rx="4"/>
+  <circle cx="1035" cy="210" r="35" fill="#0099AA" fill-opacity="0.1"/>
+  <text x="1035" y="218" text-anchor="middle" fill="#0099AA" font-family="Georgia, Microsoft YaHei, serif" font-size="28" font-weight="bold">SB</text>
+  <text x="1035" y="270" text-anchor="middle" fill="#1D1D1F" font-family="Microsoft YaHei, Arial, sans-serif" font-size="18" font-weight="bold">سعيد بن عمر</text>
+  <text x="1035" y="295" text-anchor="middle" fill="#0099AA" font-family="Microsoft YaHei, Arial, sans-serif" font-size="14" font-weight="bold">المدير التقني (CTO)</text>
+  <text x="1035" y="315" text-anchor="middle" fill="#5A5A5A" font-family="Microsoft YaHei, Arial, sans-serif" font-size="12">برمجة + قواعد بيانات + سحابة</text>
+  
+  <!-- Roadmap Timeline -->
+  <rect x="60" y="350" width="1160" height="300" fill="#F0F4F8" rx="8"/>
+  <rect x="60" y="350" width="1160" height="50" fill="#003366" rx="8"/>
+  <rect x="60" y="390" width="1160" height="10" fill="#003366"/>
+  <text x="640" y="384" text-anchor="middle" fill="#FFFFFF" font-family="Microsoft YaHei, Arial, sans-serif" font-size="18" font-weight="bold">الخريطة الزمنية</text>
+  
+  <!-- Phase 1 -->
+  <rect x="80" y="415" width="240" height="100" fill="#FFFFFF" rx="6"/>
+  <rect x="80" y="415" width="240" height="6" fill="#2E7D32" rx="3"/>
+  <text x="200" y="448" text-anchor="middle" fill="#2E7D32" font-family="Microsoft YaHei, Arial, sans-serif" font-size="16" font-weight="bold">المرحلة 1</text>
+  <text x="200" y="470" text-anchor="middle" fill="#1D1D1F" font-family="Microsoft YaHei, Arial, sans-serif" font-size="13" font-weight="bold">MVP &amp; إ launch</text>
+  <text x="200" y="493" text-anchor="middle" fill="#5A5A5A" font-family="Microsoft YaHei, Arial, sans-serif" font-size="12">0-6 أشهر</text>
+  <text x="200" y="508" text-anchor="middle" fill="#2E7D32" font-family="Microsoft YaHei, Arial, sans-serif" font-size="12">+61 عميل</text>
+  
+  <!-- Phase 2 -->
+  <rect x="340" y="415" width="240" height="100" fill="#FFFFFF" rx="6"/>
+  <rect x="340" y="415" width="240" height="6" fill="#0066CC" rx="3"/>
+  <text x="460" y="448" text-anchor="middle" fill="#0066CC" font-family="Microsoft YaHei, Arial, sans-serif" font-size="16" font-weight="bold">المرحلة 2</text>
+  <text x="460" y="470" text-anchor="middle" fill="#1D1D1F" font-family="Microsoft YaHei, Arial, sans-serif" font-size="13" font-weight="bold">التوسع والنمو</text>
+  <text x="460" y="493" text-anchor="middle" fill="#5A5A5A" font-family="Microsoft YaHei, Arial, sans-serif" font-size="12">6-18 شهر</text>
+  <text x="460" y="508" text-anchor="middle" fill="#0066CC" font-family="Microsoft YaHei, Arial, sans-serif" font-size="12">+960 عميل</text>
+  
+  <!-- Phase 3 -->
+  <rect x="600" y="415" width="240" height="100" fill="#FFFFFF" rx="6"/>
+  <rect x="600" y="415" width="240" height="6" fill="#0099AA" rx="3"/>
+  <text x="720" y="448" text-anchor="middle" fill="#0099AA" font-family="Microsoft YaHei, Arial, sans-serif" font-size="16" font-weight="bold">المرحلة 3</text>
+  <text x="720" y="470" text-anchor="middle" fill="#1D1D1F" font-family="Microsoft YaHei, Arial, sans-serif" font-size="13" font-weight="bold">الابتكار والتمكين</text>
+  <text x="720" y="493" text-anchor="middle" fill="#5A5A5A" font-family="Microsoft YaHei, Arial, sans-serif" font-size="12">18-36 شهر</text>
+  <text x="720" y="508" text-anchor="middle" fill="#0099AA" font-family="Microsoft YaHei, Arial, sans-serif" font-size="12">+2,500 عميل</text>
+  
+  <!-- Phase 4 -->
+  <rect x="860" y="415" width="340" height="100" fill="#FFFFFF" rx="6"/>
+  <rect x="860" y="415" width="340" height="6" fill="#6A1B9A" rx="3"/>
+  <text x="1030" y="448" text-anchor="middle" fill="#6A1B9A" font-family="Microsoft YaHei, Arial, sans-serif" font-size="16" font-weight="bold">المرحلة 4</text>
+  <text x="1030" y="470" text-anchor="middle" fill="#1D1D1F" font-family="Microsoft YaHei, Arial, sans-serif" font-size="13" font-weight="bold">الريادة والتوطين</text>
+  <text x="1030" y="493" text-anchor="middle" fill="#5A5A5A" font-family="Microsoft YaHei, Arial, sans-serif" font-size="12">36+ شهر</text>
+  <text x="1030" y="508" text-anchor="middle" fill="#6A1B9A" font-family="Microsoft YaHei, Arial, sans-serif" font-size="12">ريادة السوق الجزائري</text>
+  
+  <!-- Bottom milestones -->
+  <rect x="80" y="540" width="1100" height="90" fill="#FFFFFF" rx="6"/>
+  <rect x="80" y="540" width="6" height="90" fill="#CC0000" rx="3"/>
+  <text x="120" y="568" fill="#CC0000" font-family="Microsoft YaHei, Arial, sans-serif" font-size="15" font-weight="bold">المراحل الرئيسية:</text>
+  <text x="120" y="592" fill="#5A5A5A" font-family="Microsoft YaHei, Arial, sans-serif" font-size="13">BEP الشهر 4 | 960 عميل الشهر 12 | 2,500 عميل الشهر 36 | 25+ مؤسسة كبرى</text>
+  <text x="120" y="615" fill="#5A5A5A" font-family="Microsoft YaHei, Arial, sans-serif" font-size="13">توسيع Zakat &amp; Douane في 2026 | AI/ML للاستشراف الضريبي في 2027</text>
+  
+  <!-- Footer -->
+  <line x1="40" y1="665" x2="1240" y2="665" stroke="#F0F4F8" stroke-width="1"/>
+  <text x="40" y="695" fill="#8A8A8A" font-family="Microsoft YaHei, Arial, sans-serif" font-size="12">المصدر: خطة العمل</text>
+  <text x="640" y="695" text-anchor="middle" fill="#8A8A8A" font-family="Microsoft YaHei, Arial, sans-serif" font-size="12">المراحل التنفيذية</text>
+  <text x="1220" y="695" text-anchor="end" fill="#666666" font-family="Microsoft YaHei, Arial, sans-serif" font-size="14">16</text>
+</svg>

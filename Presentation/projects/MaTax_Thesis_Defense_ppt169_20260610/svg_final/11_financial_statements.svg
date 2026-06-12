@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720">
+  
+  <rect width="1280" height="720" fill="#FFFFFF" />
+  
+  
+  <rect x="0" y="0" width="1280" height="70" fill="#003366" />
+  <rect x="0" y="0" width="6" height="70" fill="#CC0000" />
+  <text x="40" y="46" fill="#FFFFFF" font-family="Microsoft YaHei, Arial, sans-serif" font-size="28" font-weight="bold">
+    04 | الدراسة المالية — القوائم المالية
+  </text>
+  <text x="1220" y="46" text-anchor="end" fill="#FFFFFF" font-family="Georgia, Microsoft YaHei, serif" font-size="18" font-weight="bold">MATAX</text>
+  
+  
+  <rect x="0" y="70" width="1280" height="50" fill="#F0F4F8" />
+  <rect x="0" y="70" width="6" height="50" fill="#0066CC" />
+  <text x="40" y="102" fill="#1E293B" font-family="Microsoft YaHei, Arial, sans-serif" font-size="18">
+    التمويل المطلوب: 3,880,000 دج — BEP في الشهر 2 — VAN: +143.3M دج
+  </text>
+  
+  
+  
+  <path fill="#003366" d="M66,140 H1214 A6,6 0 0 1 1220,146 V184 A6,6 0 0 1 1214,190 H66 A6,6 0 0 1 60,184 V146 A6,6 0 0 1 66,140 Z" />
+  <text x="280" y="172" text-anchor="middle" fill="#FFFFFF" font-family="Microsoft YaHei, Arial, sans-serif" font-size="15" font-weight="bold">البيان</text>
+  <text x="680" y="172" text-anchor="middle" fill="#FFFFFF" font-family="Microsoft YaHei, Arial, sans-serif" font-size="15" font-weight="bold">السنة الأولى</text>
+  <text x="1040" y="172" text-anchor="middle" fill="#FFFFFF" font-family="Microsoft YaHei, Arial, sans-serif" font-size="15" font-weight="bold">الملاحظات</text>
+  
+  
+  <path fill="#F8FAFC" d="M64,195 H1216 A4,4 0 0 1 1220,199 V246 A4,4 0 0 1 1216,250 H64 A4,4 0 0 1 60,246 V199 A4,4 0 0 1 64,195 Z" />
+  <text x="280" y="228" text-anchor="middle" fill="#1E293B" font-family="Microsoft YaHei, Arial, sans-serif" font-size="15" font-weight="bold">الإيرادات التشغيلية</text>
+  <text x="680" y="228" text-anchor="middle" fill="#16A34A" font-family="Microsoft YaHei, Arial, sans-serif" font-size="16" font-weight="bold">14,400,000 دج</text>
+  <text x="1040" y="228" text-anchor="middle" fill="#64748B" font-family="Microsoft YaHei, Arial, sans-serif" font-size="13">960 عميل × 15,000 دج/سنة</text>
+  
+  
+  <path fill="#FFFFFF" d="M64,255 H1216 A4,4 0 0 1 1220,259 V306 A4,4 0 0 1 1216,310 H64 A4,4 0 0 1 60,306 V259 A4,4 0 0 1 64,255 Z" />
+  <text x="280" y="288" text-anchor="middle" fill="#1E293B" font-family="Microsoft YaHei, Arial, sans-serif" font-size="15" font-weight="bold">التكلفة الإجمالية</text>
+  <text x="680" y="288" text-anchor="middle" fill="#DC2626" font-family="Microsoft YaHei, Arial, sans-serif" font-size="16" font-weight="bold">5,265,000 دج</text>
+  <text x="1040" y="288" text-anchor="middle" fill="#64748B" font-family="Microsoft YaHei, Arial, sans-serif" font-size="13">تشغيل + تسويق + تطوير</text>
+  
+  
+  <path fill="#F0FDF4" d="M64,315 H1216 A4,4 0 0 1 1220,319 V366 A4,4 0 0 1 1216,370 H64 A4,4 0 0 1 60,366 V319 A4,4 0 0 1 64,315 Z" />
+  <text x="280" y="348" text-anchor="middle" fill="#1E293B" font-family="Microsoft YaHei, Arial, sans-serif" font-size="15" font-weight="bold">صافي الربح قبل الضرائب</text>
+  <text x="680" y="348" text-anchor="middle" fill="#16A34A" font-family="Microsoft YaHei, Arial, sans-serif" font-size="16" font-weight="bold">9,135,000 دج</text>
+  <text x="1040" y="348" text-anchor="middle" fill="#16A34A" font-family="Microsoft YaHei, Arial, sans-serif" font-size="14" font-weight="bold">هامش صافي +63.4%</text>
+  
+  
+  <path fill="#FFFFFF" d="M64,375 H1216 A4,4 0 0 1 1220,379 V426 A4,4 0 0 1 1216,430 H64 A4,4 0 0 1 60,426 V379 A4,4 0 0 1 64,375 Z" />
+  <text x="280" y="408" text-anchor="middle" fill="#1E293B" font-family="Microsoft YaHei, Arial, sans-serif" font-size="15" font-weight="bold">التدفقات النقدية التراكمية</text>
+  <text x="680" y="408" text-anchor="middle" fill="#16A34A" font-family="Microsoft YaHei, Arial, sans-serif" font-size="16" font-weight="bold">+143,300,000 دج</text>
+  <text x="1040" y="408" text-anchor="middle" fill="#64748B" font-family="Microsoft YaHei, Arial, sans-serif" font-size="13">VAN على 3 سنوات</text>
+  
+  
+  <path fill="#F8FAFC" d="M64,435 H1216 A4,4 0 0 1 1220,439 V486 A4,4 0 0 1 1216,490 H64 A4,4 0 0 1 60,486 V439 A4,4 0 0 1 64,435 Z" />
+  <text x="280" y="468" text-anchor="middle" fill="#1E293B" font-family="Microsoft YaHei, Arial, sans-serif" font-size="15" font-weight="bold">معدل الخصم الداخلي (DR)</text>
+  <text x="680" y="468" text-anchor="middle" fill="#16A34A" font-family="Microsoft YaHei, Arial, sans-serif" font-size="16" font-weight="bold">6 أشهر</text>
+  <text x="1040" y="468" text-anchor="middle" fill="#64748B" font-family="Microsoft YaHei, Arial, sans-serif" font-size="13">استرداد سريع جداً</text>
+  
+  
+  <path fill="#FFFFFF" d="M64,495 H1216 A4,4 0 0 1 1220,499 V546 A4,4 0 0 1 1216,550 H64 A4,4 0 0 1 60,546 V499 A4,4 0 0 1 64,495 Z" />
+  <text x="280" y="528" text-anchor="middle" fill="#1E293B" font-family="Microsoft YaHei, Arial, sans-serif" font-size="15" font-weight="bold">نقطة التعادل (BEP)</text>
+  <text x="680" y="528" text-anchor="middle" fill="#16A34A" font-family="Microsoft YaHei, Arial, sans-serif" font-size="16" font-weight="bold">الشهر 2 | 30 عميل</text>
+  <text x="1040" y="528" text-anchor="middle" fill="#64748B" font-family="Microsoft YaHei, Arial, sans-serif" font-size="13">BEP مبكر جداً</text>
+  
+  
+  <path fill="#F8FAFC" d="M64,555 H1216 A4,4 0 0 1 1220,559 V606 A4,4 0 0 1 1216,610 H64 A4,4 0 0 1 60,606 V559 A4,4 0 0 1 64,555 Z" />
+  <text x="280" y="588" text-anchor="middle" fill="#1E293B" font-family="Microsoft YaHei, Arial, sans-serif" font-size="15" font-weight="bold">هامش الربح التشغيلي (OM)</text>
+  <text x="680" y="588" text-anchor="middle" fill="#16A34A" font-family="Microsoft YaHei, Arial, sans-serif" font-size="16" font-weight="bold">+63.4%</text>
+  <text x="1040" y="588" text-anchor="middle" fill="#64748B" font-family="Microsoft YaHei, Arial, sans-serif" font-size="13">هامش صافي مرتفع جداً</text>
+  
+  
+  <path fill="#FFFFFF" d="M64,615 H1216 A4,4 0 0 1 1220,619 V661 A4,4 0 0 1 1216,665 H64 A4,4 0 0 1 60,661 V619 A4,4 0 0 1 64,615 Z" />
+  <text x="280" y="647" text-anchor="middle" fill="#1E293B" font-family="Microsoft YaHei, Arial, sans-serif" font-size="15" font-weight="bold">العائد على الاستثمار (ROI)</text>
+  <text x="680" y="647" text-anchor="middle" fill="#16A34A" font-family="Microsoft YaHei, Arial, sans-serif" font-size="16" font-weight="bold">617%</text>
+  <text x="1040" y="647" text-anchor="middle" fill="#64748B" font-family="Microsoft YaHei, Arial, sans-serif" font-size="13">العائد على 3 سنوات</text>
+  
+  
+  <line x1="40" y1="680" x2="1240" y2="680" stroke="#E2E8F0" stroke-width="1" />
+  <text x="40" y="710" fill="#94A3B8" font-family="Microsoft YaHei, Arial, sans-serif" font-size="12">المصدر: دراسة المشروع</text>
+  <text x="640" y="710" text-anchor="middle" fill="#94A3B8" font-family="Microsoft YaHei, Arial, sans-serif" font-size="12">القوائم المالية</text>
+  <text x="1220" y="710" text-anchor="end" fill="#64748B" font-family="Microsoft YaHei, Arial, sans-serif" font-size="14">11</text>
+</svg>

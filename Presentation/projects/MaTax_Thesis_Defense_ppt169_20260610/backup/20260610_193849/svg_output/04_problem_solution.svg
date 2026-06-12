@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720">
+  <!-- Background -->
+  <rect width="1280" height="720" fill="#FFFFFF"/>
+  
+  <!-- Header -->
+  <rect x="0" y="0" width="1280" height="70" fill="#003366"/>
+  <rect x="0" y="0" width="6" height="70" fill="#CC0000"/>
+  <text x="40" y="46" fill="#FFFFFF" font-family="Microsoft YaHei, Arial, sans-serif" font-size="28" font-weight="bold">
+    01 | المشكلة والحل المقترح
+  </text>
+  <text x="1220" y="46" text-anchor="end" fill="#FFFFFF" font-family="Georgia, Microsoft YaHei, serif" font-size="18" font-weight="bold">MATAX</text>
+  
+  <!-- Key message bar -->
+  <rect x="0" y="70" width="1280" height="50" fill="#F0F4F8"/>
+  <rect x="0" y="70" width="6" height="50" fill="#0066CC"/>
+  <text x="40" y="102" fill="#1E293B" font-family="Microsoft YaHei, Arial, sans-serif" font-size="18">
+    MATAX يحل 4 مشاكل حرجة من خلال 5 ركائز رقمية متكاملة
+  </text>
+  
+  <!-- LEFT SIDE: Problems -->
+  <rect x="40" y="140" width="580" height="510" fill="#FEF2F2" rx="12" stroke="#FECACA" stroke-width="1"/>
+  <rect x="40" y="140" width="580" height="55" fill="#DC2626" rx="12"/>
+  <rect x="40" y="185" width="580" height="10" fill="#DC2626"/>
+  <text x="330" y="178" text-anchor="middle" fill="#FFFFFF" font-family="Microsoft YaHei, Arial, sans-serif" font-size="22" font-weight="bold">المشكلة</text>
+  
+  <!-- Problem 1 -->
+  <rect x="60" y="210" width="540" height="100" fill="#FFFFFF" rx="8" stroke="#FEE2E2" stroke-width="1"/>
+  <rect x="60" y="210" width="6" height="100" fill="#DC2626" rx="3"/>
+  <text x="110" y="238" fill="#DC2626" font-family="Microsoft YaHei, Arial, sans-serif" font-size="16" font-weight="bold">01 تعقيد التشريعات الجبائية</text>
+  <text x="110" y="262" fill="#475569" font-family="Microsoft YaHei, Arial, sans-serif" font-size="12">صعوبة استيعاب القوانين المالية السنوية وتداخل</text>
+  <text x="110" y="280" fill="#475569" font-family="Microsoft YaHei, Arial, sans-serif" font-size="12">الإجراءات الإدارية — حاجز كبير لرواد الأعمال</text>
+  <text x="110" y="300" fill="#94A3B8" font-family="Microsoft YaHei, Arial, sans-serif" font-size="11">في فهم التزاماتهم الحقيقية تجاه مصلحة الضرائب</text>
+  
+  <!-- Problem 2 -->
+  <rect x="60" y="320" width="540" height="100" fill="#FFFFFF" rx="8" stroke="#FEE2E2" stroke-width="1"/>
+  <rect x="60" y="320" width="6" height="100" fill="#DC2626" rx="3"/>
+  <text x="110" y="348" fill="#DC2626" font-family="Microsoft YaHei, Arial, sans-serif" font-size="16" font-weight="bold">02 مخاطر الأخطاء البشرية</text>
+  <text x="110" y="372" fill="#475569" font-family="Microsoft YaHei, Arial, sans-serif" font-size="12">الاعتماد على التعبئة اليدوية للتصاريح الدورية</text>
+  <text x="110" y="390" fill="#475569" font-family="Microsoft YaHei, Arial, sans-serif" font-size="12">(مثل تصريح G50) يعرّض المقاولين للغرامات</text>
+  <text x="110" y="410" fill="#94A3B8" font-family="Microsoft YaHei, Arial, sans-serif" font-size="11">والتأخير في المواعيد القانونية</text>
+  
+  <!-- Problem 3 -->
+  <rect x="60" y="430" width="540" height="100" fill="#FFFFFF" rx="8" stroke="#FEE2E2" stroke-width="1"/>
+  <rect x="60" y="430" width="6" height="100" fill="#DC2626" rx="3"/>
+  <text x="110" y="458" fill="#DC2626" font-family="Microsoft YaHei, Arial, sans-serif" font-size="16" font-weight="bold">03 غرامات التأخير المالي</text>
+  <text x="110" y="482" fill="#475569" font-family="Microsoft YaHei, Arial, sans-serif" font-size="12">غياب نظام متابعة وتنبيه ذكي للمواعيد القانونية</text>
+  <text x="110" y="500" fill="#475569" font-family="Microsoft YaHei, Arial, sans-serif" font-size="12">يؤدي إلى غرامات باهظة على المقاولين</text>
+  <text x="110" y="520" fill="#94A3B8" font-family="Microsoft YaHei, Arial, sans-serif" font-size="11">وخسارة مالية كبيرة</text>
+  
+  <!-- Problem 4 -->
+  <rect x="60" y="540" width="540" height="85" fill="#FFFFFF" rx="8" stroke="#FEE2E2" stroke-width="1"/>
+  <rect x="60" y="540" width="6" height="85" fill="#DC2626" rx="3"/>
+  <text x="110" y="568" fill="#DC2626" font-family="Microsoft YaHei, Arial, sans-serif" font-size="16" font-weight="bold">04 التكاليف الباهظة وهشاشة الأرشفة</text>
+  <text x="110" y="592" fill="#475569" font-family="Microsoft YaHei, Arial, sans-serif" font-size="12">أعباء التعاقد مع مكاتب المحاسبة وغياب التخزين</text>
+  <text x="110" y="612" fill="#94A3B8" font-family="Microsoft YaHei, Arial, sans-serif" font-size="11">السحابي الآمن للمستندات الجبائية</text>
+  
+  <!-- RIGHT SIDE: Solutions -->
+  <rect x="660" y="140" width="580" height="510" fill="#F0FDF4" rx="12" stroke="#BBF7D0" stroke-width="1"/>
+  <rect x="660" y="140" width="580" height="55" fill="#16A34A" rx="12"/>
+  <rect x="660" y="185" width="580" height="10" fill="#16A34A"/>
+  <text x="950" y="178" text-anchor="middle" fill="#FFFFFF" font-family="Microsoft YaHei, Arial, sans-serif" font-size="22" font-weight="bold">الحل: MATAX</text>
+  
+  <!-- Solution 1 -->
+  <rect x="680" y="210" width="540" height="90" fill="#FFFFFF" rx="8" stroke="#DCFCE7" stroke-width="1"/>
+  <rect x="680" y="210" width="6" height="90" fill="#16A34A" rx="3"/>
+  <text x="730" y="238" fill="#16A34A" font-family="Microsoft YaHei, Arial, sans-serif" font-size="16" font-weight="bold">✅ تبسيط الجباية بضغطة زر</text>
+  <text x="730" y="262" fill="#475569" font-family="Microsoft YaHei, Arial, sans-serif" font-size="12">تحويل النصوص القانونية المعقدة إلى واجهات رقمية</text>
+  <text x="730" y="280" fill="#475569" font-family="Microsoft YaHei, Arial, sans-serif" font-size="12">سلسة وتفاعلية — دون خبرة محاسبية مسبقة</text>
+  <text x="730" y="295" fill="#94A3B8" font-family="Microsoft YaHei, Arial, sans-serif" font-size="11">تقليل زمن التأهيل لـ 48 ساعة فقط</text>
+  
+  <!-- Solution 2 -->
+  <rect x="680" y="310" width="540" height="90" fill="#FFFFFF" rx="8" stroke="#DCFCE7" stroke-width="1"/>
+  <rect x="680" y="310" width="6" height="90" fill="#16A34A" rx="3"/>
+  <text x="730" y="338" fill="#16A34A" font-family="Microsoft YaHei, Arial, sans-serif" font-size="16" font-weight="bold">🔔 نظام تنبيه ذكي واستباقي</text>
+  <text x="730" y="362" fill="#475569" font-family="Microsoft YaHei, Arial, sans-serif" font-size="12">تنبيهات عبر الرسائل النصية القصيرة (SMS)</text>
+  <text x="730" y="380" fill="#475569" font-family="Microsoft YaHei, Arial, sans-serif" font-size="12">والبريد الإلكتروني قبل المواعيد الجبائية</text>
+  <text x="730" y="395" fill="#94A3B8" font-family="Microsoft YaHei, Arial, sans-serif" font-size="11">حماية المقاولين من الغرامات</text>
+  
+  <!-- Solution 3 -->
+  <rect x="680" y="410" width="540" height="90" fill="#FFFFFF" rx="8" stroke="#DCFCE7" stroke-width="1"/>
+  <rect x="680" y="410" width="6" height="90" fill="#16A34A" rx="3"/>
+  <text x="730" y="438" fill="#16A34A" font-family="Microsoft YaHei, Arial, sans-serif" font-size="16" font-weight="bold">📋 أتمتة دقيقة بنسبة خطأ 0%</text>
+  <text x="730" y="462" fill="#475569" font-family="Microsoft YaHei, Arial, sans-serif" font-size="12">توليد تصاريح G50 بضغطة زر واحدة</text>
+  <text x="730" y="480" fill="#475569" font-family="Microsoft YaHei, Arial, sans-serif" font-size="12">وتقضي تماماً على مخاطر الأخطاء البشرية</text>
+  <text x="730" y="495" fill="#94A3B8" font-family="Microsoft YaHei, Arial, sans-serif" font-size="11">من عملية تأخذ ساعات إلى عملية رقمية مؤتمتة</text>
+  
+  <!-- Solution 4 -->
+  <rect x="680" y="510" width="540" height="90" fill="#FFFFFF" rx="8" stroke="#DCFCE7" stroke-width="1"/>
+  <rect x="680" y="510" width="6" height="90" fill="#16A34A" rx="3"/>
+  <text x="730" y="538" fill="#16A34A" font-family="Microsoft YaHei, Arial, sans-serif" font-size="16" font-weight="bold">☁️ أرشفة سحابية مشفرة</text>
+  <text x="730" y="562" fill="#475569" font-family="Microsoft YaHei, Arial, sans-serif" font-size="12">منظومة سحابية آمنة لأرشفة الملفات</text>
+  <text x="730" y="580" fill="#475569" font-family="Microsoft YaHei, Arial, sans-serif" font-size="12">الجبائية والمحاسبية بتشفير 256-SSL</text>
+  <text x="730" y="595" fill="#94A3B8" font-family="Microsoft YaHei, Arial, sans-serif" font-size="11">حماية البيانات من الاختراق</text>
+  
+  <!-- Solution 5 -->
+  <rect x="680" y="610" width="540" height="25" fill="#FFFFFF" rx="4" stroke="#DCFCE7" stroke-width="1"/>
+  <rect x="680" y="610" width="6" height="25" fill="#0891B2" rx="2"/>
+  <text x="730" y="628" fill="#0891B2" font-family="Microsoft YaHei, Arial, sans-serif" font-size="14" font-weight="bold">💰 اشتراكات اقتصادية — 60% أقل من المكاتب التقليدية</text>
+  
+  <!-- Footer -->
+  <line x1="40" y1="670" x2="1240" y2="670" stroke="#E2E8F0" stroke-width="1"/>
+  <text x="40" y="700" fill="#94A3B8" font-family="Microsoft YaHei, Arial, sans-serif" font-size="12">المصدر: دراسة المشروع</text>
+  <text x="640" y="700" text-anchor="middle" fill="#94A3B8" font-family="Microsoft YaHei, Arial, sans-serif" font-size="12">المشكلة والحل المقترح</text>
+  <text x="1220" y="700" text-anchor="end" fill="#64748B" font-family="Microsoft YaHei, Arial, sans-serif" font-size="14">04</text>
+</svg>

@@ -1,0 +1,2072 @@
+{
+  "nodes": [
+    {
+      "id": "home_dev_lab_documents_github_matax_app_src_lib_pdf_g50_pdf_ts",
+      "label": "g50-pdf.ts",
+      "file_type": "code",
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "pdf_g50_pdf_fmt",
+      "label": "fmt()",
+      "file_type": "code",
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L25"
+    },
+    {
+      "id": "pdf_g50_pdf_detectformejuridique",
+      "label": "detectFormeJuridique()",
+      "file_type": "code",
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L31"
+    },
+    {
+      "id": "pdf_g50_pdf_periodlabel",
+      "label": "periodLabel()",
+      "file_type": "code",
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L41"
+    },
+    {
+      "id": "pdf_g50_pdf_drawbluebox",
+      "label": "drawBlueBox()",
+      "file_type": "code",
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L52"
+    },
+    {
+      "id": "pdf_g50_pdf_drawcharboxes",
+      "label": "drawCharBoxes()",
+      "file_type": "code",
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L76"
+    },
+    {
+      "id": "pdf_g50_pdf_drawdottedline",
+      "label": "drawDottedLine()",
+      "file_type": "code",
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L99"
+    },
+    {
+      "id": "pdf_g50_pdf_buildg50pdf",
+      "label": "buildG50Pdf()",
+      "file_type": "code",
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L117"
+    },
+    {
+      "id": "pdf_g50_pdf_downloadg50pdf",
+      "label": "downloadG50Pdf()",
+      "file_type": "code",
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L930"
+    }
+  ],
+  "edges": [
+    {
+      "source": "home_dev_lab_documents_github_matax_app_src_lib_pdf_g50_pdf_ts",
+      "target": "jspdf",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "home_dev_lab_documents_github_matax_app_src_lib_pdf_g50_pdf_ts",
+      "target": "jspdf_autotable",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "home_dev_lab_documents_github_matax_app_src_lib_pdf_g50_pdf_ts",
+      "target": "tva",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "home_dev_lab_documents_github_matax_app_src_lib_pdf_g50_pdf_ts",
+      "target": "irg",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "home_dev_lab_documents_github_matax_app_src_lib_pdf_g50_pdf_ts",
+      "target": "ibs",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L9",
+      "weight": 1.0
+    },
+    {
+      "source": "home_dev_lab_documents_github_matax_app_src_lib_pdf_g50_pdf_ts",
+      "target": "pdf_g50_pdf_fmt",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L25",
+      "weight": 1.0
+    },
+    {
+      "source": "home_dev_lab_documents_github_matax_app_src_lib_pdf_g50_pdf_ts",
+      "target": "pdf_g50_pdf_detectformejuridique",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L31",
+      "weight": 1.0
+    },
+    {
+      "source": "home_dev_lab_documents_github_matax_app_src_lib_pdf_g50_pdf_ts",
+      "target": "pdf_g50_pdf_periodlabel",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L41",
+      "weight": 1.0
+    },
+    {
+      "source": "home_dev_lab_documents_github_matax_app_src_lib_pdf_g50_pdf_ts",
+      "target": "pdf_g50_pdf_drawbluebox",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L52",
+      "weight": 1.0
+    },
+    {
+      "source": "home_dev_lab_documents_github_matax_app_src_lib_pdf_g50_pdf_ts",
+      "target": "pdf_g50_pdf_drawcharboxes",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L76",
+      "weight": 1.0
+    },
+    {
+      "source": "home_dev_lab_documents_github_matax_app_src_lib_pdf_g50_pdf_ts",
+      "target": "pdf_g50_pdf_drawdottedline",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L99",
+      "weight": 1.0
+    },
+    {
+      "source": "home_dev_lab_documents_github_matax_app_src_lib_pdf_g50_pdf_ts",
+      "target": "pdf_g50_pdf_buildg50pdf",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L117",
+      "weight": 1.0
+    },
+    {
+      "source": "home_dev_lab_documents_github_matax_app_src_lib_pdf_g50_pdf_ts",
+      "target": "pdf_g50_pdf_downloadg50pdf",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L930",
+      "weight": 1.0
+    },
+    {
+      "source": "pdf_g50_pdf_buildg50pdf",
+      "target": "pdf_g50_pdf_drawbluebox",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L207",
+      "weight": 1.0
+    },
+    {
+      "source": "pdf_g50_pdf_buildg50pdf",
+      "target": "pdf_g50_pdf_drawcharboxes",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L261",
+      "weight": 1.0
+    },
+    {
+      "source": "pdf_g50_pdf_buildg50pdf",
+      "target": "pdf_g50_pdf_detectformejuridique",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L286",
+      "weight": 1.0
+    },
+    {
+      "source": "pdf_g50_pdf_buildg50pdf",
+      "target": "pdf_g50_pdf_fmt",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L381",
+      "weight": 1.0
+    },
+    {
+      "source": "pdf_g50_pdf_buildg50pdf",
+      "target": "pdf_g50_pdf_drawdottedline",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L384",
+      "weight": 1.0
+    },
+    {
+      "source": "pdf_g50_pdf_buildg50pdf",
+      "target": "pdf_g50_pdf_periodlabel",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L924",
+      "weight": 1.0
+    },
+    {
+      "source": "pdf_g50_pdf_downloadg50pdf",
+      "target": "pdf_g50_pdf_buildg50pdf",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L935",
+      "weight": 1.0
+    },
+    {
+      "source": "pdf_g50_pdf_downloadg50pdf",
+      "target": "pdf_g50_pdf_periodlabel",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L937",
+      "weight": 1.0
+    }
+  ],
+  "raw_calls": [
+    {
+      "caller_nid": "pdf_g50_pdf_fmt",
+      "callee": "isFinite",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L26"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_fmt",
+      "callee": "format",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L27"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_fmt",
+      "callee": "replace",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L28"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_detectformejuridique",
+      "callee": "toUpperCase",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L33"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_detectformejuridique",
+      "callee": "includes",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L34"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_detectformejuridique",
+      "callee": "includes",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L35"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_detectformejuridique",
+      "callee": "includes",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L36"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_detectformejuridique",
+      "callee": "includes",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L37"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_periodlabel",
+      "callee": "String",
+      "is_member_call": false,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L48"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_drawbluebox",
+      "callee": "setDrawColor",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L60"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_drawbluebox",
+      "callee": "setLineWidth",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L61"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_drawbluebox",
+      "callee": "rect",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L62"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_drawbluebox",
+      "callee": "setFillColor",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L65"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_drawbluebox",
+      "callee": "rect",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L66"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_drawbluebox",
+      "callee": "setTextColor",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L67"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_drawbluebox",
+      "callee": "setFont",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L68"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_drawbluebox",
+      "callee": "setFontSize",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L69"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_drawbluebox",
+      "callee": "text",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L70"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_drawbluebox",
+      "callee": "setTextColor",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L71"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_drawcharboxes",
+      "callee": "setDrawColor",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L85"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_drawcharboxes",
+      "callee": "setLineWidth",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L86"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_drawcharboxes",
+      "callee": "rect",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L89"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_drawcharboxes",
+      "callee": "setFont",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L91"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_drawcharboxes",
+      "callee": "setFontSize",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L92"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_drawcharboxes",
+      "callee": "text",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L93"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_drawdottedline",
+      "callee": "setDrawColor",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L105"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_drawdottedline",
+      "callee": "setLineWidth",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L106"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_drawdottedline",
+      "callee": "line",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L112"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_buildg50pdf",
+      "callee": "getWidth",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L123"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_buildg50pdf",
+      "callee": "getHeight",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L124"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_buildg50pdf",
+      "callee": "getItem",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L130"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_buildg50pdf",
+      "callee": "parse",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L132"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_buildg50pdf",
+      "callee": "getItem",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L139"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_buildg50pdf",
+      "callee": "parse",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L141"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_buildg50pdf",
+      "callee": "getItem",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L148"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_buildg50pdf",
+      "callee": "parse",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L150"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_buildg50pdf",
+      "callee": "setFont",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L208"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_buildg50pdf",
+      "callee": "setFontSize",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L209"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_buildg50pdf",
+      "callee": "text",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L210"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_buildg50pdf",
+      "callee": "setFont",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L211"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_buildg50pdf",
+      "callee": "setFontSize",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L212"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_buildg50pdf",
+      "callee": "text",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L213"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_buildg50pdf",
+      "callee": "text",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L214"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_buildg50pdf",
+      "callee": "setFont",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L218"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_buildg50pdf",
+      "callee": "setFontSize",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L219"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_buildg50pdf",
+      "callee": "text",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L220"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_buildg50pdf",
+      "callee": "setFont",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L221"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_buildg50pdf",
+      "callee": "setFontSize",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L222"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_buildg50pdf",
+      "callee": "text",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L223"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_buildg50pdf",
+      "callee": "text",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L224"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_buildg50pdf",
+      "callee": "text",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L225"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_buildg50pdf",
+      "callee": "setFont",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L229"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_buildg50pdf",
+      "callee": "setFontSize",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L230"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_buildg50pdf",
+      "callee": "text",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L231"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_buildg50pdf",
+      "callee": "setFont",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L232"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_buildg50pdf",
+      "callee": "setFontSize",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L233"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_buildg50pdf",
+      "callee": "text",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L234"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_buildg50pdf",
+      "callee": "text",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L235"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_buildg50pdf",
+      "callee": "text",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L236"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_buildg50pdf",
+      "callee": "setFont",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L239"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_buildg50pdf",
+      "callee": "setFontSize",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L240"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_buildg50pdf",
+      "callee": "text",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L241"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_buildg50pdf",
+      "callee": "setFont",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L246"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_buildg50pdf",
+      "callee": "setFontSize",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L247"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_buildg50pdf",
+      "callee": "text",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L253"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_buildg50pdf",
+      "callee": "text",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L254"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_buildg50pdf",
+      "callee": "setFont",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L258"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_buildg50pdf",
+      "callee": "setFontSize",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L259"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_buildg50pdf",
+      "callee": "text",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L260"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_buildg50pdf",
+      "callee": "setFont",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L268"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_buildg50pdf",
+      "callee": "setFontSize",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L269"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_buildg50pdf",
+      "callee": "text",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L272"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_buildg50pdf",
+      "callee": "text",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L276"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_buildg50pdf",
+      "callee": "text",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L281"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_buildg50pdf",
+      "callee": "text",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L285"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_buildg50pdf",
+      "callee": "setFontSize",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L289"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_buildg50pdf",
+      "callee": "text",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L290"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_buildg50pdf",
+      "callee": "setFont",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L291"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_buildg50pdf",
+      "callee": "setFontSize",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L292"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_buildg50pdf",
+      "callee": "text",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L293"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_buildg50pdf",
+      "callee": "setFont",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L296"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_buildg50pdf",
+      "callee": "setFontSize",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L297"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_buildg50pdf",
+      "callee": "text",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L298"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_buildg50pdf",
+      "callee": "text",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L301"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_buildg50pdf",
+      "callee": "setFillColor",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L308"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_buildg50pdf",
+      "callee": "rect",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L309"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_buildg50pdf",
+      "callee": "setDrawColor",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L310"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_buildg50pdf",
+      "callee": "rect",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L311"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_buildg50pdf",
+      "callee": "setTextColor",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L313"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_buildg50pdf",
+      "callee": "setFont",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L314"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_buildg50pdf",
+      "callee": "setFontSize",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L315"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_buildg50pdf",
+      "callee": "text",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L324"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_buildg50pdf",
+      "callee": "text",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L325"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_buildg50pdf",
+      "callee": "text",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L326"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_buildg50pdf",
+      "callee": "text",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L327"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_buildg50pdf",
+      "callee": "text",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L328"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_buildg50pdf",
+      "callee": "setTextColor",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L329"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_buildg50pdf",
+      "callee": "setFillColor",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L335"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_buildg50pdf",
+      "callee": "rect",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L336"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_buildg50pdf",
+      "callee": "setTextColor",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L337"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_buildg50pdf",
+      "callee": "setFont",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L338"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_buildg50pdf",
+      "callee": "setFontSize",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L339"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_buildg50pdf",
+      "callee": "text",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L340"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_buildg50pdf",
+      "callee": "setTextColor",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L341"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_buildg50pdf",
+      "callee": "forEach",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L349"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_buildg50pdf",
+      "callee": "getWithholdingSectionTotal",
+      "is_member_call": false,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L373"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_buildg50pdf",
+      "callee": "setDrawColor",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L374"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_buildg50pdf",
+      "callee": "rect",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L375"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_buildg50pdf",
+      "callee": "setFont",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L376"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_buildg50pdf",
+      "callee": "setFontSize",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L377"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_buildg50pdf",
+      "callee": "text",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L378"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_buildg50pdf",
+      "callee": "text",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L379"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_buildg50pdf",
+      "callee": "text",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L381"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_buildg50pdf",
+      "callee": "text",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L382"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_buildg50pdf",
+      "callee": "setFillColor",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L390"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_buildg50pdf",
+      "callee": "rect",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L391"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_buildg50pdf",
+      "callee": "setTextColor",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L392"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_buildg50pdf",
+      "callee": "setFont",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L393"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_buildg50pdf",
+      "callee": "setFontSize",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L394"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_buildg50pdf",
+      "callee": "text",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L395"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_buildg50pdf",
+      "callee": "setTextColor",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L396"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_buildg50pdf",
+      "callee": "forEach",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L414"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_buildg50pdf",
+      "callee": "getWithholdingSectionTotal",
+      "is_member_call": false,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L438"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_buildg50pdf",
+      "callee": "setDrawColor",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L439"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_buildg50pdf",
+      "callee": "rect",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L440"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_buildg50pdf",
+      "callee": "setFont",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L441"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_buildg50pdf",
+      "callee": "setFontSize",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L442"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_buildg50pdf",
+      "callee": "text",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L443"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_buildg50pdf",
+      "callee": "text",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L444"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_buildg50pdf",
+      "callee": "text",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L446"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_buildg50pdf",
+      "callee": "text",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L447"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_buildg50pdf",
+      "callee": "setFillColor",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L453"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_buildg50pdf",
+      "callee": "rect",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L454"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_buildg50pdf",
+      "callee": "setTextColor",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L455"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_buildg50pdf",
+      "callee": "setFont",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L456"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_buildg50pdf",
+      "callee": "setFontSize",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L457"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_buildg50pdf",
+      "callee": "text",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L458"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_buildg50pdf",
+      "callee": "setTextColor",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L459"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_buildg50pdf",
+      "callee": "forEach",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L469"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_buildg50pdf",
+      "callee": "setDrawColor",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L483"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_buildg50pdf",
+      "callee": "rect",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L484"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_buildg50pdf",
+      "callee": "setFont",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L485"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_buildg50pdf",
+      "callee": "setFontSize",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L486"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_buildg50pdf",
+      "callee": "text",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L487"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_buildg50pdf",
+      "callee": "text",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L488"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_buildg50pdf",
+      "callee": "addPage",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L494"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_buildg50pdf",
+      "callee": "calculateIrg",
+      "is_member_call": false,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L500"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_buildg50pdf",
+      "callee": "Number",
+      "is_member_call": false,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L501"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_buildg50pdf",
+      "callee": "Number",
+      "is_member_call": false,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L502"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_buildg50pdf",
+      "callee": "Number",
+      "is_member_call": false,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L504"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_buildg50pdf",
+      "callee": "setFillColor",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L511"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_buildg50pdf",
+      "callee": "rect",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L512"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_buildg50pdf",
+      "callee": "setTextColor",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L513"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_buildg50pdf",
+      "callee": "setFont",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L514"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_buildg50pdf",
+      "callee": "setFontSize",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L515"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_buildg50pdf",
+      "callee": "text",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L516"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_buildg50pdf",
+      "callee": "setTextColor",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L517"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_buildg50pdf",
+      "callee": "forEach",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L528"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_buildg50pdf",
+      "callee": "setDrawColor",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L557"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_buildg50pdf",
+      "callee": "rect",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L558"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_buildg50pdf",
+      "callee": "setFont",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L559"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_buildg50pdf",
+      "callee": "setFontSize",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L560"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_buildg50pdf",
+      "callee": "text",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L561"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_buildg50pdf",
+      "callee": "text",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L562"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_buildg50pdf",
+      "callee": "text",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L564"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_buildg50pdf",
+      "callee": "text",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L565"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_buildg50pdf",
+      "callee": "setFillColor",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L573"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_buildg50pdf",
+      "callee": "rect",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L574"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_buildg50pdf",
+      "callee": "setTextColor",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L575"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_buildg50pdf",
+      "callee": "setFont",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L576"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_buildg50pdf",
+      "callee": "setFontSize",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L577"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_buildg50pdf",
+      "callee": "text",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L578"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_buildg50pdf",
+      "callee": "setTextColor",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L579"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_buildg50pdf",
+      "callee": "forEach",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L596"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_buildg50pdf",
+      "callee": "setDrawColor",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L610"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_buildg50pdf",
+      "callee": "rect",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L611"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_buildg50pdf",
+      "callee": "setFont",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L612"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_buildg50pdf",
+      "callee": "setFontSize",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L613"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_buildg50pdf",
+      "callee": "text",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L614"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_buildg50pdf",
+      "callee": "text",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L615"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_buildg50pdf",
+      "callee": "addPage",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L621"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_buildg50pdf",
+      "callee": "calculateIbs",
+      "is_member_call": false,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L633"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_buildg50pdf",
+      "callee": "Number",
+      "is_member_call": false,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L635"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_buildg50pdf",
+      "callee": "Number",
+      "is_member_call": false,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L636"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_buildg50pdf",
+      "callee": "setFillColor",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L642"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_buildg50pdf",
+      "callee": "rect",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L643"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_buildg50pdf",
+      "callee": "setTextColor",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L644"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_buildg50pdf",
+      "callee": "setFont",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L645"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_buildg50pdf",
+      "callee": "setFontSize",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L646"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_buildg50pdf",
+      "callee": "text",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L647"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_buildg50pdf",
+      "callee": "setTextColor",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L648"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_buildg50pdf",
+      "callee": "forEach",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L670"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_buildg50pdf",
+      "callee": "setFillColor",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L700"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_buildg50pdf",
+      "callee": "rect",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L701"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_buildg50pdf",
+      "callee": "setTextColor",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L702"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_buildg50pdf",
+      "callee": "setFont",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L703"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_buildg50pdf",
+      "callee": "setFontSize",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L704"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_buildg50pdf",
+      "callee": "text",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L705"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_buildg50pdf",
+      "callee": "setTextColor",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L706"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_buildg50pdf",
+      "callee": "forEach",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L720"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_buildg50pdf",
+      "callee": "getWithholdingSectionTotal",
+      "is_member_call": false,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L750"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_buildg50pdf",
+      "callee": "setDrawColor",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L751"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_buildg50pdf",
+      "callee": "rect",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L752"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_buildg50pdf",
+      "callee": "setFont",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L753"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_buildg50pdf",
+      "callee": "setFontSize",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L754"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_buildg50pdf",
+      "callee": "text",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L755"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_buildg50pdf",
+      "callee": "text",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L756"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_buildg50pdf",
+      "callee": "text",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L758"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_buildg50pdf",
+      "callee": "text",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L759"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_buildg50pdf",
+      "callee": "addPage",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L766"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_buildg50pdf",
+      "callee": "setFillColor",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L770"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_buildg50pdf",
+      "callee": "rect",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L771"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_buildg50pdf",
+      "callee": "setTextColor",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L772"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_buildg50pdf",
+      "callee": "setFont",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L773"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_buildg50pdf",
+      "callee": "setFontSize",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L774"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_buildg50pdf",
+      "callee": "text",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L775"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_buildg50pdf",
+      "callee": "setTextColor",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L776"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_buildg50pdf",
+      "callee": "map",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L780"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_buildg50pdf",
+      "callee": "push",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L788"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_buildg50pdf",
+      "callee": "autoTable",
+      "is_member_call": false,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L791"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_buildg50pdf",
+      "callee": "setFillColor",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L817"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_buildg50pdf",
+      "callee": "rect",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L818"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_buildg50pdf",
+      "callee": "setTextColor",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L819"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_buildg50pdf",
+      "callee": "setFont",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L820"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_buildg50pdf",
+      "callee": "setFontSize",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L821"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_buildg50pdf",
+      "callee": "text",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L822"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_buildg50pdf",
+      "callee": "setTextColor",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L823"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_buildg50pdf",
+      "callee": "autoTable",
+      "is_member_call": false,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L827"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_buildg50pdf",
+      "callee": "setFillColor",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L854"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_buildg50pdf",
+      "callee": "rect",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L855"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_buildg50pdf",
+      "callee": "setTextColor",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L856"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_buildg50pdf",
+      "callee": "setFont",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L857"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_buildg50pdf",
+      "callee": "setFontSize",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L858"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_buildg50pdf",
+      "callee": "text",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L859"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_buildg50pdf",
+      "callee": "setTextColor",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L860"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_buildg50pdf",
+      "callee": "autoTable",
+      "is_member_call": false,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L870"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_buildg50pdf",
+      "callee": "setFont",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L900"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_buildg50pdf",
+      "callee": "setFontSize",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L901"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_buildg50pdf",
+      "callee": "setTextColor",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L902"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_buildg50pdf",
+      "callee": "text",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L903"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_buildg50pdf",
+      "callee": "setTextColor",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L904"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_buildg50pdf",
+      "callee": "setFont",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L908"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_buildg50pdf",
+      "callee": "setFontSize",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L909"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_buildg50pdf",
+      "callee": "text",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L910"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_buildg50pdf",
+      "callee": "toLocaleDateString",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L910"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_buildg50pdf",
+      "callee": "text",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L911"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_buildg50pdf",
+      "callee": "getNumberOfPages",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L915"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_buildg50pdf",
+      "callee": "toLocaleDateString",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L916"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_buildg50pdf",
+      "callee": "setPage",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L919"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_buildg50pdf",
+      "callee": "setFont",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L920"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_buildg50pdf",
+      "callee": "setFontSize",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L921"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_buildg50pdf",
+      "callee": "setTextColor",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L922"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_buildg50pdf",
+      "callee": "text",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L923"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_buildg50pdf",
+      "callee": "text",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L924"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_downloadg50pdf",
+      "callee": "save",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L937"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_downloadg50pdf",
+      "callee": "safe",
+      "is_member_call": false,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L937"
+    },
+    {
+      "caller_nid": "pdf_g50_pdf_downloadg50pdf",
+      "callee": "replace",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/pdf/g50-pdf.ts",
+      "source_location": "L937"
+    }
+  ]
+}

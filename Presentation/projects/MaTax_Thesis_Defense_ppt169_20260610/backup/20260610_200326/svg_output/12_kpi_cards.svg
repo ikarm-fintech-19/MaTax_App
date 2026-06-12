@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720">
+  <!-- Background -->
+  <rect width="1280" height="720" fill="#FFFFFF"/>
+  
+  <!-- Header -->
+  <rect x="0" y="0" width="1280" height="70" fill="#003366"/>
+  <rect x="0" y="0" width="6" height="70" fill="#CC0000"/>
+  <text x="40" y="46" fill="#FFFFFF" font-family="Microsoft YaHei, Arial, sans-serif" font-size="28" font-weight="bold">
+    04 | الدراسة المالية - مؤشرات الأداء الرئيسية
+  </text>
+  <text x="1220" y="46" text-anchor="end" fill="#FFFFFF" font-family="Georgia, Microsoft YaHei, serif" font-size="18" font-weight="bold">MATAX</text>
+  
+  <!-- Key message bar -->
+  <rect x="0" y="70" width="1280" height="50" fill="#F0F4F8"/>
+  <rect x="0" y="70" width="6" height="50" fill="#0066CC"/>
+  <text x="40" y="102" fill="#1E293B" font-family="Microsoft YaHei, Arial, sans-serif" font-size="18">
+    MATAX حقق نتائج استثنائية: VAN +79.6M | DR 1y9m | BEP 4 months
+  </text>
+  
+  <!-- KPI Cards: 3 columns x 2 rows -->
+  <!-- Row 1 -->
+  <!-- KPI 1: VAN -->
+  <rect x="60" y="140" width="370" height="230" fill="#F8FAFC" rx="12" stroke="#E2E8F0" stroke-width="1"/>
+  <rect x="60" y="140" width="370" height="10" fill="#16A34A" rx="5"/>
+  <text x="245" y="215" text-anchor="middle" fill="#16A34A" font-family="Georgia, Microsoft YaHei, serif" font-size="56" font-weight="bold">+79.6M</text>
+  <text x="245" y="260" text-anchor="middle" fill="#1E293B" font-family="Microsoft YaHei, Arial, sans-serif" font-size="18" font-weight="bold">القيمة المضافة الصافية (VAN)</text>
+  <text x="245" y="290" text-anchor="middle" fill="#64748B" font-family="Microsoft YaHei, Arial, sans-serif" font-size="14">التدفقات النقدية التراكمية على 3 سنوات</text>
+  <text x="245" y="340" text-anchor="middle" fill="#16A34A" font-family="Microsoft YaHei, Arial, sans-serif" font-size="16" font-weight="bold">العائد على الاستثمار: 247%</text>
+  
+  <!-- KPI 2: DR -->
+  <rect x="455" y="140" width="370" height="230" fill="#F8FAFC" rx="12" stroke="#E2E8F0" stroke-width="1"/>
+  <rect x="455" y="140" width="370" height="10" fill="#0066CC" rx="5"/>
+  <text x="640" y="215" text-anchor="middle" fill="#0066CC" font-family="Georgia, Microsoft YaHei, serif" font-size="56" font-weight="bold">1y9m</text>
+  <text x="640" y="260" text-anchor="middle" fill="#1E293B" font-family="Microsoft YaHei, Arial, sans-serif" font-size="18" font-weight="bold">معدل الخصم الداخلي (DR)</text>
+  <text x="640" y="290" text-anchor="middle" fill="#64748B" font-family="Microsoft YaHei, Arial, sans-serif" font-size="14">التعافي السريع جداً للاستثمار</text>
+  <text x="640" y="340" text-anchor="middle" fill="#0066CC" font-family="Microsoft YaHei, Arial, sans-serif" font-size="16" font-weight="bold">أقل من 24 شهر</text>
+  
+  <!-- KPI 3: BEP -->
+  <rect x="850" y="140" width="370" height="230" fill="#F8FAFC" rx="12" stroke="#E2E8F0" stroke-width="1"/>
+  <rect x="850" y="140" width="370" height="10" fill="#0891B2" rx="5"/>
+  <text x="1035" y="215" text-anchor="middle" fill="#0891B2" font-family="Georgia, Microsoft YaHei, serif" font-size="56" font-weight="bold">61</text>
+  <text x="1035" y="260" text-anchor="middle" fill="#1E293B" font-family="Microsoft YaHei, Arial, sans-serif" font-size="18" font-weight="bold">نقطة التعادل (BEP)</text>
+  <text x="1035" y="290" text-anchor="middle" fill="#64748B" font-family="Microsoft YaHei, Arial, sans-serif" font-size="14">الشهر 4 فقط</text>
+  <text x="1035" y="340" text-anchor="middle" fill="#0891B2" font-family="Microsoft YaHei, Arial, sans-serif" font-size="16" font-weight="bold">61 عميل للتعادل</text>
+  
+  <!-- Row 2 -->
+  <!-- KPI 4: OM -->
+  <rect x="60" y="395" width="370" height="230" fill="#F8FAFC" rx="12" stroke="#E2E8F0" stroke-width="1"/>
+  <rect x="60" y="395" width="370" height="10" fill="#7C3AED" rx="5"/>
+  <text x="245" y="470" text-anchor="middle" fill="#7C3AED" font-family="Georgia, Microsoft YaHei, serif" font-size="56" font-weight="bold">46.6%</text>
+  <text x="245" y="515" text-anchor="middle" fill="#1E293B" font-family="Microsoft YaHei, Arial, sans-serif" font-size="18" font-weight="bold">هامش الربح التشغيلي (OM)</text>
+  <text x="245" y="545" text-anchor="middle" fill="#64748B" font-family="Microsoft YaHei, Arial, sans-serif" font-size="14">هامش صافي مرتفع جداً</text>
+  <text x="245" y="595" text-anchor="middle" fill="#7C3AED" font-family="Microsoft YaHei, Arial, sans-serif" font-size="16" font-weight="bold">+45.2% صافي الربح</text>
+  
+  <!-- KPI 5: CAPEX -->
+  <rect x="455" y="395" width="370" height="230" fill="#F8FAFC" rx="12" stroke="#E2E8F0" stroke-width="1"/>
+  <rect x="455" y="395" width="370" height="10" fill="#EA580C" rx="5"/>
+  <text x="640" y="470" text-anchor="middle" fill="#EA580C" font-family="Georgia, Microsoft YaHei, serif" font-size="56" font-weight="bold">3.88M</text>
+  <text x="640" y="515" text-anchor="middle" fill="#1E293B" font-family="Microsoft YaHei, Arial, sans-serif" font-size="18" font-weight="bold">التمويل المطلوب (CAPEX)</text>
+  <text x="640" y="545" text-anchor="middle" fill="#64748B" font-family="Microsoft YaHei, Arial, sans-serif" font-size="14">التكاليف الثابتة المتغيرة</text>
+  <text x="640" y="595" text-anchor="middle" fill="#EA580C" font-family="Microsoft YaHei, Arial, sans-serif" font-size="16" font-weight="bold">أقل من 4M دج</text>
+  
+  <!-- KPI 6: Clients -->
+  <rect x="850" y="395" width="370" height="230" fill="#F8FAFC" rx="12" stroke="#E2E8F0" stroke-width="1"/>
+  <rect x="850" y="395" width="370" height="10" fill="#DC2626" rx="5"/>
+  <text x="1035" y="470" text-anchor="middle" fill="#DC2626" font-family="Georgia, Microsoft YaHei, serif" font-size="56" font-weight="bold">960</text>
+  <text x="1035" y="515" text-anchor="middle" fill="#1E293B" font-family="Microsoft YaHei, Arial, sans-serif" font-size="18" font-weight="bold">العملاء المستهدفون (السنة 1)</text>
+  <text x="1035" y="545" text-anchor="middle" fill="#64748B" font-family="Microsoft YaHei, Arial, sans-serif" font-size="14">النمو المتوقع خلال 12 شهر</text>
+  <text x="1035" y="595" text-anchor="middle" fill="#DC2626" font-family="Microsoft YaHei, Arial, sans-serif" font-size="16" font-weight="bold">80 عميل/شهر</text>
+  
+  <!-- Footer -->
+  <line x1="40" y1="645" x2="1240" y2="645" stroke="#E2E8F0" stroke-width="1"/>
+  <text x="40" y="675" fill="#94A3B8" font-family="Microsoft YaHei, Arial, sans-serif" font-size="12">المصدر: دراسة المشروع</text>
+  <text x="640" y="675" text-anchor="middle" fill="#94A3B8" font-family="Microsoft YaHei, Arial, sans-serif" font-size="12">مؤشرات الأداء الرئيسية</text>
+  <text x="1220" y="675" text-anchor="end" fill="#64748B" font-family="Microsoft YaHei, Arial, sans-serif" font-size="14">12</text>
+</svg>

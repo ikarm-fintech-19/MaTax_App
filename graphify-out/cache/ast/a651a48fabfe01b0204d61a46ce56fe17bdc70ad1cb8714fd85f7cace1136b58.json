@@ -1,0 +1,105 @@
+{
+  "nodes": [
+    {
+      "id": "home_dev_lab_documents_github_matax_app_src_hooks_use_auth_tsx",
+      "label": "use-auth.tsx",
+      "file_type": "code",
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/hooks/use-auth.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "hooks_use_auth_authprovider",
+      "label": "AuthProvider()",
+      "file_type": "code",
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/hooks/use-auth.tsx",
+      "source_location": "L14"
+    },
+    {
+      "id": "hooks_use_auth_useauth",
+      "label": "useAuth()",
+      "file_type": "code",
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/hooks/use-auth.tsx",
+      "source_location": "L45"
+    }
+  ],
+  "edges": [
+    {
+      "source": "home_dev_lab_documents_github_matax_app_src_hooks_use_auth_tsx",
+      "target": "react",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/hooks/use-auth.tsx",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "home_dev_lab_documents_github_matax_app_src_hooks_use_auth_tsx",
+      "target": "supabase_js",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/hooks/use-auth.tsx",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "home_dev_lab_documents_github_matax_app_src_hooks_use_auth_tsx",
+      "target": "client",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/hooks/use-auth.tsx",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "home_dev_lab_documents_github_matax_app_src_hooks_use_auth_tsx",
+      "target": "hooks_use_auth_authprovider",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/hooks/use-auth.tsx",
+      "source_location": "L14",
+      "weight": 1.0
+    },
+    {
+      "source": "home_dev_lab_documents_github_matax_app_src_hooks_use_auth_tsx",
+      "target": "hooks_use_auth_useauth",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/hooks/use-auth.tsx",
+      "source_location": "L45",
+      "weight": 1.0
+    }
+  ],
+  "raw_calls": [
+    {
+      "caller_nid": "hooks_use_auth_authprovider",
+      "callee": "useState",
+      "is_member_call": false,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/hooks/use-auth.tsx",
+      "source_location": "L15"
+    },
+    {
+      "caller_nid": "hooks_use_auth_authprovider",
+      "callee": "useState",
+      "is_member_call": false,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/hooks/use-auth.tsx",
+      "source_location": "L16"
+    },
+    {
+      "caller_nid": "hooks_use_auth_authprovider",
+      "callee": "useEffect",
+      "is_member_call": false,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/hooks/use-auth.tsx",
+      "source_location": "L18"
+    },
+    {
+      "caller_nid": "hooks_use_auth_useauth",
+      "callee": "useContext",
+      "is_member_call": false,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/hooks/use-auth.tsx",
+      "source_location": "L46"
+    }
+  ]
+}

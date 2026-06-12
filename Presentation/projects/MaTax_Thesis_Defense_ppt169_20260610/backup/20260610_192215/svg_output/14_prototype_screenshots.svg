@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720">
+  <!-- Background -->
+  <rect width="1280" height="720" fill="#FFFFFF"/>
+  
+  <!-- Header -->
+  <rect x="0" y="0" width="1280" height="70" fill="#003366"/>
+  <rect x="0" y="0" width="6" height="70" fill="#CC0000"/>
+  <text x="40" y="46" fill="#FFFFFF" font-family="Microsoft YaHei, Arial, sans-serif" font-size="28" font-weight="bold">
+    05 | النموذج التجريبي — عرض المنصة
+  </text>
+  <text x="1220" y="46" text-anchor="end" fill="#FFFFFF" font-family="Georgia, Microsoft YaHei, serif" font-size="18" font-weight="bold">MATAX</text>
+  
+  <!-- Key message bar -->
+  <rect x="0" y="70" width="1280" height="50" fill="#F0F4F8"/>
+  <rect x="0" y="70" width="6" height="50" fill="#0066CC"/>
+  <text x="40" y="102" fill="#1D1D1F" font-family="Microsoft YaHei, Arial, sans-serif" font-size="18">
+    MATAX: واجهة عربية سلسة — لا حاجة لخبرة محاسبية مسبقة
+  </text>
+  
+  <!-- Screenshot area: 2-column layout with placeholder frames -->
+  <!-- Left: Mobile View -->
+  <rect x="60" y="140" width="560" height="400" fill="#F0F4F8" rx="10"/>
+  <rect x="60" y="140" width="560" height="50" fill="#003366" rx="10"/>
+  <rect x="60" y="180" width="560" height="10" fill="#003366"/>
+  <text x="340" y="174" text-anchor="middle" fill="#FFFFFF" font-family="Microsoft YaHei, Arial, sans-serif" font-size="18" font-weight="bold">التطبيق الجوال</text>
+  
+  <!-- Mobile frame placeholder -->
+  <rect x="170" y="210" width="320" height="300" fill="#FFFFFF" rx="20" stroke="#E0E0E0" stroke-width="2"/>
+  <rect x="250" y="215" width="160" height="8" fill="#E0E0E0" rx="4"/>
+  
+  <!-- Placeholder content inside mobile -->
+  <rect x="195" y="240" width="270" height="35" fill="#F0F4F8" rx="4"/>
+  <text x="330" y="264" text-anchor="middle" fill="#CCCCCC" font-family="Microsoft YaHei, Arial, sans-serif" font-size="13">[صورة التطبيق الجوال]</text>
+  
+  <rect x="195" y="285" width="270" height="60" fill="#F0F4F8" rx="4"/>
+  <text x="330" y="322" text-anchor="middle" fill="#CCCCCC" font-family="Microsoft YaHei, Arial, sans-serif" font-size="13">[لوحة تحكم المقاول]</text>
+  
+  <rect x="195" y="355" width="270" height="60" fill="#F0F4F8" rx="4"/>
+  <text x="330" y="392" text-anchor="middle" fill="#CCCCCC" font-family="Microsoft YaHei, Arial, sans-serif" font-size="13">[قائمة الجباية]</text>
+  
+  <rect x="195" y="425" width="270" height="60" fill="#F0F4F8" rx="4"/>
+  <text x="330" y="462" text-anchor="middle" fill="#CCCCCC" font-family="Microsoft YaHei, Arial, sans-serif" font-size="13">[إعدادات الحساب]</text>
+  
+  <!-- Right: Desktop View -->
+  <rect x="660" y="140" width="560" height="400" fill="#F0F4F8" rx="10"/>
+  <rect x="660" y="140" width="560" height="50" fill="#003366" rx="10"/>
+  <rect x="660" y="180" width="560" height="10" fill="#003366"/>
+  <text x="940" y="174" text-anchor="middle" fill="#FFFFFF" font-family="Microsoft YaHei, Arial, sans-serif" font-size="18" font-weight="bold">لوحة التحكم على الويب</text>
+  
+  <!-- Desktop frame placeholder -->
+  <rect x="720" y="210" width="440" height="300" fill="#FFFFFF" rx="8" stroke="#E0E0E0" stroke-width="2"/>
+  <rect x="720" y="210" width="440" height="30" fill="#F5F5F5" rx="8"/>
+  <circle cx="735" cy="225" r="5" fill="#FF5F56"/>
+  <circle cx="750" cy="225" r="5" fill="#FFBD2E"/>
+  <circle cx="765" cy="225" r="5" fill="#27CA40"/>
+  <rect x="850" y="218" width="180" height="14" fill="#E0E0E0" rx="3"/>
+  
+  <!-- Placeholder content inside desktop -->
+  <rect x="745" y="255" width="390" height="40" fill="#F0F4F8" rx="4"/>
+  <text x="940" y="282" text-anchor="middle" fill="#CCCCCC" font-family="Microsoft YaHei, Arial, sans-serif" font-size="13">[لوحة تحكم المحاسب]</text>
+  
+  <rect x="745" y="310" width="390" height="80" fill="#F0F4F8" rx="4"/>
+  <text x="940" y="358" text-anchor="middle" fill="#CCCCCC" font-family="Microsoft YaHei, Arial, sans-serif" font-size="13">[إدارة محفظة العملاء]</text>
+  
+  <rect x="745" y="405" width="390" height="90" fill="#F0F4F8" rx="4"/>
+  <text x="940" y="458" text-anchor="middle" fill="#CCCCCC" font-family="Microsoft YaHei, Arial, sans-serif" font-size="13">[تقارير الجباية والتصرح]</text>
+  
+  <!-- Bottom feature highlights -->
+  <rect x="60" y="560" width="1160" height="100" fill="#F0F4F8" rx="8"/>
+  
+  <!-- Feature 1 -->
+  <rect x="80" y="580" width="340" height="60" fill="#FFFFFF" rx="6"/>
+  <use data-icon="tabler-outline/language" x="95" y="593" width="28" height="28" fill="#003366"/>
+  <text x="140" y="612" fill="#003366" font-family="Microsoft YaHei, Arial, sans-serif" font-size="14" font-weight="bold">واجهة عربية بالكامل</text>
+  
+  <!-- Feature 2 -->
+  <rect x="440" y="580" width="340" height="60" fill="#FFFFFF" rx="6"/>
+  <use data-icon="tabler-outline/device-mobile" x="455" y="593" width="28" height="28" fill="#0066CC"/>
+  <text x="500" y="612" fill="#0066CC" font-family="Microsoft YaHei, Arial, sans-serif" font-size="14" font-weight="bold">متوافق مع الجوال</text>
+  
+  <!-- Feature 3 -->
+  <rect x="800" y="580" width="340" height="60" fill="#FFFFFF" rx="6"/>
+  <use data-icon="tabler-outline/rocket" x="815" y="593" width="28" height="28" fill="#2E7D32"/>
+  <text x="860" y="612" fill="#2E7D32" font-family="Microsoft YaHei, Arial, sans-serif" font-size="14" font-weight="bold">سرعة في الأداء</text>
+  
+  <!-- Footer -->
+  <line x1="40" y1="685" x2="1240" y2="685" stroke="#F0F4F8" stroke-width="1"/>
+  <text x="40" y="710" fill="#8A8A8A" font-family="Microsoft YaHei, Arial, sans-serif" font-size="12">المصدر: النموذج التجريبي</text>
+  <text x="640" y="710" text-anchor="middle" fill="#8A8A8A" font-family="Microsoft YaHei, Arial, sans-serif" font-size="12">عرض المنصة</text>
+  <text x="1220" y="710" text-anchor="end" fill="#666666" font-family="Microsoft YaHei, Arial, sans-serif" font-size="14">14</text>
+</svg>

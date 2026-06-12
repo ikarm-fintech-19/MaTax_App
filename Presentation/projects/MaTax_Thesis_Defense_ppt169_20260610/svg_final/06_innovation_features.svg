@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720">
+  
+  <rect width="1280" height="720" fill="#FFFFFF" />
+  
+  
+  <rect x="0" y="0" width="1280" height="70" fill="#003366" />
+  <rect x="0" y="0" width="6" height="70" fill="#CC0000" />
+  <text x="40" y="46" fill="#FFFFFF" font-family="Microsoft YaHei, Arial, sans-serif" font-size="28" font-weight="bold">
+    02 | الجوانب الابتكارية للمشروع
+  </text>
+  <text x="1220" y="46" text-anchor="end" fill="#FFFFFF" font-family="Georgia, Microsoft YaHei, serif" font-size="18" font-weight="bold">MATAX</text>
+  
+  
+  <rect x="0" y="70" width="1280" height="50" fill="#F0F4F8" />
+  <rect x="0" y="70" width="6" height="50" fill="#0066CC" />
+  <text x="40" y="102" fill="#1D1D1F" font-family="Microsoft YaHei, Arial, sans-serif" font-size="18">
+    6 مبادرات تجعل MATAX خياراً استراتيجياً للمقاولين والشركات الجزائرية
+  </text>
+  
+  
+  
+  
+  <path fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1" d="M72,145 H418 A12,12 0 0 1 430,157 V353 A12,12 0 0 1 418,365 H72 A12,12 0 0 1 60,353 V157 A12,12 0 0 1 72,145 Z" />
+  <path fill="#003366" d="M64,145 H426 A4,4 0 0 1 430,149 V149 A4,4 0 0 1 426,153 H64 A4,4 0 0 1 60,149 V149 A4,4 0 0 1 64,145 Z" />
+  <circle cx="245" cy="195" r="28" fill="#003366" fill-opacity="0.12" />
+  <text x="245" y="203" text-anchor="middle" fill="#003366" font-family="Arial, sans-serif" font-size="24" font-weight="bold">🚀</text>
+  <text x="245" y="250" text-anchor="middle" fill="#003366" font-family="Microsoft YaHei, Arial, sans-serif" font-size="18" font-weight="bold">بسيطة وسلسة</text>
+  <text x="245" y="278" text-anchor="middle" fill="#64748B" font-family="Microsoft YaHei, Arial, sans-serif" font-size="13">واجهة مستخدم سلسة لا تتطلب</text>
+  <text x="245" y="298" text-anchor="middle" fill="#64748B" font-family="Microsoft YaHei, Arial, sans-serif" font-size="13">خبرة محاسبية مسبقة</text>
+  <text x="245" y="328" text-anchor="middle" fill="#003366" font-family="Microsoft YaHei, Arial, sans-serif" font-size="12" font-weight="bold">تقليل زمن التأهيل لـ 48 ساعة</text>
+  
+  
+  <path fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1" d="M467,145 H813 A12,12 0 0 1 825,157 V353 A12,12 0 0 1 813,365 H467 A12,12 0 0 1 455,353 V157 A12,12 0 0 1 467,145 Z" />
+  <path fill="#0066CC" d="M459,145 H821 A4,4 0 0 1 825,149 V149 A4,4 0 0 1 821,153 H459 A4,4 0 0 1 455,149 V149 A4,4 0 0 1 459,145 Z" />
+  <circle cx="640" cy="195" r="28" fill="#0066CC" fill-opacity="0.12" />
+  <text x="640" y="203" text-anchor="middle" fill="#0066CC" font-family="Arial, sans-serif" font-size="24" font-weight="bold">🔔</text>
+  <text x="640" y="250" text-anchor="middle" fill="#0066CC" font-family="Microsoft YaHei, Arial, sans-serif" font-size="18" font-weight="bold">استباقية واستشراف</text>
+  <text x="640" y="278" text-anchor="middle" fill="#64748B" font-family="Microsoft YaHei, Arial, sans-serif" font-size="13">تنبيهات ذكية عبر SMS</text>
+  <text x="640" y="298" text-anchor="middle" fill="#64748B" font-family="Microsoft YaHei, Arial, sans-serif" font-size="13">والبريد الإلكتروني</text>
+  <text x="640" y="328" text-anchor="middle" fill="#0066CC" font-family="Microsoft YaHei, Arial, sans-serif" font-size="12" font-weight="bold">متابعة مسبقة للمواعيد الجبائية</text>
+  
+  
+  <path fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1" d="M862,145 H1208 A12,12 0 0 1 1220,157 V353 A12,12 0 0 1 1208,365 H862 A12,12 0 0 1 850,353 V157 A12,12 0 0 1 862,145 Z" />
+  <path fill="#0099AA" d="M854,145 H1216 A4,4 0 0 1 1220,149 V149 A4,4 0 0 1 1216,153 H854 A4,4 0 0 1 850,149 V149 A4,4 0 0 1 854,145 Z" />
+  <circle cx="1035" cy="195" r="28" fill="#0099AA" fill-opacity="0.12" />
+  <text x="1035" y="203" text-anchor="middle" fill="#0099AA" font-family="Arial, sans-serif" font-size="24" font-weight="bold">⚖️</text>
+  <text x="1035" y="250" text-anchor="middle" fill="#0099AA" font-family="Microsoft YaHei, Arial, sans-serif" font-size="18" font-weight="bold">ملاءمة قانونية</text>
+  <text x="1035" y="278" text-anchor="middle" fill="#64748B" font-family="Microsoft YaHei, Arial, sans-serif" font-size="13">تطابق مع الإطار القانوني</text>
+  <text x="1035" y="298" text-anchor="middle" fill="#64748B" font-family="Microsoft YaHei, Arial, sans-serif" font-size="13">الجزائري</text>
+  <text x="1035" y="328" text-anchor="middle" fill="#0099AA" font-family="Microsoft YaHei, Arial, sans-serif" font-size="12" font-weight="bold">تحديث تلقائي مع القوانين المالية</text>
+  
+  
+  
+  <path fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1" d="M72,395 H418 A12,12 0 0 1 430,407 V603 A12,12 0 0 1 418,615 H72 A12,12 0 0 1 60,603 V407 A12,12 0 0 1 72,395 Z" />
+  <path fill="#2E7D32" d="M64,395 H426 A4,4 0 0 1 430,399 V399 A4,4 0 0 1 426,403 H64 A4,4 0 0 1 60,399 V399 A4,4 0 0 1 64,395 Z" />
+  <circle cx="245" cy="445" r="28" fill="#2E7D32" fill-opacity="0.12" />
+  <text x="245" y="453" text-anchor="middle" fill="#2E7D32" font-family="Arial, sans-serif" font-size="24" font-weight="bold">📱</text>
+  <text x="245" y="500" text-anchor="middle" fill="#2E7D32" font-family="Microsoft YaHei, Arial, sans-serif" font-size="18" font-weight="bold">أتمتة شاملة</text>
+  <text x="245" y="528" text-anchor="middle" fill="#64748B" font-family="Microsoft YaHei, Arial, sans-serif" font-size="13">توليد تلقائي للتصريحات G50</text>
+  <text x="245" y="548" text-anchor="middle" fill="#64748B" font-family="Microsoft YaHei, Arial, sans-serif" font-size="13">بصيغة PDF</text>
+  <text x="245" y="578" text-anchor="middle" fill="#2E7D32" font-family="Microsoft YaHei, Arial, sans-serif" font-size="12" font-weight="bold">صفر أخطاء يدوية</text>
+  
+  
+  <path fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1" d="M467,395 H813 A12,12 0 0 1 825,407 V603 A12,12 0 0 1 813,615 H467 A12,12 0 0 1 455,603 V407 A12,12 0 0 1 467,395 Z" />
+  <path fill="#1565C0" d="M459,395 H821 A4,4 0 0 1 825,399 V399 A4,4 0 0 1 821,403 H459 A4,4 0 0 1 455,399 V399 A4,4 0 0 1 459,395 Z" />
+  <circle cx="640" cy="445" r="28" fill="#1565C0" fill-opacity="0.12" />
+  <text x="640" y="453" text-anchor="middle" fill="#1565C0" font-family="Arial, sans-serif" font-size="24" font-weight="bold">💰</text>
+  <text x="640" y="500" text-anchor="middle" fill="#1565C0" font-family="Microsoft YaHei, Arial, sans-serif" font-size="18" font-weight="bold">اشتراكات اقتصادية</text>
+  <text x="640" y="528" text-anchor="middle" fill="#64748B" font-family="Microsoft YaHei, Arial, sans-serif" font-size="13">تقليل التكاليف بنسبة 60%</text>
+  <text x="640" y="548" text-anchor="middle" fill="#64748B" font-family="Microsoft YaHei, Arial, sans-serif" font-size="13">مقارنة بالمكاتب التقليدية</text>
+  <text x="640" y="578" text-anchor="middle" fill="#1565C0" font-family="Microsoft YaHei, Arial, sans-serif" font-size="12" font-weight="bold">اشتراكات من 1,490 دج/شهر</text>
+  
+  
+  <path fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1" d="M862,395 H1208 A12,12 0 0 1 1220,407 V603 A12,12 0 0 1 1208,615 H862 A12,12 0 0 1 850,603 V407 A12,12 0 0 1 862,395 Z" />
+  <path fill="#6A1B9A" d="M854,395 H1216 A4,4 0 0 1 1220,399 V399 A4,4 0 0 1 1216,403 H854 A4,4 0 0 1 850,399 V399 A4,4 0 0 1 854,395 Z" />
+  <circle cx="1035" cy="445" r="28" fill="#6A1B9A" fill-opacity="0.12" />
+  <text x="1035" y="453" text-anchor="middle" fill="#6A1B9A" font-family="Arial, sans-serif" font-size="24" font-weight="bold">☁️</text>
+  <text x="1035" y="500" text-anchor="middle" fill="#6A1B9A" font-family="Microsoft YaHei, Arial, sans-serif" font-size="18" font-weight="bold">بنية تحتية سحابية</text>
+  <text x="1035" y="528" text-anchor="middle" fill="#64748B" font-family="Microsoft YaHei, Arial, sans-serif" font-size="13">استضافة Cloudflare المحمية</text>
+  <text x="1035" y="548" text-anchor="middle" fill="#64748B" font-family="Microsoft YaHei, Arial, sans-serif" font-size="13">بتشفير 256-SSL</text>
+  <text x="1035" y="578" text-anchor="middle" fill="#6A1B9A" font-family="Microsoft YaHei, Arial, sans-serif" font-size="12" font-weight="bold">مزامنة Google Drive</text>
+  
+  
+  <line x1="40" y1="640" x2="1240" y2="640" stroke="#E2E8F0" stroke-width="1" />
+  <text x="40" y="670" fill="#94A3B8" font-family="Microsoft YaHei, Arial, sans-serif" font-size="12">المصدر: PRODUCT.md</text>
+  <text x="640" y="670" text-anchor="middle" fill="#94A3B8" font-family="Microsoft YaHei, Arial, sans-serif" font-size="12">الجوانب الابتكارية</text>
+  <text x="1220" y="670" text-anchor="end" fill="#64748B" font-family="Microsoft YaHei, Arial, sans-serif" font-size="14">06</text>
+</svg>

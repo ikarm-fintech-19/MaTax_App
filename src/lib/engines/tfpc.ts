@@ -70,9 +70,10 @@ export function calculateTfpc(input: TfpcInput): TfpcResult {
   const taDueBeforeOffset = isSubjectToTax ? Math.max(0, taTarget - apprenticeshipExpenses) : 0;
 
   // Offset applied: if the gap is justified, we can use the training surplus to reduce the TA due
-  const apprenticeshipOffsetApplied = (isSubjectToTax && isApprenticeshipGapJustified)
-    ? Math.min(taDueBeforeOffset, trainingSurplus)
-    : 0;
+  const apprenticeshipOffsetApplied =
+    isSubjectToTax && isApprenticeshipGapJustified
+      ? Math.min(taDueBeforeOffset, trainingSurplus)
+      : 0;
 
   const taDue = isSubjectToTax ? Math.max(0, taDueBeforeOffset - apprenticeshipOffsetApplied) : 0;
   const totalDue = tfpcDue + taDue;

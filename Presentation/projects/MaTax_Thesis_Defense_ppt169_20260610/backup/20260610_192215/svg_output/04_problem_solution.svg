@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720">
+  <!-- Background -->
+  <rect width="1280" height="720" fill="#FFFFFF"/>
+  
+  <!-- Header -->
+  <rect x="0" y="0" width="1280" height="70" fill="#003366"/>
+  <rect x="0" y="0" width="6" height="70" fill="#CC0000"/>
+  <text x="40" y="46" fill="#FFFFFF" font-family="Microsoft YaHei, Arial, sans-serif" font-size="28" font-weight="bold">
+    01 | المشكلة والحل المقترح
+  </text>
+  <text x="1220" y="46" text-anchor="end" fill="#FFFFFF" font-family="Georgia, Microsoft YaHei, serif" font-size="18" font-weight="bold">MATAX</text>
+  
+  <!-- Key message bar -->
+  <rect x="0" y="70" width="1280" height="50" fill="#F0F4F8"/>
+  <rect x="0" y="70" width="6" height="50" fill="#0066CC"/>
+  <text x="40" y="102" fill="#1D1D1F" font-family="Microsoft YaHei, Arial, sans-serif" font-size="18">
+    MATAX يحل 4 مشاكل حرجة من خلال 5 ركائز رقمية متكاملة
+  </text>
+  
+  <!-- LEFT SIDE: Problems -->
+  <rect x="40" y="140" width="580" height="500" fill="#F0F4F8" rx="8"/>
+  <rect x="40" y="140" width="580" height="50" fill="#C62828" rx="8"/>
+  <rect x="40" y="180" width="580" height="10" fill="#C62828"/>
+  <text x="330" y="174" text-anchor="middle" fill="#FFFFFF" font-family="Microsoft YaHei, Arial, sans-serif" font-size="20" font-weight="bold">المشكلة</text>
+  
+  <!-- Problem 1 -->
+  <rect x="60" y="210" width="540" height="90" fill="#FFFFFF" rx="6"/>
+  <rect x="60" y="210" width="6" height="90" fill="#C62828" rx="3"/>
+  <text x="110" y="240" fill="#C62828" font-family="Microsoft YaHei, Arial, sans-serif" font-size="16" font-weight="bold">01 تعقيد التشريعات الجبائية</text>
+  <text x="110" y="265" fill="#5A5A5A" font-family="Microsoft YaHei, Arial, sans-serif" font-size="13">صعوبة استيعاب القوانين المالية السنوية وتداخل الإجراءات الإدارية</text>
+  
+  <!-- Problem 2 -->
+  <rect x="60" y="315" width="540" height="90" fill="#FFFFFF" rx="6"/>
+  <rect x="60" y="315" width="6" height="90" fill="#C62828" rx="3"/>
+  <text x="110" y="345" fill="#C62828" font-family="Microsoft YaHei, Arial, sans-serif" font-size="16" font-weight="bold">02 مخاطر الأخطاء البشرية</text>
+  <text x="110" y="370" fill="#5A5A5A" font-family="Microsoft YaHei, Arial, sans-serif" font-size="13">الاعتماد على التعبئة اليدوية للتصاريح الدورية</text>
+  
+  <!-- Problem 3 -->
+  <rect x="60" y="420" width="540" height="90" fill="#FFFFFF" rx="6"/>
+  <rect x="60" y="420" width="6" height="90" fill="#C62828" rx="3"/>
+  <text x="110" y="450" fill="#C62828" font-family="Microsoft YaHei, Arial, sans-serif" font-size="16" font-weight="bold">03 غرامات التأخير المالي</text>
+  <text x="110" y="475" fill="#5A5A5A" font-family="Microsoft YaHei, Arial, sans-serif" font-size="13">غياب نظام متابعة وتنبيه ذكي للمواعيد القانونية</text>
+  
+  <!-- Problem 4 -->
+  <rect x="60" y="525" width="540" height="90" fill="#FFFFFF" rx="6"/>
+  <rect x="60" y="525" width="6" height="90" fill="#C62828" rx="3"/>
+  <text x="110" y="555" fill="#C62828" font-family="Microsoft YaHei, Arial, sans-serif" font-size="16" font-weight="bold">04 التكاليف الباهظة وهشاشة الأرشفة</text>
+  <text x="110" y="580" fill="#5A5A5A" font-family="Microsoft YaHei, Arial, sans-serif" font-size="13">أعباء التعاقد مع مكاتب المحاسبة وغياب التخزين السحابي</text>
+  
+  <!-- RIGHT SIDE: Solutions -->
+  <rect x="660" y="140" width="580" height="500" fill="#F0F4F8" rx="8"/>
+  <rect x="660" y="140" width="580" height="50" fill="#2E7D32" rx="8"/>
+  <rect x="660" y="180" width="580" height="10" fill="#2E7D32"/>
+  <text x="950" y="174" text-anchor="middle" fill="#FFFFFF" font-family="Microsoft YaHei, Arial, sans-serif" font-size="20" font-weight="bold">الحل: MATAX</text>
+  
+  <!-- Solution 1 -->
+  <rect x="680" y="210" width="540" height="85" fill="#FFFFFF" rx="6"/>
+  <rect x="680" y="210" width="6" height="85" fill="#2E7D32" rx="3"/>
+  <use data-icon="tabler-outline/clipboard-check" x="700" y="225" width="32" height="32" fill="#2E7D32"/>
+  <text x="745" y="238" fill="#2E7D32" font-family="Microsoft YaHei, Arial, sans-serif" font-size="15" font-weight="bold">تبسيط الجباية</text>
+  <text x="745" y="260" fill="#5A5A5A" font-family="Microsoft YaHei, Arial, sans-serif" font-size="12">واجهات رقمية سلسة دون خبرة محاسبية</text>
+  
+  <!-- Solution 2 -->
+  <rect x="680" y="305" width="540" height="85" fill="#FFFFFF" rx="6"/>
+  <rect x="680" y="305" width="6" height="85" fill="#2E7D32" rx="3"/>
+  <use data-icon="tabler-outline/bell" x="700" y="320" width="32" height="32" fill="#2E7D32"/>
+  <text x="745" y="333" fill="#2E7D32" font-family="Microsoft YaHei, Arial, sans-serif" font-size="15" font-weight="bold">نظام تنبيه ذكي واستباقي</text>
+  <text x="745" y="355" fill="#5A5A5A" font-family="Microsoft YaHei, Arial, sans-serif" font-size="12">رسائل SMS والبريد الإلكتروني قبل المواعيد</text>
+  
+  <!-- Solution 3 -->
+  <rect x="680" y="400" width="540" height="85" fill="#FFFFFF" rx="6"/>
+  <rect x="680" y="400" width="6" height="85" fill="#2E7D32" rx="3"/>
+  <use data-icon="tabler-outline/calculator" x="700" y="415" width="32" height="32" fill="#2E7D32"/>
+  <text x="745" y="428" fill="#2E7D32" font-family="Microsoft YaHei, Arial, sans-serif" font-size="15" font-weight="bold">الأتمتة الكاملة والتصريح الآلي</text>
+  <text x="745" y="450" fill="#5A5A5A" font-family="Microsoft YaHei, Arial, sans-serif" font-size="12">توليد تصاريح G50 بنسبة خطأ 0%</text>
+  
+  <!-- Solution 4 -->
+  <rect x="680" y="495" width="540" height="85" fill="#FFFFFF" rx="6"/>
+  <rect x="680" y="495" width="6" height="85" fill="#2E7D32" rx="3"/>
+  <use data-icon="tabler-outline/cloud" x="700" y="510" width="32" height="32" fill="#2E7D32"/>
+  <text x="745" y="523" fill="#2E7D32" font-family="Microsoft YaHei, Arial, sans-serif" font-size="15" font-weight="bold">أرشفة سحابية مشفرة</text>
+  <text x="745" y="545" fill="#5A5A5A" font-family="Microsoft YaHei, Arial, sans-serif" font-size="12">تخزين آمن للمستندات الجبائية والمحاسبية</text>
+  
+  <!-- Solution 5 -->
+  <rect x="680" y="590" width="540" height="40" fill="#FFFFFF" rx="6"/>
+  <rect x="680" y="590" width="6" height="40" fill="#0099AA" rx="3"/>
+  <use data-icon="tabler-outline/shield-check" x="700" y="596" width="28" height="28" fill="#0099AA"/>
+  <text x="745" y="615" fill="#0099AA" font-family="Microsoft YaHei, Arial, sans-serif" font-size="14" font-weight="bold">اشتراكات اقتصادية مقارنة بالمكاتب التقليدية</text>
+  
+  <!-- Footer -->
+  <line x1="40" y1="665" x2="1240" y2="665" stroke="#F0F4F8" stroke-width="1"/>
+  <text x="40" y="695" fill="#8A8A8A" font-family="Microsoft YaHei, Arial, sans-serif" font-size="12">المصدر: دراسةالمشروع</text>
+  <text x="640" y="695" text-anchor="middle" fill="#8A8A8A" font-family="Microsoft YaHei, Arial, sans-serif" font-size="12">المشكلة والحل المقترح</text>
+  <text x="1220" y="695" text-anchor="end" fill="#666666" font-family="Microsoft YaHei, Arial, sans-serif" font-size="14">04</text>
+</svg>

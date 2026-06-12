@@ -1,0 +1,91 @@
+{
+  "nodes": [
+    {
+      "id": "home_dev_lab_documents_github_matax_app_src_lib_regime_config_ts",
+      "label": "regime-config.ts",
+      "file_type": "code",
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/regime-config.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "lib_regime_config_getuserregime",
+      "label": "getUserRegime()",
+      "file_type": "code",
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/regime-config.ts",
+      "source_location": "L38"
+    },
+    {
+      "id": "lib_regime_config_setuserregime",
+      "label": "setUserRegime()",
+      "file_type": "code",
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/regime-config.ts",
+      "source_location": "L44"
+    },
+    {
+      "id": "lib_regime_config_isregimeset",
+      "label": "isRegimeSet()",
+      "file_type": "code",
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/regime-config.ts",
+      "source_location": "L50"
+    }
+  ],
+  "edges": [
+    {
+      "source": "home_dev_lab_documents_github_matax_app_src_lib_regime_config_ts",
+      "target": "lib_regime_config_getuserregime",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/regime-config.ts",
+      "source_location": "L38",
+      "weight": 1.0
+    },
+    {
+      "source": "home_dev_lab_documents_github_matax_app_src_lib_regime_config_ts",
+      "target": "lib_regime_config_setuserregime",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/regime-config.ts",
+      "source_location": "L44",
+      "weight": 1.0
+    },
+    {
+      "source": "home_dev_lab_documents_github_matax_app_src_lib_regime_config_ts",
+      "target": "lib_regime_config_isregimeset",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/regime-config.ts",
+      "source_location": "L50",
+      "weight": 1.0
+    }
+  ],
+  "raw_calls": [
+    {
+      "caller_nid": "lib_regime_config_getuserregime",
+      "callee": "getItem",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/regime-config.ts",
+      "source_location": "L40"
+    },
+    {
+      "caller_nid": "lib_regime_config_setuserregime",
+      "callee": "setItem",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/regime-config.ts",
+      "source_location": "L46"
+    },
+    {
+      "caller_nid": "lib_regime_config_setuserregime",
+      "callee": "setItem",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/regime-config.ts",
+      "source_location": "L47"
+    },
+    {
+      "caller_nid": "lib_regime_config_isregimeset",
+      "callee": "getItem",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/regime-config.ts",
+      "source_location": "L52"
+    }
+  ]
+}

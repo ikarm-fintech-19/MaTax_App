@@ -1,0 +1,429 @@
+{
+  "nodes": [
+    {
+      "id": "home_dev_lab_documents_github_matax_app_src_routes_app_g50_tsx",
+      "label": "g50.tsx",
+      "file_type": "code",
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/routes/_app/g50.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "app_g50_loadcompany",
+      "label": "loadCompany()",
+      "file_type": "code",
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/routes/_app/g50.tsx",
+      "source_location": "L32"
+    },
+    {
+      "id": "app_g50_loaddraft",
+      "label": "loadDraft()",
+      "file_type": "code",
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/routes/_app/g50.tsx",
+      "source_location": "L44"
+    },
+    {
+      "id": "app_g50_seeddemo",
+      "label": "seedDemo()",
+      "file_type": "code",
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/routes/_app/g50.tsx",
+      "source_location": "L93"
+    },
+    {
+      "id": "app_g50_updateline",
+      "label": "updateLine()",
+      "file_type": "code",
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/routes/_app/g50.tsx",
+      "source_location": "L141"
+    },
+    {
+      "id": "app_g50_addline",
+      "label": "addLine()",
+      "file_type": "code",
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/routes/_app/g50.tsx",
+      "source_location": "L143"
+    },
+    {
+      "id": "app_g50_removeline",
+      "label": "removeLine()",
+      "file_type": "code",
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/routes/_app/g50.tsx",
+      "source_location": "L145"
+    },
+    {
+      "id": "app_g50_savecompany",
+      "label": "saveCompany()",
+      "file_type": "code",
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/routes/_app/g50.tsx",
+      "source_location": "L148"
+    },
+    {
+      "id": "app_g50_handleexport",
+      "label": "handleExport()",
+      "file_type": "code",
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/routes/_app/g50.tsx",
+      "source_location": "L160"
+    }
+  ],
+  "edges": [
+    {
+      "source": "home_dev_lab_documents_github_matax_app_src_routes_app_g50_tsx",
+      "target": "react_router",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/routes/_app/g50.tsx",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "home_dev_lab_documents_github_matax_app_src_routes_app_g50_tsx",
+      "target": "react",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/routes/_app/g50.tsx",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "home_dev_lab_documents_github_matax_app_src_routes_app_g50_tsx",
+      "target": "sonner",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/routes/_app/g50.tsx",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "home_dev_lab_documents_github_matax_app_src_routes_app_g50_tsx",
+      "target": "lucide_react",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/routes/_app/g50.tsx",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "home_dev_lab_documents_github_matax_app_src_routes_app_g50_tsx",
+      "target": "i18n",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/routes/_app/g50.tsx",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "home_dev_lab_documents_github_matax_app_src_routes_app_g50_tsx",
+      "target": "tva",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/routes/_app/g50.tsx",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "home_dev_lab_documents_github_matax_app_src_routes_app_g50_tsx",
+      "target": "format",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/routes/_app/g50.tsx",
+      "source_location": "L14",
+      "weight": 1.0
+    },
+    {
+      "source": "home_dev_lab_documents_github_matax_app_src_routes_app_g50_tsx",
+      "target": "utils",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/routes/_app/g50.tsx",
+      "source_location": "L15",
+      "weight": 1.0
+    },
+    {
+      "source": "home_dev_lab_documents_github_matax_app_src_routes_app_g50_tsx",
+      "target": "g50_pdf",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/routes/_app/g50.tsx",
+      "source_location": "L16",
+      "weight": 1.0
+    },
+    {
+      "source": "home_dev_lab_documents_github_matax_app_src_routes_app_g50_tsx",
+      "target": "app_g50_loadcompany",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/routes/_app/g50.tsx",
+      "source_location": "L32",
+      "weight": 1.0
+    },
+    {
+      "source": "home_dev_lab_documents_github_matax_app_src_routes_app_g50_tsx",
+      "target": "app_g50_loaddraft",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/routes/_app/g50.tsx",
+      "source_location": "L44",
+      "weight": 1.0
+    },
+    {
+      "source": "home_dev_lab_documents_github_matax_app_src_routes_app_g50_tsx",
+      "target": "app_g50_seeddemo",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/routes/_app/g50.tsx",
+      "source_location": "L93",
+      "weight": 1.0
+    },
+    {
+      "source": "home_dev_lab_documents_github_matax_app_src_routes_app_g50_tsx",
+      "target": "app_g50_updateline",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/routes/_app/g50.tsx",
+      "source_location": "L141",
+      "weight": 1.0
+    },
+    {
+      "source": "home_dev_lab_documents_github_matax_app_src_routes_app_g50_tsx",
+      "target": "app_g50_addline",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/routes/_app/g50.tsx",
+      "source_location": "L143",
+      "weight": 1.0
+    },
+    {
+      "source": "home_dev_lab_documents_github_matax_app_src_routes_app_g50_tsx",
+      "target": "app_g50_removeline",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/routes/_app/g50.tsx",
+      "source_location": "L145",
+      "weight": 1.0
+    },
+    {
+      "source": "home_dev_lab_documents_github_matax_app_src_routes_app_g50_tsx",
+      "target": "app_g50_savecompany",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/routes/_app/g50.tsx",
+      "source_location": "L148",
+      "weight": 1.0
+    },
+    {
+      "source": "home_dev_lab_documents_github_matax_app_src_routes_app_g50_tsx",
+      "target": "app_g50_handleexport",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/routes/_app/g50.tsx",
+      "source_location": "L160",
+      "weight": 1.0
+    }
+  ],
+  "raw_calls": [
+    {
+      "caller_nid": "app_g50_loadcompany",
+      "callee": "getItem",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/routes/_app/g50.tsx",
+      "source_location": "L35"
+    },
+    {
+      "caller_nid": "app_g50_loadcompany",
+      "callee": "parse",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/routes/_app/g50.tsx",
+      "source_location": "L36"
+    },
+    {
+      "caller_nid": "app_g50_loaddraft",
+      "callee": "getItem",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/routes/_app/g50.tsx",
+      "source_location": "L47"
+    },
+    {
+      "caller_nid": "app_g50_loaddraft",
+      "callee": "parse",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/routes/_app/g50.tsx",
+      "source_location": "L48"
+    },
+    {
+      "caller_nid": "app_g50_seeddemo",
+      "callee": "setPeriod",
+      "is_member_call": false,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/routes/_app/g50.tsx",
+      "source_location": "L96"
+    },
+    {
+      "caller_nid": "app_g50_seeddemo",
+      "callee": "getFullYear",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/routes/_app/g50.tsx",
+      "source_location": "L96"
+    },
+    {
+      "caller_nid": "app_g50_seeddemo",
+      "callee": "getMonth",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/routes/_app/g50.tsx",
+      "source_location": "L96"
+    },
+    {
+      "caller_nid": "app_g50_seeddemo",
+      "callee": "setLines",
+      "is_member_call": false,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/routes/_app/g50.tsx",
+      "source_location": "L98"
+    },
+    {
+      "caller_nid": "app_g50_seeddemo",
+      "callee": "generateId",
+      "is_member_call": false,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/routes/_app/g50.tsx",
+      "source_location": "L99"
+    },
+    {
+      "caller_nid": "app_g50_seeddemo",
+      "callee": "generateId",
+      "is_member_call": false,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/routes/_app/g50.tsx",
+      "source_location": "L100"
+    },
+    {
+      "caller_nid": "app_g50_seeddemo",
+      "callee": "generateId",
+      "is_member_call": false,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/routes/_app/g50.tsx",
+      "source_location": "L101"
+    },
+    {
+      "caller_nid": "app_g50_seeddemo",
+      "callee": "generateId",
+      "is_member_call": false,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/routes/_app/g50.tsx",
+      "source_location": "L102"
+    },
+    {
+      "caller_nid": "app_g50_seeddemo",
+      "callee": "generateId",
+      "is_member_call": false,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/routes/_app/g50.tsx",
+      "source_location": "L103"
+    },
+    {
+      "caller_nid": "app_g50_seeddemo",
+      "callee": "setDeductions",
+      "is_member_call": false,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/routes/_app/g50.tsx",
+      "source_location": "L105"
+    },
+    {
+      "caller_nid": "app_g50_seeddemo",
+      "callee": "setCompany",
+      "is_member_call": false,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/routes/_app/g50.tsx",
+      "source_location": "L113"
+    },
+    {
+      "caller_nid": "app_g50_seeddemo",
+      "callee": "success",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/routes/_app/g50.tsx",
+      "source_location": "L124"
+    },
+    {
+      "caller_nid": "app_g50_seeddemo",
+      "callee": "t",
+      "is_member_call": false,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/routes/_app/g50.tsx",
+      "source_location": "L124"
+    },
+    {
+      "caller_nid": "app_g50_updateline",
+      "callee": "setLines",
+      "is_member_call": false,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/routes/_app/g50.tsx",
+      "source_location": "L142"
+    },
+    {
+      "caller_nid": "app_g50_addline",
+      "callee": "setLines",
+      "is_member_call": false,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/routes/_app/g50.tsx",
+      "source_location": "L144"
+    },
+    {
+      "caller_nid": "app_g50_removeline",
+      "callee": "setLines",
+      "is_member_call": false,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/routes/_app/g50.tsx",
+      "source_location": "L146"
+    },
+    {
+      "caller_nid": "app_g50_savecompany",
+      "callee": "setCompany",
+      "is_member_call": false,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/routes/_app/g50.tsx",
+      "source_location": "L149"
+    },
+    {
+      "caller_nid": "app_g50_savecompany",
+      "callee": "setItem",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/routes/_app/g50.tsx",
+      "source_location": "L151"
+    },
+    {
+      "caller_nid": "app_g50_savecompany",
+      "callee": "stringify",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/routes/_app/g50.tsx",
+      "source_location": "L151"
+    },
+    {
+      "caller_nid": "app_g50_handleexport",
+      "callee": "trim",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/routes/_app/g50.tsx",
+      "source_location": "L161"
+    },
+    {
+      "caller_nid": "app_g50_handleexport",
+      "callee": "trim",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/routes/_app/g50.tsx",
+      "source_location": "L161"
+    },
+    {
+      "caller_nid": "app_g50_handleexport",
+      "callee": "error",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/routes/_app/g50.tsx",
+      "source_location": "L162"
+    },
+    {
+      "caller_nid": "app_g50_handleexport",
+      "callee": "downloadG50Pdf",
+      "is_member_call": false,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/routes/_app/g50.tsx",
+      "source_location": "L169"
+    },
+    {
+      "caller_nid": "app_g50_handleexport",
+      "callee": "success",
+      "is_member_call": true,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/routes/_app/g50.tsx",
+      "source_location": "L170"
+    }
+  ]
+}

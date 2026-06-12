@@ -10,7 +10,12 @@ interface RegimeSelectorProps {
   onClose?: () => void;
 }
 
-export function RegimeSelector({ initial = "reel", showWarning = false, onConfirm, onClose }: RegimeSelectorProps) {
+export function RegimeSelector({
+  initial = "reel",
+  showWarning = false,
+  onConfirm,
+  onClose,
+}: RegimeSelectorProps) {
   const { t, locale } = useI18n();
   const [selected, setSelected] = useState<FiscalRegime>(initial);
 
@@ -30,7 +35,11 @@ export function RegimeSelector({ initial = "reel", showWarning = false, onConfir
             <p className="mt-1 text-sm text-ink-muted">{t("regime.selector.subtitle")}</p>
           </div>
           {onClose && (
-            <button onClick={onClose} aria-label="close" className="rounded-md p-1 text-ink-muted hover:bg-muted">
+            <button
+              onClick={onClose}
+              aria-label="close"
+              className="rounded-md p-1 text-ink-muted hover:bg-muted"
+            >
               <X size={18} />
             </button>
           )}
@@ -70,7 +79,12 @@ export function RegimeSelector({ initial = "reel", showWarning = false, onConfir
                 <p className="text-xs text-ink-muted">{cfg.description[locale]}</p>
                 <div className="flex flex-wrap gap-1">
                   {cfg.features.map((f) => (
-                    <span key={f} className="rounded bg-muted px-1.5 py-0.5 text-[10px] text-ink-muted">{f}</span>
+                    <span
+                      key={f}
+                      className="rounded bg-muted px-1.5 py-0.5 text-[10px] text-ink-muted"
+                    >
+                      {f}
+                    </span>
                   ))}
                 </div>
                 {!cfg.available && "v2Note" in cfg && (

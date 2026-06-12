@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720">
+  <rect width="1280" height="720" fill="#FFFFFF"/>
+  <rect x="0" y="0" width="1280" height="70" fill="#00527F"/>
+  <rect x="0" y="0" width="6" height="70" fill="#D62828"/>
+  <text x="40" y="46" fill="#FFFFFF" font-family="Montserrat, Arial, sans-serif" font-size="28" font-weight="bold">04 | الجدوى المالية — Year 1</text>
+  <text x="1220" y="46" text-anchor="end" fill="#FFFFFF" font-family="Montserrat, Arial, sans-serif" font-size="18" font-weight="bold">MATAX</text>
+  
+  <rect x="0" y="70" width="1280" height="50" fill="#F8FAFC"/>
+  <rect x="0" y="70" width="6" height="50" fill="#F77F00"/>
+  <text x="40" y="102" fill="#1E293B" font-family="Montserrat, Arial, sans-serif" font-size="18">مؤشرات Year 1 — 1,500 مقاول + 12 مكتب محاسبة</text>
+  
+  <!-- Top KPIs -->
+  <rect x="60" y="140" width="280" height="120" fill="#00527F" rx="12"/>
+  <text x="200" y="178" text-anchor="middle" fill="#FFFFFF" font-family="Montserrat, Arial, sans-serif" font-size="14">CA (إيرادات Year 1)</text>
+  <text x="200" y="222" text-anchor="middle" fill="#FFFFFF" font-family="Montserrat, Arial, sans-serif" font-size="34" font-weight="bold">9.6M</text>
+  
+  <rect x="355" y="140" width="280" height="120" fill="#16A34A" rx="12"/>
+  <text x="495" y="178" text-anchor="middle" fill="#FFFFFF" font-family="Montserrat, Arial, sans-serif" font-size="14">Marge Nette (Year 1)</text>
+  <text x="495" y="222" text-anchor="middle" fill="#FFFFFF" font-family="Montserrat, Arial, sans-serif" font-size="34" font-weight="bold">46.6%</text>
+  
+  <rect x="650" y="140" width="280" height="120" fill="#F77F00" rx="12"/>
+  <text x="790" y="178" text-anchor="middle" fill="#FFFFFF" font-family="Montserrat, Arial, sans-serif" font-size="14">Marge Brute (Year 1)</text>
+  <text x="790" y="222" text-anchor="middle" fill="#FFFFFF" font-family="Montserrat, Arial, sans-serif" font-size="34" font-weight="bold">75.1%</text>
+  
+  <rect x="945" y="140" width="275" height="120" fill="#D62828" rx="12"/>
+  <text x="1082" y="178" text-anchor="middle" fill="#FFFFFF" font-family="Montserrat, Arial, sans-serif" font-size="14">Trésorerie Year 1</text>
+  <text x="1082" y="222" text-anchor="middle" fill="#FFFFFF" font-family="Montserrat, Arial, sans-serif" font-size="34" font-weight="bold">+1.6M</text>
+  
+  <!-- Financial P&L -->
+  <rect x="60" y="285" width="1160" height="225" fill="#F8FAFC" rx="12" stroke="#E2E8F0" stroke-width="1"/>
+  <rect x="60" y="285" width="1160" height="45" fill="#00527F" rx="12"/>
+  <rect x="60" y="320" width="1160" height="10" fill="#00527F"/>
+  <text x="640" y="316" text-anchor="middle" fill="#FFFFFF" font-family="Montserrat, Arial, sans-serif" font-size="18" font-weight="bold">P&amp;L Year 1 — ميزانية النتيجة</text>
+  
+  <rect x="80" y="355" width="370" height="45" fill="#FFFFFF" rx="6" stroke="#E2E8F0" stroke-width="1"/>
+  <text x="100" y="385" fill="#44546A" font-family="Lato Light, Arial, sans-serif" font-size="14">Chiffre d'affaires</text>
+  <text x="430" y="385" text-anchor="end" fill="#00527F" font-family="Montserrat, Arial, sans-serif" font-size="16" font-weight="bold">9,600,000 دج</text>
+  
+  <rect x="470" y="355" width="370" height="45" fill="#FFFFFF" rx="6" stroke="#E2E8F0" stroke-width="1"/>
+  <text x="490" y="385" fill="#44546A" font-family="Lato Light, Arial, sans-serif" font-size="14">Charges variables</text>
+  <text x="800" y="385" text-anchor="end" fill="#D62828" font-family="Montserrat, Arial, sans-serif" font-size="16" font-weight="bold">2,390,400 دج</text>
+  
+  <rect x="860" y="355" width="340" height="45" fill="#16A34A" rx="6"/>
+  <text x="880" y="385" fill="#FFFFFF" font-family="Lato Light, Arial, sans-serif" font-size="14">Marge brute</text>
+  <text x="1160" y="385" text-anchor="end" fill="#FFFFFF" font-family="Montserrat, Arial, sans-serif" font-size="16" font-weight="bold">7,209,600 دج (75.1%)</text>
+  
+  <rect x="80" y="415" width="560" height="45" fill="#FFFFFF" rx="6" stroke="#E2E8F0" stroke-width="1"/>
+  <text x="100" y="445" fill="#44546A" font-family="Lato Light, Arial, sans-serif" font-size="14">Charges fixes totales</text>
+  <text x="600" y="445" text-anchor="end" fill="#D62828" font-family="Montserrat, Arial, sans-serif" font-size="16" font-weight="bold">2,322,000 دج</text>
+  
+  <rect x="660" y="415" width="300" height="45" fill="#16A34A" rx="6"/>
+  <text x="680" y="445" fill="#FFFFFF" font-family="Lato Light, Arial, sans-serif" font-size="14">Résultat net Year 1</text>
+  <text x="920" y="445" text-anchor="end" fill="#FFFFFF" font-family="Montserrat, Arial, sans-serif" font-size="16" font-weight="bold">4,487,600 دج</text>
+  
+  <rect x="980" y="415" width="220" height="45" fill="#F77F00" rx="6"/>
+  <text x="1000" y="445" fill="#FFFFFF" font-family="Lato Light, Arial, sans-serif" font-size="14">Trésorerie</text>
+  <text x="1160" y="445" text-anchor="end" fill="#FFFFFF" font-family="Montserrat, Arial, sans-serif" font-size="16" font-weight="bold">+1,565,600</text>
+  
+  <rect x="80" y="475" width="1140" height="20" fill="#F0FDF4" rx="4"/>
+  <text x="640" y="490" text-anchor="middle" fill="#16A34A" font-family="Lato Light, Arial, sans-serif" font-size="13">Marge Nette = 46.6% — Marge Brute = 75.1% — Trésorerie = +1.6M</text>
+  
+  <!-- Analysis -->
+  <rect x="60" y="535" width="570" height="140" fill="#F8FAFC" rx="10" stroke="#E2E8F0" stroke-width="1"/>
+  <rect x="60" y="535" width="6" height="140" fill="#F77F00" rx="3"/>
+  <text x="100" y="565" fill="#F77F00" font-family="Montserrat, Arial, sans-serif" font-size="15" font-weight="bold">تحليل الأداء المالي</text>
+  <text x="100" y="595" fill="#44546A" font-family="Lato Light, Arial, sans-serif" font-size="13">• حصة مالية قوية (46.6%) — أعلى من SaaS benchmarks</text>
+  <text x="100" y="620" fill="#44546A" font-family="Lato Light, Arial, sans-serif" font-size="13">• هامش خالص 75.1% — نموذج SaaS عالي الربحية</text>
+  <text x="100" y="645" fill="#44546A" font-family="Lato Light, Arial, sans-serif" font-size="13">• تدفق نقدي إيجابي من السنة الأولى</text>
+  
+  <rect x="650" y="535" width="570" height="140" fill="#F8FAFC" rx="10" stroke="#E2E8F0" stroke-width="1"/>
+  <rect x="650" y="535" width="6" height="140" fill="#16A34A" rx="3"/>
+  <text x="690" y="565" fill="#16A34A" font-family="Montserrat, Arial, sans-serif" font-size="15" font-weight="bold">نقاط القوة</text>
+  <text x="690" y="595" fill="#44546A" font-family="Lato Light, Arial, sans-serif" font-size="13">• CLV/CAC = 10.6x — استثمار مربح</text>
+  <text x="690" y="620" fill="#44546A" font-family="Lato Light, Arial, sans-serif" font-size="13">• B2B + B2C = تنوع مصادر الإيرادات</text>
+  <text x="690" y="645" fill="#44546A" font-family="Lato Light, Arial, sans-serif" font-size="13">• توسع مضمون في 3 شرائح مستهدفة</text>
+  
+  <line x1="40" y1="690" x2="1240" y2="690" stroke="#E2E8F0" stroke-width="1"/>
+  <text x="40" y="715" fill="#94A3B8" font-family="Lato Light, Arial, sans-serif" font-size="12">المصدر: PRODUCT.md — P&amp;L Year 1</text>
+  <text x="640" y="715" text-anchor="middle" fill="#94A3B8" font-family="Lato Light, Arial, sans-serif" font-size="12">الجدوى المالية Year 1</text>
+  <text x="1220" y="715" text-anchor="end" fill="#44546A" font-family="Montserrat, Arial, sans-serif" font-size="14">11</text>
+</svg>

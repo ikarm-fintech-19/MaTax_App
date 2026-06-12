@@ -93,21 +93,56 @@ export interface G50Result {
  *  the form. Source: Série G n°50 (2025), section 11/A. */
 export const G50_OPERATION_LINES: OperationLineDef[] = [
   // 1) Opérations assujetties à la TVA — taux réduit 9%
-  { code: "E3B1", label: "Biens, produits et denrées visés à l'art. 23 du CTCA", rate: 0.09, kind: "imposable" },
-  { code: "E3B2", label: "Prestations de services visées à l'art. 23 du CTCA", rate: 0.09, kind: "imposable" },
-  { code: "E3B3", label: "Opérations immobilières visées à l'art. 23 du CTCA", rate: 0.09, kind: "imposable" },
+  {
+    code: "E3B1",
+    label: "Biens, produits et denrées visés à l'art. 23 du CTCA",
+    rate: 0.09,
+    kind: "imposable",
+  },
+  {
+    code: "E3B2",
+    label: "Prestations de services visées à l'art. 23 du CTCA",
+    rate: 0.09,
+    kind: "imposable",
+  },
+  {
+    code: "E3B3",
+    label: "Opérations immobilières visées à l'art. 23 du CTCA",
+    rate: 0.09,
+    kind: "imposable",
+  },
   { code: "E3B4", label: "Actes médicaux", rate: 0.09, kind: "imposable" },
   { code: "E3B5", label: "Commissionnaires et courtiers", rate: 0.09, kind: "imposable" },
   { code: "E3B6", label: "Fourniture d'énergie (9%)", rate: 0.09, kind: "imposable" },
   { code: "E3B7", label: "Autres opérations à 9%", rate: 0.09, kind: "imposable" },
   // 2) Opérations assujetties à la TVA — taux normal 19%
-  { code: "E3B8", label: "Productions : biens, produits et denrées (art. 21 CTCA)", rate: 0.19, kind: "imposable" },
-  { code: "E3B9", label: "Revente en l'état : biens, produits et denrées (art. 21 CTCA)", rate: 0.19, kind: "imposable" },
-  { code: "E3B10", label: "Travaux immobiliers autres que ceux soumis au taux de 9%", rate: 0.19, kind: "imposable" },
+  {
+    code: "E3B8",
+    label: "Productions : biens, produits et denrées (art. 21 CTCA)",
+    rate: 0.19,
+    kind: "imposable",
+  },
+  {
+    code: "E3B9",
+    label: "Revente en l'état : biens, produits et denrées (art. 21 CTCA)",
+    rate: 0.19,
+    kind: "imposable",
+  },
+  {
+    code: "E3B10",
+    label: "Travaux immobiliers autres que ceux soumis au taux de 9%",
+    rate: 0.19,
+    kind: "imposable",
+  },
   { code: "E3B11", label: "Professions libérales", rate: 0.19, kind: "imposable" },
   { code: "E3B12", label: "Opérations de téléphone et d'internet", rate: 0.19, kind: "imposable" },
   { code: "E3B13", label: "Tabacs et allumettes", rate: 0.19, kind: "imposable" },
-  { code: "E3B14", label: "Spectacles, jeux et divertissements (art. 21 CTCA)", rate: 0.19, kind: "imposable" },
+  {
+    code: "E3B14",
+    label: "Spectacles, jeux et divertissements (art. 21 CTCA)",
+    rate: 0.19,
+    kind: "imposable",
+  },
   { code: "E3B15", label: "TVA produits pétroliers", rate: 0.19, kind: "imposable" },
   { code: "E3B16", label: "Concessionnaires autos", rate: 0.19, kind: "imposable" },
   { code: "E3B17", label: "Producteurs de médicaments", rate: 0.19, kind: "imposable" },
@@ -120,7 +155,12 @@ export const G50_OPERATION_LINES: OperationLineDef[] = [
   // 3) Chiffre d'affaires non-imposable / exonéré (art. 9 CTCA)
   { code: "E3B30", label: "Exportation (exonérée)", rate: 0, kind: "exonere" },
   { code: "E3B31", label: "Médicaments (exonérés)", rate: 0, kind: "exonere" },
-  { code: "E3B25", label: "Produits de première nécessité (art. 9/2 CTCA)", rate: 0, kind: "exonere" },
+  {
+    code: "E3B25",
+    label: "Produits de première nécessité (art. 9/2 CTCA)",
+    rate: 0,
+    kind: "exonere",
+  },
 ];
 
 const LINE_BY_CODE: Map<string, OperationLineDef> = new Map(

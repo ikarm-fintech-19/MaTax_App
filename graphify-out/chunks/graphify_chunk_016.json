@@ -1,0 +1,10 @@
+{
+  "chunk_id": 16,
+  "category": "code",
+  "files": [
+    "/home/dev-lab/Documents/GitHub/MaTax_App/supabase/migrations/20260516150120_5b65194a-b1ab-4454-943d-cf634bff0eaa.sql",
+    "/home/dev-lab/Documents/GitHub/MaTax_App/supabase/migrations/20260516150154_a9e87574-ef3e-423b-9161-b0ca736df533.sql"
+  ],
+  "input_tokens": 0,
+  "output_tokens": 0
+}

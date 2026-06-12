@@ -1,0 +1,83 @@
+{
+  "nodes": [
+    {
+      "id": "home_dev_lab_documents_github_matax_app_src_lib_i18n_tsx",
+      "label": "i18n.tsx",
+      "file_type": "code",
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/i18n.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "lib_i18n_i18nprovider",
+      "label": "I18nProvider()",
+      "file_type": "code",
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/i18n.tsx",
+      "source_location": "L523"
+    }
+  ],
+  "edges": [
+    {
+      "source": "home_dev_lab_documents_github_matax_app_src_lib_i18n_tsx",
+      "target": "react",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/i18n.tsx",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "home_dev_lab_documents_github_matax_app_src_lib_i18n_tsx",
+      "target": "lib_i18n_i18nprovider",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/i18n.tsx",
+      "source_location": "L523",
+      "weight": 1.0
+    }
+  ],
+  "raw_calls": [
+    {
+      "caller_nid": "lib_i18n_i18nprovider",
+      "callee": "useState",
+      "is_member_call": false,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/i18n.tsx",
+      "source_location": "L524"
+    },
+    {
+      "caller_nid": "lib_i18n_i18nprovider",
+      "callee": "useEffect",
+      "is_member_call": false,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/i18n.tsx",
+      "source_location": "L526"
+    },
+    {
+      "caller_nid": "lib_i18n_i18nprovider",
+      "callee": "useEffect",
+      "is_member_call": false,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/i18n.tsx",
+      "source_location": "L534"
+    },
+    {
+      "caller_nid": "lib_i18n_i18nprovider",
+      "callee": "useCallback",
+      "is_member_call": false,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/i18n.tsx",
+      "source_location": "L541"
+    },
+    {
+      "caller_nid": "lib_i18n_i18nprovider",
+      "callee": "useMemo",
+      "is_member_call": false,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/i18n.tsx",
+      "source_location": "L548"
+    },
+    {
+      "caller_nid": "lib_i18n_i18nprovider",
+      "callee": "useContext",
+      "is_member_call": false,
+      "source_file": "/home/dev-lab/Documents/GitHub/MaTax_App/src/lib/i18n.tsx",
+      "source_location": "L562"
+    }
+  ]
+}

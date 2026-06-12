@@ -64,7 +64,7 @@ function computeAnnualIrg(taxableAnnual: number): {
   total: number;
   breakdown: IrgResult["breakdown"];
 } {
-  let remaining = taxableAnnual;
+  const remaining = taxableAnnual;
   let total = 0;
   const breakdown: IrgResult["breakdown"] = [];
   for (const b of IRG_BRACKETS_ANNUAL) {

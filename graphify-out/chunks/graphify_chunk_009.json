@@ -1,0 +1,33 @@
+{
+  "chunk_id": 9,
+  "category": "code",
+  "files": [
+    "/home/dev-lab/Documents/GitHub/MaTax_App/src/components/ui/tabs.tsx",
+    "/home/dev-lab/Documents/GitHub/MaTax_App/src/components/ui/input.tsx",
+    "/home/dev-lab/Documents/GitHub/MaTax_App/src/components/ui/dropdown-menu.tsx",
+    "/home/dev-lab/Documents/GitHub/MaTax_App/src/components/ui/checkbox.tsx",
+    "/home/dev-lab/Documents/GitHub/MaTax_App/src/components/ui/drawer.tsx",
+    "/home/dev-lab/Documents/GitHub/MaTax_App/src/components/ui/radio-group.tsx",
+    "/home/dev-lab/Documents/GitHub/MaTax_App/src/components/ui/alert-dialog.tsx",
+    "/home/dev-lab/Documents/GitHub/MaTax_App/src/components/ui/sheet.tsx",
+    "/home/dev-lab/Documents/GitHub/MaTax_App/src/components/ui/avatar.tsx",
+    "/home/dev-lab/Documents/GitHub/MaTax_App/src/components/ui/slider.tsx",
+    "/home/dev-lab/Documents/GitHub/MaTax_App/src/components/ui/sidebar.tsx",
+    "/home/dev-lab/Documents/GitHub/MaTax_App/src/components/ui/menubar.tsx",
+    "/home/dev-lab/Documents/GitHub/MaTax_App/src/components/ui/alert.tsx",
+    "/home/dev-lab/Documents/GitHub/MaTax_App/src/components/ui/input-otp.tsx",
+    "/home/dev-lab/Documents/GitHub/MaTax_App/src/components/ui/accordion.tsx",
+    "/home/dev-lab/Documents/GitHub/MaTax_App/src/components/ui/command.tsx",
+    "/home/dev-lab/Documents/GitHub/MaTax_App/src/components/ui/scroll-area.tsx",
+    "/home/dev-lab/Documents/GitHub/MaTax_App/src/components/ui/pagination.tsx",
+    "/home/dev-lab/Documents/GitHub/MaTax_App/src/components/ui/context-menu.tsx",
+    "/home/dev-lab/Documents/GitHub/MaTax_App/src/components/ui/switch.tsx",
+    "/home/dev-lab/Documents/GitHub/MaTax_App/src/components/ui/form.tsx",
+    "/home/dev-lab/Documents/GitHub/MaTax_App/src/components/ui/breadcrumb.tsx",
+    "/home/dev-lab/Documents/GitHub/MaTax_App/src/components/ui/progress.tsx",
+    "/home/dev-lab/Documents/GitHub/MaTax_App/src/components/ui/aspect-ratio.tsx",
+    "/home/dev-lab/Documents/GitHub/MaTax_App/src/components/ui/carousel.tsx"
+  ],
+  "input_tokens": 0,
+  "output_tokens": 0
+}

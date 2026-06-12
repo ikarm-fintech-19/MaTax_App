@@ -18,7 +18,11 @@ export const IBS_ACTIVITY_LABELS: Record<IbsActivity, { fr: string; ar: string; 
   production: { fr: "Production de biens", ar: "إنتاج السلع", en: "Production of goods" },
   btp_tourism: { fr: "BTP & tourisme", ar: "البناء و السياحة", en: "Construction & tourism" },
   services_trade: { fr: "Services & commerce", ar: "الخدمات و التجارة", en: "Services & trade" },
-  banks_insurance: { fr: "Banques & assurances", ar: "البنوك و التأمينات", en: "Banks & insurance" },
+  banks_insurance: {
+    fr: "Banques & assurances",
+    ar: "البنوك و التأمينات",
+    en: "Banks & insurance",
+  },
 };
 
 export interface IbsInput {
