@@ -81,20 +81,11 @@ function LoginPage() {
     await submitCredentials(email, password, mode === "signup");
   };
 
-  const handleDemo = async (role: "user" | "expert" | "admin") => {
+  const handleDemo = (role: "user" | "expert" | "admin") => {
     setSubmitting(true);
-    const creds: Record<string, { email: string; password: string }> = {
-      user: { email: "demo-user@matax.dz", password: "demo1234" },
-      expert: { email: "demo-expert@matax.dz", password: "demo1234" },
-      admin: { email: "demo-admin@matax.dz", password: "demo1234" },
-    };
-    const { email, password } = creds[role];
-    const { error } = await supabase.auth.signInWithPassword({ email, password });
     sessionStorage.setItem("matax_demo_role", role);
     sessionStorage.setItem("matax_demo_subscription_tier", "enterprise");
-    if (error) {
-      toast.info(t("auth.demoAutoFill"));
-    }
+    toast.info(t("auth.demoAutoFill"));
     navigate({ to: "/dashboard" });
     setSubmitting(false);
   };
