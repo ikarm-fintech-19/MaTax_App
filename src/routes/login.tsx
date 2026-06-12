@@ -90,12 +90,12 @@ function LoginPage() {
     };
     const { email, password } = creds[role];
     const { error } = await supabase.auth.signInWithPassword({ email, password });
+    sessionStorage.setItem("matax_demo_role", role);
+    sessionStorage.setItem("matax_demo_subscription_tier", "enterprise");
     if (error) {
-      sessionStorage.setItem("matax_demo_role", role);
-      sessionStorage.setItem("matax_demo_subscription_tier", "enterprise");
       toast.info(t("auth.demoAutoFill"));
-      navigate({ to: "/dashboard" });
     }
+    navigate({ to: "/dashboard" });
     setSubmitting(false);
   };
 
