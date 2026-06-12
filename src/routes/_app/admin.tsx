@@ -4,6 +4,7 @@ import { supabase } from "@/integrations/supabase/client";
 import { useAuth } from "@/hooks/use-auth";
 import { useI18n } from "@/lib/i18n";
 import { formatCurrency } from "@/lib/format";
+import { createUser, deleteUser } from "@/lib/admin-service";
 import {
   Users,
   FileText,
@@ -25,11 +26,17 @@ import {
   Activity,
   BarChart3,
   PieChart,
+  Trash2,
+  Plus,
+  Sparkles,
+  UserRoundPlus,
+  UserRoundX,
 } from "lucide-react";
 import { Skeleton } from "@/components/ui/skeleton";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
+import { Label } from "@/components/ui/label";
 import {
   Select,
   SelectContent,
@@ -49,6 +56,7 @@ import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
+  DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
@@ -69,6 +77,21 @@ function AdminDashboard() {
   const [selectedExpert, setSelectedExpert] = useState<string>("");
   const [selectedClient, setSelectedClient] = useState<string>("");
   const [activeTab, setActiveTab] = useState("users");
+
+  // Create user modal
+  const [createModalOpen, setCreateModalOpen] = useState(false);
+  const [newUser, setNewUser] = useState({ email: "", password: "", fullName: "", companyName: "", nif: "", role: "user" as "user" | "expert" | "admin" });
+
+  // Delete confirmation
+  const [deleteConfirmOpen, setDeleteConfirmOpen] = useState(false);
+  const [userToDelete, setUserToDelete] = useState<string | null>(null);
+
+  // Predefined accounts
+  const PREDEFINED_ACCOUNTS = [
+    { email: "demo-user@matax.dz", password: "demo1234", fullName: "Ali Bencheikh", companyName: "SARL Atlas Commerce", nif: "099916001234567", role: "user" as const },
+    { email: "demo-expert@matax.dz", password: "demo1234", fullName: "Fatima Zohra", companyName: "Cabinet FZ Expertise", nif: "198512345678902", role: "expert" as const },
+    { email: "demo-admin@matax.dz", password: "demo1234", fullName: "Karim Mokhtar", companyName: "MaTax Administration", nif: "198012345678903", role: "admin" as const },
+  ];
 
   // Fetch all users
   const { data: users = [], isLoading: usersLoading } = useQuery({
@@ -166,12 +189,60 @@ function AdminDashboard() {
     },
   });
 
+  // Create user mutation
+  const createUserMutation = useMutation({
+    mutationFn: async () => {
+      return createUser(newUser);
+    },
+    onSuccess: () => {
+      queryClient.invalidateQueries({ queryKey: ["admin-users"] });
+      setCreateModalOpen(false);
+      setNewUser({ email: "", password: "", fullName: "", companyName: "", nif: "", role: "user" });
+      toast.success("Compte créé avec succès");
+    },
+    onError: (error) => {
+      toast.error(error.message);
+    },
+  });
+
+  // Create predefined account mutation
+  const createPredefinedMutation = useMutation({
+    mutationFn: async (account: typeof PREDEFINED_ACCOUNTS[0]) => {
+      return createUser(account);
+    },
+    onSuccess: (result) => {
+      queryClient.invalidateQueries({ queryKey: ["admin-users"] });
+      toast.success(`Compte ${result.email} créé`);
+    },
+    onError: (error) => {
+      toast.error(error.message);
+    },
+  });
+
+  // Delete user mutation
+  const deleteUserMutation = useMutation({
+    mutationFn: async () => {
+      if (!userToDelete) throw new Error("No user selected");
+      return deleteUser({ userId: userToDelete });
+    },
+    onSuccess: () => {
+      queryClient.invalidateQueries({ queryKey: ["admin-users"] });
+      setDeleteConfirmOpen(false);
+      setUserToDelete(null);
+      toast.success("Compte supprimé avec succès");
+    },
+    onError: (error) => {
+      toast.error(error.message);
+    },
+  });
+
   // Filter users based on search and role
   const filteredUsers = users.filter((u) => {
     const matchesSearch =
       searchQuery === "" ||
       u.full_name?.toLowerCase().includes(searchQuery.toLowerCase()) ||
-      u.company_name?.toLowerCase().includes(searchQuery.toLowerCase());
+      u.company_name?.toLowerCase().includes(searchQuery.toLowerCase()) ||
+      u.nif?.toLowerCase().includes(searchQuery.toLowerCase());
     const matchesRole = roleFilter === "all" || u.role === roleFilter;
     return matchesSearch && matchesRole;
   });
@@ -214,10 +285,16 @@ function AdminDashboard() {
           <h1 className="headline-text mt-2">{t("admin.dashboard")}</h1>
           <p className="text-ink-muted">{t("admin.dashboard_desc")}</p>
         </div>
-        <Button onClick={() => setAssignModalOpen(true)} className="inline-flex items-center gap-2">
-          <UserPlus size={16} />
-          {t("admin.assign_client")}
-        </Button>
+        <div className="flex flex-wrap items-center gap-2">
+          <Button onClick={() => setCreateModalOpen(true)} variant="outline" className="inline-flex items-center gap-2">
+            <Plus size={16} />
+            Créer un compte
+          </Button>
+          <Button onClick={() => setAssignModalOpen(true)} className="inline-flex items-center gap-2">
+            <UserPlus size={16} />
+            {t("admin.assign_client")}
+          </Button>
+        </div>
       </header>
 
       {/* Stats Grid */}
@@ -309,6 +386,29 @@ function AdminDashboard() {
                 <SelectItem value="admin">{t("admin.total_admins")}</SelectItem>
               </SelectContent>
             </Select>
+          </div>
+
+          {/* Predefined Accounts Quick-Create */}
+          <div className="surface-card rounded-lg border border-dashed border-primary/30 bg-primary/5 p-4">
+            <h3 className="label-text mb-2 flex items-center gap-2 text-primary">
+              <Sparkles size={14} /> Comptes prédéfinis
+            </h3>
+            <p className="mb-3 text-xs text-ink-muted">Créez des comptes de démonstration en un clic :</p>
+            <div className="flex flex-wrap gap-2">
+              {PREDEFINED_ACCOUNTS.map((account) => (
+                <Button
+                  key={account.email}
+                  variant="outline"
+                  size="sm"
+                  className="gap-2"
+                  onClick={() => createPredefinedMutation.mutate(account)}
+                  disabled={createPredefinedMutation.isPending}
+                >
+                  <UserRoundPlus size={14} />
+                  {account.fullName} ({account.role})
+                </Button>
+              ))}
+            </div>
           </div>
 
           {/* Users Table */}
@@ -411,6 +511,18 @@ function AdminDashboard() {
                               }}
                             >
                               {t("admin.assign_client")}
+                            </DropdownMenuItem>
+                            <DropdownMenuSeparator />
+                            <DropdownMenuItem
+                              className="text-destructive"
+                              onClick={() => {
+                                setUserToDelete(u.id);
+                                setDeleteConfirmOpen(true);
+                              }}
+                              disabled={u.id === user?.id}
+                            >
+                              <Trash2 size={14} className="mr-2" />
+                              Supprimer
                             </DropdownMenuItem>
                           </DropdownMenuContent>
                         </DropdownMenu>
@@ -758,6 +870,118 @@ function AdminDashboard() {
               disabled={!selectedExpert || !selectedClient}
             >
               {t("common.save")}
+            </Button>
+          </DialogFooter>
+        </DialogContent>
+      </Dialog>
+
+      {/* Create User Modal */}
+      <Dialog open={createModalOpen} onOpenChange={setCreateModalOpen}>
+        <DialogContent className="sm:max-w-md">
+          <DialogHeader>
+            <DialogTitle>Créer un compte</DialogTitle>
+            <DialogDescription>
+              Créez un nouvel utilisateur avec un email et mot de passe.
+            </DialogDescription>
+          </DialogHeader>
+          <div className="space-y-4">
+            <div className="grid grid-cols-2 gap-4">
+              <div className="space-y-2">
+                <Label>Email *</Label>
+                <Input
+                  value={newUser.email}
+                  onChange={(e) => setNewUser({ ...newUser, email: e.target.value })}
+                  placeholder="email@exemple.com"
+                />
+              </div>
+              <div className="space-y-2">
+                <Label>Mot de passe *</Label>
+                <Input
+                  type="password"
+                  value={newUser.password}
+                  onChange={(e) => setNewUser({ ...newUser, password: e.target.value })}
+                  placeholder="••••••••"
+                />
+              </div>
+            </div>
+            <div className="space-y-2">
+              <Label>Nom complet *</Label>
+              <Input
+                value={newUser.fullName}
+                onChange={(e) => setNewUser({ ...newUser, fullName: e.target.value })}
+                placeholder="Prénom et Nom"
+              />
+            </div>
+            <div className="grid grid-cols-2 gap-4">
+              <div className="space-y-2">
+                <Label>Société</Label>
+                <Input
+                  value={newUser.companyName}
+                  onChange={(e) => setNewUser({ ...newUser, companyName: e.target.value })}
+                  placeholder="Nom de l'entreprise"
+                />
+              </div>
+              <div className="space-y-2">
+                <Label>NIF</Label>
+                <Input
+                  value={newUser.nif}
+                  onChange={(e) => setNewUser({ ...newUser, nif: e.target.value })}
+                  placeholder="Numéro d'identification fiscale"
+                />
+              </div>
+            </div>
+            <div className="space-y-2">
+              <Label>Rôle</Label>
+              <Select
+                value={newUser.role}
+                onValueChange={(v) => setNewUser({ ...newUser, role: v as "user" | "expert" | "admin" })}
+              >
+                <SelectTrigger>
+                  <SelectValue />
+                </SelectTrigger>
+                <SelectContent>
+                  <SelectItem value="user">Utilisateur</SelectItem>
+                  <SelectItem value="expert">Expert</SelectItem>
+                  <SelectItem value="admin">Admin</SelectItem>
+                </SelectContent>
+              </Select>
+            </div>
+          </div>
+          <DialogFooter>
+            <Button variant="outline" onClick={() => setCreateModalOpen(false)}>
+              Annuler
+            </Button>
+            <Button
+              onClick={() => createUserMutation.mutate()}
+              disabled={!newUser.email || !newUser.password || !newUser.fullName || createUserMutation.isPending}
+            >
+              {createUserMutation.isPending ? "Création..." : "Créer le compte"}
+            </Button>
+          </DialogFooter>
+        </DialogContent>
+      </Dialog>
+
+      {/* Delete User Confirmation */}
+      <Dialog open={deleteConfirmOpen} onOpenChange={setDeleteConfirmOpen}>
+        <DialogContent className="sm:max-w-sm">
+          <DialogHeader>
+            <DialogTitle className="flex items-center gap-2 text-destructive">
+              <Trash2 size={18} /> Supprimer le compte
+            </DialogTitle>
+            <DialogDescription>
+              Cette action est irréversible. L'utilisateur sera supprimé définitivement.
+            </DialogDescription>
+          </DialogHeader>
+          <DialogFooter>
+            <Button variant="outline" onClick={() => setDeleteConfirmOpen(false)}>
+              Annuler
+            </Button>
+            <Button
+              variant="destructive"
+              onClick={() => deleteUserMutation.mutate()}
+              disabled={deleteUserMutation.isPending}
+            >
+              {deleteUserMutation.isPending ? "Suppression..." : "Supprimer"}
             </Button>
           </DialogFooter>
         </DialogContent>
