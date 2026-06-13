@@ -231,6 +231,48 @@ function tokenize(text: string): string[] {
     .filter((t) => t.length > 1 && !STOP_WORDS.has(t));
 }
 
+const GREETINGS = new Set([
+  "hi", "hello", "hey", "good morning", "good evening", "good afternoon",
+  "bonjour", "salut", "bonsoir", "bon matin",
+  "salam", "salam", "ahlan", "marhaba", "salem", "salamo",
+  "yo", "sup", "howdy",
+]);
+
+const THANKS = new Set([
+  "merci", "merci beaucoup", "thank you", "thanks", "thank",
+  "shukran", "chokran", "thanks a lot", "thank you so much",
+  "merci bien", "merci infiniment",
+]);
+
+const GOODBYES = new Set([
+  "au revoir", "a bientot", "a plus tard", "ciao", "adieu", "bonne journee",
+  "goodbye", "bye", "see you", "see you later", "later", "bye bye",
+  "besslama", "ma salama", "ila likae",
+]);
+
+function detectIntent(q: string): "greeting" | "thanks" | "goodbye" | "unknown_user" | null {
+  const nq = normalize(q).trim().replace(/\s+/g, " ");
+  if (!nq) return null;
+
+  for (const g of GREETINGS) {
+    if (nq === g || nq.startsWith(g + " ") || nq.endsWith(" " + g) || nq.includes(" " + g + " ")) {
+      return "greeting";
+    }
+  }
+  for (const t of THANKS) {
+    if (nq === t || nq.startsWith(t + " ") || nq.endsWith(" " + t) || nq.includes(" " + t + " ")) {
+      return "thanks";
+    }
+  }
+  for (const g of GOODBYES) {
+    if (nq === g || nq.startsWith(g + " ") || nq.endsWith(" " + g) || nq.includes(" " + g + " ")) {
+      return "goodbye";
+    }
+  }
+
+  return null;
+}
+
 function getLocalizedField(entry: KBEntry, locale: string, field: "question" | "answer") {
   if (locale === "ar") return field === "question" ? entry.question_ar : entry.answer_ar;
   if (locale === "en") return field === "question" ? entry.question_en : entry.answer_en;
@@ -312,6 +354,31 @@ export function FiscalChat() {
   const ask = (q: string) => {
     if (!q.trim()) return;
     const userMsg: Msg = { role: "user", text: q };
+
+    // Check social intents before KB search
+    const intent = detectIntent(q);
+    const intentMap: Record<string, string> = {
+      greeting: t("assistant.greeting_user"),
+      thanks: t("assistant.thanks"),
+      goodbye: t("assistant.goodbye"),
+    };
+    if (intent && intentMap[intent]) {
+      const botMsg: Msg = { role: "bot", text: intentMap[intent] };
+      setMsgs((prev) => [...prev, userMsg, botMsg]);
+      setInput("");
+      return;
+    }
+
+    const nq = normalize(q);
+    const isHelpOrIdentity =
+      /what can you do|how (can )?you help|who are you|tell me about yourself|help\b|que fais tu|a quoi tu sers|tu peux faire quoi|qu est ce que tu fais|qui es tu|aide moi|matax|ماذا يمكنك|من انت|ساعدني/.test(nq);
+    if (isHelpOrIdentity) {
+      const botMsg: Msg = { role: "bot", text: t("assistant.unknown_user") };
+      setMsgs((prev) => [...prev, userMsg, botMsg]);
+      setInput("");
+      return;
+    }
+
     const ranked = KB.map((e) => ({ e, s: scoreEntry(q, e, locale) }))
       .filter((r) => r.s > 0)
       .sort((a, b) => b.s - a.s);
